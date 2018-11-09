@@ -26,14 +26,10 @@ node('master') {
 
 		if (canDeploy()) {
 			stage('Deploy') {
-				dir("${nasajonCIBaseDir}\\build\\erp") {
-					bat "deploy.bat ${artifactBuildPath} exe ${env.WORKSPACE}\\output\\bin\\${artifactId}.exe ${artifactId}"
-				}
-
 				dir("${nasajonCIBaseDir}\\build\\") {
-					bat "tools\\7zip\\7za.exe a -tzip ${env.WORKSPACE}\\output\\nsjApi.zip ${env.WORKSPACE}\\output\\dcu\\api"
+					bat "tools\\7zip\\7za.exe a -tzip ${env.WORKSPACE}\\output\\Nasajon.API.zip ${env.WORKSPACE}\\output\\dcu\\api"
 
-					bat "erp\\deploy.bat ${artifactBuildPath} zip ${env.WORKSPACE}\\output\\nsjApi.zip"
+					bat "erp\\deploy.bat ${artifactBuildPath} zip ${env.WORKSPACE}\\output\\Nasajon.API.zip"
 				}
 			}
 		}
