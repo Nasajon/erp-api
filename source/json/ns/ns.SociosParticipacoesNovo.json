@@ -1,0 +1,10 @@
+{
+     "IdSocioParticipacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Socio" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataInicial" : "2014-12-31"
+   , "DataFinal" : "2014-12-31"
+   , "PercentualCapitalTotal" : 5,2
+   , "PercentualCapitalVotante" : 5,2
+	
+}

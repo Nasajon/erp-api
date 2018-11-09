@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="BaixaTituloUnitaria">
+		<model>
+		    <nome>BaixarTitulo</nome>
+			<field nome="IdTitulo" controlType="Guid" notnull="True"/>	
+			<field nome="Conta" controlType="EntidadeInterna" summary="Indica a conta que o título foi baixado." notnull="True"/>	
+            <field nome="Data" controlType="Date" summary="Indica a data que o título foi baixado." notnull="True"/>	
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="20,4" Required="False"/>
+			<field nome="ValorDesconto" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="PercentualJuros" controlType="Currency" tamanho="20,4" Required="False"/>
+			<field nome="ValorJuros" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="PercentualMulta" controlType="Currency" tamanho="20,4" Required="False"/>
+			<field nome="ValorMulta" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorAcrescimo" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorTarifaBancaria" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorPisRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorCofinsRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorCsllRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorIrrfRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorInssRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorissRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorIrrfRetidoNotaFiscal" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorInssRetidoNotaFiscal" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="Valor" controlType="Currency" tamanho="20,2" Required="False"
+			       summary="Indica o valor líquido da baixa. Valor utilizado no lançamento bancário. 
+				            Quando não informado será calculado a partir do valor do título e seus impostos e valores financeiros." notnull="True"/>
+			<field nome="DataLancamento" controlType="Date" 
+			       required="False" summary="Indica a data do lançamento bancário. Quando não informada é assumida a data da baixa." notnull="True"/>
+			<field nome="ImprimirCheque" controlType="Boolean" 
+			       requerid="False" summary="Indica se o lançamento bancário estará habilitado para impressão do cheque. Utilizado somente para títulos a pagar." notnull="True"/>
+			<field nome="Documento" controlType="String" tamanho="20" 
+			       required="False" summary="Campo de controle utilizado no lançamento bancário."/>
+			<field nome="Historico" controlType="Memo" 
+			       required="False" summary="Indica o histórico do lançamento."/>
+			<field nome="VersoCheque" controlType="Memo" 
+			       required="False" summary="Indica o texto que será impresso no verso do cheque."/>
+			<field nome="Favorecido" controlType="String" tamanho="150" 
+			       required="False" summary="Indica o nome do favorecido que será impresso no cheque." notnull="True"/>                   
+			<field nome="Renegociacao" controlType="Boolean" required="False" notnull="True"/>                   
+			<field nome="FormasPagamentos" controlType="ObjectList" namespace="financas\FormaPagamentoRenegociacaoTitulos\TFormaPagamentoRenegociacaoTitulosNovo" required="False"/>
+			<field nome="Parcelas" controlType="ObjectList" namespace="financas\ParcelaFormaPagamentoRenegociacaoTitulos\TParcelaFormaPagamentoRenegociacaoTitulosNovo" required="False"/>                                     
+            <field nome="Usuario" controlType="Guid" notnull="True"/>	
+			<field nome="valorvariacaocambialativa" controlType="Currency" Required="False" notnull="False"/>
+			<field nome="valorvariacaocambialpassiva" controlType="Currency" Required="False" notnull="False"/> 
+			<field nome="idlancamentoconta" controlType="Guid" notnull="False" required="False"/>            
+            <field nome="PrestacaoDeContas" controlType="EntidadeInterna" Required="False" notnull="True"/>             
+            <field nome="DataCompetencia" controlType="Date" Required="False" notnull="False"/>             
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" required="False" summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>
+
+			<field nome="baixapermuta" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="valorpermuta" controlType="Currency" required="False" notnull="False"/>
+			<field nome="descricaopermuta" controlType="String" tamanho="1000" required="False"/>			
+			<field nome="OutrasRetencoes" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="DescricaoOutrasRetencoes" controlType="String" tamanho="255" required="False"/>		
+			<field nome="cotacao" controlType="Currency" Required="False" notnull="False"/>
+			<field nome="Origem" controlType="Integer" Required="False" notnull="False"/>			
+		</model>	
+	</models>
+</root>

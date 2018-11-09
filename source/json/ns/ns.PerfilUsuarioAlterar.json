@@ -1,0 +1,6 @@
+{
+     "PerfilUsuario" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(50)"
+	
+}

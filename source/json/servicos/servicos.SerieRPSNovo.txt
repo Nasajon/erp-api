@@ -1,0 +1,32 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "String(3)"
+   , "SubSerie" : "String(2)"
+   , "Padrao" : False
+   , "NumeroInicial" : 1
+   , "NumeroFinal" : 1
+   , "ProximoNumero" : 1
+	
+}
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Serie
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: SubSerie
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Padrao
+Descrição: Informa se esse RPS é o RPS padrão a ser consideradoObrigatório: SIMAceita valor nulo: SIM
+
+Campo: NumeroInicial
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: NumeroFinal
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ProximoNumero
+Obrigatório: SIMAceita valor nulo: NÃO
+

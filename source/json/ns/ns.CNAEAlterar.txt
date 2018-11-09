@@ -1,0 +1,16 @@
+{
+     "Codigo" : "String(7)"
+   , "Descricao" : "String(255)"
+   , "CodigoPai" : "String(7)"
+	
+}
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoPai
+Obrigatório: NÃOAceita valor nulo: SIM
+

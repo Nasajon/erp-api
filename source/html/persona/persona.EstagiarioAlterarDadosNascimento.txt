@@ -1,0 +1,51 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "UF" : "String(2)"
+   , "Cidade" : "String(60)"
+   , "CodigoMunicipio" : "String(8)"
+   , "CodigoPais" : "String(5)"
+   , "NomePai" : "String(80)"
+   , "NomeMae" : "String(80)"
+   , "DataNascimento" : "2014-12-31"
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: UF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoMunicipio
+Descrição: Conforme tabela do IBGE
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoPais
+Descrição: Conforme tabela oficial do governo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomePai
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeMae
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataNascimento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

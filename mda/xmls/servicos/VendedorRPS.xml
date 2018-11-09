@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="VendedorRPS">
+		<model>		    
+            <field nome="Vendedor" controlType="EntidadeInterna" required="True" notnull="True"/>			
+            <field nome="Percentual" controlType="Currency" tamanho="20,2" Required="True" notnull="True"/>  
+            <field nome="PercentualComissao" controlType="Currency" tamanho="20,2" Required="True" notnull="True"/>            	      
+		</model>
+	</models>
+</root>

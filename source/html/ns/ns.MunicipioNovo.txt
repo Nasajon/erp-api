@@ -1,0 +1,29 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ibge" : "String(8)"
+   , "nome" : "String(100)"
+   , "uf" : "String(2)"
+   , "zfm" : "String(50)"
+	
+}
+
+Campo: id
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ibge
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: nome
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: uf
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: zfm
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

@@ -1,0 +1,24 @@
+{
+     "Lote" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Tipo" : 1
+   , "DataHora" : "2014-12-31"
+   , "Mensagem" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: Lote
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataHora
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Mensagem
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

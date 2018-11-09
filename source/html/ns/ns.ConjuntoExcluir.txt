@@ -1,0 +1,29 @@
+{
+     "Conjunto" : "Guid ou Código"
+   , "Cadastro" : 1
+	
+}
+
+Campo: Conjunto
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Cadastro
+Descrição: Indica que tipo de cadastro o cojunto suporta:
+				   			0 - Produto
+				   			1 - Unidade
+				   			2 - Combustível
+				   			3 - Serviço
+				   			4 - Classificação dos Participantes
+				   			5 - Ficha
+				   			6 - Cliente
+				   			7 - Fornecedor
+				   			8 - Transportadora
+				   			9 - Vendedor
+				   			10 - Serviço de Catálogo
+				   			11 - Modelo de Contrato
+				   			12 - Técnico
+				   			13 - Rubrica
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

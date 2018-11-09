@@ -1,0 +1,44 @@
+{
+     "IdSindicato" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(6)"
+   , "CNPJ" : "String(18)"
+   , "CodigoContribuicao" : "String(12)"
+   , "CodigoEntidade" : "String(15)"
+   , "Patronal" : False
+   , "MesContribuicaoAssistencial" : 1
+   , "MesContribuicaoSindical" : 1
+   , "PisoSalarial" : 20,6
+   , "Nome" : "String(60)"
+	
+}
+
+Campo: IdSindicato
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CNPJ
+Descrição: [99.999.999/9999-99]. A máscara não é obrigatória.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CodigoContribuicao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoEntidade
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Patronal
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: MesContribuicaoAssistencial
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: MesContribuicaoSindical
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: PisoSalarial
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+

@@ -1,0 +1,54 @@
+{
+     "Usuario" : "Guid ou Código"
+   , "Nome" : "String(60)"
+   , "Email" : "String(100)"
+   , "Telefone" : "String(20)"
+   , "Login" : "String(20)"
+   , "Senha" : "String(300)"
+   , "PerfilUsuario" : "Guid ou Código"
+   , "GrupoDeUsuario" : "Guid ou Código"
+   , "representante" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "vendedor" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: Usuario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Email
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Login
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Senha
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: PerfilUsuario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: GrupoDeUsuario
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: representante
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: vendedor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

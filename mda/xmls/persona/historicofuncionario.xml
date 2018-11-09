@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="HistoricoFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdHistorico" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="Date" tamanho="255" required="True" notnull="True"/>
+			<field nome="TipoHistorico" controlType="String" tamanho="3" required="True" notnull="True" summary="Conforme coluna tipo da tela de históricos do funcionário"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="IdHistorico" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="Date" tamanho="255" required="False" notnull="True"/>
+			<field nome="TipoHistorico" controlType="String" tamanho="3" required="False" notnull="True" summary="Conforme coluna tipo da tela de históricos do funcionário"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdHistorico" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+		</model>
+	</models>
+</root> 
+
+
+  
+  
+  
+  

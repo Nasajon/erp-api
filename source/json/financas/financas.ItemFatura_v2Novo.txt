@@ -1,0 +1,16 @@
+{
+     "ItemFatura" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Fatura" : "Guid ou Código"
+   , "DocumentoFiscal" : "Objeto: TDocumentoFiscalNs"
+	
+}
+
+Campo: ItemFatura
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Fatura
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DocumentoFiscal
+Obrigatório: SIMAceita valor nulo: NÃO
+

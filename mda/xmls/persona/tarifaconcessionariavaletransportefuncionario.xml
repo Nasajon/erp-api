@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="TarifaValeTransporteFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdTarifa" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="TarifaConcessionaria" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Concessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Quantidade" controlType="Integer" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="IdTarifa" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="TarifaConcessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Concessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Quantidade" controlType="Integer" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdTarifa" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="TarifaConcessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Concessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>
+

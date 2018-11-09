@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="LancamentoConta_v2">
+		<model>
+			<nome>Novo</nome>
+			<field nome="Id" controlType="Guid" required="False" notnull="True"
+			       summary="Identificador do lançamento. Quando não informado será gerado automaticamente."/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"
+			       summary="Estabelecimento da conta na qual o lançamento pertence."/> 	   
+			<field nome="Conta" controlType="EntidadeInterna" notnull="True"
+			       summary="Conta na qual o lançamento pertence."/>
+			<field nome="Data" controlType="Date" required="False" notnull="False"
+			       summary="Data do lançamento. Quando não informada assumirá a data do servidor."/>
+			<field nome="DataCompetencia" controlType="Date" required="False" notnull="False"
+			       summary="Data da competência do lançamento. Quando não informada assumirá a data do próprio lançamento."/>
+			<field nome="Documento" controlType="String" tamanho="30" required="True" notnull="True"
+			       summary="Código para identificar o lançamento."/>
+			<field nome="Historico" controlType="String" tamanho="1024" required="False" notnull="False"
+			       summary="Histórico do lançamento."/>
+			<field nome="Sinal" controlType="Integer" required="True" notnull="True"
+			       summary="Indica se é um débito ou crédito: 0 - Débito; 1 - Crédito;"/>
+			<field nome="Valor" controlType="Currency" tamanho="20,2" required="True" notnull="True"
+			       summary="Valor do lançamento."/>
+			<field nome="ImprimeCheque" controlType="Boolean" required="False" notnull="False"
+			       summary="Quando for uma lançamento de débito, ter a possibilidade de gerar um lançamento preparado para uma impressão em cheque."/>
+			<field nome="VersoCheque" controlType="String" tamanho="1024" required="False" notnull="False"
+			       summary="Informações para ser impressa no verso do cheque caso o mesmo seja impresso."/>
+			<field nome="Favorecido" controlType="String" tamanho="150" required="False" notnull="False"
+			       summary="Nome do favorecido para ser usado na impressão do cheque."/>/>
+            <field nome="Contabilizar" controlType="Boolean" required="False" notnull="True"
+			       summary="Indica se o lançamento pode ser contabilizado. Quando não informado assume o valor False."/> 	
+ 	        <field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" required="False" 
+				   summary="Indica a lista de discriminação de valores por classificação financeira, centro de custo e projeto."/>	
+		</model>
+	</models>
+</root>

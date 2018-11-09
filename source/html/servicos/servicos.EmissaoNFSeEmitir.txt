@@ -1,0 +1,29 @@
+{
+     "AtributoEstabelecimento" : "String(1024)"
+   , "AtributoRPS" : "String(1024)"
+   , "AtributoSerie" : "String(1024)"
+   , "AtributoCertificado" : "String(1024)"
+   , "AtributoUsuario" : "Guid ou Código"
+	
+}
+
+Campo: AtributoEstabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoRPS
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoSerie
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoCertificado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AtributoUsuario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

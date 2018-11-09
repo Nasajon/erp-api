@@ -1,0 +1,20 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Acordo" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Acordo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃOAceita valor nulo: NÃO
+

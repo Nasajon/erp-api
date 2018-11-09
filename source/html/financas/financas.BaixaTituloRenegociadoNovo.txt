@@ -1,0 +1,139 @@
+{
+     "IdTitulo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Data" : "2014-12-31"
+   , "PercentualDesconto" : 20,4
+   , "ValorDesconto" : 20,2
+   , "PercentualJuros" : 20,4
+   , "ValorJuros" : 20,2
+   , "PercentualMulta" : 20,4
+   , "ValorMulta" : 20,2
+   , "ValorAcrescimo" : 20,2
+   , "ValorTarifaBancaria" : 20,2
+   , "ValorPisRetido" : 20,2
+   , "ValorCofinsRetido" : 20,2
+   , "ValorCsllRetido" : 20,2
+   , "ValorIrrfRetido" : 20,2
+   , "ValorInssRetido" : 20,2
+   , "ValorissRetido" : 20,2
+   , "ValorIrrfRetidoNotaFiscal" : 20,2
+   , "ValorInssRetidoNotaFiscal" : 20,2
+   , "Valor" : 20,2
+   , "Documento" : "String(30)"
+   , "Historico" : "Este atributo é do titpo Memo."
+   , "Favorecido" : "String(150)"
+   , "valorvariacaocambialativa" : 
+   , "valorvariacaocambialpassiva" : 
+   , "OutrasRetencoes" : 20,2
+   , "DescricaoOutrasRetencoes" : "String(255)"
+   , "Origem" : 1
+	
+}
+
+Campo: IdTitulo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PercentualDesconto
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorDesconto
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: PercentualJuros
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorJuros
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: PercentualMulta
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorMulta
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorAcrescimo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorTarifaBancaria
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorPisRetido
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorCofinsRetido
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorCsllRetido
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorIrrfRetido
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorInssRetido
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorissRetido
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorIrrfRetidoNotaFiscal
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorInssRetidoNotaFiscal
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Documento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Historico
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Favorecido
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: valorvariacaocambialativa
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: valorvariacaocambialpassiva
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: OutrasRetencoes
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: DescricaoOutrasRetencoes
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Origem
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

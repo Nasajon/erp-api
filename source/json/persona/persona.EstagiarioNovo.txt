@@ -1,0 +1,76 @@
+{
+     "IdEstagiario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Departamento" : "Guid ou Código"
+   , "Horario" : "Guid ou Código"
+   , "Lotacao" : "Guid ou Código"
+   , "NivelCargo" : "Guid ou Código"
+   , "Cargo" : "Guid ou Código"
+   , "Codigo" : "String(14)"
+   , "Nome" : "String(80)"
+   , "CodigoCategoria" : "String(3)"
+   , "CPF" : "String(11)"
+   , "NIS" : "String(11)"
+   , "DataInicioContrato" : "2014-12-31"
+   , "DataFimContrato" : "2014-12-31"
+   , "UnidadeSalario" : 1
+   , "Sexo" : 1
+   , "CodigoCBO" : "String(6)"
+	
+}
+
+Campo: IdEstagiario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Departamento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Horario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Lotacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: NivelCargo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Cargo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CodigoCategoria
+Descrição: Conforme tabela de categorias do eSocialObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CPF
+Descrição: [999.999.999-99]. A máscara não é obrigatória.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: NIS
+Descrição: Informar o número do PIS, PASEP ou NITObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataInicioContrato
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataFimContrato
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: UnidadeSalario
+Descrição: Hora(1), Dia(2), Semana(3), Mês(4) ou Tarefa(5)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Sexo
+Descrição: Masculino(1) ou Feminino(2)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CodigoCBO
+Descrição: Conforme tabela de código brasileiro de ocupaçõesObrigatório: SIMAceita valor nulo: NÃO
+

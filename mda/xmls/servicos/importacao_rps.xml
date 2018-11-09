@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="importacao_rps">
+        <model>
+            <field nome="Estabelecimento" controlType="EntidadeJuridica" required="True" 
+                   summary="Identificador do estabelecimento" notnull="False"/>
+            <field nome="Cliente" controlType="EntidadeFisicaJuridica" required="True" 
+                   summary="Identificador do cliente" notnull="False"/>
+            <field nome="Serie" controlType="String" tamanho="38" required="False"
+                   summary="Número da série do RPS a ser utilizada. Quando não informado será utilizada a série padrão do estabelecimento" notnull="False"/>
+            <field nome="Numero" controlType="String" tamanho="9" required="False"
+                   summary="Número do RPS a ser utilizado. Quando não informado será utilizado o próximo número da série padrão do estabelecimento" notnull="False"/>
+            <field nome="TipoTributacao" controlType="Integer" required="False" 
+                   summary="Indica o Tipo de Tributação. Quando não informado assumirá da configuração de RPS.
+                            00 - Nenhum,
+                            01 - Tributação no Município,
+                            02 - Tributação Fora do Município,
+                            03 - Operação Isenta,
+                            04 - Operação Imune,
+                            05 - Operação Suspensa por Decisão Judicial,
+                            06 - Operação Suspensa por Decisão Administrativa" notnull="True"/>
+            <field nome="RegimeEspecial" controlType="Integer" required="False" 
+                   summary="Indica o Regime Especial. Quando não informado assumirá da configuração de RPS.
+                            00 - Nenhum,
+                            01 - Microempresa Municipal,
+                            02 - Estimativa,
+                            03 - Sociedade de Profissionais,
+                            04 - Cooperativa,
+                            05 - Microempreendedor Individual,
+                            06 - Empresa Júnior" notnull="True"/>
+            <field nome="IncentivoCultural" controlType="Boolean" required="False" 
+                   summary="Indica se tem Incentivo Cultural. Quando não informado assumirá da configuração de RPS." notnull="True"/>
+            <field nome="ISSRetido" controlType="Boolean" required="False"
+                   summary="Indica se haverá retenção de ISS no RPS Quando não informado assumirá da configuração do cliente/código de serviço" notnull="True"/>
+            <field nome="CodigoServico" controlType="EntidadeInterna" required="True"
+                   summary="Identificador do código de serviço" notnull="False"/>
+            <field nome="DescontoCondicional" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica se haverá desconto condicional no RPS" notnull="False"/>
+            <field nome="CodigoIBGEMunicipioPrestacao" controlType="String" tamanho="7" required="True"
+                   summary="Indica o município onde o serviço está sendo prestado" notnull="False"/>
+            <field nome="Obra" controlType="EntidadeInterna" required="False"
+                   summary="Identificador da obra" notnull="False"/>
+            <field nome="DiscriminacaoServicos" controlType="String" tamanho="5000" required="True"
+                   summary="Indica a discriminação dos serviços prestados" notnull="False"/>
+            <field nome="OutrasDeducoes" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica se haverá deduções no RPS" notnull="False"/>
+            <field nome="OutrasRetencoes" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica se haverá retenções no RPS" notnull="False"/>
+            <field nome="Observacao" controlType="String" tamanho="5000" required="False"
+                   summary="Indica a observação do RPS" notnull="False"/>
+            <field nome="CalcularImpostos" controlType="Boolean" required="True"
+                   summary="Indica se o sistema vai calcular os impostos com base nas configurações. Quando falso, assume os valores informados" notnull="False"/>
+            <field nome="ItensRPS" controlType="ObjectList" required="True"
+                   summary="Indica os serviços prestados no RPS" namespace="timportacao_itemrpps"/>
+            <field nome="Pagamentos" controlType="ObjectList" required="False"
+                   summary="Indica as formas de pagamentos do RPS. Quando não informado assumirá da configuração do cliente" namespace="timportacao_pagamento"/>
+            <field nome="Rateios" controlType="ObjectList" required="False"
+                   summary="Indica as forma de rateio do RPS. Quando não informado assumirá da configuração do cliente" namespace="timportacao_rateio"/>
+        </model>
+    </models>
+</root>

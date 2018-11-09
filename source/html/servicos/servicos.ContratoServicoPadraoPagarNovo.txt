@@ -1,0 +1,88 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(120)"
+   , "DefinicaoContratante" : "String(20)"
+   , "DefinicaoBeneficiario" : "String(20)"
+   , "DataInicial" : "2014-12-31"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "QtdDiasDesconto" : 1
+   , "QtdDiasMulta" : 1
+   , "QtdDiasJurosDiarios" : 1
+   , "EmitirNotaFiscal" : False
+   , "TipoContabilizacao" : 1
+   , "Itens" : "ObjectList: TItemContratoPagarNovo"
+	
+}
+
+Campo: Id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DefinicaoContratante
+Descrição: Indica o nome do label ao informar a parte contratante.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DefinicaoBeneficiario
+Descrição: Indica o nome do label ao informar a parte contratada.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataInicial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Descrição: Indica o estabelecimento do contrato(contratante).
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Pessoa
+Descrição: Indica o fornecedor do contrato(contratado).
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conta
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: QtdDiasDesconto
+Descrição: Dias para cálculo de desconto no título com referência no vencimento.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: QtdDiasMulta
+Descrição: Dias para cálculo de multa no título com referência no vencimento.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: QtdDiasJurosDiarios
+Descrição: Dias para cálculo de juros no título com referência no vencimento.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: EmitirNotaFiscal
+Descrição: Define se ao processar o contrato será gerado um registro de NFS-e.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: TipoContabilizacao
+Descrição: Utiliza na contabilização de títulos a pagar gerado por contratos. 0-Não Contabiliza/1-Contabiliza Provisão e Baixas/2-Contabiliza somente baixas.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Itens
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

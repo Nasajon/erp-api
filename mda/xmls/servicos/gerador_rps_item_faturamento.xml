@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="gerador_rps_item_faturamento">
+        <model>
+            <field nome="id" controlType="Guid" required="True" summary="Identificador do estabelecimento" notnull="False"/>
+            <field nome="quantidade" controlType="Currency" tamanho="20,2" required="True" summary="Indica a quantidade de serviços prestados" notnull="False"/>
+            <field nome="valor_unitario" controlType="Currency" tamanho="20,2" required="True" summary="Indica o valor unitário do serviço prestado." notnull="False"/>
+            <field nome="valor_total" controlType="Currency" tamanho="20,2" required="True" summary="Indica o valor total do serviço prestado." notnull="False"/>
+            <field nome="id_owner" controlType="Guid" required="False" notnull="True"/>	
+        </model>
+    </models>
+</root>

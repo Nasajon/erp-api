@@ -1,0 +1,8 @@
+{
+     "PerfilUsuario" : "Guid ou Código"
+	
+}
+
+Campo: PerfilUsuario
+Obrigatório: SIMAceita valor nulo: NÃO
+

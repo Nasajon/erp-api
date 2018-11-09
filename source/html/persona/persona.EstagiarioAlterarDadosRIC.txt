@@ -1,0 +1,39 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(30)"
+   , "OrgaoEmissor" : "String(20)"
+   , "UF" : "String(2)"
+   , "Cidade" : "String(60)"
+   , "DataExpedicao" : "2014-12-31"
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: OrgaoEmissor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: UF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataExpedicao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

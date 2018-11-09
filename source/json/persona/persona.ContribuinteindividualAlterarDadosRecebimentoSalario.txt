@@ -1,0 +1,32 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Tipo" : 1
+   , "NumeroConta" : "String(14)"
+   , "DigitoVerificador" : "String(2)"
+   , "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+	
+}
+
+Campo: Contribuinte
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Conta Corrente(1), Conta Poupança(2), Conta Salário(4), Dinheiro(8) ou Cheque(16)Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: NumeroConta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DigitoVerificador
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Agencia
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: NÃOAceita valor nulo: NÃO
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="Contrato">
+		<model>
+			<field nome="Id" controlType="Guid"/>	
+			<field nome="Codigo" controlType="String" tamanho="30"/>	
+			<field nome="Descricao" controlType="String" tamanho="120"/> 
+			<field nome="TipoContrato" controlType="Integer"/>	
+			<field nome="DefinicaoContratante" controlType="String" tamanho="20"/>	
+			<field nome="DefinicaoBeneficiario" controlType="String" tamanho="20"/>	
+			<field nome="DataInicial" controlType="Date"/>	 
+			<field nome="Administrador" controlType="EntidadeInterna"/> 
+			<field nome="Estabelecimento" controlType="EntidadeJuridica"/>
+			<field nome="Pessoa" controlType="EntidadeFisicaJuridica"/>
+			<field nome="Fiador" controlType="EntidadeFisicaJuridica"/>
+			<field nome="Conta" controlType="EntidadeInterna"/>
+			<field nome="Patrimonio" controlType="EntidadeInterna"/>
+			<field nome="QtdDiasDesconto" controlType="Integer"/>	
+			<field nome="QtdDiasMulta" controlType="Integer"/>	
+			<field nome="QtdDiasJurosDiarios" controlType="Integer"/>	
+			<field nome="PercentualComissao" controlType="Currency" tamanho="20,2"/>	
+			<field nome="ValorComissao" controlType="Currency" tamanho="20,2"/>	
+			<field nome="PercentualRetencaoImposto" controlType="Currency" tamanho="20,2"/>	
+			<field nome="ValorRetencaoImposto" controlType="Currency" tamanho="20,2"/>	
+			<field nome="EmitirNotaFiscal" controlType="Boolean"/>	
+			<field nome="TipoContabilizacao" controlType="Integer"/>	
+			<field nome="Autorizado" controlType="Integer"/>	
+			<field nome="Cancelado" controlType="Boolean"/>  
+			<field nome="DataHoraCancelamento" controlType="DateTime"/>  
+			<field nome="TipoFuncao" controlType="Integer"/> 
+			<field nome="Itens" controlType="ObjectList" namespace="servicos\ItemContrato\TItemContrato" /> 
+		</model>	
+	</models>
+</root>

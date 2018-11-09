@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+  <models sistema="financas" modulo="TituloPagar">
+    <model>
+      <nome>Novo</nome>
+      <field nome="Id" controlType="Guid" Required="False" notnull="True"/>	
+      <field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+      <field nome="Pessoa" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+      <field nome="Conta" controlType="EntidadeInterna" notnull="True"/> 
+      <field nome="LayoutPagamento" controlType="EntidadeInterna" 
+      Required="False" summary="Indica o layout de pagamento a ser utilizado na integração bancária. Caso não seja informado o Guid, passar a descrição." notnull="True"/> 
+      <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>	
+      <field nome="Emissao" controlType="Date" notnull="True"/>	
+      <field nome="Vencimento" controlType="Date" notnull="True"/>	
+      <field nome="PrevisaoVencimento" controlType="Date" required="False" summary="Indica a previsão do vencimento. Utilizado no fluxo de caixa, caso não informado assume a data de vencimento." notnull="True"/>
+      <field nome="Parcela" controlType="Integer" required="False"/>	
+      <field nome="TotalParcelas" controlType="Integer" required="False"/>	
+      <field nome="Observacao" controlType="String" tamanho="1000" required="False"/>	
+      <field nome="Anotacoes" controlType="Memo" required="False"/>	
+      <field nome="ValorTitulo" controlType="Currency" tamanho="20,2" notnull="True"/>
+      <field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" 
+      required="False" summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>
+      <field nome="AliquotaIr" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorIrRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaCofins" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorCofinsRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaPis" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorPisRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaCsll" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorCsllRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="ValorInssRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaIss" controlType="Currency" tamanho="15,4" required="False"/> 
+      <field nome="ValorIssRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="DataLimiteDesconto" controlType="Date" required="False"/>	
+      <field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="DataInicioMulta" controlType="Date" required="False"/>	
+      <field nome="PercentualMulta" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="PercentualJurosDiario" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="LinhaDigitavel" controlType="String" tamanho="54" 
+      required="False" summary="Indica a linha digitável do título. Utilizado na integração bancária, via borderô eletrônico." notnull="True"/>	
+      <field nome="CodigoBarras" controlType="String" tamanho="44" 
+      required="False" summary="Indica o código de barras do título. Utilizado na integração bancária, via borderô eletrônico." notnull="True"/>	
+      <field nome="NumeroNota" controlType="String" tamanho="20" 
+      required="False" summary="Indica o número da nota que deu origem ao título."/>
+      <field nome="ModeloDocumentoFiscal" controlType="Integer" 
+      required="False" summary="Indica o modelo da nota que deu origem ao título. 
+                             1-Nenhum Modelo de Documento Fiscal,
+                                     2-Nota Fiscal (Saída ou Entrada de NF emitida pelo fornecedor,
+                                     3-Nota Fiscal Eletrônica,
+                                     4-Nota Fiscal emissão própria na entrada, marcada ENTRADA [X],
+                                     5-Nota Fiscal de Venda ao Consumidor,
+                                     6-Nota Fiscal de Produtor (Rural), 
+                                     7-Nota Fiscal de Serviço,
+                                     8-Nota Fiscal Fatura de Serviço,
+                                     9-Nota Fiscal Simplificada de Serviço,
+                                     10-Nota Eletrônica de Serviços,
+                                     11-Conhecimento Aéreo,
+                                     12-Conhecimento de Transporte Aquaviário,
+                                     13-Conhecimento de Transporte Eletrônico,
+                                     14-Conhecimento de Transporte Ferroviário,
+                                     15-Nota Fiscal De Transporte Ferroviário,
+                                     16-Conhecimento de Transporte Rodoviário,
+                                     17-Conhecimento de Transporte Multimodal de Carga,
+                                     18-Nota Fiscal de Serviço de Transporte,
+                                     19-Conta de Energia Elétrica,
+                                     20-Nota Fiscal Serviço de Telecomunicação,
+                                     21-Conta Fornecimento de Gás Canalizado,
+                                     22-Conta Fornecimento de Água Canalizada,
+                                     23-Bilhete de Passagem Aquaviário,
+                                     24-Bilhete de Passagem Ferroviário,
+                                     25-Bilhete de Passagem e Nota de Bagagem,
+                                     26-Bilhete de Passagem Rodoviário,
+                                     27-Resumo do Movimento Diário (Transporte de Passageiros)"/>
+      <field nome="SerieDocumentoFiscal" controlType="String" tamanho="3" 
+      required="False" summary="Indica a serie da nota que deu origem ao título."/>
+      <field nome="SubserieDocumentoFiscal" controlType="String" tamanho="2" 
+      required="False" summary="Indica a sub-serie da nota que deu origem ao título."/>
+      <field nome="ServicoBancario" controlType="EntidadeInterna" 
+      required="False" summary="Indica os serviços disponiveis para o layout de pagamento do banco informado no título. Para preenchimento deste campo 
+      vide a tabela financas.servicosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>
+      <field nome="FormaPagamento" controlType="EntidadeInterna"
+      required="False" summary="Indica a forma de pagamento do título." notnull="True"/>
+      <field nome="FinalidadePagamento" controlType="EntidadeInterna"
+      required="False" summary="Indica as finalidades de pagamentos suportada pela forma de pagamento escolhida. Para preenchimento deste campo
+      vide a tabela financas.finalidadespagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>
+      <field nome="TipoContaPagamento" controlType="EntidadeInterna"
+      required="False" summary="Indica os tipos de contas suportada pela forma de pagamento escolhida. Para preenchimento deste campo
+      vide a tabela financas.tiposcontaspagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>				   
+      <field nome="DataAgendamento" controlType="Date" 
+      required="False" summary="Indica a data do agendamento do pagamento do título. Utilizado no borderô eletrônico." notnull="True"/> 	   
+      <field nome="DataProvisoria" controlType="Boolean" 
+      required="False" summary="Indica que as datas de emissão e vencimento do título são provisórias, quando marcado(true)." notnull="True"/> 	   	   
+      <field nome="ValorProvisorio" controlType="Boolean" 
+      required="False" summary="Indica que o valor do título é provisório, quando marcado(true)." notnull="True"/> 	   	   	   
+      <field nome="TipoOrigem" controlType="Integer" 
+      required="False" summary="Indica a origem do titulo. Quando não informado, assumirá 0 - Manutenção
+                             23 - Previsão"
+      notnull="True"/>
+      <field nome="Contrato" controlType="EntidadeInterna" required="False" notnull="False"/>				   
+      <field nome="IRRetidoNF" controlType="Currency" tamanho="20,2"  required="False" 
+      summary="Indica o valor do IR Retido na nota." notnull="True"/>	   
+      <field nome="INSSRetidoNF" controlType="Currency" tamanho="20,2"  required="False" 
+      summary="Indica o valor do INSS Retido na nota." notnull="True"/>	                      
+      <field nome="BemPatrimonial" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+      <field nome="Desconto" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="Multa" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="Juros" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="Adiantamento" controlType="Boolean" required="False" notnull="True"/>        	  
+      <field nome="UsaDiscriminacao" controlType="Boolean" required="False"  otnull="False"/> 	
+      <field nome="IDDocumentoRateado" controlType="EntidadeInterna" notnull="False"/>      
+      <field nome="DebitoAutomatico" controlType="Boolean" required="False" notnull="True"/> 	 
+      <field nome="PercentualOutrosAcrescimos" controlType="Currency" tamanho="15,4" required="False"/>            
+      <field nome="OutrosAcrescimos" controlType="Currency" tamanho="15,4" required="False"/>            
+      <field nome="ModoExibicaoDesconto" controlType="String" tamanho="1" requited="True" notnull="True"/>
+      <field nome="ModoExibicaoJuros" controlType="String" tamanho="1" requited="True" notnull="True"/>
+      <field nome="ModoExibicaoMulta" controlType="String" tamanho="1" requited="True" notnull="True"/>            
+      <field nome="ModoExibicaoOutrosAcrescimos" controlType="String" tamanho="1" requited="True" notnull="True"/>                                     
+      <field nome="ModoExibicaoCodigoBarras" controlType="String" tamanho="1" requited="True" notnull="True"/>     
+      <field nome="id_servicobanco" controlType="EntidadeInterna" Required="False" notnull="True"/>             
+      <field nome="id_formapagamentobanco" controlType="EntidadeInterna" Required="False" summary="Indica as modalidades de pagamentos suportada pelo serviço bancário escolhido. Para preenchimento deste campo
+      vide a tabela financas.formaspagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>             
+      <field nome="id_finalidadepagamentobanco" controlType="EntidadeInterna" Required="False" notnull="True"/>             
+      <field nome="id_tipocontapagamentobanco" controlType="EntidadeInterna" Required="False" notnull="True"/>                         
+      <field nome="DataCompetenciaTributos" controlType="Date" required="False"  notnull="True"/>
+      <field nome="DataProcessamentoBoleto" controlType="Date" required="False"  notnull="True"/>            
+      <field nome="NossoNumero" controlType="String" tamanho="30" requited="False" notnull="False"/>                                     
+      <field nome="CodigoDoCedenteBoleto" controlType="String" tamanho="7" requited="False" notnull="False"/>                                                 
+      <field nome="NumeroDocumentoBoleto" controlType="String" tamanho="20" requited="False" notnull="False"/>                                                 
+      <field nome="EspecieBoleto" controlType="String" tamanho="3" requited="False" notnull="False"/>                                                             
+      <field nome="AceiteBoleto" controlType="Boolean" required="False" notnull="True"/>
+      <field nome="UsoBancoBoleto" controlType="String" tamanho="10" requited="False" notnull="False"/>
+      <field nome="CarteiraBoleto" controlType="String" tamanho="5" requited="False" notnull="False"/>
+      <field nome="CodigodaReceitaTributos" controlType="String" tamanho="6" requited="False" notnull="False"/>            
+      <field nome="NumeroDeReferenciaDARF" controlType="String" tamanho="17" requited="False" notnull="False"/>                                    
+      <field nome="valorreceitabrutaacumuladadarfsimples" controlType="Currency" tamanho="20,2" requited="False" notnull="False"/>                                    
+      <field nome="percreceitabrutaacumuladadarfsimples" controlType="Currency" tamanho="14, 4" requited="False" notnull="False"/>
+      <field nome="numerodeclaracaogare" controlType="String" tamanho="12" requited="False" notnull="False"/>
+      <field nome="numeroetiquetagare" controlType="String" tamanho="13" requited="False" notnull="False"/>
+      <field nome="numerodaparcelagare" controlType="String" tamanho="13" requited="False" notnull="False"/>
+      <field nome="codigomunicipioipva" controlType="String" tamanho="5" requited="False" notnull="False"/>
+      <field nome="codigorenavam" controlType="String" tamanho="11" requited="False" notnull="False"/>
+      <field nome="opcaodepagamentoipva" controlType="String" tamanho="1" requited="False" notnull="False"/>
+      <field nome="opcaoretiradacrlv" controlType="String" tamanho="1" requited="False" notnull="False"/>
+      <field nome="placaveiculoipva" controlType="String" tamanho="7" requited="False" notnull="False"/>
+      <field nome="unidadefederacaoipva" controlType="String" tamanho="2" requited="False" notnull="False"/>
+      <field nome="identificadorfgts" controlType="String" tamanho="16" requited="False" notnull="False"/>
+      <field nome="lacreconectividadesocial" controlType="String" tamanho="11" requited="False" notnull="False"/>
+      <field nome="numerodocumentodarj" controlType="String" tamanho="16" requited="False" notnull="False"/>
+      <field nome="Situacao" controlType="Integer" required="True" notnull="True"/>
+      <field nome="ID_RENEGOCIACAO_GERADORA" controlType="Guid" Required="False" notnull="False"/>  
+      <field nome="valorvariacaocambialativa" controlType="Currency" tamanho="20,2" Required="False" notnull="False"/>
+      <field nome="valorvariacaocambialpassiva" controlType="Currency" tamanho="20,2" Required="False" notnull="False"/>			
+      <field nome="Emprestimo" controlType="Boolean" required="False" notnull="True"/> 	  
+      <field nome="ID_ContaEmprestimo" controlType="EntidadeInterna" notnull="True"/>             
+      <field nome="IdConjuntoAnexo" controlType="Guid" required="False" notnull="True"/>    
+      <field nome="DataCompetencia" controlType="Date" Required="False" notnull="True"/>	
+      <field nome="UsuarioResponsavel" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="ChavePersona" controlType="String" tamanho="255" required="False" notnull="False"/>
+      <field nome="id_servicons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="id_formapagamentons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="id_finalidadepagamentons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="id_tipocontapagamentons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="tipoordempagamento" controlType="Integer" required="False"/>
+      <field nome="id_template" controlType="Guid" Required="False" notnull="False"/>
+      <field nome="UsuarioCadastro" controlType="EntidadeInterna" Required="False" notnull="False"/>      
+      <field nome="TituloCoberturaConta" controlType="Boolean" required="False" notnull="True"/> 
+      <field nome="GrupoEmpresarialCobertura" controlType="EntidadeInterna" required="False" notnull="False"/> 
+      <field nome="ContaCobertura" controlType="EntidadeInterna" required="False" notnull="False"/> 
+      <field nome="IDDocumentoRateadoCobertura" controlType="EntidadeInterna" required="False" notnull="False"/>
+      <field nome="PrestacaoDeConta" controlType="EntidadeInterna" notnull="True"/>      
+      <field nome="contafornecedor" controlType="EntidadeInterna" Required="False" notnull="False"/>
+	  <field nome="Previsto" controlType="Boolean" required="False" summary="Indica que o título é previsto, quando marcado(true)." notnull="True"/>
+      <field nome="CFOPCodigo" controlType="String" tamanho="50" Required="False" notnull="False" summary="Código do CFOP."/>
+	  <field nome="TipoCredito" controlType="Integer" required="False"/>
+	  <field nome="CreditoIdentificado" controlType="Integer" required="False"/>
+	  <field nome="Contabilizar" controlType="Boolean" required="False"/>	  
+	  <field nome="Contabilizar_Baixa" controlType="Boolean" required="False"/>	  
+	  <field nome="OutrasRetencoes" controlType="Currency" tamanho="20,2" Required="False"/>
+	  <field nome="DescricaoOutrasRetencoes" controlType="String" tamanho="255" required="False"/>
+      <field nome="id_docfis" controlType="Guid" summary="Indica o id do documento ao qual o titulo pertence." Required="False" notnull="False"/>
+      <field nome="RazaoSocialFactoring" controlType="String" tamanho="150" Required="False" notnull="False"/>
+      <field nome="NumeroDocumentoFactoring" controlType="String" tamanho="30" Required="False" notnull="False"/>
+      <field nome="RazaoSocialGPS" controlType="String" tamanho="150" Required="False" notnull="False"/>
+      <field nome="NumeroDocumentoGPS" controlType="String" tamanho="30" Required="False" notnull="False"/>
+	  <field nome="Estorno" controlType="Boolean" required="False" notnull="True"/>
+	  <field nome="id_titulo_estorno" controlType="Guid" Required="False" notnull="False"/>
+  	  <field nome="tipoestorno" controlType="Integer" Required="False" notnull="False"/>
+	  <field nome="pisestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="cofinsestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="csllestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="irestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="issestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="inssestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="NotaFutura" controlType="Boolean" required="False" notnull="False"/> 
+	  <field nome="ValorASerReembolsado" controlType="Boolean" required="False" notnull="False"/> 
+	  <field nome="id_pessoa_reembolso" controlType="Guid" Required="False" notnull="False"/>
+	  <field nome="usamoedaestrangeira" controlType="Boolean" required="False" notnull="False"/> 
+	  <field nome="moedaestrangeira" controlType="Guid" Required="False" notnull="False"/>
+	  <field nome="cotacao" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="valornamoedaestrangeira" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="mesanocompetenciagps" controlType="String" Required="False" notnull="False"/>
+	  <field nome="outrasentidadesgps" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="id_titulo_origemcomissao" controlType="Guid" Required="False" notnull="False"/>
+	  <field nome="DataCancelamento" controlType="Date" Required="False" notnull="False"/>
+	  <field nome="id_tipo_despesa_receita" controlType="Guid" Required="False" notnull="False"/>
+    </model>
+    
+    <model>
+      <nome>Alterar</nome>
+      <field nome="Id" controlType="Guid" Required="False" notnull="True"/>	
+      <field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+      <field nome="Pessoa" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+      <field nome="Conta" controlType="EntidadeInterna" notnull="True"/> 
+      <field nome="LayoutPagamento" controlType="EntidadeInterna" 
+      Required="False" summary="Indica o layout de pagamento a ser utilizado na integração bancária. Caso não seja informado o Guid, passar a descrição." notnull="True"/> 
+      <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>	
+      <field nome="Emissao" controlType="Date" notnull="True"/>	
+      <field nome="Vencimento" controlType="Date" notnull="True"/>	
+      <field nome="PrevisaoVencimento" controlType="Date" required="False" summary="Indica a previsão do vencimento. Utilizado no fluxo de caixa, caso não informado assume a data de vencimento." notnull="True"/>
+      <field nome="Parcela" controlType="Integer" required="False"/>	
+      <field nome="TotalParcelas" controlType="Integer" required="False"/>	
+      <field nome="Observacao" controlType="String" tamanho="1000" required="False"/>	
+      <field nome="Anotacoes" controlType="Memo" required="False"/>	
+      <field nome="ValorTitulo" controlType="Currency" tamanho="20,2" notnull="True"/>
+      <field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" 
+      required="False" summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>
+      <field nome="AliquotaIr" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorIrRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaCofins" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorCofinsRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaPis" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorPisRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaCsll" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="ValorCsllRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="ValorInssRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="AliquotaIss" controlType="Currency" tamanho="15,4" required="False"/> 
+      <field nome="ValorIssRetido" controlType="Currency" tamanho="20,2" required="False"/>
+      <field nome="DataLimiteDesconto" controlType="Date" required="False"/>	
+      <field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="DataInicioMulta" controlType="Date" required="False"/>	
+      <field nome="PercentualMulta" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="PercentualJurosDiario" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="LinhaDigitavel" controlType="String" tamanho="54" 
+      required="False" summary="Indica a linha digitável do título. Utilizado na integração bancária, via borderô eletrônico." notnull="True"/>	
+      <field nome="CodigoBarras" controlType="String" tamanho="44" 
+      required="False" summary="Indica o código de barras do título. Utilizado na integração bancária, via borderô eletrônico." notnull="True"/>	
+      <field nome="NumeroNota" controlType="String" tamanho="20" 
+      required="False" summary="Indica o número da nota que deu origem ao título."/>
+      <field nome="ModeloDocumentoFiscal" controlType="Integer" 
+      required="False" summary="Indica o modelo da nota que deu origem ao título. 
+                             1-Nenhum Modelo de Documento Fiscal,
+                                     2-Nota Fiscal (Saída ou Entrada de NF emitida pelo fornecedor,
+                                     3-Nota Fiscal Eletrônica,
+                                     4-Nota Fiscal emissão própria na entrada, marcada ENTRADA [X],
+                                     5-Nota Fiscal de Venda ao Consumidor,
+                                     6-Nota Fiscal de Produtor (Rural), 
+                                     7-Nota Fiscal de Serviço,
+                                     8-Nota Fiscal Fatura de Serviço,
+                                     9-Nota Fiscal Simplificada de Serviço,
+                                     10-Nota Eletrônica de Serviços,
+                                     11-Conhecimento Aéreo,
+                                     12-Conhecimento de Transporte Aquaviário,
+                                     13-Conhecimento de Transporte Eletrônico,
+                                     14-Conhecimento de Transporte Ferroviário,
+                                     15-Nota Fiscal De Transporte Ferroviário,
+                                     16-Conhecimento de Transporte Rodoviário,
+                                     17-Conhecimento de Transporte Multimodal de Carga,
+                                     18-Nota Fiscal de Serviço de Transporte,
+                                     19-Conta de Energia Elétrica,
+                                     20-Nota Fiscal Serviço de Telecomunicação,
+                                     21-Conta Fornecimento de Gás Canalizado,
+                                     22-Conta Fornecimento de Água Canalizada,
+                                     23-Bilhete de Passagem Aquaviário,
+                                     24-Bilhete de Passagem Ferroviário,
+                                     25-Bilhete de Passagem e Nota de Bagagem,
+                                     26-Bilhete de Passagem Rodoviário,
+                                     27-Resumo do Movimento Diário (Transporte de Passageiros)"/>
+      <field nome="SerieDocumentoFiscal" controlType="String" tamanho="3" 
+      required="False" summary="Indica a serie da nota que deu origem ao título."/>
+      <field nome="SubserieDocumentoFiscal" controlType="String" tamanho="2" 
+      required="False" summary="Indica a sub-serie da nota que deu origem ao título."/>
+      <field nome="ServicoBancario" controlType="EntidadeInterna" 
+      required="False" summary="Indica os serviços disponiveis para o layout de pagamento do banco informado no título. Para preenchimento deste campo 
+      vide a tabela financas.servicosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>
+      <field nome="FormaPagamento" controlType="EntidadeInterna"
+      required="False" summary="Indica a forma de pagamento do título." notnull="True"/>
+      <field nome="FinalidadePagamento" controlType="EntidadeInterna"
+      required="False" summary="Indica as finalidades de pagamentos suportada pela forma de pagamento escolhida. Para preenchimento deste campo
+      vide a tabela financas.finalidadespagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>
+      <field nome="TipoContaPagamento" controlType="EntidadeInterna"
+      required="False" summary="Indica os tipos de contas suportada pela forma de pagamento escolhida. Para preenchimento deste campo
+      vide a tabela financas.tiposcontaspagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>				   
+      <field nome="DataAgendamento" controlType="Date" 
+      required="False" summary="Indica a data do agendamento do pagamento do título. Utilizado no borderô eletrônico." notnull="True"/> 	   
+      <field nome="DataProvisoria" controlType="Boolean" 
+      required="False" summary="Indica que as datas de emissão e vencimento do título são provisórias, quando marcado(true)." notnull="True"/> 	   	   
+      <field nome="ValorProvisorio" controlType="Boolean" 
+      required="False" summary="Indica que o valor do título é provisório, quando marcado(true)." notnull="True"/> 	   	   	   
+      <field nome="TipoOrigem" controlType="Integer" 
+      required="False" summary="Indica a origem do titulo. Quando não informado, assumirá 0 - Manutenção
+                             23 - Previsão"
+      notnull="True"/>
+      <field nome="Contrato" controlType="EntidadeInterna" required="False" notnull="False"/>				   
+      <field nome="IRRetidoNF" controlType="Currency" tamanho="20,2"  required="False" 
+      summary="Indica o valor do IR Retido na nota." notnull="True"/>	   
+      <field nome="INSSRetidoNF" controlType="Currency" tamanho="20,2"  required="False" 
+      summary="Indica o valor do INSS Retido na nota." notnull="True"/>	                      
+      <field nome="BemPatrimonial" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+      <field nome="Desconto" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="Multa" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="Juros" controlType="Currency" tamanho="15,4" required="False"/>
+      <field nome="Adiantamento" controlType="Boolean" required="False" notnull="True"/>        	  
+      <field nome="UsaDiscriminacao" controlType="Boolean" required="False"  otnull="False"/> 	
+      <field nome="IDDocumentoRateado" controlType="EntidadeInterna" notnull="False"/>
+      <field nome="DebitoAutomatico" controlType="Boolean" required="False" notnull="True"/> 	 
+      <field nome="PercentualOutrosAcrescimos" controlType="Currency" tamanho="15,4" required="False"/>            
+      <field nome="OutrosAcrescimos" controlType="Currency" tamanho="15,4" required="False"/>                        
+      <field nome="ModoExibicaoDesconto" controlType="String" tamanho="1" requited="True" notnull="True"/>
+      <field nome="ModoExibicaoJuros" controlType="String" tamanho="1" requited="True" notnull="True"/>
+      <field nome="ModoExibicaoMulta" controlType="String" tamanho="1" requited="True" notnull="True"/>            
+      <field nome="ModoExibicaoOutrosAcrescimos" controlType="String" tamanho="1" requited="True" notnull="True"/>
+      <field nome="ModoExibicaoCodigoBarras" controlType="String" tamanho="1" requited="True" notnull="True"/>     
+      <field nome="id_servicobanco" controlType="EntidadeInterna" Required="False" notnull="True"/>             
+      <field nome="id_formapagamentobanco" controlType="EntidadeInterna" Required="False" summary="Indica as modalidades de pagamentos suportada pelo serviço bancário escolhido. Para preenchimento deste campo
+      vide a tabela financas.formaspagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível." notnull="True"/>             
+      <field nome="id_finalidadepagamentobanco" controlType="EntidadeInterna" Required="False" notnull="True"/>             
+      <field nome="id_tipocontapagamentobanco" controlType="EntidadeInterna" Required="False" notnull="True"/>                         
+      <field nome="DataCompetenciaTributos" controlType="Date" required="False"  notnull="True"/>
+      <field nome="DataProcessamentoBoleto" controlType="Date" required="False"  notnull="True"/>            
+      <field nome="NossoNumero" controlType="String" tamanho="30" requited="False" notnull="False"/>                                     
+      <field nome="CodigoDoCedenteBoleto" controlType="String" tamanho="7" requited="False" notnull="False"/>                                                 
+      <field nome="NumeroDocumentoBoleto" controlType="String" tamanho="20" requited="False" notnull="False"/>                                                 
+      <field nome="EspecieBoleto" controlType="String" tamanho="3" requited="False" notnull="False"/>                                                             
+      <field nome="AceiteBoleto" controlType="Boolean" required="False" notnull="True"/>
+      <field nome="UsoBancoBoleto" controlType="String" tamanho="10" requited="False" notnull="False"/>
+      <field nome="CarteiraBoleto" controlType="String" tamanho="5" requited="False" notnull="False"/>
+      <field nome="CodigodaReceitaTributos" controlType="String" tamanho="6" requited="False" notnull="False"/>            
+      <field nome="NumeroDeReferenciaDARF" controlType="String" tamanho="17" requited="False" notnull="False"/>                                    
+      <field nome="valorreceitabrutaacumuladadarfsimples" controlType="Currency" tamanho="20,2" requited="False" notnull="False"/>                                    
+      <field nome="percreceitabrutaacumuladadarfsimples" controlType="Currency" tamanho="14, 4" requited="False" notnull="False"/>
+      <field nome="numerodeclaracaogare" controlType="String" tamanho="12" requited="False" notnull="False"/>
+      <field nome="numeroetiquetagare" controlType="String" tamanho="13" requited="False" notnull="False"/>
+      <field nome="numerodaparcelagare" controlType="String" tamanho="13" requited="False" notnull="False"/>
+      <field nome="codigomunicipioipva" controlType="String" tamanho="5" requited="False" notnull="False"/>
+      <field nome="codigorenavam" controlType="String" tamanho="11" requited="False" notnull="False"/>
+      <field nome="opcaodepagamentoipva" controlType="String" tamanho="1" requited="False" notnull="False"/>
+      <field nome="opcaoretiradacrlv" controlType="String" tamanho="1" requited="False" notnull="False"/>
+      <field nome="placaveiculoipva" controlType="String" tamanho="7" requited="False" notnull="False"/>
+      <field nome="unidadefederacaoipva" controlType="String" tamanho="2" requited="False" notnull="False"/>
+      <field nome="identificadorfgts" controlType="String" tamanho="16" requited="False" notnull="False"/>
+      <field nome="lacreconectividadesocial" controlType="String" tamanho="11" requited="False" notnull="False"/>
+      <field nome="numerodocumentodarj" controlType="String" tamanho="16" requited="False" notnull="False"/>
+      <field nome="Situacao" controlType="Integer" required="True" notnull="True"/>
+      <field nome="ID_RENEGOCIACAO_GERADORA" controlType="Guid" Required="False" notnull="False"/>          
+      <field nome="valorvariacaocambialativa" controlType="Currency" Required="False" notnull="False"/>
+      <field nome="valorvariacaocambialpassiva" controlType="Currency" Required="False" notnull="False"/> 
+      <field nome="Emprestimo" controlType="Boolean" required="False" notnull="True"/>
+      <field nome="ID_ContaEmprestimo" controlType="EntidadeInterna" notnull="True"/>             
+      <field nome="DataCompetencia" controlType="Date" Required="False" notnull="True"/>	
+      <field nome="UsuarioResponsavel" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="id_servicons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="id_formapagamentons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="id_finalidadepagamentons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="id_tipocontapagamentons" controlType="EntidadeInterna" Required="False" notnull="False"/>
+      <field nome="tipoordempagamento" controlType="Integer" required="False"/>
+      <field nome="TituloCoberturaConta" controlType="Boolean" required="False" notnull="True"/> 
+      <field nome="GrupoEmpresarialCobertura" controlType="EntidadeInterna" required="False" notnull="False"/> 
+      <field nome="ContaCobertura" controlType="EntidadeInterna" required="False" notnull="False"/> 
+      <field nome="IDDocumentoRateadoCobertura" controlType="EntidadeInterna" required="False" notnull="False"/> 
+      <field nome="PrestacaoDeConta" controlType="EntidadeInterna" notnull="True"/>      
+      <field nome="contafornecedor" controlType="EntidadeInterna" Required="False" notnull="False"/>
+	  <field nome="Previsto" controlType="Boolean" required="False" summary="Indica que o título é previsto, quando marcado(true)." notnull="True"/>
+      <field nome="CFOPCodigo" controlType="String" tamanho="50" Required="False" notnull="False" summary="Código do CFOP."/>
+	  <field nome="IdConjuntoAnexo" controlType="Guid" required="False" notnull="True"/>
+	  <field nome="OutrasRetencoes" controlType="Currency" tamanho="20,2" Required="False"/>
+	  <field nome="DescricaoOutrasRetencoes" controlType="String" tamanho="255" required="False"/>
+	  <field nome="Contabilizar" controlType="Boolean" required="False"/>	  
+	  <field nome="Contabilizar_Baixa" controlType="Boolean" required="False"/>	 
+      <field nome="RazaoSocialFactoring" controlType="String" tamanho="150" Required="False" notnull="False"/>
+      <field nome="NumeroDocumentoFactoring" controlType="String" tamanho="30" Required="False" notnull="False"/>
+      <field nome="RazaoSocialGPS" controlType="String" tamanho="150" Required="False" notnull="False"/>
+      <field nome="NumeroDocumentoGPS" controlType="String" tamanho="30" Required="False" notnull="False"/>
+	  <field nome="Estorno" controlType="Boolean" required="False" notnull="True"/>
+	  <field nome="id_titulo_estorno" controlType="Guid" Required="False" notnull="False"/>
+	  <field nome="tipoestorno" controlType="Integer" Required="False" notnull="False"/>
+	  <field nome="pisestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="cofinsestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="csllestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="irestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="issestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="inssestornado" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="NotaFutura" controlType="Boolean" required="False" notnull="False"/>
+	  <field nome="ValorASerReembolsado" controlType="Boolean" required="False" notnull="False"/> 
+	  <field nome="id_pessoa_reembolso" controlType="Guid" Required="False" notnull="False"/>
+	  <field nome="usamoedaestrangeira" controlType="Boolean" required="False" notnull="False"/> 
+	  <field nome="moedaestrangeira" controlType="Guid" Required="False" notnull="False"/>
+	  <field nome="cotacao" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="valornamoedaestrangeira" controlType="Currency" Required="False" notnull="False"/>
+	  <field nome="mesanocompetenciagps" controlType="String" Required="False" notnull="False" />
+	  <field nome="outrasentidadesgps" controlType="Currency" Required="False" notnull="False" />
+	  <field nome="id_titulo_origemcomissao" controlType="Guid" Required="False" notnull="False"/>
+	  <field nome="DataCancelamento" controlType="Date" Required="False" notnull="False"/>
+	  <field nome="id_tipo_despesa_receita" controlType="Guid" Required="False" notnull="False"/>
+    </model>
+    <model>
+      <nome>Excluir</nome>			
+      <field nome="Id" controlType="Guid" notnull="true"/>		
+    </model>
+  </models>
+</root>
+
+

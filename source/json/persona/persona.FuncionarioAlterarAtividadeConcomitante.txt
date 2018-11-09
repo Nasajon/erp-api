@@ -1,0 +1,16 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(1)"
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Descrição: Contribuição Substituída(1), Contribuição não Substituída(2) ou Ambas(3)Obrigatório: SIMAceita valor nulo: SIM
+

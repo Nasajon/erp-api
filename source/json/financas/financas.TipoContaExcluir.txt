@@ -1,0 +1,8 @@
+{
+     "TipoConta" : "Guid ou Código"
+	
+}
+
+Campo: TipoConta
+Obrigatório: SIMAceita valor nulo: SIM
+

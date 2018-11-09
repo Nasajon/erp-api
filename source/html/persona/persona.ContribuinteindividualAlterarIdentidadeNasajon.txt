@@ -1,0 +1,19 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Identidade" : "String(250)"
+	
+}
+
+Campo: Contribuinte
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Identidade
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

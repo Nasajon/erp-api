@@ -1,0 +1,52 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Conta" : "Objeto: TConta_v2Novo"
+   , "Data" : "2014-12-31"
+   , "Documento" : "String(30)"
+   , "Sinal" : 1
+   , "Valor" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "Contabilizar" : False
+   , "Historico" : "String(1024)"
+	
+}
+
+Campo: Id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Conta
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Sinal
+Descrição: Débito - 0; Crédito - 1;
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira e centro de custo.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Contabilizar
+Descrição: Default False
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Historico
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

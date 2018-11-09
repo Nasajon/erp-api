@@ -1,0 +1,93 @@
+{
+     "Socio" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(30)"
+   , "Nome" : "String(50)"
+   , "Cargo" : "String(30)"
+   , "Pais" : "String(5)"
+   , "UFCaixaPostal" : "String(2)"
+   , "Identidade" : "String(20)"
+   , "Documento" : "String(20)"
+   , "Telefone" : "String(20)"
+   , "Email" : "String(100)"
+   , "Imprimir" : False
+   , "IndicadorQualificacao" : "String(25)"
+   , "Qualificacao" : "String(80)"
+	
+}
+
+Campo: Socio
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cargo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Pais
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: UFCaixaPostal
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Identidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Documento
+Descrição: Este campo aceita CPF ou CNPJ com ou sem mascara.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Email
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Imprimir
+Descrição: Define se o sócio será impresso nos relatórios
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: IndicadorQualificacao
+Descrição: Disponível para este campo os valores: Pessoa Física, Pessoa Jurídica, Fundo de Investimento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Qualificacao
+Descrição: Disponível para este campo os valores: Acionista Pessoa Física Domiciliada no Brasil, 
+			Sócio Pessoa Física Domiciliado no Brasil, 
+			Acionista Pessoa Jurídica Domiciliado no Brasil, 
+			Sócio Pessoa Jurídica Domiciliado no Brasil, 
+			Sócio Pessoa Física Residente ou Domiciliado no Exterior, 
+			Acionista Pessoa Física Residente ou Domiciliado no Exterior, 
+			Acionista Pessoa Jurídica Residente ou Domiciliado no Exterior, 
+			Sócio Pessoa Jurídica Residente ou Domiciliado no Exterior, 
+			Titular, 
+			Administrador sem Vínculo Empregatício,
+			Diretor sem Vínculo Empregatício,
+			Presidente sem Vínculo Empregatício,
+			Administrador com Vínculo Empregatício,
+			Conselheiro de Administração ou Fiscal,
+			Diretor com Vínculo Empregatício,
+			Presidente com Vínculo Empregatício
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

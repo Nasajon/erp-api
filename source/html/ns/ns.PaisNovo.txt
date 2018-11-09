@@ -1,0 +1,19 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "nome" : "String(150)"
+	
+}
+
+Campo: id
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: codigo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: nome
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

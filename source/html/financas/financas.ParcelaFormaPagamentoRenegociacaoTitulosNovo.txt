@@ -1,0 +1,39 @@
+{
+     "parcela" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Id_pagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Numero" : "String(30)"
+   , "Valor" : 13,2
+   , "Vencimento" : "2014-12-31"
+   , "Sequencial" : 1
+   , "Conta" : "Guid ou Código"
+	
+}
+
+Campo: parcela
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Id_pagamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Vencimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Sequencial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Conta
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

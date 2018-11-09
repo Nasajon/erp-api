@@ -1,0 +1,97 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "completarcodigoproduto" : False
+   , "sigla" : "String(10)"
+   , "categoriasuperior" : "Guid ou Código"
+   , "figuratributaria" : "Guid ou Código"
+   , "ncm" : "Guid ou Código"
+   , "controlaestoque" : False
+   , "quantidademinima" : 20,2
+   , "quantidademaxima" : 20,2
+   , "quantidadealerta" : 20,2
+   , "dimensaohorizontal" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "dimensaovertical" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "classificacaofinanceiracompra" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "classificacaofinanceiravenda" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: completarcodigoproduto
+Descrição: Este recurso fará com que o código do produto seja concatenado com a sigla da categoria.
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: sigla
+Descrição: Sigla para concatenação com o código do produto
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: categoriasuperior
+Descrição: Categoria pai. Este campo é responsável por determinar a árvore hierárquica das categorias.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: figuratributaria
+Descrição: Figura Tributária à ser aplicada em todos os produtos da categoria
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: ncm
+Descrição: NCM à ser aplicado em todos os produtos da categoria
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: controlaestoque
+Descrição: Este campo habilita o gerenciamento do estoque na categoria.
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: quantidademinima
+Descrição: Quantidade mínima em estoque
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: quantidademaxima
+Descrição: Quantidade máxima em estoque
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: quantidadealerta
+Descrição: Quantidade de alerta para o estoque
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: dimensaohorizontal
+Descrição: Dimensão horizontal na grade dos produtos da categoria
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: dimensaovertical
+Descrição: Dimensão vertical na grade dos produtos da categoria
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: classificacaofinanceiracompra
+Descrição: Categoria de Compra
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: classificacaofinanceiravenda
+Descrição: Categoria de Venda
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="InformacaoCartao">
+		<model>
+			<field nome="TipoOperacao" controlType="Integer" 
+			       summary="Indica a operação do cartão: 1-Débito, 2-Crédito a vista, 3-Parcelado pela empresa, 4-Parcelado pela administradora." notnull="True"/>	
+			<field nome="Bandeira" controlType="EntidadeInterna" 
+			       summary="Indica a bandeira utilizada na venda com cartão." notnull="True"/>	
+			<field nome="Operadora" controlType="EntidadeInterna" 
+			       summary="Indica a operadora do cartão. Preencher BNDES quando for o mesmo ou Não Informado quando não for. Pode-se passar o Guid também." notnull="True"/>	
+			<field nome="MeioEletronico" controlType="EntidadeInterna" 
+			       summary="Indica o meio eletronico na qual a operação foi realizada." notnull="True"/>	
+		</model>	
+	</models>
+</root>
+  
+
+  
+  

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="MovimentoEmpresa">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Ordem" controlType="Integer" required="True" notnull="True"/>			
+			<field nome="CalculaNoFim" controlType="Boolean" required="False" notnull="True" summary = "Indica se o movimento será calculado após todos os cálculos internos"/>
+			<field nome="Invisivel" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="BaseParaCalculo" controlType="Currency" tamanho="20,6"  required="False" notnull="True" summary="Informar o valor que servirá de base para cálculo da rubrica. Por exemplo, se a rubrica for de faltas, informar o número de dias"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Ordem" controlType="Integer" required="False" notnull="True"/>			
+			<field nome="CalculaNoFim" controlType="Boolean" required="False" notnull="True" summary = "Indica se o movimento será calculado após todos os cálculos internos"/>
+			<field nome="Invisivel" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="BaseParaCalculo" controlType="Currency" tamanho="20,6"  required="False" notnull="True" summary="Informar o valor que servirá de base para cálculo da rubrica. Por exemplo, se a rubrica for de faltas, informar o número de dias"/>
+		</model>	
+		<model>
+			<nome>AlterarCalcularNaFolha</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarCalcularNasFerias</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarCalcularNoDecimoTerceiro</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarCalcularNoAdiantamentoDeDecimoTerceiro</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarCalcularNoAdiantamentoDeFolha</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarCalcularNoPPLR</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarCalcularNaFolhaCorretiva</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarCalcularNaRescisao</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarCalcularNoComplementoDeDecimoTerceiro</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Calcular" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarPeriodoSempre</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarPeriodoProximoCalculo</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarPeriodoMensal</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Mes" controlType="Integer" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarPeriodoSemanal</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Semana" controlType="Integer" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarPeriodoEntreDatas</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="DataInicial" controlType="Date" required="False" notnull="True"/>
+			<field nome="DataFinal" controlType="Date" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarPeriodoEntreMesAno</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="MesInicial" controlType="Integer" required="False" notnull="True"/>
+			<field nome="MesFinal" controlType="Integer" required="False" notnull="True"/>
+			<field nome="AnoInicial" controlType="Integer" required="False" notnull="True"/>
+			<field nome="AnoFinal" controlType="Integer" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="IdMovimento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Rubrica" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,58 @@
+{
+     "Processo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(20)"
+   , "DataAbertura" : "2014-12-31"
+   , "Descricao" : "String(100)"
+   , "CodigoMunicipioVara" : "String(8)"
+   , "CodigoVara" : "String(2)"
+   , "Tipo" : 1
+   , "Autor" : 1
+   , "Motivo" : 1
+	
+}
+
+Campo: Processo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataAbertura
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CodigoMunicipioVara
+Descrição: Conforme tabela do IBGE
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CodigoVara
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Administrativo(1) ou Judicial(2)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Autor
+Descrição: Próprio contribuinte(1) ou Outra entidade(2)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Motivo
+Descrição: RAT(0), FAP(1), INSS(2), IRRF(3), FGTS(4), Sindical(5), Demissão(6), Reintegração(7), Admissão(8), Menor Aprendiz(9) ou Terceiros(10)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

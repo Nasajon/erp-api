@@ -1,0 +1,16 @@
+{
+     "Faixa" : "Guid ou Código"
+   , "Codigo" : "String(10)"
+   , "Descricao" : "String(40)"
+	
+}
+
+Campo: Faixa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃOAceita valor nulo: NÃO
+

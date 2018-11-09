@@ -1,0 +1,63 @@
+{
+     "Profissional" : "Guid ou Código"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(40)"
+   , "Conselho" : 1
+   , "NumeroConselho" : "String(14)"
+   , "UFConselho" : "String(2)"
+   , "NIT" : "String(15)"
+   , "TipoRegistro" : "String(1)"
+   , "Categoria" : 1
+   , "DDDTelefone" : "String(2)"
+   , "Telefone" : "String(20)"
+	
+}
+
+Campo: Profissional
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Conselho
+Descrição: Medicina(0), Odontologia(1) ou Enfermagem(2)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: NumeroConselho
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: UFConselho
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: NIT
+Descrição: Número de inscrição do trabalhador
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: TipoRegistro
+Descrição: Definitivo(D) ou Provisório(P)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Categoria
+Descrição: Geral(0), Ambientalista(1) ou Químico(2)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DDDTelefone
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

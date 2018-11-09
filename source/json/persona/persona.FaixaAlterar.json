@@ -1,0 +1,6 @@
+{
+     "Faixa" : "Guid ou Código"
+   , "Codigo" : "String(10)"
+   , "Descricao" : "String(40)"
+	
+}

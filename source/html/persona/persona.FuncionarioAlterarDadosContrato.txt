@@ -1,0 +1,92 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "TipoAdmissao" : 1
+   , "RegimeTrabalhista" : 1
+   , "RegimeINSS" : 1
+   , "Atividade" : 1
+   , "Prazo" : 1
+   , "CodigoVinculo" : "String(3)"
+   , "DiasExperiencia" : 1
+   , "DiasProrrogacao" : 1
+   , "MotivoAdmissao" : 1
+   , "MotivoContratacaoTemporaria" : 1
+   , "DataFimcontrato" : "2014-12-31"
+   , "FuncionarioSubstituido" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "ProcessoAdmissao" : "Guid ou Código"
+   , "PrimeiroEmprego" : False
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: TipoAdmissao
+Descrição: Contratação Normal(1), Transferência de empresa do mesmo grupo econômico(2), Sucessão, incorporação ou fusão(3) ou Trabalhador Cedido(4)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RegimeTrabalhista
+Descrição: CLT(1), RJU(2) ou RJP(3)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RegimeINSS
+Descrição: RGPS(1), RPPS(2) ou RPPE(3)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Atividade
+Descrição: Rural(1) ou Urbana(2)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Prazo
+Descrição: Indeterminado(1) ou Determinado(2)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoVinculo
+Descrição: Conforme tabela de vínculo da RAIS
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DiasExperiencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DiasProrrogacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: MotivoAdmissao
+Descrição: Normal(1), Ação Fiscal(2) ou Decisão Judicial(3)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: MotivoContratacaoTemporaria
+Descrição: Substituição de Pessoal(1) ou Acréscimo Extraordinário de Serviço(2)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataFimcontrato
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FuncionarioSubstituido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ProcessoAdmissao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PrimeiroEmprego
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

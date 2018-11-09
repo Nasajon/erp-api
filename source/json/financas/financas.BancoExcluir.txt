@@ -1,0 +1,8 @@
+{
+     "Banco" : "Guid ou Código"
+	
+}
+
+Campo: Banco
+Obrigatório: SIMAceita valor nulo: NÃO
+

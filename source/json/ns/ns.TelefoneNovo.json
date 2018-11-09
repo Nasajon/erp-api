@@ -1,0 +1,14 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "idPessoa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "idContato" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ddi" : "String(5)"
+   , "ddd" : "String(5)"
+   , "chaveTel" : "String(50)"
+   , "numero" : "String(50)"
+   , "ramal" : "String(10)"
+   , "descricao" : "Este atributo é do titpo Memo."
+   , "tipo" : 1
+   , "ordemImportancia" : 1
+	
+}

@@ -1,0 +1,55 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(30)"
+   , "Livro" : "String(15)"
+   , "Folha" : "String(5)"
+   , "Cidade" : "String(60)"
+   , "UF" : "String(2)"
+   , "Cartorio" : "String(30)"
+   , "DataExpedicao" : "2014-12-31"
+   , "Tipo" : 1
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Livro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Folha
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: UF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cartorio
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataExpedicao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Tipo
+Descrição: Nascimento(1) ou Casamento(2)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

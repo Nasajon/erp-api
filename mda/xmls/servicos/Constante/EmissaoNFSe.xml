@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="EmissaoNFSe">
+		<model>
+			<nome>Emitir</nome>
+			<field nome="AtributoEstabelecimento" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoRPS" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoSerie" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoCertificado" controlType="String" tamanho="1024" required="False" notnull="False"/>
+			<field nome="AtributoUsuario" controlType="EntidadeInterna" Required="True" notnull="True"/> 
+		</model>		
+		<model>
+			<nome>Consultar</nome>
+			<field nome="AtributoEstabelecimento" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoRPS" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoSerie" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoCertificado" controlType="String" tamanho="1024" required="False" notnull="False"/>
+			<field nome="AtributoUsuario" controlType="EntidadeInterna" Required="True" notnull="True"/> 
+		</model>			
+		<model>
+			<nome>Cancelar</nome>
+			<field nome="AtributoEstabelecimento" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoRPS" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoSerie" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoMotivo" controlType="String" tamanho="1024" required="True" notnull="True"/>
+			<field nome="AtributoCodigoMotivo" controlType="Integer" 
+			       required="True" summary="Indica o Código do Motivo de cancelamento.
+                                             1 - Erro na emissão,
+                                             2 - Serviço não prestado,
+                                             3 - Duplicidade da nota,
+                                             9 - Outros" notnull="True"/>
+			<field nome="AtributoCertificado" controlType="String" tamanho="1024" required="False" notnull="False"/>
+			<field nome="AtributoUsuario" controlType="EntidadeInterna" Required="True" notnull="True"/> 
+		</model>			
+	</models>
+</root>

@@ -1,0 +1,10 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Tipo" : 1
+   , "NumeroConta" : "String(14)"
+   , "DigitoVerificador" : "String(2)"
+   , "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+	
+}

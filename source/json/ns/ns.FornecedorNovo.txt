@@ -1,0 +1,36 @@
+{
+     "fornecedor" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "nome" : "String(150)"
+   , "nomefantasia" : "String(150)"
+   , "identidade" : "String(20)"
+   , "documento" : "String(20)"
+   , "entidadescompartilhadoras" : "ObjectList: TEntidadeCompartilhadora"
+   , "endereco" : "ObjectList: TEndereco"
+	
+}
+
+Campo: fornecedor
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: nome
+Descrição: Informe o Nome do cliente ou Razão socialObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: nomefantasia
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: identidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: documento
+Descrição: Este campo aceita CPF ou CNPJ com ou sem mascara.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: entidadescompartilhadoras
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: endereco
+Obrigatório: SIMAceita valor nulo: NÃO
+

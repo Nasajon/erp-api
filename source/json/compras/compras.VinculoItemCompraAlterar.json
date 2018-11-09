@@ -1,0 +1,8 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "itemcompra" : "Guid ou Código"
+   , "produto" : "Guid ou Código"
+   , "grupoempresarial" : "Guid ou Código"
+   , "padrao" : False
+	
+}

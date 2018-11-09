@@ -1,0 +1,28 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(30)"
+   , "OrgaoEmissor" : "String(20)"
+   , "DataExpedicao" : "2014-12-31"
+   , "DataValidade" : "2014-12-31"
+	
+}
+
+Campo: Contribuinte
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: OrgaoEmissor
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataExpedicao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataValidade
+Obrigatório: NÃOAceita valor nulo: SIM
+

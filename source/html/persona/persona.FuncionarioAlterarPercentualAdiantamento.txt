@@ -1,0 +1,19 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Percentual" : 20,6
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Percentual
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

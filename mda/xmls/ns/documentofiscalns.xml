@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="ns" modulo="DocumentoFiscalNs">
+        <model>
+            <field nome="DocumentoFiscal" controlType="Guid" required="False" notnull="True"/>
+            <field nome="ChaveAcesso" controlType="String" tamanho="44" required="False" notnull="True"/>
+            <field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="False" notnull="True"/>
+            <field nome="Valor" controlType="Currency" tamanho="15,2" required="False"/>             
+            <field nome="Emissao" controlType="Date" required="True" notnull="True"/>
+            <field nome="DataSaida" controlType="Date" required="True" notnull="True"/>
+            <field nome="Tipo" controlType="Integer" required="False" summary="087 - Conhecimento de Transporte"/>
+        </model>		
+        <model>
+            <nome>Excluir</nome>
+            <field nome="DocumentoFiscal" controlType="Guid" required="False" notnull="True"/>
+        </model>    
+    </models>
+</root>

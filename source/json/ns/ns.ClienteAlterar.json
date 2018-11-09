@@ -1,0 +1,18 @@
+{
+     "cliente" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "codigo" : "String(30)"
+   , "nome" : "String(150)"
+   , "nomefantasia" : "String(150)"
+   , "identidade" : "String(20)"
+   , "documento" : "String(20)"
+   , "retemiss" : False
+   , "retemir" : False
+   , "retempis" : False
+   , "retemcofins" : False
+   , "retemcsll" : False
+   , "reteminss" : False
+   , "entidadescompartilhadoras_anteriores" : "ObjectList: TEntidadeCompartilhadora"
+   , "entidadescompartilhadoras_novas" : "ObjectList: TEntidadeCompartilhadora"
+   , "endereco" : "ObjectList: TEndereco"
+	
+}

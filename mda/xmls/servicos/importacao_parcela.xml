@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="importacao_parcela">
+        <model>
+            <field nome="Valor" controlType="Currency" tamanho="13,2" required="True"
+                   summary="Identifica o valor da parcela" notnull="True"/>
+            <field nome="DataVencimento" controlType="Date" required="True"
+                   summary="Identifica a data de vencimento da parcela" notnull="True"/>
+            <field nome="Sequencial" controlType="Integer" required="True"
+                   summary="Identifica o número da parcela" notnull="True"/>
+        </model>
+    </models>
+</root>

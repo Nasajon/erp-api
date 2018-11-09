@@ -1,0 +1,29 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Condicao" : "Este atributo é do titpo Memo."
+   , "Valor" : "Este atributo é do titpo Memo."
+   , "Referencia" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Condicao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Valor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Referencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,10 @@
+{
+     "DocumentoFiscal" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ChaveAcesso" : "String(44)"
+   , "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "Valor" : 15,2
+   , "Emissao" : "2014-12-31"
+   , "DataSaida" : "2014-12-31"
+   , "Tipo" : 1
+	
+}

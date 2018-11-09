@@ -1,0 +1,24 @@
+{
+     "IdHorario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(8)"
+   , "Nome" : "String(50)"
+   , "Jornada" : "Guid ou Código"
+	
+}
+
+Campo: IdHorario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Jornada
+Obrigatório: SIMAceita valor nulo: NÃO
+

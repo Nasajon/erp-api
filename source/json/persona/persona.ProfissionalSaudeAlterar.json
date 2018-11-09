@@ -1,0 +1,14 @@
+{
+     "Profissional" : "Guid ou Código"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(40)"
+   , "Conselho" : 1
+   , "NumeroConselho" : "String(14)"
+   , "UFConselho" : "String(2)"
+   , "NIT" : "String(15)"
+   , "TipoRegistro" : "String(1)"
+   , "Categoria" : 1
+   , "DDDTelefone" : "String(2)"
+   , "Telefone" : "String(20)"
+	
+}

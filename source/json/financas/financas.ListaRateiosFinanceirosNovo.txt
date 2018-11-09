@@ -1,0 +1,8 @@
+{
+     "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+	
+}
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira e centro de custo.Obrigatório: NÃOAceita valor nulo: SIM
+

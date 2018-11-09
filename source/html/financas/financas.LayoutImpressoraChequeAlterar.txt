@@ -1,0 +1,24 @@
+{
+     "LayoutImpressoraCheque" : "Guid ou Código"
+   , "Codigo" : "String(20)"
+   , "Descricao" : "String(200)"
+   , "Banco" : "Guid ou Código"
+	
+}
+
+Campo: LayoutImpressoraCheque
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

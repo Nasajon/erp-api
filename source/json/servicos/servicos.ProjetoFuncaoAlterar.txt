@@ -1,0 +1,32 @@
+{
+     "Identificador" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Cargo" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Bloqueado" : False
+	
+}
+
+Campo: Identificador
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Cargo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Bloqueado
+Obrigatório: SIMAceita valor nulo: SIM
+

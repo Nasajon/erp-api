@@ -1,0 +1,24 @@
+{
+     "Instituicao" : "Guid ou Código"
+   , "Tipo" : 1
+   , "Codigo" : "String(10)"
+   , "Nome" : "String(70)"
+   , "CNPJ" : "String(18)"
+	
+}
+
+Campo: Instituicao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Tipo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CNPJ
+Descrição: [99.999.999/9999-99]. A máscara não é obrigatória.Obrigatório: NÃOAceita valor nulo: NÃO
+

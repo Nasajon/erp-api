@@ -1,0 +1,14 @@
+{
+     "idoperacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(6)"
+   , "descricao" : "String(40)"
+   , "sinal" : 1
+   , "afetacustodosprodutos" : False
+   , "grupoodeoperacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usatabeladepreco" : False
+   , "associardocumento" : False
+   , "associarproduto" : False
+   , "finalidade" : 1
+   , "ativa" : False
+	
+}

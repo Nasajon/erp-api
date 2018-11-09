@@ -1,0 +1,18 @@
+{
+     "id" : "Guid ou Código"
+   , "descricao" : "String(150)"
+   , "categoriasuperior" : "Guid ou Código"
+   , "figuratributaria" : "Guid ou Código"
+   , "ncm" : "Guid ou Código"
+   , "controlaestoque" : False
+   , "quantidademinima" : 20,2
+   , "quantidademaxima" : 20,2
+   , "quantidadealerta" : 20,2
+   , "dimensaohorizontal" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "dimensaovertical" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "completarcodigoproduto" : False
+   , "sigla" : "String(10)"
+   , "classificacaofinanceiracompra" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "classificacaofinanceiravenda" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

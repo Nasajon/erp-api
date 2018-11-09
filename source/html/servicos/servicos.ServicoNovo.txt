@@ -1,0 +1,39 @@
+{
+     "Servico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "TipoServico" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Valor" : 20,2
+   , "CFOP" : "Objeto: TCFOPServico"
+   , "entidadescompartilhadoras" : "ObjectList: TEntidadeCompartilhadora"
+	
+}
+
+Campo: Servico
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: TipoServico
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: CFOP
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: entidadescompartilhadoras
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

@@ -1,0 +1,8 @@
+{
+     "Profissional" : "Guid ou Código"
+	
+}
+
+Campo: Profissional
+Obrigatório: SIMAceita valor nulo: NÃO
+

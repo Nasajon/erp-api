@@ -1,0 +1,14 @@
+{
+     "LayoutImpressoraCheque" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+	
+}
+
+Campo: LayoutImpressoraCheque
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

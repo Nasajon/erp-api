@@ -1,0 +1,14 @@
+{
+     "IdClassificacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ClassificacaoPai" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(16)"
+   , "Descricao" : "String(150)"
+   , "CodigoContabil" : "String(20)"
+   , "Resumo" : "String(30)"
+   , "Natureza" : 1
+   , "Transferencia" : False
+   , "Repasse_Deducao" : False
+   , "Rendimentos" : False
+	
+}

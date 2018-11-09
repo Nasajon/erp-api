@@ -1,0 +1,10 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Tipo" : 1
+   , "DataRetroativa" : "2014-12-31"
+   , "DataRetorno" : "2014-12-31"
+   , "Processo" : "Guid ou Código"
+   , "NumeroLeiAnistia" : "String(14)"
+	
+}

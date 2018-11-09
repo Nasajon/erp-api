@@ -1,0 +1,14 @@
+{
+     "Codigo" : "String(4)"
+   , "Descricao" : "String(100)"
+	
+}
+
+Campo: Codigo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

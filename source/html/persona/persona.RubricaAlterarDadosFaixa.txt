@@ -1,0 +1,30 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Faixa" : "Guid ou Código"
+   , "RubricaFaixa" : "Guid ou Código"
+   , "Base" : 1
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Faixa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RubricaFaixa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Base
+Descrição: Conforme campo base da tela de rubricas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

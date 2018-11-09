@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="Impostos_RPS">
+        <model>
+            <field nome="estabelecimento_id" controlType="Guid" required="True" notnull="False"/>
+            <field nome="estabelecimento_simples_nacional" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="estabelecimento_ibge" controlType="String" tamanho="7" required="True" notnull="False"/>
+            <field nome="cliente_id" controlType="Guid" required="True" notnull="False"/>
+            <field nome="cliente_simples_nacional" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="cliente_qualificacao" controlType="Integer" required="True" notnull="False"/>
+            <field nome="cliente_retem_iss" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="cliente_retem_inss" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="cliente_retem_ir" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="cliente_retem_pis" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="cliente_retem_cofins" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="cliente_retem_csll" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="configuracao_id" controlType="Guid" required="True" notnull="False"/>
+            <field nome="configuracao_destacar_iss_estabelecimento_simples" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="configuracao_considerar_valor_minimo" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="configuracao_ratear_retencoes" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="configuracao_destacar_retencoes_parcela_inferior_valor_minimo" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="codigo_servico_id" controlType="Guid" required="True" notnull="False"/>
+            <field nome="codigo_servico_retem_ir" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="codigo_servico_retem_pis" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="codigo_servico_retem_cofins" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="codigo_servico_retem_csll" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="rps_tipo_tributacao" controlType="Integer" required="True" notnull="False"/>
+            <field nome="rps_iss_retido" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="rps_valor_deducoes" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="rps_municipio_prestacao_id" controlType="Guid" required="True" notnull="False"/>
+            <field nome="rps_municipio_prestacao_ibge" controlType="String" tamanho="7" required="True" notnull="False"/>
+            <field nome="rps_total_parcelas" controlType="Integer" required="True" notnull="False"/>
+            <field nome="rps_lista_itens" controlType="ObjectList" namespace="servicos\Impostos_ItemRPS\TImpostos_ItemRPS" required="True" notnull="False"/>
+        </model>
+    </models>
+</root>

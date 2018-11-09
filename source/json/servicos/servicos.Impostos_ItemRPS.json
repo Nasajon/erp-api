@@ -1,0 +1,12 @@
+{
+     "itemrps_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Item_Faturamento_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "itemrps_percentual_incidencia_inss" : 20,2
+   , "itemrps_percentual_base_iss" : 20,2
+   , "itemrps_quantidade" : 20,2
+   , "itemrps_valor_unitario" : 20,2
+   , "itemrps_desconto" : 20,2
+   , "itemrps_valor_total" : 20,2
+   , "itemrps_lista_tributos" : "ObjectList: TImpostos_Tributo"
+	
+}

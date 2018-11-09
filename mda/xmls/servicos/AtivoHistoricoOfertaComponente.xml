@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="AtivoHistoricoOfertaComponente">
+		<model>
+			<nome>Novo</nome>
+			<field nome="ativohistoricoofertacomponente" controlType="Guid" required="False" notnull="True"/>
+			<field nome="id_objetoservicohistoricooferta" controlType="Guid" required="False" notnull="True"/>
+			<field nome="id_componente" controlType="Guid" required="False" notnull="True"/>
+			<field nome="quantidade" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+			<field nome="ativa" controlType="Boolean" />
+			<field nome="data" controlType="Date"  />			
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="ativohistoricoofertacomponente" controlType="Guid" required="False" notnull="True"/>
+			<field nome="id_objetoservicohistoricooferta" controlType="Guid" required="False" notnull="True"/>
+			<field nome="id_componente" controlType="Guid" required="False" notnull="True"/>
+			<field nome="quantidade" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+			<field nome="ativa" controlType="Boolean" />
+			<field nome="data" controlType="Date"  />			
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="ativohistoricoofertacomponente" controlType="Guid" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

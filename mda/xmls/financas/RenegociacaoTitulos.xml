@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="RenegociacaoTitulos">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Id" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"/>
+			<field nome="Pessoa" controlType="EntidadeFisicaJuridica" notnull="True"/>
+			<field nome="DataRenegociacao" controlType="Date" notnull="True"/>
+            <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Usuario" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Tipo" controlType="Integer" required="True" notnull="True"/>
+			<field nome="TitulosRenegociados" controlType="ObjectList" namespace="financas\TituloRenegociado\TTituloRenegociado" required="True"/>
+			<field nome="FormasPagamentos" controlType="ObjectList" namespace="financas\FormaPagamentoRenegociacaoTitulos\TFormaPagamentoRenegociacaoTitulosNovo" required="False"/>
+			<field nome="Parcelas" controlType="ObjectList" namespace="financas\ParcelaFormaPagamentoRenegociacaoTitulos\TParcelaFormaPagamentoRenegociacaoTitulosNovo" required="False"/>                                     
+            <field nome="QtdTitulosRenegociados" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="ValorTitulosRenegociados" controlType="Currency" tamanho="20,2" notnull="True"/>
+            <field nome="AcaoImpostos" controlType="Integer" required="True" notnull="True"/>            
+			<field nome="Desconto" controlType="Currency" tamanho="20,2" notnull="False"/>
+            <field nome="Acrescimo" controlType="Currency" tamanho="20,2" notnull="False"/>            
+		</model>
+		<model>
+		    <nome>Alterar</nome>        
+            <field nome="Id" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"/>
+			<field nome="Pessoa" controlType="EntidadeFisicaJuridica" notnull="True"/>
+			<field nome="DataRenegociacao" controlType="Date" notnull="True"/>
+            <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Usuario" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Tipo" controlType="Integer" required="True" notnull="True"/>
+			<field nome="TitulosRenegociados" controlType="ObjectList" namespace="financas\TituloRenegociado\TTituloRenegociado" required="True"/>
+			<field nome="FormasPagamentos" controlType="ObjectList" namespace="financas\FormaPagamentoRenegociacaoTitulos\TFormaPagamentoRenegociacaoTitulosNovo" required="False"/>
+			<field nome="Parcelas" controlType="ObjectList" namespace="financas\ParcelaFormaPagamentoRenegociacaoTitulos\TParcelaFormaPagamentoRenegociacaoTitulosNovo" required="False"/>                                                 
+            <field nome="QtdTitulosRenegociados" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="ValorTitulosRenegociados" controlType="Currency" tamanho="20,2" notnull="True"/>
+            <field nome="AcaoImpostos" controlType="Integer" required="True" notnull="True"/>            
+	        <field nome="Desconto" controlType="Currency" tamanho="20,2" notnull="False"/>
+	        <field nome="Acrescimo" controlType="Currency" tamanho="20,2" notnull="False"/>            
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="Id" controlType="Guid" notnull="true"/>
+		</model>
+	</models>
+</root>

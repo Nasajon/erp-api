@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="ConfiguracaoProxy">
+		<model>		    
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>	
+			<field nome="usuariosistema" controlType="EntidadeInterna" tamanho="60" required="False" notnull="False"/>			
+			<field nome="endereco" controlType="String" tamanho="50" required="True" notnull="True"/>	
+			<field nome="prota" controlType="String" tamanho="10" required="True" notnull="True"/>	
+			<field nome="usuarioproxy" controlType="String" tamanho="60" required="True" notnull="True"/>	
+			<field nome="senhaproxy" controlType="String" tamanho="300" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>						
+			<field nome="Configuracaoproxy" controlType="String" tamanho="100" required="False" notnull="False" sumary="Este campo é utilizado para localizar io cadastro. Informe o Configuração(Guid) ou o Usuário(Guid ou Código). Caso não controle pelo usuario, deixar o campo vazio"/>			
+			<field nome="endereco" controlType="String" tamanho="50" required="True" notnull="True"/>	
+			<field nome="prota" controlType="String" tamanho="10" required="True" notnull="True"/>	
+			<field nome="usuarioproxy" controlType="String" tamanho="60" required="True" notnull="True"/>	
+			<field nome="senhaproxy" controlType="String" tamanho="300" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Configuracaoproxy" controlType="String" tamanho="100" required="False" notnull="False" sumary="Este campo é utilizado para localizar io cadastro. Informe o IDConfiguração ou o Usuário. Caso não controle pelo usuario, deixar o campo vazio"/>				
+		</model>
+	</models>
+</root>

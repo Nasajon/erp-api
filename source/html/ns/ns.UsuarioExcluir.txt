@@ -1,0 +1,9 @@
+{
+     "Usuario" : "Guid ou Código"
+	
+}
+
+Campo: Usuario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

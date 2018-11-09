@@ -1,0 +1,31 @@
+{
+     "Pagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "FormaPagamento" : "Guid ou Código"
+   , "DocumentoFiscal" : "Objeto: TDocumentoFiscalns"
+   , "Conta" : "Guid ou Código"
+   , "RateioPadrao" : "Objeto: TRateioPadrao"
+   , "MeioEletronicoCartao" : "Guid ou Código"
+   , "LayoutCobranca" : "Objeto: TLayoutCobranca"
+   , "OperadoraCartao" : "Guid ou Código"
+   , "BandeiraCartao" : "Guid ou Código"
+   , "Parcelamento" : "Guid ou Código"
+   , "Valor" : 13,2
+   , "NomeFormaPagamento" : "String(30)"
+   , "NomeMeioEletronicoCartao" : "String(30)"
+   , "NomeBandeiraCartao" : "String(30)"
+   , "NomeOperadoraCartao" : "String(30)"
+   , "NomeConta" : "String(30)"
+   , "NumeroParcelas" : 1
+   , "DataFatura" : "2014-12-31"
+   , "TipoOperacao" : 1
+   , "AutorizacaoCartao" : "String(30)"
+   , "DataAutorizacaoCartao" : "2014-12-31"
+   , "DocumentoCartao" : "String(30)"
+   , "IrRetido" : 13,2
+   , "PisRetido" : 13,2
+   , "CofinsRetido" : 13,2
+   , "CsllRetido" : 13,2
+   , "Tipo" : 1
+   , "Parcelas" : "ObjectList: TParcela"
+	
+}

@@ -1,0 +1,13 @@
+{
+     "IdReajuste" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Data" : "2014-12-31"
+   , "Descricao" : "String(255)"
+   , "Tipo" : 1
+   , "Percentual" : 20,6
+   , "SalarioAnterior" : 20,6
+   , "SalarioNovo" : 20,6
+   , "UnidadeSalarioNovo" : 1
+	
+}

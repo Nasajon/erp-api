@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="configuracaotrabalhadorporprojeto">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="Trabalhador" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="Projeto" controlType="EntidadeInterna" required="True" notnull="True"/>
+	        <field nome="ano" controlType="Integer" required="True" notnull="True"/>
+            <field nome="mes" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="horas" controlType="Integer" required="True" notnull="False"/>
+            <field nome="percentual" controlType="Currency" tamanho="10,4" required="True" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="Trabalhador" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="Projeto" controlType="EntidadeInterna" required="True" notnull="True"/>
+	        <field nome="ano" controlType="Integer" required="True" notnull="True"/>
+            <field nome="mes" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="horas" controlType="Integer" required="True" notnull="False"/>
+            <field nome="percentual" controlType="Currency" tamanho="10,4" required="True" notnull="False"/>
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="Trabalhador" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="Projeto" controlType="EntidadeInterna" required="True" notnull="True"/>
+	        <field nome="ano" controlType="Integer" required="True" notnull="True"/>
+            <field nome="mes" controlType="Integer" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

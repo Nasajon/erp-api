@@ -1,0 +1,12 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃOAceita valor nulo: NÃO
+

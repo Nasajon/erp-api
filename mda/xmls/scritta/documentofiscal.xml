@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="scritta" modulo="DocumentoFiscal">
+		<model>
+			<nome>Cancelar</nome>
+			<field nome="id" controlType="Guid" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Vendedor">
+		<model>
+			<nome>Novo</nome>
+			<field nome="idvendedor" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" required="True" notnull="True"/>	
+			<field nome="nome" controlType="String" tamanho="150" required="True" notnull="True"/>			
+			<field nome="identidade" controlType="String" tamanho="20"/>
+			<field nome="documento" controlType="String" tamanho="20" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="idvendedor" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="nome" controlType="String" tamanho="150" required="True" notnull="True"/>			
+			<field nome="identidade" controlType="String" tamanho="20"/>
+			<field nome="documento" controlType="String" tamanho="20" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="idvendedor" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>			
+		</model>
+	</models>
+</root>

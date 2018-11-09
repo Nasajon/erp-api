@@ -1,0 +1,36 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcao" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CNPJ [99.999.999/9999-99]"
+   , "Registro" : "Guid ou Código"
+   , "Agrupador" : "Guid ou Código"
+   , "PeriodicidadeTipo" : 1
+   , "PeriodicidadeIntervalo" : 
+	
+}
+
+Campo: Identificador
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Funcao
+Descrição: Função à qual esta Formação Salarial pertence.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Descrição: Utilizado para recuperar a função à que a Formação Salarial pertence.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Descrição: Utilizado para recuperar a própria Formação Salarial.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Registro
+Descrição: Identificador da formação salarial.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Agrupador
+Descrição: Campo utilizado para indicar a que agrupador esta Formação Salarial pertence.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PeriodicidadeTipo
+Descrição: Tipo de periodicidade da Formação Salarial. Valores possíveis: 0) Não periódico; 1) Diário; 2) Semanal; 3) Mensal; 4) Bimestral; 5) Trimestral; 6) Semestral; 7) AnualObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: PeriodicidadeIntervalo
+Descrição: Periodicidade do Formação Salarial (verificar os tipos de periodicidade no parâmetro PeriodicidadeTipo).Obrigatório: SIMAceita valor nulo: SIM
+

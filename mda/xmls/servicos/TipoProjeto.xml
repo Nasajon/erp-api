@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models modulo="TipoProjeto" sistema="servicos">
+		<model>
+			<nome>Novo</nome>
+			<field controlType="Guid" nome="TipoProjeto" notnull="True" required="False"/>
+			<field controlType="EntidadeInterna" nome="GrupoEmpresarial" required="True" notnull="True"/>
+			<field controlType="String" nome="Codigo" notnull="True" required="True" tamanho="30"/>
+			<field controlType="String" nome="Descricao" notnull="False" required="True" tamanho="150"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field controlType="EntidadeInterna" nome="TipoProjeto" notnull="True" required="False"/>
+			<field controlType="EntidadeInterna" nome="GrupoEmpresarial" required="True" notnull="True"/>
+			<field controlType="String" nome="Codigo" notnull="True" required="True" tamanho="30"/>
+			<field controlType="String" nome="Descricao" notnull="False" required="True" tamanho="150"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field controlType="EntidadeInterna" nome="TipoProjeto" notnull="True" required="True"/>
+			<field controlType="EntidadeInterna" nome="GrupoEmpresarial" required="False" notnull="False"/>
+		</model>
+	</models>
+</root>

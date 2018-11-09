@@ -1,0 +1,12 @@
+{
+     "Identificador" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+	
+}
+
+Campo: Identificador
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Obrigatório: SIMAceita valor nulo: NÃO
+

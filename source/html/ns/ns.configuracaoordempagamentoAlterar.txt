@@ -1,0 +1,90 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "grupoempresarial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "tipoordempagamento" : 1
+   , "fornecedor" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "contacorrente" : "Guid ou Código"
+   , "diapagamento" : 1
+   , "classificacaofinanceira" : "Guid ou Código"
+   , "CentroDeCusto" : "Guid ou Código"
+   , "Projeto" : "Guid ou Código"
+	
+}
+
+Campo: id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: grupoempresarial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: tipoordempagamento
+Descrição: Informe: 
+                            0  - Folha
+                            1  - AdiantamentoDeFolha
+                            2  - FolhaCorretiva
+                            3  - DecimoTerceiroSalario
+                            4  - AdiantamentoDeDecimoTerceiroSalario
+                            5  - ComplementoDeDecimoTerceiroSalario
+                            6  - Ferias
+                            7  - ComplementoDeFerias
+                            8  - Recisao
+                            9  - ReajusteSindical
+                            10 - PPLR
+                            11 - ValeTransporte
+                            12 - ValrRefeicao
+                            13 - ValeAlimentacao
+                            14 - PlanoDeSaude
+                            15 - PlanoOdontologico
+                            16 - GPSEmpresa
+                            17 - GPSContribuinteIndividual
+                            18 - GPSTrabalhadoresDomesticos
+                            19 - SEFIP
+                            20 - GRRF
+                            21 - DARFFuncionario
+                            22 - DARFEstabiario
+                            23 - DARFContribuinteIndividual
+                            24 - DARFPIS
+                            25 - GRCSSindical
+                            26 - GRCSConfederativa
+                            27 - GRCSAssistencial
+                            28 - GRCSAssociativa
+                            29 - GRCSPatronal
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: fornecedor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: contacorrente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: diapagamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: classificacaofinanceira
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CentroDeCusto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Projeto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

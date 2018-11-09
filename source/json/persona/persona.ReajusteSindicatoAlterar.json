@@ -1,0 +1,10 @@
+{
+     "IdReajuste" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Sindicato" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+   , "DataDeveriaTerSidoConcedido" : "2014-12-31"
+   , "Tipo" : 1
+   , "Percentual" : 20,6
+   , "Descricao" : "String(50)"
+	
+}

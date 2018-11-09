@@ -1,0 +1,24 @@
+{
+     "IdFuncao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(100)"
+   , "CodigoCBO" : "String(6)"
+	
+}
+
+Campo: IdFuncao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CodigoCBO
+Descrição: Conforme tabela de código brasileiro de ocupaçõesObrigatório: SIMAceita valor nulo: NÃO
+

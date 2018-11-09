@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="PrestacaoDeConta">
+		<model>
+      <nome>Novo</nome>
+      <field nome="ID" controlType="Guid" required="False" notnull="True"/>
+      <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+      <field nome="Data" controlType="Date" notnull="True"/>
+      <field nome="ID_ContaEmprestimo" controlType="EntidadeInterna" notnull="True"/>             
+      <field nome="Situacao" controlType="Integer" required="True" notnull="True"/>
+      <field nome="ID_GrupoEmpresarial" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="ItensPrestacaoDeConta" controlType="ObjectList" namespace="financas\ItemPrestacaoDeConta\TItemPrestacaoDeContaNovo" required="False"/>
+      <field nome="ItensEmprestimoPrestacao" controlType="ObjectList" namespace="financas\ItemEmprestimoPrestacao\TItemEmprestimoPrestacaoNovo" required="False"/>
+      <field nome="DocumentoRateado" controlType="EntidadeInterna" notnull="False"/>
+      <field nome="ValorEspecie" controlType="Currency" tamanho="20,2" required="False" notnull="True"/>
+      <field nome="contaespecie" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Empresa" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Estabelecimento" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Fornecedor" controlType="EntidadeFisicaJuridica" notnull="False"/>
+      <field nome="ValorPerdoado" controlType="Currency" tamanho="20,2" required="False" notnull="True"/>
+      <field nome="DataLancamento" controlType="Date" notnull="True"/>
+      <field nome="Tipo" controlType="Integer" required="True" notnull="True"/>
+		</model>
+		<model>
+      <nome>Alterar</nome>
+      <field nome="ID" controlType="Guid" required="False" notnull="True"/>
+      <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+      <field nome="Data" controlType="Date" notnull="True"/>
+      <field nome="ID_ContaEmprestimo" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Situacao" controlType="Integer" required="True" notnull="True"/>
+      <field nome="ID_GrupoEmpresarial" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="ItensPrestacaoDeConta" controlType="ObjectList" namespace="financas\ItemPrestacaoDeConta\TItemPrestacaoDeContaNovo" required="False"/>
+      <field nome="ItensEmprestimoPrestacao" controlType="ObjectList" namespace="financas\ItemEmprestimoPrestacao\TItemEmprestimoPrestacaoNovo" required="False"/>
+      <field nome="DocumentoRateado" controlType="EntidadeInterna" notnull="False"/>
+      <field nome="ValorEspecie" controlType="Currency" tamanho="20,2" required="False" notnull="True"/>
+      <field nome="contaespecie" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Empresa" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Estabelecimento" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Fornecedor" controlType="EntidadeFisicaJuridica" notnull="False"/>
+      <field nome="ValorPerdoado" controlType="Currency" tamanho="20,2" required="False" notnull="True"/>
+      <field nome="DataLancamento" controlType="Date" notnull="True"/>
+      <field nome="Tipo" controlType="Integer" required="True" notnull="True"/>
+		</model>		
+		<model>
+			<nome>Excluir</nome>			
+      <field nome="ID" controlType="Guid" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

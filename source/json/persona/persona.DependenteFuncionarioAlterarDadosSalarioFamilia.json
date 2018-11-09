@@ -1,0 +1,9 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataVencimentoDeclaracaoEscolar" : "2014-12-31"
+   , "DataVencimentoVacinacao" : "2014-12-31"
+   , "DependenteBeneficiarioPensao" : "Guid ou Código"
+	
+}

@@ -1,0 +1,147 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "grupoempresarial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "tipocategoria" : 1
+   , "categoriarubrica" : 1
+   , "ClassificacaoFinanceira" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "tipocalculo" : 1
+	
+}
+
+Campo: id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: grupoempresarial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: tipocategoria
+Descrição: Informe: 
+                            0  - Recebimento
+                            1  - Desconto
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: categoriarubrica
+Descrição: Informe: 
+                     Outros = 0;
+                     Salario = 1;
+                     SalarioHora = 2;
+                     Falta = 3;
+                     Atraso = 4;
+                     Pensao = 5;
+                     Anuenio = 6;
+                     Medicas = 7;
+                     PrevidenciaPrivada = 8;
+                     AdicionalNoturno = 9;
+                     AdicionalFeriasMes = 10;
+                     AdicionalFeriasProxMes = 11
+                     AbonoPecuniario = 12;
+                     AdicionalPecuniario = 13;
+                     DiferencaAPagar = 14;
+                     Dobrado = 15;
+                     FeriasNoMes = 16;
+                     FeriasNoProxMes = 17;
+                     IRRF = 18;
+                     ValorPago = 19;
+                     Proporcional = 20;
+                     Vencida = 21;
+                     VencidaEmDobro = 22;
+                     Indenizado = 23;
+                     AbonoContProporcional = 24;
+                     AbonoContVencida = 25;
+                     AbonoConstIndenizada = 26;
+                     Comissao = 27;
+                     Adiantamento = 28;
+                     ValorJaPago = 29;
+                     FGTS = 30;
+                     INSS = 31;
+                     FGTSEmpresa = 32;
+                     SalarioFamilia = 33;
+                     SalarioFamiliaMesAnt = 34;
+                     Sindical = 35;
+                     ValeTransporte = 36;
+                     DiferencaSalario = 37;
+                     DSR = 38;
+                     DSRHorista = 39;
+                     ISS = 40;
+                     SEST = 41;
+                     SENAT = 42;
+                     ValorPagoMaior = 43;
+                     FaltaMesAnterior = 44;
+                     ValeAlimentacao = 45;
+                     ReembolsoValeAlim = 46;
+                     ReembolsoVT = 47;
+                     DifSalarialNegativa = 48;
+                     DifSalarialINSS = 49;
+                     Insalubridade = 50;
+                     Sobreaviso = 51;
+                     Viagens = 52;
+                     Premios = 53;
+                     Percentagem = 54;
+                     Periculosidade = 55;
+                     BolsaMedico = 56;
+                     VoluntarioCopa = 57;
+                     EtapasMaritimas = 58;
+                     AdicTransfLocal = 59;
+                     Prontidao = 60;
+                     Multa476 = 61;
+                     Gorjeta = 62;
+                     Gratificacao = 63;
+                     IRAcumulado = 64;
+                     ContribuicaoFAPI = 65;
+                     OutrosIsentos = 66;
+                     ParcelaIsenta = 67;
+                     Invalidez = 68;
+                     DiariasEAjudaCusto = 69;
+                     LicencaRemunerada = 70;
+                     INSSRetido = 71;
+                     AvisoPrevioIndenizado = 72;
+                     MultaDemissaoAntesDissidio = 73;
+                     MultaSaldoFGTS = 74;
+                     MultaAtrasoPgtoRescisao = 75;
+                     MultaFGTSEmpresa = 76;
+                     IndenizacaoNaoOptanteFGTS = 77;
+                     MultaFimContratoAntecipado = 78;
+                     ValorPagoRescisao = 79;
+                     IndenizacoesRescisao = 80;
+                     Associativa = 81;
+                     Assistencial = 82;
+                     Confederativa = 83;
+                     Emprestimo = 84;
+                     Saldo = 85;
+                     Arredondamento = 86;
+                     SalarioMaternidade = 87;
+                     DependenteIR = 88;
+                     INSSVinculoMaisOutros = 89;
+                     IRRFVinculoMaisOutros = 90;
+                     HoraExtra   = 91;
+                     HoraFolga   = 92;
+                     HoraSabado  = 93;
+                     HoraDomingo = 94;
+                     HoraFeriado = 95;
+                     INSSAcumulado = 96;
+                     AdicionalVencidaDobro = 97;
+                     PensaoRRA = 98;
+                     DedDepIRRRA = 99;
+                     IRRFRRA = 100;
+                     LucroDiretor = 101;
+                     Complemento = 102;
+                     PrevidenciaComplementar = 103;
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ClassificacaoFinanceira
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: tipocalculo
+Descrição: Informe: 
+                            0  - Folha
+                            1  - Férias
+							2  - 13º Salário
+							3  - PPLR
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

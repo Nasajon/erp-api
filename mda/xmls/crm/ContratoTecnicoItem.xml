@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="crm" modulo="ContratoTecnicoItem">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Identificador" controlType="Guid" required="False" notnull="False"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Empresa" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Estabelecimento" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="ContratoTecnico" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="ContratoFinanceiro" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="ObjetoServico" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

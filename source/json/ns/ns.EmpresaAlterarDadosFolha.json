@@ -1,0 +1,13 @@
+{
+     "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoCNAE" : "String(7)"
+   , "CodigoNaturezaJuridica" : "String(4)"
+   , "FormaPagamento" : "String(1)"
+   , "TipoCooperativa" : 1
+   , "Construtora" : 1
+   , "PontoEletronico" : 1
+   , "PossuiMultiplasTabelasRubrica" : False
+   , "SituacaoPJ" : 1
+   , "SituacaoPF" : 1
+	
+}

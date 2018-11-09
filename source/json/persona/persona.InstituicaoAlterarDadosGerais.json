@@ -1,0 +1,8 @@
+{
+     "Instituicao" : "Guid ou Código"
+   , "Tipo" : 1
+   , "Codigo" : "String(10)"
+   , "Nome" : "String(70)"
+   , "CNPJ" : "String(18)"
+	
+}

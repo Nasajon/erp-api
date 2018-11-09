@@ -1,0 +1,12 @@
+{
+     "TipoDocumento" : "Guid ou Código"
+   , "Descricao" : "String(200)"
+	
+}
+
+Campo: TipoDocumento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+

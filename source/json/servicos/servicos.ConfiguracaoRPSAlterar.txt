@@ -1,0 +1,186 @@
+{
+     "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : 1
+   , "BeneficioFiscal" : 1
+   , "AliquotaISS" : 20,2
+   , "AliquotaIRPessoaJuridica" : 20,2
+   , "AliquotaIROrgaoPublico" : 20,2
+   , "AliquotaPIS" : 20,2
+   , "AliquotaCOFINS" : 20,2
+   , "AliquotaCSLL" : 20,2
+   , "UsaDiscriminacaoDoCFOPNoRPS" : False
+   , "UsaWebServiceRPS" : False
+   , "CertificadoDigitalInstalado" : "String(5000)"
+   , "CaminhoCertificadoDigital" : "String(5000)"
+   , "SenhaCertificadoDigital" : "String(5000)"
+   , "IdentificacaoAmbiente" : 1
+   , "LoteDaEmpresa" : 1
+   , "UtilizarMesmoRPS" : False
+   , "IncluirObservacao" : False
+   , "IncluirInformacoesOS" : False
+   , "TemplateOS" : "String(5000)"
+   , "IncluirRetencoes" : False
+   , "PermitirMultiplosVendedores" : False
+   , "ParticipanteCertificado" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ServidorSMTP" : "String(5000)"
+   , "Porta" : 1
+   , "Usuario" : "String(5000)"
+   , "Senha" : "String(5000)"
+   , "RequerAutenticacao" : False
+   , "UtilizarConexaoSegura" : False
+   , "AssuntoEmail" : "String(5000)"
+   , "MensagemEmail" : "String(5000)"
+   , "IncluirProjetos" : False
+	
+}
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: TipoTributacao
+Descrição: Indica o Tipo de Tributação. 
+                                             00 - Nenhum,
+                                             01 - Tributação no Município,
+                                             02 - Tributação Fora do Município,
+                                             03 - Operação Isenta,
+                                             04 - Operação Imune,
+                                             05 - Operação Suspensa por Decisão Judicial,
+                                             06 - Operação Suspensa por Decisão AdministrativaObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RegimeEspecial
+Descrição: Indica o Regime Especial. 
+                                             00 - Nenhum,
+                                             01 - Microempresa Municipal,
+                                             02 - Estimativa,
+                                             03 - Sociedade de Profissionais,
+                                             04 - Cooperativa,
+                                             05 - Microempreendedor Individual,
+                                             06 - Empresa JúniorObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IncentivoCultural
+Descrição: Indica se tem Incentivo Cultural. 
+                                             0 - Não,
+                                             1 - SimObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BeneficioFiscal
+Descrição: Indica se tem Incentivo Cultural. 
+                                             001 - L. 691/84 - Isenção - associações de classe, sindicatos e as respectivas federações e confederações.
+                                             002 - L. 691/84 - Isenção - associações culturais, recreativas e desportivas.
+                                             003 - L. 691/84 - Isenção - serviços de veiculação de publicidade prestados por táxis autônomos e táxis de cooperativas.
+                                             004 - L. 691/84 - Isenção - espetáculos circenses nacionais.
+                                             005 - L. 691/84 - Isenção - espetáculos teatrais.
+                                             006 - L. 691/84 - Isenção - promoção de concertos, recitais, shows, festividades, exposições, quermesses e similares.
+                                             007 - L. 691/84 - Isenção - músicos, artistas e técnicos de espetáculos.
+                                             008 - L. 691/84 - Isenção - exibição de filmes cinematográficos por entidades brasileiras sem fins lucrativos.
+                                             009 - L. 691/84 - Isenção - reforma, reestruturação ou conserv. de prédios de int. histórico, cultural ou p/ preserv. ambiental.
+                                             010 - L. 691/84 - Estudos e projetos / polos industriais - Lei 691/84, art. 12, inciso XX.
+                                             011 - L. 4.372/06 - Isenção - Serv. vinc. à construção de terminais portuários na Zona Oeste.
+                                             012 - L. 5.133/09 - Isenção - Serviços vinculados à construção de complexos siderúrgicos na Zona Oeste.
+                                             013 - L. 5.044/2009 - Isenção - Central de teleatendimento (construção/reforma).
+                                             014 - L. 5.065/2009 - Isenção - Empreendim. Habitacionais de interesse social e de arrendamento Resid. - construção / reforma.
+                                             015 - Lei 5.128/2009 - Isenção - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             016 - L. 5.230/2010 - Isenção - Copa das Confederações 2013 / Copa do Mundo 2014.
+                                             017 - L. 5.230/2010 - Isenção - Jogos Olímpicos e Paraolímpicos RIO 2016.
+                                             039 - Exportação de serviços para o exterior.
+                                             040 - Lei 4.372/2006 - Redução de Aliq. - Serviços Vinculados à operação de terminais portuários na Zona Oeste.
+                                             041 - Lei 5.128/2009 - Redução de Aliq. - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             080 - Imunidade - Ente Federado.
+                                             081 - Imunidade - Autarquia ou Fundação pública.
+                                             082 - Imunidade - Templo religioso.
+                                             083 - Imunidade - Partido político.
+                                             084 - Imunidade - Fundação mantida por partido político.
+                                             085 - Imunidade - Entidade sindical de trabalhadores.
+                                             086 - Imunidade - Instituição de educação sem fins lucrativos.
+                                             087 - CRFB, Art. 150, inc. VI, alínea 'c'.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaISS
+Descrição: Informe a alíquota de ISS.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: AliquotaIRPessoaJuridica
+Descrição: Informe a alíquota de IR para pessoa jurídica.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: AliquotaIROrgaoPublico
+Descrição: Informe a alíquota de IR para órgão público.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: AliquotaPIS
+Descrição: Informe a alíquota de PIS.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: AliquotaCOFINS
+Descrição: Informe a alíquota de COFINS.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: AliquotaCSLL
+Descrição: Informe a alíquota de CSLL.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: UsaDiscriminacaoDoCFOPNoRPS
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: UsaWebServiceRPS
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CertificadoDigitalInstalado
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CaminhoCertificadoDigital
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: SenhaCertificadoDigital
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IdentificacaoAmbiente
+Descrição: Inddentifica o tipo de ambiente
+                                             0 - Homologaão,
+                                             1 - ProduçãoObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: LoteDaEmpresa
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: UtilizarMesmoRPS
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: IncluirObservacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: IncluirInformacoesOS
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: TemplateOS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IncluirRetencoes
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: PermitirMultiplosVendedores
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ParticipanteCertificado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ServidorSMTP
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Porta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Usuario
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Senha
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RequerAutenticacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: UtilizarConexaoSegura
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: AssuntoEmail
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: MensagemEmail
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IncluirProjetos
+Obrigatório: SIMAceita valor nulo: NÃO
+

@@ -1,0 +1,12 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(70)"
+   , "CPF" : "String(14)"
+   , "DataInclusao" : "2014-12-31"
+   , "TipoParentesco" : 1
+   , "Sexo" : 1
+	
+}

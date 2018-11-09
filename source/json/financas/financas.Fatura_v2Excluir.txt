@@ -1,0 +1,12 @@
+{
+     "Fatura" : "Guid ou Código"
+   , "Numero" : "String(30)"
+	
+}
+
+Campo: Fatura
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: SIMAceita valor nulo: NÃO
+

@@ -1,0 +1,65 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "Guid ou Código"
+   , "Emissao" : "2014-12-31"
+   , "Vencimento" : "2014-12-31"
+   , "Lancamento" : "2014-12-31"
+   , "LoteCobrancaId" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : 1
+   , "BeneficioFiscal" : 1
+   , "Desconto" : 20,2
+   , "ItemRPS" : "ObjectList: TItemRPSNovo"
+   , "FormasPagamentos" : "ObjectList: TPagamentoSemParcela"
+   , "Parcelas" : "ObjectList: TParcela"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "Observacao" : "String(5000)"
+   , "Vendedores" : "ObjectList: TVendedorRPS"
+   , "Origem" : 1
+   , "BaseISS" : 20,2
+   , "ValorISS" : 20,2
+   , "BaseIRRf" : 20,2
+   , "ValorIRRF" : 20,2
+   , "BaseINSS" : 20,2
+   , "ValorINSS" : 20,2
+   , "BasePIS" : 20,2
+   , "ValorPIS" : 20,2
+   , "BaseCOFINS" : 20,2
+   , "ValorCOFINS" : 20,2
+   , "BaseCSLL" : 20,2
+   , "ValorCSLL" : 20,2
+   , "RetemISS" : False
+   , "RetemIRRF" : False
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+   , "DescricaoServicos" : "String(5000)"
+   , "IdConjuntoAnexo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "RpsOriginal" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ISS" : 1
+   , "PreRPS" : False
+   , "OutrasDeducoes" : 20,2
+   , "XML_RPS" : "String(999999)"
+   , "XML_NFSE" : "String(999999)"
+   , "XML_Cancelamento" : "String(999999)"
+   , "XML_DocEngine" : "String(999999)"
+   , "id_documento_vinculado" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "MunicipioPrestacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "CFOPId" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Obra" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Usuario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Contrato_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "NaoGerarFinanceiro" : False
+   , "NaoGerarTitulo" : False
+   , "OutrasRetencoes" : 20,2
+   , "DiscriminacaoServicos" : "String(5000)"
+   , "numero_titulo" : "String(30)"
+   , "TemplateDiscriminacaoRPS" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "RetemINSS" : False
+   , "CalcularImpostos" : False
+   , "FaturamentoProvisorio" : False
+	
+}

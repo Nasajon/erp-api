@@ -1,0 +1,52 @@
+{
+     "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "Complemento" : "String(10)"
+   , "Bairro" : "String(60)"
+   , "Cidade" : "String(60)"
+   , "Estado" : "String(2)"
+   , "CEP" : "String(9)"
+   , "Contato" : "String(40)"
+   , "Telefone" : "String(20)"
+   , "DDDTelefone" : "String(2)"
+	
+}
+
+Campo: Agencia
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Logradouro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Numero
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Complemento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Bairro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Estado
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CEP
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Contato
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DDDTelefone
+Obrigatório: NÃOAceita valor nulo: SIM
+

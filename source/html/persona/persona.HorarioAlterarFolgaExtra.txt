@@ -1,0 +1,26 @@
+{
+     "Horario" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "OrdemNoMes" : 1
+   , "DiaSemana" : 1
+	
+}
+
+Campo: Horario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: OrdemNoMes
+Descrição: Informar qual a ordem dentro do mês será a folga. Por exemplo, se o a folga é no 2º domingo do mês, informar 2
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DiaSemana
+Descrição: De 1 a 7 começando com domingo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

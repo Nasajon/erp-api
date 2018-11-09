@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="acessoestabelecimento">
+		<model>
+			<nome>Novo</nome>
+			<field nome="GrupoUsuario" controlType="EntidadeInterna" required="True" notnull="True" summary="Informar o grupo de usuário ao qual o acesso será dado. Opcionalmente pode-se informar no campo 'usuario', do qual o grupo de usuário será utilizado para o acesso"/>
+			<field nome="Usuario" controlType="EntidadeFisicaJuridica" required="False" notnull="True" summary="Ïnformar o usuário do qual o grupo de usuário será utilizado para o acesso. Opcionalmente pode-se informar diretamente o campo 'grupodeusuario'"/> 
+			<field nome="GrupoEmpresarial" controlType="EntidadeFisicaJuridica" required="False" notnull="True" summary="Pode receber ID ou Código"/> 
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True" summary="Pode receber ID, Código ou CPF/CNPJ. Caso seja informado Código ou CPF/CNPJ, é necessário informar também o grupo empresarial"/>      
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True" summary="Pode receber ID, Código ou CPF/CNPJ. Case seja informado Código ou CPF/CNPJ, é necessário informar também a empresa"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="GrupoUsuario" controlType="EntidadeInterna" required="True" notnull="True" summary="Informar o grupo de usuário ao qual o acesso será dado. Opcionalmente pode-se informar no campo 'usuario', do qual o grupo de usuário será utilizado para o acesso"/>
+			<field nome="Usuario" controlType="EntidadeFisicaJuridica" required="False" notnull="True" summary="Ïnformar o usuário do qual o grupo de usuário será utilizado para o acesso. Opcionalmente pode-se informar diretamente o campo 'grupodeusuario'"/> 
+			<field nome="GrupoEmpresarial" controlType="EntidadeFisicaJuridica" required="False" notnull="True" summary="Pode receber ID ou Código"/> 
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True" summary="Pode receber ID, Código ou CPF/CNPJ. Caso seja informado Código ou CPF/CNPJ, é necessário informar também o grupo empresarial"/>      
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True" summary="Pode receber ID, Código ou CPF/CNPJ. Case seja informado Código ou CPF/CNPJ, é necessário informar também a empresa"/>
+		</model>
+	</models>
+</root>

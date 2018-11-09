@@ -1,0 +1,81 @@
+{
+     "Conta" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Nome" : "String(150)"
+   , "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "TipoConta" : "Guid ou Código"
+   , "Banco" : "Objeto: TBancoNovo"
+   , "NomeAgencia" : "String(150)"
+   , "NumeroAgencia" : "String(30)"
+   , "DvNumeroAgencia" : "String(1)"
+   , "NumeroConta" : "String(30)"
+   , "DvNumeroConta" : "String(1)"
+   , "NomeTitular" : "String(150)"
+   , "LimiteFechamento" : "2014-12-31"
+   , "Bloqueada" : False
+   , "ConsideraSaldoNoFluxoCaixa" : False
+	
+}
+
+Campo: Conta
+Descrição: Conta para alteração.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: TipoConta
+Descrição: Tipo da Conta(financas.TipoConta).
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeAgencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroAgencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DvNumeroAgencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroConta
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DvNumeroConta
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeTitular
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: LimiteFechamento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Bloqueada
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ConsideraSaldoNoFluxoCaixa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

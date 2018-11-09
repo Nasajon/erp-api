@@ -1,0 +1,40 @@
+{
+     "Acordo" : "Guid ou Código"
+   , "Sindicato" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(10)"
+   , "Descricao" : "String(100)"
+   , "DataInicio" : "2014-12-31"
+   , "DataFim" : "2014-12-31"
+   , "QuantidadeHoras" : "2014-12-31"
+   , "PercentualHoras" : 20,6
+	
+}
+
+Campo: Acordo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Sindicato
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataInicio
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataFim
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: QuantidadeHoras
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: PercentualHoras
+Obrigatório: NÃOAceita valor nulo: NÃO
+

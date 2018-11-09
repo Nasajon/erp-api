@@ -1,0 +1,40 @@
+{
+     "IdDependente" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(70)"
+   , "CPF" : "String(14)"
+   , "DataInclusao" : "2014-12-31"
+   , "TipoParentesco" : 1
+   , "Sexo" : 1
+	
+}
+
+Campo: IdDependente
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CPF
+Descrição: [999.999.999-99]. A máscara não é obrigatória.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataInclusao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: TipoParentesco
+Descrição: Conforme tabela do eSocialObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Sexo
+Descrição: Masculino(1) ou Feminino(2)Obrigatório: NÃOAceita valor nulo: NÃO
+

@@ -1,0 +1,608 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "LayoutPagamento" : "Guid ou Código"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "Vencimento" : "2014-12-31"
+   , "PrevisaoVencimento" : "2014-12-31"
+   , "Parcela" : 1
+   , "TotalParcelas" : 1
+   , "Observacao" : "String(1000)"
+   , "Anotacoes" : "Este atributo é do titpo Memo."
+   , "ValorTitulo" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "AliquotaIr" : 15,4
+   , "ValorIrRetido" : 20,2
+   , "AliquotaCofins" : 15,4
+   , "ValorCofinsRetido" : 20,2
+   , "AliquotaPis" : 15,4
+   , "ValorPisRetido" : 20,2
+   , "AliquotaCsll" : 15,4
+   , "ValorCsllRetido" : 20,2
+   , "ValorInssRetido" : 20,2
+   , "AliquotaIss" : 15,4
+   , "ValorIssRetido" : 20,2
+   , "DataLimiteDesconto" : "2014-12-31"
+   , "PercentualDesconto" : 15,4
+   , "DataInicioMulta" : "2014-12-31"
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiario" : 15,4
+   , "LinhaDigitavel" : "String(54)"
+   , "CodigoBarras" : "String(44)"
+   , "NumeroNota" : "String(20)"
+   , "ModeloDocumentoFiscal" : 1
+   , "SerieDocumentoFiscal" : "String(3)"
+   , "SubserieDocumentoFiscal" : "String(2)"
+   , "ServicoBancario" : "Guid ou Código"
+   , "FormaPagamento" : "Guid ou Código"
+   , "FinalidadePagamento" : "Guid ou Código"
+   , "TipoContaPagamento" : "Guid ou Código"
+   , "DataAgendamento" : "2014-12-31"
+   , "DataProvisoria" : False
+   , "ValorProvisorio" : False
+   , "TipoOrigem" : 1
+   , "Contrato" : "Guid ou Código"
+   , "IRRetidoNF" : 20,2
+   , "INSSRetidoNF" : 20,2
+   , "BemPatrimonial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Desconto" : 15,4
+   , "Multa" : 15,4
+   , "Juros" : 15,4
+   , "Adiantamento" : False
+   , "UsaDiscriminacao" : False
+   , "IDDocumentoRateado" : "Guid ou Código"
+   , "DebitoAutomatico" : False
+   , "PercentualOutrosAcrescimos" : 15,4
+   , "OutrosAcrescimos" : 15,4
+   , "ModoExibicaoDesconto" : "String(1)"
+   , "ModoExibicaoJuros" : "String(1)"
+   , "ModoExibicaoMulta" : "String(1)"
+   , "ModoExibicaoOutrosAcrescimos" : "String(1)"
+   , "ModoExibicaoCodigoBarras" : "String(1)"
+   , "id_servicobanco" : "Guid ou Código"
+   , "id_formapagamentobanco" : "Guid ou Código"
+   , "id_finalidadepagamentobanco" : "Guid ou Código"
+   , "id_tipocontapagamentobanco" : "Guid ou Código"
+   , "DataCompetenciaTributos" : "2014-12-31"
+   , "DataProcessamentoBoleto" : "2014-12-31"
+   , "NossoNumero" : "String(30)"
+   , "CodigoDoCedenteBoleto" : "String(7)"
+   , "NumeroDocumentoBoleto" : "String(20)"
+   , "EspecieBoleto" : "String(3)"
+   , "AceiteBoleto" : False
+   , "UsoBancoBoleto" : "String(10)"
+   , "CarteiraBoleto" : "String(5)"
+   , "CodigodaReceitaTributos" : "String(6)"
+   , "NumeroDeReferenciaDARF" : "String(17)"
+   , "valorreceitabrutaacumuladadarfsimples" : 20,2
+   , "percreceitabrutaacumuladadarfsimples" : 14, 4
+   , "numerodeclaracaogare" : "String(12)"
+   , "numeroetiquetagare" : "String(13)"
+   , "numerodaparcelagare" : "String(13)"
+   , "codigomunicipioipva" : "String(5)"
+   , "codigorenavam" : "String(11)"
+   , "opcaodepagamentoipva" : "String(1)"
+   , "opcaoretiradacrlv" : "String(1)"
+   , "placaveiculoipva" : "String(7)"
+   , "unidadefederacaoipva" : "String(2)"
+   , "identificadorfgts" : "String(16)"
+   , "lacreconectividadesocial" : "String(11)"
+   , "numerodocumentodarj" : "String(16)"
+   , "Situacao" : 1
+   , "ID_RENEGOCIACAO_GERADORA" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "valorvariacaocambialativa" : 
+   , "valorvariacaocambialpassiva" : 
+   , "Emprestimo" : False
+   , "ID_ContaEmprestimo" : "Guid ou Código"
+   , "DataCompetencia" : "2014-12-31"
+   , "UsuarioResponsavel" : "Guid ou Código"
+   , "id_servicons" : "Guid ou Código"
+   , "id_formapagamentons" : "Guid ou Código"
+   , "id_finalidadepagamentons" : "Guid ou Código"
+   , "id_tipocontapagamentons" : "Guid ou Código"
+   , "tipoordempagamento" : 1
+   , "TituloCoberturaConta" : False
+   , "GrupoEmpresarialCobertura" : "Guid ou Código"
+   , "ContaCobertura" : "Guid ou Código"
+   , "IDDocumentoRateadoCobertura" : "Guid ou Código"
+   , "PrestacaoDeConta" : "Guid ou Código"
+   , "contafornecedor" : "Guid ou Código"
+   , "Previsto" : False
+   , "CFOPCodigo" : "String(50)"
+   , "IdConjuntoAnexo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "OutrasRetencoes" : 20,2
+   , "DescricaoOutrasRetencoes" : "String(255)"
+   , "Contabilizar" : False
+   , "Contabilizar_Baixa" : False
+   , "RazaoSocialFactoring" : "String(150)"
+   , "NumeroDocumentoFactoring" : "String(30)"
+   , "RazaoSocialGPS" : "String(150)"
+   , "NumeroDocumentoGPS" : "String(30)"
+   , "Estorno" : False
+   , "id_titulo_estorno" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipoestorno" : 1
+   , "pisestornado" : 
+   , "cofinsestornado" : 
+   , "csllestornado" : 
+   , "irestornado" : 
+   , "issestornado" : 
+   , "inssestornado" : 
+   , "NotaFutura" : False
+   , "ValorASerReembolsado" : False
+   , "id_pessoa_reembolso" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usamoedaestrangeira" : False
+   , "moedaestrangeira" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "cotacao" : 
+   , "valornamoedaestrangeira" : 
+   , "mesanocompetenciagps" : "String()"
+   , "outrasentidadesgps" : 
+   , "id_titulo_origemcomissao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "DataCancelamento" : "2014-12-31"
+   , "id_tipo_despesa_receita" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: Id
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Pessoa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: LayoutPagamento
+Descrição: Indica o layout de pagamento a ser utilizado na integração bancária. Caso não seja informado o Guid, passar a descrição.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Emissao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Vencimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: PrevisaoVencimento
+Descrição: Indica a previsão do vencimento. Utilizado no fluxo de caixa, caso não informado assume a data de vencimento.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Parcela
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: TotalParcelas
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Observacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Anotacoes
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorTitulo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira e centro de custo.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaIr
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorIrRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaCofins
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorCofinsRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaPis
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorPisRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaCsll
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorCsllRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorInssRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaIss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorIssRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataLimiteDesconto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualDesconto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataInicioMulta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualMulta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualJurosDiario
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: LinhaDigitavel
+Descrição: Indica a linha digitável do título. Utilizado na integração bancária, via borderô eletrônico.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoBarras
+Descrição: Indica o código de barras do título. Utilizado na integração bancária, via borderô eletrônico.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NumeroNota
+Descrição: Indica o número da nota que deu origem ao título.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ModeloDocumentoFiscal
+Descrição: Indica o modelo da nota que deu origem ao título. 
+                             1-Nenhum Modelo de Documento Fiscal,
+                                     2-Nota Fiscal (Saída ou Entrada de NF emitida pelo fornecedor,
+                                     3-Nota Fiscal Eletrônica,
+                                     4-Nota Fiscal emissão própria na entrada, marcada ENTRADA [X],
+                                     5-Nota Fiscal de Venda ao Consumidor,
+                                     6-Nota Fiscal de Produtor (Rural), 
+                                     7-Nota Fiscal de Serviço,
+                                     8-Nota Fiscal Fatura de Serviço,
+                                     9-Nota Fiscal Simplificada de Serviço,
+                                     10-Nota Eletrônica de Serviços,
+                                     11-Conhecimento Aéreo,
+                                     12-Conhecimento de Transporte Aquaviário,
+                                     13-Conhecimento de Transporte Eletrônico,
+                                     14-Conhecimento de Transporte Ferroviário,
+                                     15-Nota Fiscal De Transporte Ferroviário,
+                                     16-Conhecimento de Transporte Rodoviário,
+                                     17-Conhecimento de Transporte Multimodal de Carga,
+                                     18-Nota Fiscal de Serviço de Transporte,
+                                     19-Conta de Energia Elétrica,
+                                     20-Nota Fiscal Serviço de Telecomunicação,
+                                     21-Conta Fornecimento de Gás Canalizado,
+                                     22-Conta Fornecimento de Água Canalizada,
+                                     23-Bilhete de Passagem Aquaviário,
+                                     24-Bilhete de Passagem Ferroviário,
+                                     25-Bilhete de Passagem e Nota de Bagagem,
+                                     26-Bilhete de Passagem Rodoviário,
+                                     27-Resumo do Movimento Diário (Transporte de Passageiros)Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: SerieDocumentoFiscal
+Descrição: Indica a serie da nota que deu origem ao título.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: SubserieDocumentoFiscal
+Descrição: Indica a sub-serie da nota que deu origem ao título.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ServicoBancario
+Descrição: Indica os serviços disponiveis para o layout de pagamento do banco informado no título. Para preenchimento deste campo 
+      vide a tabela financas.servicosbancos. Pode-se utilizar o Guid ou o código de um registro disponível.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: FormaPagamento
+Descrição: Indica a forma de pagamento do título.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: FinalidadePagamento
+Descrição: Indica as finalidades de pagamentos suportada pela forma de pagamento escolhida. Para preenchimento deste campo
+      vide a tabela financas.finalidadespagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoContaPagamento
+Descrição: Indica os tipos de contas suportada pela forma de pagamento escolhida. Para preenchimento deste campo
+      vide a tabela financas.tiposcontaspagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataAgendamento
+Descrição: Indica a data do agendamento do pagamento do título. Utilizado no borderô eletrônico.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataProvisoria
+Descrição: Indica que as datas de emissão e vencimento do título são provisórias, quando marcado(true).Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ValorProvisorio
+Descrição: Indica que o valor do título é provisório, quando marcado(true).Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoOrigem
+Descrição: Indica a origem do titulo. Quando não informado, assumirá 0 - Manutenção
+                             23 - PrevisãoObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Contrato
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IRRetidoNF
+Descrição: Indica o valor do IR Retido na nota.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: INSSRetidoNF
+Descrição: Indica o valor do INSS Retido na nota.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: BemPatrimonial
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Desconto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Multa
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Juros
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Adiantamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: UsaDiscriminacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IDDocumentoRateado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DebitoAutomatico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: PercentualOutrosAcrescimos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: OutrosAcrescimos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ModoExibicaoDesconto
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ModoExibicaoJuros
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ModoExibicaoMulta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ModoExibicaoOutrosAcrescimos
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ModoExibicaoCodigoBarras
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: id_servicobanco
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: id_formapagamentobanco
+Descrição: Indica as modalidades de pagamentos suportada pelo serviço bancário escolhido. Para preenchimento deste campo
+      vide a tabela financas.formaspagamentosbancos. Pode-se utilizar o Guid ou o código de um registro disponível.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: id_finalidadepagamentobanco
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: id_tipocontapagamentobanco
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataCompetenciaTributos
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataProcessamentoBoleto
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NossoNumero
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: CodigoDoCedenteBoleto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: NumeroDocumentoBoleto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: EspecieBoleto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: AceiteBoleto
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: UsoBancoBoleto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: CarteiraBoleto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: CodigodaReceitaTributos
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: NumeroDeReferenciaDARF
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: valorreceitabrutaacumuladadarfsimples
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: percreceitabrutaacumuladadarfsimples
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: numerodeclaracaogare
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: numeroetiquetagare
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: numerodaparcelagare
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: codigomunicipioipva
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: codigorenavam
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: opcaodepagamentoipva
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: opcaoretiradacrlv
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: placaveiculoipva
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: unidadefederacaoipva
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: identificadorfgts
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: lacreconectividadesocial
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: numerodocumentodarj
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Situacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ID_RENEGOCIACAO_GERADORA
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: valorvariacaocambialativa
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: valorvariacaocambialpassiva
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Emprestimo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ID_ContaEmprestimo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataCompetencia
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: UsuarioResponsavel
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: id_servicons
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: id_formapagamentons
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: id_finalidadepagamentons
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: id_tipocontapagamentons
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: tipoordempagamento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: TituloCoberturaConta
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: GrupoEmpresarialCobertura
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ContaCobertura
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IDDocumentoRateadoCobertura
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PrestacaoDeConta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: contafornecedor
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Previsto
+Descrição: Indica que o título é previsto, quando marcado(true).Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CFOPCodigo
+Descrição: Código do CFOP.Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: IdConjuntoAnexo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: OutrasRetencoes
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DescricaoOutrasRetencoes
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Contabilizar
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Contabilizar_Baixa
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RazaoSocialFactoring
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: NumeroDocumentoFactoring
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: RazaoSocialGPS
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: NumeroDocumentoGPS
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Estorno
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: id_titulo_estorno
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: tipoestorno
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: pisestornado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: cofinsestornado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: csllestornado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: irestornado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: issestornado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: inssestornado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: NotaFutura
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorASerReembolsado
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: id_pessoa_reembolso
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: usamoedaestrangeira
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: moedaestrangeira
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: cotacao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: valornamoedaestrangeira
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: mesanocompetenciagps
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: outrasentidadesgps
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: id_titulo_origemcomissao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DataCancelamento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: id_tipo_despesa_receita
+Obrigatório: SIMAceita valor nulo: SIM
+

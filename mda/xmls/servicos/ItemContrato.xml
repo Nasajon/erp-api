@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="ItemContrato">
+		<model>
+		    <field nome="Id" controlType="Guid"/>	
+			<field nome="IdContrato" controlType="EntidadeInterna"/>	
+			<field nome="Servico" controlType="EntidadeInterna"/>			
+			<field nome="ValorVariavel" controlType="Boolean" />
+			<field nome="ValoresVariaveis" controlType="ObjectList" namespace="servicos\ValorVariavelItemContrato\TValorVariavelItemContrato" /> 
+			<field nome="Codigo" controlType="String" tamanho="40" />
+			<field nome="Observacao" controlType="Memo" />
+			<field nome="Valor" controlType="Currency" tamanho="20,2" />
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" /> 
+			<field nome="Quantidade" controlType="Integer" />
+			<field nome="Instancia" controlType="EntidadeInterna"/> 
+			<field nome="CodigoInstancia" controlType="String" tamanho="30" /> 	   
+			<field nome="NomeInstancia" controlType="String" tamanho="100" /> 
+			<field nome="TipoInstancia" controlType="String" tamanho="50" /> 
+			<field nome="DescontosNoPedido" controlType="Currency" tamanho="20,2"/>
+			<field nome="UnidadeNatureza" controlType="Integer" />
+			<field nome="UnidadeIntervaloNatureza" controlType="Integer" />
+			<field nome="QuantidadeIntervaloNatureza" controlType="Integer" />
+			<field nome="TipoVencimento" controlType="Integer" />
+			<field nome="DiaVencimento" controlType="Integer" />
+			<field nome="AdicaoMesesVencimento" controlType="Integer" />
+			<field nome="QtdDiasParaInicio" controlType="Integer" />
+			<field nome="QtdDiasParaFim" controlType="Integer" />
+			<field nome="QtdMesesParaReajuste" controlType="Integer" />
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" />
+			<field nome="PercentualMulta" controlType="Currency" tamanho="15,4" />
+			<field nome="PercentualJurosDiarios" controlType="Currency" tamanho="15,4" />
+			<field nome="TipoCobranca" controlType="Integer" /> 
+			<field nome="Indice" controlType="EntidadeInterna"/> 
+			<field nome="ConsiderarDataInicio" controlType="Boolean"  />
+			<field nome="DataCobranca" controlType="Date" />  
+			<field nome="DataReajuste" controlType="Date" />  
+			<field nome="Autorizado" controlType="Boolean"/>	
+			<field nome="Cancelado" controlType="Boolean"/>  
+			<field nome="DataHoraCancelamento" controlType="DateTime"/>
+		</model>	
+	</models>
+</root>

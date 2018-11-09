@@ -1,0 +1,34 @@
+{
+     "catalogodeoferta" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "id_grupoempresarial" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "catalogodeoferta_pai" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipo" : 1
+	
+}
+
+Campo: catalogodeoferta
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: id_grupoempresarial
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: catalogodeoferta_pai
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: tipo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

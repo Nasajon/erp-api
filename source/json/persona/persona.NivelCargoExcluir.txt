@@ -1,0 +1,16 @@
+{
+     "Nivel" : "Guid ou Código"
+   , "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+	
+}
+
+Campo: Nivel
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Cargo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+

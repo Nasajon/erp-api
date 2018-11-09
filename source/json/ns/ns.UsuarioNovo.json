@@ -1,0 +1,13 @@
+{
+     "IdUsuario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Nome" : "String(60)"
+   , "Email" : "String(100)"
+   , "Telefone" : "String(20)"
+   , "Login" : "String(20)"
+   , "Senha" : "String(300)"
+   , "PerfilUsuario" : "Guid ou Código"
+   , "GrupoDeUsuario" : "Guid ou Código"
+   , "representante" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "vendedor" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

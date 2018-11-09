@@ -1,0 +1,16 @@
+{
+     "id_elementoDeControle" : "Guid ou Código"
+   , "id_registro" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "valor" : "String(150)"
+	
+}
+
+Campo: id_elementoDeControle
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: id_registro
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: valor
+Obrigatório: SIMAceita valor nulo: SIM
+

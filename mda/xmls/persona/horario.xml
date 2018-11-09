@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Horario">
+		<model>
+			<nome>NovoDadosPadrao</nome>
+			<field nome="IdHorario" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="8" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Normal(0), Folga fixa(1) ou Folga extra(2)"/>
+			<field nome="JornadaSegunda" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="RepousoSabado" controlType="Boolean" required="True" notnull="True"/>			
+			<field nome="JornadaSabado" controlType="EntidadeInterna"  required="True" notnull="True"/>			
+		</model>	
+		<model>
+			<nome>NovoDadosOutros</nome>
+			<field nome="IdHorario" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="8" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Normal(3), Folga fixa(4) ou Folga extra(5)"/>
+			<field nome="JornadaSegunda" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="JornadaTerca" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="JornadaQuarta" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="JornadaQuinta" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="JornadaSexta" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="JornadaSabado" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="JornadaDomingo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="RepousoSegunda" controlType="Boolean" required="True" notnull="True"/>			
+			<field nome="RepousoTerca" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RepousoQuarta" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RepousoQuinta" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RepousoSexta" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RepousoSabado" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RepousoDomingo" controlType="Boolean" required="True" notnull="True"/>			
+		</model>
+		<model>
+			<nome>NovoDadosEscala</nome>
+			<field nome="IdHorario" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="8" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="True" notnull="True"/>			
+			<field nome="Jornada" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosPadrao</nome>
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="8" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="False" summary="Normal(0), Folga fixa(1) ou Folga extra(2)"/>
+			<field nome="JornadaSegunda" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="RepousoSabado" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="JornadaSabado" controlType="EntidadeInterna"  required="False" notnull="True"/>			
+		</model>
+		<model>
+			<nome>AlterarDadosOutros</nome>
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="8" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="False" summary="Normal(3), Folga fixa(4) ou Folga extra(5)"/>
+			<field nome="JornadaSegunda" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="JornadaTerca" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="JornadaQuarta" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="JornadaQuinta" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="JornadaSexta" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="JornadaSabado" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="JornadaDomingo" controlType="EntidadeInterna" required="False" notnull="True"/>			
+			<field nome="RepousoSegunda" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="RepousoTerca" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="RepousoQuarta" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="RepousoQuinta" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="RepousoSexta" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="RepousoSabado" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="RepousoDomingo" controlType="Boolean" required="False" notnull="True"/>			
+		</model>		
+		<model>
+			<nome>AlterarDadosEscala</nome>
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="8" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="False" notnull="True"/>
+			<field nome="Jornada" controlType="EntidadeInterna" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarFolgaFixa</nome>
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Quantidade" controlType="Integer" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarFolgaExtra</nome>
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="OrdemNoMes" controlType="Integer" required="False" notnull="True" summary="Informar qual a ordem dentro do mês será a folga. Por exemplo, se o a folga é no 2º domingo do mês, informar 2"/>
+			<field nome="DiaSemana" controlType="Integer" required="False" notnull="True" summary="De 1 a 7 começando com domingo"/>
+		</model>
+		<model>
+			<nome>AlterarDescontaAtrasosEmDiasDeFalta</nome>
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>			
+			<field nome="Segunda" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="Terca" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="Quarta" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="Quinta" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="Sexta" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="Sabado" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="Domingo" controlType="Boolean" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

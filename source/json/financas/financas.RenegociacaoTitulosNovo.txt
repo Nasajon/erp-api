@@ -1,0 +1,64 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataRenegociacao" : "2014-12-31"
+   , "Numero" : "String(30)"
+   , "Usuario" : "Guid ou Código"
+   , "Tipo" : 1
+   , "TitulosRenegociados" : "ObjectList: TTituloRenegociado"
+   , "FormasPagamentos" : "ObjectList: TFormaPagamentoRenegociacaoTitulosNovo"
+   , "Parcelas" : "ObjectList: TParcelaFormaPagamentoRenegociacaoTitulosNovo"
+   , "QtdTitulosRenegociados" : 1
+   , "ValorTitulosRenegociados" : 20,2
+   , "AcaoImpostos" : 1
+   , "Desconto" : 20,2
+   , "Acrescimo" : 20,2
+	
+}
+
+Campo: Id
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Pessoa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataRenegociacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Usuario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Tipo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: TitulosRenegociados
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: FormasPagamentos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Parcelas
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: QtdTitulosRenegociados
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ValorTitulosRenegociados
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: AcaoImpostos
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Desconto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Acrescimo
+Obrigatório: SIMAceita valor nulo: SIM
+

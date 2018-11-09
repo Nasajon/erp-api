@@ -1,0 +1,34 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "OrdemCalculoINSSFolha" : 1
+   , "OrdemCalculoINSSDecimoTerceiro" : 1
+   , "TemVinculoComOutraEmpresa" : False
+   , "MesesTrabalhadosOutrasEmpresas" : 1
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: OrdemCalculoINSSFolha
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: OrdemCalculoINSSDecimoTerceiro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: TemVinculoComOutraEmpresa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: MesesTrabalhadosOutrasEmpresas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

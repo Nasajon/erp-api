@@ -1,0 +1,9 @@
+{
+     "Discriminacao" : "String(200)"
+   , "ClassificacaoFinanceira" : "Guid ou Código"
+   , "CentroCusto" : "Guid ou Código"
+   , "Projeto" : "Guid ou Código"
+   , "Valor" : 20,2
+   , "Percentual" : 20,2
+	
+}

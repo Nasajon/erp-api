@@ -1,0 +1,5 @@
+{
+     "Servico" : "Guid ou Código"
+   , "entidadescompartilhadoras" : "ObjectList: TEntidadeCompartilhadora"
+	
+}

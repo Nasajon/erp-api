@@ -1,0 +1,16 @@
+{
+     "Horario" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Quantidade" : 1
+	
+}
+
+Campo: Horario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Quantidade
+Obrigatório: SIMAceita valor nulo: NÃO
+

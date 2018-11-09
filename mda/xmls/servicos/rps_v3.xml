@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="rps_v3">
+        <model>
+            <field nome="id" controlType="Guid" required="False" notnull="True"/>
+            <field nome="nota_antecipada" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="estabelecimento" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="cliente" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="serie" controlType="String" tamanho="5" required="True" notnull="True"/>
+            <field nome="lancamento" controlType="Date" required="True" notnull="True"/>
+            <field nome="origem" controlType="Integer" required="True"
+                   summary="Indica a Origem do RPS
+                            00 - Manual
+                            01 - Ordem de Serviço
+                            02 - Contrato
+                            03 - Proposta
+                            04 - Pedido de Servico
+                            05 - Importacao
+                            06 - Faturamento Provisorio
+                            07 - GeradorRPS"/>
+            <field nome="tipo_tributacao" controlType="Integer" required="False"
+                   summary="Indica o Tipo de Tributação. Quando não informado assumirá da configuração de RPS.
+                            00 - Nenhum,
+                            01 - Tributação no Município,
+                            02 - Tributação Fora do Município,
+                            03 - Operação Isenta,
+                            04 - Operação Imune,
+                            05 - Operação Suspensa por Decisão Judicial,
+                            06 - Operação Suspensa por Decisão Administrativa" notnull="True"/>
+            <field nome="regime_especial" controlType="Integer" required="False"
+                   summary="Indica o Regime Especial. Quando não informado assumirá da configuração de RPS.
+                            00 - Nenhum,
+                            01 - Microempresa Municipal,
+                            02 - Estimativa,
+                            03 - Sociedade de Profissionais,
+                            04 - Cooperativa,
+                            05 - Microempreendedor Individual,
+                            06 - Empresa Júnior" notnull="True"/>
+            <field nome="incentivo_cultural" controlType="Integer" required="False"
+                   summary="Indica se tem Incentivo Cultural. Quando não informado assumirá da configuração de RPS.
+                            0 - Não,
+                            1 - Sim" notnull="True"/>
+            <field nome="beneficio_fiscal" controlType="Integer" required="False" 
+                   summary="Indica se tem Benifício Fiscal. Quando não informado assumirá da configuração de RPS.
+                            001 - L. 691/84 - Isenção - associações de classe, sindicatos e as respectivas federações e confederações.
+                            002 - L. 691/84 - Isenção - associações culturais, recreativas e desportivas.
+                            003 - L. 691/84 - Isenção - serviços de veiculação de publicidade prestados por táxis autônomos e táxis de cooperativas.
+                            004 - L. 691/84 - Isenção - espetáculos circenses nacionais.
+                            005 - L. 691/84 - Isenção - espetáculos teatrais.
+                            006 - L. 691/84 - Isenção - promoção de concertos, recitais, shows, festividades, exposições, quermesses e similares.
+                            007 - L. 691/84 - Isenção - músicos, artistas e técnicos de espetáculos.
+                            008 - L. 691/84 - Isenção - exibição de filmes cinematográficos por entidades brasileiras sem fins lucrativos.
+                            009 - L. 691/84 - Isenção - reforma, reestruturação ou conserv. de prédios de int. histórico, cultural ou p/ preserv. ambiental.
+                            010 - L. 691/84 - Estudos e projetos / polos industriais - Lei 691/84, art. 12, inciso XX.
+                            011 - L. 4.372/06 - Isenção - Serv. vinc. à construção de terminais portuários na Zona Oeste.
+                            012 - L. 5.133/09 - Isenção - Serviços vinculados à construção de complexos siderúrgicos na Zona Oeste.
+                            013 - L. 5.044/2009 - Isenção - Central de teleatendimento (construção/reforma).
+                            014 - L. 5.065/2009 - Isenção - Empreendim. Habitacionais de interesse social e de arrendamento Resid. - construção / reforma.
+                            015 - Lei 5.128/2009 - Isenção - Operação Urbana Consorciada da Região do Porto do Rio.
+                            016 - L. 5.230/2010 - Isenção - Copa das Confederações 2013 / Copa do Mundo 2014.
+                            017 - L. 5.230/2010 - Isenção - Jogos Olímpicos e Paraolímpicos RIO 2016.
+                            039 - Exportação de serviços para o exterior.
+                            040 - Lei 4.372/2006 - Redução de Aliq. - Serviços Vinculados à operação de terminais portuários na Zona Oeste.
+                            041 - Lei 5.128/2009 - Redução de Aliq. - Operação Urbana Consorciada da Região do Porto do Rio.
+                            080 - Imunidade - Ente Federado.
+                            081 - Imunidade - Autarquia ou Fundação pública.
+                            082 - Imunidade - Templo religioso.
+                            083 - Imunidade - Partido político.
+                            084 - Imunidade - Fundação mantida por partido político.
+                            085 - Imunidade - Entidade sindical de trabalhadores.
+                            086 - Imunidade - Instituição de educação sem fins lucrativos.
+                            087 - CRFB, Art. 150, inc. VI, alínea 'c'." notnull="True"/>
+            <field nome="codigo_servico" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="codigo_municipio_prestacao" controlType="String" tamanho="7" required="False" notnull="False"/>
+            <field nome="obra" controlType="EntidadeInterna" required="False" notnull="False"/>
+
+            <field nome="discriminacao_servicos" controlType="String" tamanho="5000" required="False"/>
+
+            <field nome="desconto" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="outras_deducoes" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="outras_retencoes" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="descricao_outras_retencoes" controlType="String" tamanho="5000" required="False" notnull="False"/>
+
+            <field nome="retem_iss" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_ir" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_inss" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_pis" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_cofins" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_csll" controlType="Boolean" required="False" notnull="False"/>
+
+            <field nome="aliquota_iss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+
+            <field nome="base_iss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_iss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_ir" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_ir" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_inss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_inss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_pis" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_pis" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_cofins" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_cofins" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_csll" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_csll" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+
+            <field nome="observacao" controlType="String" tamanho="5000" required="False"/>
+            <field nome="observacao_titulo" controlType="String" tamanho="5000" required="False"/>
+
+            <field nome="conjunto_anexo" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="lote_cobranca" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="numero_nota_servico_substituicao" controlType="String" tamanho="9" required="False" notnull="False" 
+                   summary="Indica o número da nota de serviço que será substituída pelo RPS gerado." />
+            <field nome="documento_vinculado" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="numero_titulo" controlType="string" required="False" notnull="False"/>
+            <field nome="usuario" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="template_rps" controlType="Guid" required="False" notnull="False"/>
+
+            <field nome="id_contrato" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="id_processamento_cobranca" controlType="EntidadeInterna" required="False" notnull="False"/>
+
+            <field nome="xml_docengine" controlType="String" tamanho="999999" required="False"/>
+
+            <field nome="calcular_imposto" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="gerar_financeiro" controlType="Boolean" required="False" notnull="False"/>
+
+            <field nome="itens" controlType="ObjectList" namespace="servicos\itemrps_v3\titemrps_v3" required="True"
+                   summary="Indica a lista de itens do RPS." notnull="True"/>
+            <field nome="pagamentos" controlType="ObjectList" namespace="ns\pagamentosemparcela\TPagamentoSemParcela" required="False"/>
+            <field nome="parcelas" controlType="ObjectList" namespace="ns\parcela\TParcela" required="False"/>
+            <field nome="rateios" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" 
+                   required="False" summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>
+            <field nome="vendedores" controlType="ObjectList" namespace="servicos\VendedorRPS\TVendedorRPS"
+                   required="False" summary="Indica a lista de vendedores vinculados ao serviço prestado."/>
+			<field nome="retem_ir_nota" controlType="Boolean" required="False" notnull="False"/>	
+			<field nome="numeroexterno" controlType="String" tamanho="255" required="False"/>
+			<field nome="projeto_padrao_id" controlType="EntidadeInterna" required="false" notnull="false"/>			
+			<field nome="reinf_maodeobra" controlType="String" tamanho="12" required="False"/>
+			<field nome="cnae" controlType="String" tamanho="9" required="False"/>
+        </model>
+    </models>
+</root>

@@ -1,0 +1,39 @@
+{
+     "IdDocumento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "TipoDocumento" : "Guid ou Código"
+   , "Url" : "Este atributo é do titpo Memo."
+   , "Bin" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: IdDocumento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Dependente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: TipoDocumento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Url
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Bin
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

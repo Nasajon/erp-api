@@ -1,0 +1,22 @@
+{
+     "Valor" : 13,2
+   , "DataVencimento" : "2014-12-31"
+   , "Sequencial" : 1
+	
+}
+
+Campo: Valor
+Descrição: Identifica o valor da parcela
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataVencimento
+Descrição: Identifica a data de vencimento da parcela
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Sequencial
+Descrição: Identifica o número da parcela
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

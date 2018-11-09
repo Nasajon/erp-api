@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="ValorVariavelItemContrato">
+		<model>
+			<field nome="data" controlType="Date" notnull="True"/>	
+			<field nome="valor" controlType="Currency" tamanho="20,2" notnull="True"/>
+		</model>	
+	</models>
+</root>

@@ -1,0 +1,19 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Id_fatura" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Id_docfis" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: Id
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Id_fatura
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Id_docfis
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

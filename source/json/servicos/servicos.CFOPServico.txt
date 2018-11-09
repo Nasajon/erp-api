@@ -1,0 +1,12 @@
+{
+     "CFOPServico" : "Guid ou Código"
+   , "IBGEMunicipio" : 1
+	
+}
+
+Campo: CFOPServico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: IBGEMunicipio
+Obrigatório: SIMAceita valor nulo: NÃO
+

@@ -1,0 +1,9 @@
+{
+     "TipoDocumento" : "Guid ou Código"
+	
+}
+
+Campo: TipoDocumento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

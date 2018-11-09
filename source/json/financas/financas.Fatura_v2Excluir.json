@@ -1,0 +1,5 @@
+{
+     "Fatura" : "Guid ou Código"
+   , "Numero" : "String(30)"
+	
+}

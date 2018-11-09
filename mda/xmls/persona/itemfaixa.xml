@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="ItemFaixa">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdItem" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Faixa" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="DataInicioValidade" controlType="Date" required="True" notnull="True"/>
+			<field nome="ValorFinal" controlType="Currency" tamanho="20,6"  required="True" notnull="True"/>
+			<field nome="Percentual" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+			<field nome="ValorConstante" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="IdItem" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Faixa" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="DataInicioValidade" controlType="Date" required="False" notnull="True"/>
+			<field nome="ValorFinal" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+			<field nome="Percentual" controlType="Currency" tamanho="20,6"  required="False" notnull="False"/>
+			<field nome="ValorConstante" controlType="Currency" tamanho="20,6"  required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdItem" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Faixa" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="DataInicioValidade" controlType="Date" required="False" notnull="True"/>
+			<field nome="ValorFinal" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

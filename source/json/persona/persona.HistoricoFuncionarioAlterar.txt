@@ -1,0 +1,28 @@
+{
+     "IdHistorico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Data" : "2014-12-31"
+   , "Descricao" : "2014-12-31"
+   , "TipoHistorico" : "String(3)"
+	
+}
+
+Campo: IdHistorico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoHistorico
+Descrição: Conforme coluna tipo da tela de históricos do funcionárioObrigatório: NÃOAceita valor nulo: NÃO
+

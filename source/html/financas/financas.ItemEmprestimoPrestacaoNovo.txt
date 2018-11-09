@@ -1,0 +1,19 @@
+{
+     "ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ID_PrestacaoDeConta" : "Guid ou Código"
+   , "ID_TituloEmprestimo" : "Guid ou Código"
+	
+}
+
+Campo: ID
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: ID_PrestacaoDeConta
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ID_TituloEmprestimo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

@@ -1,0 +1,8 @@
+{
+     "Instituicao" : "Guid ou Código"
+	
+}
+
+Campo: Instituicao
+Obrigatório: SIMAceita valor nulo: NÃO
+

@@ -1,0 +1,9 @@
+{
+     "IdTarifa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Concessionaria" : "Guid ou Código"
+   , "Codigo" : "String(4)"
+   , "Descricao" : "String(30)"
+   , "Valor" : 20,6
+   , "Tipo" : 1
+	
+}

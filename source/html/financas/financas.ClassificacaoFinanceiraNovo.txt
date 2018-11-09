@@ -1,0 +1,62 @@
+{
+     "IdClassificacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ClassificacaoPai" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(16)"
+   , "Descricao" : "String(150)"
+   , "CodigoContabil" : "String(20)"
+   , "Resumo" : "String(30)"
+   , "Natureza" : 1
+   , "Transferencia" : False
+   , "Repasse_Deducao" : False
+   , "Rendimentos" : False
+	
+}
+
+Campo: IdClassificacao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: ClassificacaoPai
+Descrição: Classificação financeira a qual está nova pertence(sintética).
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: GrupoEmpresarial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoContabil
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Resumo
+Descrição: Descrição de forma resumida.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Natureza
+Descrição: Indica a natureza da classificação: 0 - Indefinido, 1 - Receita e 2 - Despesa. Quando não informado será assumido o valor 0.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Transferencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Repasse_Deducao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Rendimentos
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

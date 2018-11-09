@@ -1,0 +1,20 @@
+{
+     "Sindicato" : "Guid ou Código"
+   , "Acumulativo" : False
+   , "CalculaNoFim" : False
+   , "PagaSomenteMaior" : False
+	
+}
+
+Campo: Sindicato
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Acumulativo
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CalculaNoFim
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PagaSomenteMaior
+Obrigatório: NÃOAceita valor nulo: SIM
+

@@ -1,0 +1,9 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "NumeroConta" : "String(16)"
+   , "Optante" : False
+   , "DataOpcao" : "2014-12-31"
+   , "Saldo" : 20,6
+	
+}

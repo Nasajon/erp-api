@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="unidadesdecustos">
+		<model>
+			<nome>Novo</nome>
+			<field nome="unidadedecustodecusto" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />
+			<field nome="valor" controlType="Double" required="True" notnull="True"/>
+			<field nome="created_by" controlType="String" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="unidadedecustodecusto" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />
+			<field nome="valor" controlType="Double" required="True" notnull="True"/>
+			<field nome="updated_by" controlType="String" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="unidadedecusto" controlType="Guid" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,19 @@
+{
+     "Tarifa" : "Guid ou Código"
+   , "Concessionaria" : "Guid ou Código"
+   , "Valor" : 20,6
+	
+}
+
+Campo: Tarifa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Concessionaria
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

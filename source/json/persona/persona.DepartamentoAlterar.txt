@@ -1,0 +1,24 @@
+{
+     "Departamento" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(8)"
+   , "Nome" : "String(40)"
+	
+}
+
+Campo: Departamento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃOAceita valor nulo: NÃO
+

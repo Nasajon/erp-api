@@ -1,0 +1,12 @@
+{
+     "Servico" : "Guid ou Código"
+   , "entidadescompartilhadoras" : "ObjectList: TEntidadeCompartilhadora"
+	
+}
+
+Campo: Servico
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: entidadescompartilhadoras
+Obrigatório: SIMAceita valor nulo: NÃO
+

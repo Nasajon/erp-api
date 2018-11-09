@@ -1,0 +1,36 @@
+{
+     "Processo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Data" : "2014-12-31"
+   , "Tipo" : 1
+   , "Extensao" : 1
+   , "DepositoIntegral" : False
+	
+}
+
+Campo: Processo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Definitiva (1), Decisão não transitada em julgado com efeito suspensivo(2), Liminar em mandado de segurança(3), Liminar ou tutela antecipada, em outras espécies de ação judicial(4), Contestação administrativa(5), Outros(9)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Extensao
+Descrição: Contribuições Patronais(1) ou Contribuições Patronais + Segurados(2)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DepositoIntegral
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

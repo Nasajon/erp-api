@@ -1,0 +1,34 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataVencimentoDeclaracaoEscolar" : "2014-12-31"
+   , "DataVencimentoVacinacao" : "2014-12-31"
+   , "DependenteBeneficiarioPensao" : "Guid ou Código"
+	
+}
+
+Campo: Dependente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataVencimentoDeclaracaoEscolar
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataVencimentoVacinacao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DependenteBeneficiarioPensao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

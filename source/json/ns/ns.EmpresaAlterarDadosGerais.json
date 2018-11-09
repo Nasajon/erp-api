@@ -1,0 +1,11 @@
+{
+     "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Identificacao" : "String(20)"
+   , "RazaoSocial" : "String(150)"
+   , "Descricao" : "String(150)"
+   , "CodigoCNAE" : "String(7)"
+   , "InicioExercicio" : "2014-12-31"
+	
+}

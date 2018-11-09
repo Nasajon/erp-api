@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{69BC8D9E-3AE6-4505-B2A5-872EFAD6E1A8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="mda\package\nsjMDAAPI.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="source\delphi\package\nsjAPI.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="nsjMDAAPI">
+        <MSBuild Projects="mda\package\nsjMDAAPI.dproj"/>
+    </Target>
+    <Target Name="nsjMDAAPI:Clean">
+        <MSBuild Projects="mda\package\nsjMDAAPI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="nsjMDAAPI:Make">
+        <MSBuild Projects="mda\package\nsjMDAAPI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="nsjAPI">
+        <MSBuild Projects="source\delphi\package\nsjAPI.dproj"/>
+    </Target>
+    <Target Name="nsjAPI:Clean">
+        <MSBuild Projects="source\delphi\package\nsjAPI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="nsjAPI:Make">
+        <MSBuild Projects="source\delphi\package\nsjAPI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="nsjMDAAPI;nsjAPI"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="nsjMDAAPI:Clean;nsjAPI:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="nsjMDAAPI:Make;nsjAPI:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,24 @@
+{
+     "TipoProjeto" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+	
+}
+
+Campo: TipoProjeto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

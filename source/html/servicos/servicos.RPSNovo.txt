@@ -1,0 +1,113 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "Guid ou Código"
+   , "Emissao" : "2014-12-31"
+   , "Lancamento" : "2014-12-31"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : 1
+   , "BeneficioFiscal" : 1
+   , "Desconto" : 20,2
+   , "ItemRPS" : "ObjectList: TItemRPSNovo"
+	
+}
+
+Campo: Id
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Pessoa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Serie
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Emissao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Lancamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: TipoTributacao
+Descrição: Indica o Tipo de Tributação. Quando não informado assumirá da configuração de RPS.
+                                             00 - Nenhum,
+                                             01 - Tributação no Município,
+                                             02 - Tributação Fora do Município,
+                                             03 - Operação Isenta,
+                                             04 - Operação Imune,
+                                             05 - Operação Suspensa por Decisão Judicial,
+                                             06 - Operação Suspensa por Decisão Administrativa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RegimeEspecial
+Descrição: Indica o Regime Especial. Quando não informado assumirá da configuração de RPS.
+                                             00 - Nenhum,
+                                             01 - Microempresa Municipal,
+                                             02 - Estimativa,
+                                             03 - Sociedade de Profissionais,
+                                             04 - Cooperativa,
+                                             05 - Microempreendedor Individual,
+                                             06 - Empresa Júnior
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: IncentivoCultural
+Descrição: Indica se tem Incentivo Cultural. Quando não informado assumirá da configuração de RPS.
+                                             0 - Não,
+                                             1 - Sim
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: BeneficioFiscal
+Descrição: Indica se tem Benifício Fiscal. Quando não informado assumirá da configuração de RPS.
+                                             001 - L. 691/84 - Isenção - associações de classe, sindicatos e as respectivas federações e confederações.
+                                             002 - L. 691/84 - Isenção - associações culturais, recreativas e desportivas.
+                                             003 - L. 691/84 - Isenção - serviços de veiculação de publicidade prestados por táxis autônomos e táxis de cooperativas.
+                                             004 - L. 691/84 - Isenção - espetáculos circenses nacionais.
+                                             005 - L. 691/84 - Isenção - espetáculos teatrais.
+                                             006 - L. 691/84 - Isenção - promoção de concertos, recitais, shows, festividades, exposições, quermesses e similares.
+                                             007 - L. 691/84 - Isenção - músicos, artistas e técnicos de espetáculos.
+                                             008 - L. 691/84 - Isenção - exibição de filmes cinematográficos por entidades brasileiras sem fins lucrativos.
+                                             009 - L. 691/84 - Isenção - reforma, reestruturação ou conserv. de prédios de int. histórico, cultural ou p/ preserv. ambiental.
+                                             010 - L. 691/84 - Estudos e projetos / polos industriais - Lei 691/84, art. 12, inciso XX.
+                                             011 - L. 4.372/06 - Isenção - Serv. vinc. à construção de terminais portuários na Zona Oeste.
+                                             012 - L. 5.133/09 - Isenção - Serviços vinculados à construção de complexos siderúrgicos na Zona Oeste.
+                                             013 - L. 5.044/2009 - Isenção - Central de teleatendimento (construção/reforma).
+                                             014 - L. 5.065/2009 - Isenção - Empreendim. Habitacionais de interesse social e de arrendamento Resid. - construção / reforma.
+                                             015 - Lei 5.128/2009 - Isenção - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             016 - L. 5.230/2010 - Isenção - Copa das Confederações 2013 / Copa do Mundo 2014.
+                                             017 - L. 5.230/2010 - Isenção - Jogos Olímpicos e Paraolímpicos RIO 2016.
+                                             039 - Exportação de serviços para o exterior.
+                                             040 - Lei 4.372/2006 - Redução de Aliq. - Serviços Vinculados à operação de terminais portuários na Zona Oeste.
+                                             041 - Lei 5.128/2009 - Redução de Aliq. - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             080 - Imunidade - Ente Federado.
+                                             081 - Imunidade - Autarquia ou Fundação pública.
+                                             082 - Imunidade - Templo religioso.
+                                             083 - Imunidade - Partido político.
+                                             084 - Imunidade - Fundação mantida por partido político.
+                                             085 - Imunidade - Entidade sindical de trabalhadores.
+                                             086 - Imunidade - Instituição de educação sem fins lucrativos.
+                                             087 - CRFB, Art. 150, inc. VI, alínea 'c'.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Desconto
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ItemRPS
+Descrição: Indica a lista dos Itens do RPS.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

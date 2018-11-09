@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="SolicitacaoAlteracaoEndereco">
+		<model>
+			<nome>Novo</nome>
+      <field nome="Solicitacao" controlType="Guid" required="False" notnull="True" />
+			<field nome="Conteudo" controlType="Object" namespace="persona\funcionario\TFuncionarioSolicitacaoAlteracaoEndereco" />
+      <field nome="Status" controlType="Integer" required="True" notnull="True" />
+      <field nome="FuncionarioNome" controlType="String" tamanho="80" required="False" notnull="False" />
+      <field nome="FuncionarioCodigo" controlType="String" tamanho="6" required="False" notnull="False" />
+      <field nome="FuncionarioDepartamento" controlType="String" tamanho="40" required="False" notnull="False" />
+      <field nome="FuncionarioCargo" controlType="String" tamanho="50" required="False" notnull="False" />
+			<field nome="FuncionarioFoto" controlType="String" tamanho="100" required="False" notnull="False" />
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="False"/>
+			<field nome="Data" controlType="Date" required="False" notnull="False" />
+			<field nome="Tipo" controlType="String" tamanho="5" required="True" notnull="True" />
+      <field nome="Rascunho" controlType="Boolean" required="False" notnull="False" />
+      <field nome="Solicitante" controlType="String" tamanho="64" required="False" notnull="False" />
+			<field nome="Fila" controlType="Guid" required="False" notnull="False" />
+      <field nome="Tenant" controlType="Integer" required="False" notnull="False" />
+      <field nome="Colaborador" controlType="Guid" required="False" notnull="False" />
+      <field nome="UsuarioDestino" controlType="String" tamanho="64" required="False" notnull="False" />
+		</model>
+	</models>
+</root>

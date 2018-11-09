@@ -1,0 +1,20 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Valor" : 20,6
+   , "FazProporcao" : False
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FazProporcao
+Obrigatório: NÃOAceita valor nulo: SIM
+

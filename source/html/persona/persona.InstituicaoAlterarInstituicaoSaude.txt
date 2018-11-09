@@ -1,0 +1,15 @@
+{
+     "Instituicao" : "Guid ou Código"
+   , "NumeroCNES" : "String(7)"
+	
+}
+
+Campo: Instituicao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: NumeroCNES
+Descrição: Informar o número da instituição no cadastro nacional de estabelecimentos de saúde
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

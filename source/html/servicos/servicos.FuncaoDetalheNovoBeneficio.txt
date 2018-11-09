@@ -1,0 +1,39 @@
+{
+     "FuncaoDetalhe" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcao" : "Guid ou Código"
+   , "Registro" : "Guid ou Código"
+   , "Agrupador" : "Guid ou Código"
+   , "PeriodicidadeTipo" : 1
+   , "PeriodicidadeIntervalo" : 
+	
+}
+
+Campo: FuncaoDetalhe
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Funcao
+Descrição: Função à qual este Beneficio pertence.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Registro
+Descrição: Identificador do Benefício.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Agrupador
+Descrição: Campo utilizado para indicar a que agrupador este Benefício pertence.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PeriodicidadeTipo
+Descrição: Tipo de periodicidade do benefício. Valores possíveis: 0) Não periódico; 1) Diário; 2) Semanal; 3) Mensal; 4) Bimestral; 5) Trimestral; 6) Semestral; 7) Anual
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PeriodicidadeIntervalo
+Descrição: Periodicidade do Benefício (verificar os tipos de periodicidade no parâmetro PeriodicidadeTipo).
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

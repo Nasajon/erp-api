@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="estoque" modulo="LocalDeEstoque">
+		<model>
+			<nome>Novo</nome>
+			<field nome="idlocaldeestoque" controlType="Guid" required="False" notnull="True"/>
+			<field nome="estabelecimento" controlType="Guid" required="True" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="nome" controlType="String" tamanho="80"/>
+			<field nome="tipo" controlType="Integer" required="False"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="idlocaldeestoque" controlType="Guid" required="True" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="nome" controlType="String" tamanho="80" required="False" notnull="True"/>
+			<field nome="tipo" controlType="Integer" required="False" notnull="True"/>
+			
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="idlocaldeestoque" controlType="Guid" required="True" notnull="True"/>			
+		</model>
+	</models>
+</root>

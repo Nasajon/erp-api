@@ -1,0 +1,19 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Observacao" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Observacao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

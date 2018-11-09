@@ -1,0 +1,72 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoFPAS" : "String(6)"
+   , "CodigoTerceiros" : "String(4)"
+   , "CodigoCNAE" : "String(7)"
+   , "NumeroProprietarios" : 1
+   , "NumeroFamiliares" : 1
+   , "Porte" : 1
+   , "CapitalSocial" : 20,6
+   , "FazPartePAT" : False
+   , "PagaPIS" : False
+   , "CentralizaContribuicaoSindical" : False
+   , "Sindicato" : "Guid ou Código"
+   , "NumeroContaDepositoFGTS" : "String(14)"
+   , "TipoContaDepositoFGTS" : 1
+   , "AgenciaDepositoFGTS" : "Guid ou Código"
+   , "BancoDepositoFGTS" : "Guid ou Código"
+	
+}
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoFPAS
+Descrição: Conforme tabela de Fundo da Previdência e Assistência Social do governoObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoTerceiros
+Descrição: Conforme tabela de outras entidades do governoObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoCNAE
+Descrição: Conforme tabela de atividades econômicas do governoObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NumeroProprietarios
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: NumeroFamiliares
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Porte
+Descrição: Normal(1), Pequeno(2) ou Micro(3)Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CapitalSocial
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FazPartePAT
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PagaPIS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CentralizaContribuicaoSindical
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Sindicato
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: NumeroContaDepositoFGTS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: TipoContaDepositoFGTS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AgenciaDepositoFGTS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BancoDepositoFGTS
+Obrigatório: NÃOAceita valor nulo: SIM
+

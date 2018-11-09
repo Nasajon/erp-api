@@ -1,0 +1,8 @@
+{
+     "Faixa" : "Guid ou Código"
+	
+}
+
+Campo: Faixa
+Obrigatório: SIMAceita valor nulo: NÃO
+

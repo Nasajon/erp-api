@@ -1,0 +1,103 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Sistema" : 1
+   , "Tipo" : 1
+   , "Situacao" : 1
+   , "LinkId" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "LinkType" : 1
+   , "CriadoPor" : "Guid ou Código"
+   , "ResolvidoPor" : "Guid ou Código"
+   , "DataResolucao" : "2014-12-31"
+   , "Observacao" : "String(300)"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "DataCriacao" : "2014-12-31"
+	
+}
+
+Campo: Id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Sistema
+Descrição: siGeral = 0
+siPersona         = 1
+siContabil        = 2
+siScritta         = 3
+siFinancas        = 4
+siCRM             = 5
+siEstoque         = 6
+siServicos        = 7
+siAdmin           = 8
+siLauncher        = 9
+siContabilizacao  = 10
+siMANAD           = 11
+siDIPJ            = 12
+siDIRF            = 13
+siSyncBrutus      = 14
+siSyncDiretorio   = 15
+siAgente          = 16
+siSolicitacoes    = 17
+siAPI             = 18
+siLojaPDV         = 19
+siECF             = 20
+siFamilyOffice    = 21
+siCompras         = 22
+siServiceDocument = 23
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Manual = 0 
+Desprocessamento de Proposta = 1
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Situacao
+Descrição: Pendente = 0
+Resolvida = 1
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: LinkId
+Descrição: Id da Entidade
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: LinkType
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: CriadoPor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ResolvidoPor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataResolucao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Observacao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataCriacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,8 @@
+{
+     "GrupoDeUsuario" : "Guid ou Código"
+	
+}
+
+Campo: GrupoDeUsuario
+Obrigatório: SIMAceita valor nulo: NÃO
+

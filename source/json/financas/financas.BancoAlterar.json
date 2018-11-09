@@ -1,0 +1,7 @@
+{
+     "Banco" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Nome" : "String(150)"
+   , "Numero" : "String(4)"
+	
+}

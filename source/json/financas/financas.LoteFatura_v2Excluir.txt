@@ -1,0 +1,8 @@
+{
+     "LoteFatura" : "Guid ou Código"
+	
+}
+
+Campo: LoteFatura
+Obrigatório: SIMAceita valor nulo: SIM
+

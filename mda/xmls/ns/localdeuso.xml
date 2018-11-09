@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="LocalDeUso">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />
+			<field nome="centrocusto" controlType="Guid"  />
+			<field nome="projeto" controlType="Guid" />
+			<field nome="grupoempresarial" controlType="Guid" required="True" notnull="True"/>
+            <field nome="agrega_solicitacoes" controlType="Boolean" />
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="id" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />
+			<field nome="centrocusto" controlType="Guid"  />
+			<field nome="projeto" controlType="Guid" />
+			<field nome="grupoempresarial" controlType="Guid"  />
+            <field nome="agrega_solicitacoes" controlType="Boolean"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

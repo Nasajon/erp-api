@@ -1,0 +1,8 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: id
+Obrigatório: SIMAceita valor nulo: NÃO
+

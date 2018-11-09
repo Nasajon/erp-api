@@ -1,0 +1,28 @@
+{
+     "Discriminacao" : "String(200)"
+   , "ClassificacaoFinanceira" : "Guid ou Código"
+   , "CentroCusto" : "Guid ou Código"
+   , "Projeto" : "Guid ou Código"
+   , "Valor" : 20,2
+   , "Percentual" : 20,2
+	
+}
+
+Campo: Discriminacao
+Descrição: Identifica o rateio financeiroObrigatório: SIMAceita valor nulo: SIM
+
+Campo: ClassificacaoFinanceira
+Descrição: Identificador da classificação financeira do rateio financeiroObrigatório: SIMAceita valor nulo: SIM
+
+Campo: CentroCusto
+Descrição: Identificador do centro de custo do rateio financeiroObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Projeto
+Descrição: Identificador do projeto do rateio financeiroObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Valor
+Descrição: Identifica o valor do rateio financeiroObrigatório: SIMAceita valor nulo: SIM
+
+Campo: Percentual
+Descrição: Identifica o percentual do rateio financeiroObrigatório: NÃOAceita valor nulo: NÃO
+

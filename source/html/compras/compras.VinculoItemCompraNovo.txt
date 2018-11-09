@@ -1,0 +1,29 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "itemcompra" : "Guid ou Código"
+   , "produto" : "Guid ou Código"
+   , "grupoempresarial" : "Guid ou Código"
+   , "padrao" : False
+	
+}
+
+Campo: id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: itemcompra
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: produto
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: grupoempresarial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: padrao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

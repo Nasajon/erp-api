@@ -1,0 +1,24 @@
+{
+     "Configuracaoproxy" : "String(100)"
+   , "endereco" : "String(50)"
+   , "prota" : "String(10)"
+   , "usuarioproxy" : "String(60)"
+   , "senhaproxy" : "String(300)"
+	
+}
+
+Campo: Configuracaoproxy
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: endereco
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: prota
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: usuarioproxy
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: senhaproxy
+Obrigatório: NÃOAceita valor nulo: SIM
+

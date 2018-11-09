@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="Servico">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Servico" controlType="Guid" required="False" notnull="True"/>	
+            <field nome="TipoServico" controlType="EntidadeInterna" required="False" notnull="True"/>	
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/> 
+			<field nome="Descricao" controlType="String" tamanho="150" required="True" notnull="True"/> 
+			<field nome="Valor" controlType="Currency" tamanho="20,2" required="True" notnull="True"/> 
+			<field nome="CFOP" controlType="Object" namespace="servicos\cfopservico\TCFOPServico" required="True" notnull="True"/>
+			<field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Servico" controlType="EntidadeInterna" required="False" notnull="True"/>	
+			<field nome="TipoServico" controlType="EntidadeInterna" required="False" notnull="True"/>	
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/> 
+			<field nome="Descricao" controlType="String" tamanho="150" required="True" notnull="True"/> 
+			<field nome="Valor" controlType="Currency" tamanho="20,2" required="True" notnull="True"/> 
+			<field nome="CFOP" controlType="Object" namespace="servicos\cfopservico\TCFOPServico" required="True" notnull="True"/>
+			<field nome="entidadescompartilhadoras_anteriores" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" 
+				   required="True" notnull="True" summary="Define as entidades compartilhadoras atuais as quais o cliente está vinculado. Simplesmente para localização do registro considerando Código, CNPJ ou CPF."/>
+			<field nome="entidadescompartilhadoras_novas" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" 
+				   required="False" notnull="True" summary="Define as entidades compartilhadoras as quais o cliente passará a estar vinculado."/>
+		</model>		
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Servico" controlType="EntidadeInterna" notnull="true"/>
+			<field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>
+
+

@@ -1,0 +1,937 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A7420DC9-733C-429F-80B9-2397F5C6C2C3}</ProjectGuid>
+        <ProjectVersion>18.2</ProjectVersion>
+        <FrameworkType>None</FrameworkType>
+        <MainSource>nsjAPI.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Console</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
+        <Base_OSX32>true</Base_OSX32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Cfg_2)'=='true') or '$(Cfg_2_OSX32)'!=''">
+        <Cfg_2_OSX32>true</Cfg_2_OSX32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_UnitSearchPath>$(nsdcu)\util;$(nsdcu)\libraries;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <SanitizedProjectName>nsjAPI</SanitizedProjectName>
+        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+        <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
+        <DCC_Warnings>false</DCC_Warnings>
+        <Manifest_File>None</Manifest_File>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <DCC_Hints>false</DCC_Hints>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_ExeOutput>$(nsbin)</DCC_ExeOutput>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_DcuOutput>$(nsdcu)\api</DCC_DcuOutput>
+        <DCC_E>false</DCC_E>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_OSX32)'!=''">
+        <DCC_UsePackage>ACBr_BlocoX;ACBr_Boleto;ACBr_BoletoRL;ACBr_Capicom;ACBr_Comum;ACBr_Convenio115;ACBr_CTe;ACBr_CTeDacteRL;ACBR_DeSTDA;ACBr_DFeComum;ACBr_Diversos;ACBr_GNRE;ACBr_GNREGuiaRL;ACBr_LFD;ACBr_MDFe;ACBr_MDFeDamdfeRL;ACBr_MTER;ACBr_NFCeECFVirtual;ACBr_NFe;ACBr_NFeDanfeESCPOS;ACBr_NFeDanfeRL;ACBr_NFSe;ACBr_NFSeDanfseRL;ACBr_OpenSSL;ACBr_PAF;ACBr_PCNComum;ACBr_Ponto;ACBr_SAT;ACBr_SATECFVirtual;ACBr_SATExtratoESCPOS;ACBr_SATExtratoRL;ACBr_SEF2;ACBr_Serial;ACBr_Sintegra;ACBr_SPED;ACBr_SPEDImportar;ACBr_synapse;ACBr_TCP;ACBr_TEFD;ACBr_TXTComum;cxADOAdaptersRS24;cxBDEAdaptersRS24;cxDataRS24;cxEditorsRS24;cxExportRS24;cxFireDACAdaptersRS24;cxGridRS24;cxIBXAdaptersRS24;cxLibraryRS24;cxPageControldxBarPopupMenuRS24;cxPageControlRS24;cxPivotGridChartRS24;cxPivotGridOLAPRS24;cxPivotGridRS24;cxSchedulerGridRS24;cxSchedulerRibbonStyleEventEditorRS24;cxSchedulerRS24;cxSchedulerTreeBrowserRS24;cxTreeListdxBarPopupMenuRS24;cxTreeListRS24;cxVerticalGridRS24;dxADOServerModeRS24;dxBarDBNavRS24;dxBarExtDBItemsRS24;dxBarExtItemsRS24;dxBarRS24;dxComnRS24;dxCoreRS24;dxdborRS24;dxdbtrRS24;dxDBXServerModeRS24;dxDockingRS24;dxFireDACServerModeRS24;dxFlowChartRS24;dxGaugeControlRS24;dxGDIPlusRS24;dxHttpIndyRequestRS24;dxLayoutControlRS24;dxMapControlRS24;dxmdsRS24;dxNavBarRS24;dxOrgChartAdvancedCustomizeFormRS24;dxorgcRS24;dxPSCoreRS24;dxPScxCommonRS24;dxPScxExtCommonRS24;dxPScxGridLnkRS24;dxPScxPCProdRS24;dxPScxPivotGridLnkRS24;dxPScxSchedulerLnkRS24;dxPScxTLLnkRS24;dxPScxVGridLnkRS24;dxPSDBTeeChartRS24;dxPSdxDBOCLnkRS24;dxPSdxDBTVLnkRS24;dxPSdxFCLnkRS24;dxPSdxGaugeControlLnkRS24;dxPSdxLCLnkRS24;dxPSdxOCLnkRS24;dxPSdxSpreadSheetLnkRS24;dxPSLnksRS24;dxPsPrVwAdvRS24;dxPSPrVwRibbonRS24;dxPSRichEditControlLnkRS24;dxPSTeeChartRS24;dxRibbonCustomizationFormRS24;dxRibbonRS24;dxRichEditControlOpenXMLFormatRS24;dxRichEditControlRS24;dxServerModeRS24;dxSkinBlackRS24;dxSkinBlueprintRS24;dxSkinBlueRS24;dxSkinCaramelRS24;dxSkinCoffeeRS24;dxSkinDarkRoomRS24;dxSkinDarkSideRS24;dxSkinDevExpressDarkStyleRS24;dxSkinDevExpressStyleRS24;dxSkinFoggyRS24;dxSkinGlassOceansRS24;dxSkinHighContrastRS24;dxSkiniMaginaryRS24;dxSkinLilianRS24;dxSkinLiquidSkyRS24;dxSkinLondonLiquidSkyRS24;dxSkinMcSkinRS24;dxSkinMetropolisDarkRS24;dxSkinMetropolisRS24;dxSkinMoneyTwinsRS24;dxSkinOffice2007BlackRS24;dxSkinOffice2007BlueRS24;dxSkinOffice2007GreenRS24;dxSkinOffice2007PinkRS24;dxSkinOffice2007SilverRS24;dxSkinOffice2010BlackRS24;dxSkinOffice2010BlueRS24;dxSkinOffice2010SilverRS24;dxSkinOffice2013DarkGrayRS24;dxSkinOffice2013LightGrayRS24;dxSkinOffice2013WhiteRS24;dxSkinOffice2016ColorfulRS24;dxSkinOffice2016DarkRS24;dxSkinPumpkinRS24;dxSkinsCoreRS24;dxSkinscxPCPainterRS24;dxSkinscxSchedulerPainterRS24;dxSkinsdxBarPainterRS24;dxSkinsdxBarSkinnedCustomizationFormRS24;dxSkinsdxDLPainterRS24;dxSkinsdxNavBarPainterRS24;dxSkinsdxRibbonPainterRS24;dxSkinSevenClassicRS24;dxSkinSevenRS24;dxSkinSharpPlusRS24;dxSkinSharpRS24;dxSkinSilverRS24;dxSkinSpringTimeRS24;dxSkinStardustRS24;dxSkinSummer2008RS24;dxSkinTheAsphaltWorldRS24;dxSkinValentineRS24;dxSkinVisualStudio2013BlueRS24;dxSkinVisualStudio2013DarkRS24;dxSkinVisualStudio2013LightRS24;dxSkinVS2010RS24;dxSkinWhiteprintRS24;dxSkinXmas2008BlueRS24;dxSpellCheckerRS24;dxSpreadSheetConditionalFormattingDialogsRS24;dxSpreadSheetRS24;dxTabbedMDIRS24;dxThemeRS24;dxTileControlRS24;dxtrmdRS24;dxWizardControlRS24;NasajonSkinDestaqueRS24;NasajonSkinRS24;nsXEUtil;dclcxEditorFieldLinkRS24;dclcxEditorsRS24;dclcxGridRS24;dclcxGridWizardRS24;dclcxLibraryRS24;dclcxPageControldxBarPopupMenuRS24;dclcxPageControlRS24;dclcxPivotGridChartRS24;dclcxPivotGridOLAPRS24;dclcxPivotGridRS24;dclcxSchedulerGridRS24;dclcxSchedulerRibbonStyleEventEditorRS24;dclcxSchedulerRS24;dclcxSchedulerTreeBrowserRS24;dclcxTreeListdxBarPopupMenuRS24;dclcxTreeListRS24;dclcxVerticalGridRS24;dcldxADOServerModeRS24;dcldxBarDBNavRS24;dcldxBarExtDBItemsRS24;dcldxBarExtItemsRS24;dcldxBarRS24;dcldxCoreRS24;dcldxdborRS24;dcldxdbtrRS24;dcldxDBXServerModeRS24;dcldxDockingRS24;dcldxFireDACServerModeRS24;dcldxFlowChartRS24;dcldxGaugeControlRS24;dcldxHttpIndyRequestRS24;dcldxIconLibraryRS24;dcldxLayoutControlRS24;dcldxMapControlRS24;dcldxmdsRS24;dcldxNavBarRS24;dcldxorgcRS24;dcldxPSCoreRS24;dcldxPScxCommonRS24;dcldxPScxExtCommonRS24;dcldxPScxGridLnkRS24;dcldxPScxPivotGridLnkRS24;dcldxPScxSchedulerLnkRS24;dcldxPScxTLLnkRS24;dcldxPScxVGridLnkRS24;dcldxPSDBTeeChartRS24;dcldxPSdxDBOCLnkRS24;dcldxPSdxDBTVLnkRS24;dcldxPSdxFCLnkRS24;dcldxPSdxGaugeControlLnkRS24;dcldxPSdxLCLnkRS24;dcldxPSdxOCLnkRS24;dcldxPSdxSpreadSheetLnkRS24;dcldxPSLnksRS24;dcldxPsPrVwAdvRS24;dcldxPSPrVwRibbonRS24;dcldxPSRichEditControlLnkRS24;dcldxPSTeeChartRS24;dcldxRibbonCustomizationFormRS24;dcldxRibbonRS24;dcldxRichEditControlRS24;dcldxServerModeRS24;dcldxSkinsCoreRS24;dcldxSkinscxEditorsHelperRS24;dcldxSkinscxPCPainterRS24;dcldxSkinscxSchedulerPainterRS24;dcldxSkinsDesignHelperRS24;dcldxSkinsdxBarsPaintersRS24;dcldxSkinsdxNavBarPainterRS24;dcldxSkinsdxRibbonPaintersRS24;dcldxSpellCheckerRS24;dcldxSpreadSheetRS24;dcldxTabbedMDIRS24;dcldxTileControlRS24;dcldxtrmdRS24;dcldxWizardControlRS24;dclFMXfs24;dclFMXfsADO24;dclFMXfsDB24;dclFMXfsIBX24;dclFMXfsTee24;dclfrx24;dclfrxADO24;dclfrxBDE24;dclfrxDB24;dclfrxDBX24;dclfrxe24;dclfrxFD24;dclfrxIBX24;dclfrxTee24;dclfs24;dclfsADO24;dclfsBDE24;dclfsDB24;dclfsIBX24;dclfsTee24;FMXfs24;FMXfsADO24;FMXfsDB24;FMXfsIBX24;FMXfsTee24;fqb240;frce;frx24;frxADO24;frxBDE24;frxDB24;frxDBX24;frxe24;frxFD24;frxIBX24;frxTee24;fs24;fsADO24;fsBDE24;fsDB24;fsIBX24;fsTee24;Jcl;JclBaseExpert;JclContainers;JclDebugExpert;JclDeveloperTools;JclFavoriteFoldersExpert;JclProjectAnalysisExpert;JclRepositoryExpert;JclSIMDViewExpert;JclStackTraceViewerExpert;JclVcl;JvAppFrm;JvAppFrmDesign;JvBands;JvBandsDesign;JvCmp;JvCmpDesign;JvControls;JvControlsDesign;JvCore;JvCoreDesign;JvCrypt;JvCryptDesign;JvCustom;JvCustomDesign;JvDB;JvDBDesign;JvDlgs;JvDlgsDesign;JvDocking;JvDockingDesign;JvDotNetCtrls;JvDotNetCtrlsDesign;JvGlobus;JvGlobusDesign;JvHMI;JvHMIDesign;JvJans;JvJansDesign;JvManagedThreads;JvManagedThreadsDesign;JvMM;JvMMDesign;JvNet;JvNetDesign;JvPageComps;JvPageCompsDesign;JvPascalInterpreter;JvPascalInterpreterDesign;JvPluginSystem;JvPluginSystemDesign;JvPrintPreview;JvPrintPreviewDesign;JvRuntimeDesign;JvRuntimeDesignDesign;JvStdCtrls;JvStdCtrlsDesign;JvSystem;JvSystemDesign;JvTimeFramework;JvTimeFrameworkDesign;JvWizards;JvWizardsDesign;JvXPCtrls;JvXPCtrlsDesign;$(DCC_UsePackage)</DCC_UsePackage>
+        <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_UsePackage>ACBr_BlocoX;ACBr_Boleto;ACBr_BoletoRL;ACBr_Capicom;ACBr_Comum;ACBr_Convenio115;ACBr_CTe;ACBr_CTeDacteRL;ACBR_DeSTDA;ACBr_DFeComum;ACBr_Diversos;ACBr_GNRE;ACBr_GNREGuiaRL;ACBr_LFD;ACBr_MDFe;ACBr_MDFeDamdfeRL;ACBr_MTER;ACBr_NFCeECFVirtual;ACBr_NFe;ACBr_NFeDanfeESCPOS;ACBr_NFeDanfeRL;ACBr_NFSe;ACBr_NFSeDanfseRL;ACBr_OpenSSL;ACBr_PAF;ACBr_PCNComum;ACBr_Ponto;ACBr_SAT;ACBr_SATECFVirtual;ACBr_SATExtratoESCPOS;ACBr_SATExtratoRL;ACBr_SEF2;ACBr_Serial;ACBr_Sintegra;ACBr_SPED;ACBr_SPEDImportar;ACBr_synapse;ACBr_TCP;ACBr_TEFD;ACBr_TXTComum;cxADOAdaptersRS24;cxBDEAdaptersRS24;cxDataRS24;cxEditorsRS24;cxExportRS24;cxFireDACAdaptersRS24;cxGridRS24;cxIBXAdaptersRS24;cxLibraryRS24;cxPageControldxBarPopupMenuRS24;cxPageControlRS24;cxPivotGridChartRS24;cxPivotGridOLAPRS24;cxPivotGridRS24;cxSchedulerGridRS24;cxSchedulerRibbonStyleEventEditorRS24;cxSchedulerRS24;cxSchedulerTreeBrowserRS24;cxTreeListdxBarPopupMenuRS24;cxTreeListRS24;cxVerticalGridRS24;dxADOServerModeRS24;dxBarDBNavRS24;dxBarExtDBItemsRS24;dxBarExtItemsRS24;dxBarRS24;dxComnRS24;dxCoreRS24;dxdborRS24;dxdbtrRS24;dxDBXServerModeRS24;dxDockingRS24;dxFireDACServerModeRS24;dxFlowChartRS24;dxGaugeControlRS24;dxGDIPlusRS24;dxHttpIndyRequestRS24;dxLayoutControlRS24;dxMapControlRS24;dxmdsRS24;dxNavBarRS24;dxOrgChartAdvancedCustomizeFormRS24;dxorgcRS24;dxPSCoreRS24;dxPScxCommonRS24;dxPScxExtCommonRS24;dxPScxGridLnkRS24;dxPScxPCProdRS24;dxPScxPivotGridLnkRS24;dxPScxSchedulerLnkRS24;dxPScxTLLnkRS24;dxPScxVGridLnkRS24;dxPSDBTeeChartRS24;dxPSdxDBOCLnkRS24;dxPSdxDBTVLnkRS24;dxPSdxFCLnkRS24;dxPSdxGaugeControlLnkRS24;dxPSdxLCLnkRS24;dxPSdxOCLnkRS24;dxPSdxSpreadSheetLnkRS24;dxPSLnksRS24;dxPsPrVwAdvRS24;dxPSPrVwRibbonRS24;dxPSRichEditControlLnkRS24;dxPSTeeChartRS24;dxRibbonCustomizationFormRS24;dxRibbonRS24;dxRichEditControlOpenXMLFormatRS24;dxRichEditControlRS24;dxServerModeRS24;dxSkinBlackRS24;dxSkinBlueprintRS24;dxSkinBlueRS24;dxSkinCaramelRS24;dxSkinCoffeeRS24;dxSkinDarkRoomRS24;dxSkinDarkSideRS24;dxSkinDevExpressDarkStyleRS24;dxSkinDevExpressStyleRS24;dxSkinFoggyRS24;dxSkinGlassOceansRS24;dxSkinHighContrastRS24;dxSkiniMaginaryRS24;dxSkinLilianRS24;dxSkinLiquidSkyRS24;dxSkinLondonLiquidSkyRS24;dxSkinMcSkinRS24;dxSkinMetropolisDarkRS24;dxSkinMetropolisRS24;dxSkinMoneyTwinsRS24;dxSkinOffice2007BlackRS24;dxSkinOffice2007BlueRS24;dxSkinOffice2007GreenRS24;dxSkinOffice2007PinkRS24;dxSkinOffice2007SilverRS24;dxSkinOffice2010BlackRS24;dxSkinOffice2010BlueRS24;dxSkinOffice2010SilverRS24;dxSkinOffice2013DarkGrayRS24;dxSkinOffice2013LightGrayRS24;dxSkinOffice2013WhiteRS24;dxSkinOffice2016ColorfulRS24;dxSkinOffice2016DarkRS24;dxSkinPumpkinRS24;dxSkinsCoreRS24;dxSkinscxPCPainterRS24;dxSkinscxSchedulerPainterRS24;dxSkinsdxBarPainterRS24;dxSkinsdxBarSkinnedCustomizationFormRS24;dxSkinsdxDLPainterRS24;dxSkinsdxNavBarPainterRS24;dxSkinsdxRibbonPainterRS24;dxSkinSevenClassicRS24;dxSkinSevenRS24;dxSkinSharpPlusRS24;dxSkinSharpRS24;dxSkinSilverRS24;dxSkinSpringTimeRS24;dxSkinStardustRS24;dxSkinSummer2008RS24;dxSkinTheAsphaltWorldRS24;dxSkinValentineRS24;dxSkinVisualStudio2013BlueRS24;dxSkinVisualStudio2013DarkRS24;dxSkinVisualStudio2013LightRS24;dxSkinVS2010RS24;dxSkinWhiteprintRS24;dxSkinXmas2008BlueRS24;dxSpellCheckerRS24;dxSpreadSheetConditionalFormattingDialogsRS24;dxSpreadSheetRS24;dxTabbedMDIRS24;dxThemeRS24;dxTileControlRS24;dxtrmdRS24;dxWizardControlRS24;NasajonSkinDestaqueRS24;NasajonSkinRS24;nsXEUtil;dclcxEditorFieldLinkRS24;dclcxEditorsRS24;dclcxGridRS24;dclcxGridWizardRS24;dclcxLibraryRS24;dclcxPageControldxBarPopupMenuRS24;dclcxPageControlRS24;dclcxPivotGridChartRS24;dclcxPivotGridOLAPRS24;dclcxPivotGridRS24;dclcxSchedulerGridRS24;dclcxSchedulerRibbonStyleEventEditorRS24;dclcxSchedulerRS24;dclcxSchedulerTreeBrowserRS24;dclcxTreeListdxBarPopupMenuRS24;dclcxTreeListRS24;dclcxVerticalGridRS24;dcldxADOServerModeRS24;dcldxBarDBNavRS24;dcldxBarExtDBItemsRS24;dcldxBarExtItemsRS24;dcldxBarRS24;dcldxCoreRS24;dcldxdborRS24;dcldxdbtrRS24;dcldxDBXServerModeRS24;dcldxDockingRS24;dcldxFireDACServerModeRS24;dcldxFlowChartRS24;dcldxGaugeControlRS24;dcldxHttpIndyRequestRS24;dcldxIconLibraryRS24;dcldxLayoutControlRS24;dcldxMapControlRS24;dcldxmdsRS24;dcldxNavBarRS24;dcldxorgcRS24;dcldxPSCoreRS24;dcldxPScxCommonRS24;dcldxPScxExtCommonRS24;dcldxPScxGridLnkRS24;dcldxPScxPivotGridLnkRS24;dcldxPScxSchedulerLnkRS24;dcldxPScxTLLnkRS24;dcldxPScxVGridLnkRS24;dcldxPSDBTeeChartRS24;dcldxPSdxDBOCLnkRS24;dcldxPSdxDBTVLnkRS24;dcldxPSdxFCLnkRS24;dcldxPSdxGaugeControlLnkRS24;dcldxPSdxLCLnkRS24;dcldxPSdxOCLnkRS24;dcldxPSdxSpreadSheetLnkRS24;dcldxPSLnksRS24;dcldxPsPrVwAdvRS24;dcldxPSPrVwRibbonRS24;dcldxPSRichEditControlLnkRS24;dcldxPSTeeChartRS24;dcldxRibbonCustomizationFormRS24;dcldxRibbonRS24;dcldxRichEditControlRS24;dcldxServerModeRS24;dcldxSkinsCoreRS24;dcldxSkinscxEditorsHelperRS24;dcldxSkinscxPCPainterRS24;dcldxSkinscxSchedulerPainterRS24;dcldxSkinsDesignHelperRS24;dcldxSkinsdxBarsPaintersRS24;dcldxSkinsdxNavBarPainterRS24;dcldxSkinsdxRibbonPaintersRS24;dcldxSpellCheckerRS24;dcldxSpreadSheetRS24;dcldxTabbedMDIRS24;dcldxTileControlRS24;dcldxtrmdRS24;dcldxWizardControlRS24;dclFMXfs24;dclFMXfsADO24;dclFMXfsDB24;dclFMXfsIBX24;dclFMXfsTee24;dclfrx24;dclfrxADO24;dclfrxBDE24;dclfrxDB24;dclfrxDBX24;dclfrxe24;dclfrxFD24;dclfrxIBX24;dclfrxTee24;dclfs24;dclfsADO24;dclfsBDE24;dclfsDB24;dclfsIBX24;dclfsTee24;FMXfs24;FMXfsADO24;FMXfsDB24;FMXfsIBX24;FMXfsTee24;fqb240;frce;frx24;frxADO24;frxBDE24;frxDB24;frxDBX24;frxe24;frxFD24;frxIBX24;frxTee24;fs24;fsADO24;fsBDE24;fsDB24;fsIBX24;fsTee24;Jcl;JclBaseExpert;JclContainers;JclDebugExpert;JclDeveloperTools;JclFavoriteFoldersExpert;JclProjectAnalysisExpert;JclRepositoryExpert;JclSIMDViewExpert;JclStackTraceViewerExpert;JclVcl;JvAppFrm;JvAppFrmDesign;JvBands;JvBandsDesign;JvCmp;JvCmpDesign;JvControls;JvControlsDesign;JvCore;JvCoreDesign;JvCrypt;JvCryptDesign;JvCustom;JvCustomDesign;JvDB;JvDBDesign;JvDlgs;JvDlgsDesign;JvDocking;JvDockingDesign;JvDotNetCtrls;JvDotNetCtrlsDesign;JvGlobus;JvGlobusDesign;JvHMI;JvHMIDesign;JvJans;JvJansDesign;JvManagedThreads;JvManagedThreadsDesign;JvMM;JvMMDesign;JvNet;JvNetDesign;JvPageComps;JvPageCompsDesign;JvPascalInterpreter;JvPascalInterpreterDesign;JvPluginSystem;JvPluginSystemDesign;JvPrintPreview;JvPrintPreviewDesign;JvRuntimeDesign;JvRuntimeDesignDesign;JvStdCtrls;JvStdCtrlsDesign;JvSystem;JvSystemDesign;JvTimeFramework;JvTimeFrameworkDesign;JvWizards;JvWizardsDesign;JvXPCtrls;JvXPCtrlsDesign;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_UsePackage>ACBr_BlocoX;ACBr_Boleto;ACBr_BoletoRL;ACBr_Capicom;ACBr_Comum;ACBr_Convenio115;ACBr_CTe;ACBr_CTeDacteRL;ACBR_DeSTDA;ACBr_DFeComum;ACBr_Diversos;ACBr_GNRE;ACBr_GNREGuiaRL;ACBr_LFD;ACBr_MDFe;ACBr_MDFeDamdfeRL;ACBr_MTER;ACBr_NFCeECFVirtual;ACBr_NFe;ACBr_NFeDanfeESCPOS;ACBr_NFeDanfeRL;ACBr_NFSe;ACBr_NFSeDanfseRL;ACBr_OpenSSL;ACBr_PAF;ACBr_PCNComum;ACBr_Ponto;ACBr_SAT;ACBr_SATECFVirtual;ACBr_SATExtratoESCPOS;ACBr_SATExtratoRL;ACBr_SEF2;ACBr_Serial;ACBr_Sintegra;ACBr_SPED;ACBr_SPEDImportar;ACBr_synapse;ACBr_TCP;ACBr_TEFD;ACBr_TXTComum;cxADOAdaptersRS24;cxBDEAdaptersRS24;cxDataRS24;cxEditorsRS24;cxExportRS24;cxFireDACAdaptersRS24;cxGridRS24;cxIBXAdaptersRS24;cxLibraryRS24;cxPageControldxBarPopupMenuRS24;cxPageControlRS24;cxPivotGridChartRS24;cxPivotGridOLAPRS24;cxPivotGridRS24;cxSchedulerGridRS24;cxSchedulerRibbonStyleEventEditorRS24;cxSchedulerRS24;cxSchedulerTreeBrowserRS24;cxTreeListdxBarPopupMenuRS24;cxTreeListRS24;cxVerticalGridRS24;dxADOServerModeRS24;dxBarDBNavRS24;dxBarExtDBItemsRS24;dxBarExtItemsRS24;dxBarRS24;dxComnRS24;dxCoreRS24;dxdborRS24;dxdbtrRS24;dxDBXServerModeRS24;dxDockingRS24;dxFireDACServerModeRS24;dxFlowChartRS24;dxGaugeControlRS24;dxGDIPlusRS24;dxHttpIndyRequestRS24;dxLayoutControlRS24;dxMapControlRS24;dxmdsRS24;dxNavBarRS24;dxOrgChartAdvancedCustomizeFormRS24;dxorgcRS24;dxPSCoreRS24;dxPScxCommonRS24;dxPScxExtCommonRS24;dxPScxGridLnkRS24;dxPScxPCProdRS24;dxPScxPivotGridLnkRS24;dxPScxSchedulerLnkRS24;dxPScxTLLnkRS24;dxPScxVGridLnkRS24;dxPSDBTeeChartRS24;dxPSdxDBOCLnkRS24;dxPSdxDBTVLnkRS24;dxPSdxFCLnkRS24;dxPSdxGaugeControlLnkRS24;dxPSdxLCLnkRS24;dxPSdxOCLnkRS24;dxPSdxSpreadSheetLnkRS24;dxPSLnksRS24;dxPsPrVwAdvRS24;dxPSPrVwRibbonRS24;dxPSRichEditControlLnkRS24;dxPSTeeChartRS24;dxRibbonCustomizationFormRS24;dxRibbonRS24;dxRichEditControlOpenXMLFormatRS24;dxRichEditControlRS24;dxServerModeRS24;dxSkinBlackRS24;dxSkinBlueprintRS24;dxSkinBlueRS24;dxSkinCaramelRS24;dxSkinCoffeeRS24;dxSkinDarkRoomRS24;dxSkinDarkSideRS24;dxSkinDevExpressDarkStyleRS24;dxSkinDevExpressStyleRS24;dxSkinFoggyRS24;dxSkinGlassOceansRS24;dxSkinHighContrastRS24;dxSkiniMaginaryRS24;dxSkinLilianRS24;dxSkinLiquidSkyRS24;dxSkinLondonLiquidSkyRS24;dxSkinMcSkinRS24;dxSkinMetropolisDarkRS24;dxSkinMetropolisRS24;dxSkinMoneyTwinsRS24;dxSkinOffice2007BlackRS24;dxSkinOffice2007BlueRS24;dxSkinOffice2007GreenRS24;dxSkinOffice2007PinkRS24;dxSkinOffice2007SilverRS24;dxSkinOffice2010BlackRS24;dxSkinOffice2010BlueRS24;dxSkinOffice2010SilverRS24;dxSkinOffice2013DarkGrayRS24;dxSkinOffice2013LightGrayRS24;dxSkinOffice2013WhiteRS24;dxSkinOffice2016ColorfulRS24;dxSkinOffice2016DarkRS24;dxSkinPumpkinRS24;dxSkinsCoreRS24;dxSkinscxPCPainterRS24;dxSkinscxSchedulerPainterRS24;dxSkinsdxBarPainterRS24;dxSkinsdxBarSkinnedCustomizationFormRS24;dxSkinsdxDLPainterRS24;dxSkinsdxNavBarPainterRS24;dxSkinsdxRibbonPainterRS24;dxSkinSevenClassicRS24;dxSkinSevenRS24;dxSkinSharpPlusRS24;dxSkinSharpRS24;dxSkinSilverRS24;dxSkinSpringTimeRS24;dxSkinStardustRS24;dxSkinSummer2008RS24;dxSkinTheAsphaltWorldRS24;dxSkinValentineRS24;dxSkinVisualStudio2013BlueRS24;dxSkinVisualStudio2013DarkRS24;dxSkinVisualStudio2013LightRS24;dxSkinVS2010RS24;dxSkinWhiteprintRS24;dxSkinXmas2008BlueRS24;dxSpellCheckerRS24;dxSpreadSheetConditionalFormattingDialogsRS24;dxSpreadSheetRS24;dxTabbedMDIRS24;dxThemeRS24;dxTileControlRS24;dxtrmdRS24;dxWizardControlRS24;NasajonSkinDestaqueRS24;NasajonSkinRS24;nsXEUtil;dclcxEditorFieldLinkRS24;dclcxEditorsRS24;dclcxGridRS24;dclcxGridWizardRS24;dclcxLibraryRS24;dclcxPageControldxBarPopupMenuRS24;dclcxPageControlRS24;dclcxPivotGridChartRS24;dclcxPivotGridOLAPRS24;dclcxPivotGridRS24;dclcxSchedulerGridRS24;dclcxSchedulerRibbonStyleEventEditorRS24;dclcxSchedulerRS24;dclcxSchedulerTreeBrowserRS24;dclcxTreeListdxBarPopupMenuRS24;dclcxTreeListRS24;dclcxVerticalGridRS24;dcldxADOServerModeRS24;dcldxBarDBNavRS24;dcldxBarExtDBItemsRS24;dcldxBarExtItemsRS24;dcldxBarRS24;dcldxCoreRS24;dcldxdborRS24;dcldxdbtrRS24;dcldxDBXServerModeRS24;dcldxDockingRS24;dcldxFireDACServerModeRS24;dcldxFlowChartRS24;dcldxGaugeControlRS24;dcldxHttpIndyRequestRS24;dcldxIconLibraryRS24;dcldxLayoutControlRS24;dcldxMapControlRS24;dcldxmdsRS24;dcldxNavBarRS24;dcldxorgcRS24;dcldxPSCoreRS24;dcldxPScxCommonRS24;dcldxPScxExtCommonRS24;dcldxPScxGridLnkRS24;dcldxPScxPivotGridLnkRS24;dcldxPScxSchedulerLnkRS24;dcldxPScxTLLnkRS24;dcldxPScxVGridLnkRS24;dcldxPSDBTeeChartRS24;dcldxPSdxDBOCLnkRS24;dcldxPSdxDBTVLnkRS24;dcldxPSdxFCLnkRS24;dcldxPSdxGaugeControlLnkRS24;dcldxPSdxLCLnkRS24;dcldxPSdxOCLnkRS24;dcldxPSdxSpreadSheetLnkRS24;dcldxPSLnksRS24;dcldxPsPrVwAdvRS24;dcldxPSPrVwRibbonRS24;dcldxPSRichEditControlLnkRS24;dcldxPSTeeChartRS24;dcldxRibbonCustomizationFormRS24;dcldxRibbonRS24;dcldxRichEditControlRS24;dcldxServerModeRS24;dcldxSkinsCoreRS24;dcldxSkinscxEditorsHelperRS24;dcldxSkinscxPCPainterRS24;dcldxSkinscxSchedulerPainterRS24;dcldxSkinsDesignHelperRS24;dcldxSkinsdxBarsPaintersRS24;dcldxSkinsdxNavBarPainterRS24;dcldxSkinsdxRibbonPaintersRS24;dcldxSpellCheckerRS24;dcldxSpreadSheetRS24;dcldxTabbedMDIRS24;dcldxTileControlRS24;dcldxtrmdRS24;dcldxWizardControlRS24;dclFMXfs24;dclFMXfsADO24;dclFMXfsDB24;dclFMXfsIBX24;dclFMXfsTee24;dclfrx24;dclfrxADO24;dclfrxBDE24;dclfrxDB24;dclfrxDBX24;dclfrxe24;dclfrxFD24;dclfrxIBX24;dclfrxTee24;dclfs24;dclfsADO24;dclfsBDE24;dclfsDB24;dclfsIBX24;dclfsTee24;FMXfs24;FMXfsADO24;FMXfsDB24;FMXfsIBX24;FMXfsTee24;fqb240;frce;frx24;frxADO24;frxBDE24;frxDB24;frxDBX24;frxe24;frxFD24;frxIBX24;frxTee24;fs24;fsADO24;fsBDE24;fsDB24;fsIBX24;fsTee24;Jcl;JclBaseExpert;JclContainers;JclDebugExpert;JclDeveloperTools;JclFavoriteFoldersExpert;JclProjectAnalysisExpert;JclRepositoryExpert;JclSIMDViewExpert;JclStackTraceViewerExpert;JclVcl;JvAppFrm;JvAppFrmDesign;JvBands;JvBandsDesign;JvCmp;JvCmpDesign;JvControls;JvControlsDesign;JvCore;JvCoreDesign;JvCrypt;JvCryptDesign;JvCustom;JvCustomDesign;JvDB;JvDBDesign;JvDlgs;JvDlgsDesign;JvDocking;JvDockingDesign;JvDotNetCtrls;JvDotNetCtrlsDesign;JvGlobus;JvGlobusDesign;JvHMI;JvHMIDesign;JvJans;JvJansDesign;JvManagedThreads;JvManagedThreadsDesign;JvMM;JvMMDesign;JvNet;JvNetDesign;JvPageComps;JvPageCompsDesign;JvPascalInterpreter;JvPascalInterpreterDesign;JvPluginSystem;JvPluginSystemDesign;JvPrintPreview;JvPrintPreviewDesign;JvRuntimeDesign;JvRuntimeDesignDesign;JvStdCtrls;JvStdCtrlsDesign;JvSystem;JvSystemDesign;JvTimeFramework;JvTimeFrameworkDesign;JvWizards;JvWizardsDesign;JvXPCtrls;JvXPCtrlsDesign;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <DCC_Inlining>off</DCC_Inlining>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_OSX32)'!=''">
+        <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="..\src\api.dao.pas"/>
+        <DCCReference Include="..\src\api.token.pas"/>
+        <DCCReference Include="..\src\api.utils.pas"/>
+        <DCCReference Include="..\src\command\api.command.pas"/>
+        <DCCReference Include="..\src\command\api.command.client.pas"/>
+        <DCCReference Include="..\src\api.send.pas">
+            <Form>$R *.res</Form>
+        </DCCReference>
+        <DCCReference Include="..\src\controller\api.controller.contabil.contaanual.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.contabil.lancamento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.contabil.lote.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.contabil.lotelancamento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.contabil.lotelancamento_v2.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.estoque.categoriadeprodutos.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.estoque.localdeestoque.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.estoque.operacao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.estoque.produtoendereco.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.estoque.unidade.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.agencia.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.baixatitulorenegociado.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.baixatitulounitaria.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.banco.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.classificacaofinanceira.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.conta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.conta_v2.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.fatura.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.fatura_v2.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.formapagamentofatura.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.formapagamentorenegociacaotitulos.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.itemfatura.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.itemfatura_v2.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.itemprestacaodeconta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.lancamentoconta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.layoutimpressoracheque.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.lotefatura_v2.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.lotesfatura.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.mensagemlotefatura.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.parcelaformapagamentofatura.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.parcelaformapagamentorenegociacaotitulos.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.prestacaodeconta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.previsaofinanceirapagar.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.previsaofinanceirareceber.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.renegociacaotitulos.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.tipoconta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.titulopagar.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.tituloreceber.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.acessoestabelecimento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.cliente.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.cnae.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.configuracaocategoriaporclassfinan.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.configuracaoordempagamento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.configuracaoproxy.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.configuracaotrabalhadorporcentrocusto.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.configuracaotrabalhadorporprojeto.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.configuracoestrabalhadoresporcentroscustos.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.conjunto.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.contaanual.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.contato.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.docfis.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.empresa.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.endereco.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.estabelecimento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.fornecedor.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.grupodeusuario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.grupoempresarial.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.municipio.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.pais.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.perfilusuario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.pessoa.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.socios.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.sociosparticipacoes.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.solicitacao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.solicitacaoalteracaoendereco.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.telefone.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.usuario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.vendedor.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.acordoprorrogacaohora.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.afastamentofuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.avisoferiasfuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.cargo.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.concessionariavaletransporte.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.contribuinteindividual.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.departamento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.dependentefuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.documentodependentefuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.documentofuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.escalafolgafuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.estagiario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.faixa.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.faltafuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.fpas.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.funcionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.historicofuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.horario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.instituicao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.intervalojornada.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.itemfaixa.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.jornada.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.lotacao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.movimentodepartamento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.movimentoempresa.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.movimentoestabelecimento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.movimentofuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.movimentolotacao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.movimentosindicato.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.naturezajuridica.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.nivelcargo.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.processo.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.profissionalsaude.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.promocaofuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.reajustesalarialfuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.reajustesindicato.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.rubrica.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.sindicato.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.solicitacoes.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.tarifaconcessionariavaletransporte.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.tarifavaletransportefuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.tipodocumentocolaborador.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.tipofuncionario.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.scritta.documentofiscal.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.scritta.itemlancamentofiscal.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.scritta.lancamentofiscal.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.cfopservico.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.configuracaorps.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.contratolocacaoimovelpagar.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.contratolocacaoimovelreceber.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.contratoservicopadraopagar.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.contratoservicopadraoreceber.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.itemcontratopagar.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.itemcontratoreceber.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.itemrps.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.projeto.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.projetohistorico.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.rps.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.rps_v2.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.serierps.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.servico.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.tipoprojeto.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.tiposervico.pas"/>
+        <DCCReference Include="..\src\model\api.model.contabil.contaanual.pas"/>
+        <DCCReference Include="..\src\model\api.model.contabil.lancamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.contabil.lote.pas"/>
+        <DCCReference Include="..\src\model\api.model.contabil.lotelancamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.contabil.lotelancamento_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.estoque.categoriadeprodutos.pas"/>
+        <DCCReference Include="..\src\model\api.model.estoque.localdeestoque.pas"/>
+        <DCCReference Include="..\src\model\api.model.estoque.operacao.pas"/>
+        <DCCReference Include="..\src\model\api.model.estoque.produtoendereco.pas"/>
+        <DCCReference Include="..\src\model\api.model.estoque.unidade.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.adiantamentosaldo.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.agencia.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.baixatitulorenegociado.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.baixatitulounitaria.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.banco.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.classificacaofinanceira.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.conta.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.conta_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.fatura.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.fatura_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.formapagamentofatura.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.formapagamentofatura_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.formapagamentorenegociacaotitulos.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.informacaocartao.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.itemfatura.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.itemfatura_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.itemprestacaodeconta.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.itemrateiofinanceiro.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.lancamentoconta.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.layoutcobranca.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.layoutimpressoracheque.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.lotefatura_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.lotesfatura.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.mensagemlotefatura.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.mensagemlotefatura_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.parcelaformapagamentofatura.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.parcelaformapagamentorenegociacaotitulos.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.prestacaodeconta.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.previsaofinanceirapagar.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.previsaofinanceirareceber.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.rateiopadrao.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.renegociacaotitulos.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.tipoconta.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.titulo.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.titulopagar.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.tituloreceber.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.titulorenegociado.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.vendedortitulo.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.acessoestabelecimento.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.cliente.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.cnae.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.configuracaocategoriaporclassfinan.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.configuracaoordempagamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.configuracaoproxy.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.configuracaotrabalhadorporcentrocusto.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.configuracaotrabalhadorporprojeto.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.configuracoestrabalhadoresporcentroscustos.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.conjunto.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.contaanual.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.contato.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.docfis.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.empresa.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.endereco.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.entidadecompartilhadora.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.estabelecimento.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.fornecedor.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.grupodeusuario.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.grupoempresarial.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.municipio.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.pagamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.pagamentosemparcela.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.pais.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.parcela.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.perfilusuario.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.pessoa.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.socios.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.sociosparticipacoes.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.solicitacao.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.solicitacaoalteracaoendereco.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.solicitacaohistorico.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.telefone.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.usuario.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.vendedor.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.acordoprorrogacaohora.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.afastamentofuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.avisoferiasfuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.cargo.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.concessionariavaletransporte.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.contribuinteindividual.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.departamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.dependentefuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.documentodependentefuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.documentofuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.escalafolgafuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.estagiario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.faixa.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.faltafuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.fpas.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.funcionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.historicofuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.horario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.instituicao.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.intervalojornada.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.itemfaixa.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.jornada.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.lotacao.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.movimentodepartamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.movimentoempresa.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.movimentoestabelecimento.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.movimentofuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.movimentolotacao.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.movimentosindicato.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.naturezajuridica.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.nivelcargo.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.processo.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.profissionalsaude.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.promocaofuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.reajustesalarialfuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.reajustesindicato.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.rubrica.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.sindicato.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.solicitacoes.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.tarifaconcessionariavaletransporte.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.tarifavaletransportefuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.tipodocumentocolaborador.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.tipofuncionario.pas"/>
+        <DCCReference Include="..\src\model\api.model.scritta.documentofiscal.pas"/>
+        <DCCReference Include="..\src\model\api.model.scritta.itemlancamentofiscal.pas"/>
+        <DCCReference Include="..\src\model\api.model.scritta.lancamentofiscal.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.cfopservico.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.configuracaorps.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.contrato.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.contratolocacaoimovelpagar.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.contratolocacaoimovelreceber.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.contratoservicopadraopagar.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.contratoservicopadraoreceber.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.emissaonfse.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.itemcontrato.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.itemcontratopagar.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.itemcontratoreceber.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.itemrps.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.projeto.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.projetohistorico.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.rps.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.rps_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.serierps.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.servico.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.tipoprojeto.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.tiposervico.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.valorvariavelitemcontrato.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.vendedorrps.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.persona.funcao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.funcaodetalhe.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.funcao.pas"/>
+        <DCCReference Include="..\src\model\api.model.persona.funcao.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.funcaodetalhe.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.funcao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.projetofuncaodetalhe.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.projetofuncao.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.projetofuncaodetalhe.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.projetofuncao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.contabil.lotecontaanual.pas"/>
+        <DCCReference Include="..\src\model\api.model.contabil.lotecontaanual.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.listarateiosfinanceiros.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.listarateiosfinanceiros.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.localdeuso.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.localdeuso.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.compras.itemcompra.pas"/>
+        <DCCReference Include="..\src\model\api.model.compras.itemcompra.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.impostos_itemrps.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.impostos_rps.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.impostos_tributo.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.pendenciaadministrativa.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.pendenciaadministrativa.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.objetoservico.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.objetoservico.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.categoriadeservicos.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.categoriadeservicos.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.catalogodeoferta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.catalogodeoferta.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.servicocatalogo.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.servicocatalogo.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.oferta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.oferta.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.ofertaitemfaturamento.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.ofertaitemfaturamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.ativohistoricooferta.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.ativohistoricooferta.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.ativohistoricoofertacomponente.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.ativohistoricoofertacomponente.pas"/>
+        <DCCReference Include="..\src\model\api.model.compras.vinculoitemcompra.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.compras.vinculoitemcompra.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.documentoajusterateio.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.documentoajusterateio.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.rps_v3.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.itemrps_v3.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.gerador_rps.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.gerador_rps_cliente.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.gerador_rps_item_faturamento.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.documentofiscalns.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.documentofiscalns.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.servicos.unidadesdecustos.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.unidadesdecustos.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.gerador_rps_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.servicos.gerador_rps_cliente_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.elementodecontrole.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.elementodecontrole.pas"/>
+        <DCCReference Include="..\src\model\api.model.ns.participante.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.ns.participante.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.lancamentoconta_v2.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.lancamentoconta_v2.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.financas.itememprestimoprestacao.pas"/>
+        <DCCReference Include="..\src\model\api.model.financas.itememprestimoprestacao.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.crm.contratotecnico.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.crm.contratotecnicoitem.pas"/>
+        <DCCReference Include="..\src\model\api.model.crm.contratotecnico.pas"/>
+        <DCCReference Include="..\src\model\api.model.crm.contratotecnicoitem.pas">
+            <Form>$R *.res</Form>
+        </DCCReference>
+        <DCCReference Include="..\src\controller\api.controller.estoque.acordosfornecimentoprodutos.pas"/>
+        <DCCReference Include="..\src\controller\api.controller.estoque.acordosfornecimentoprodutositens.pas"/>
+        <DCCReference Include="..\src\model\api.model.estoque.acordosfornecimentoprodutos.pas"/>
+        <DCCReference Include="..\src\model\api.model.estoque.acordosfornecimentoprodutositens.pas"/>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">nsjAPI.dpr</Source>
+                </Source>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1046</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                    <VersionInfoKeys Name="CFBundleName"/>
+                    <VersionInfoKeys Name="CFBundleDisplayName"/>
+                    <VersionInfoKeys Name="CFBundleIdentifier"/>
+                    <VersionInfoKeys Name="CFBundleVersion"/>
+                    <VersionInfoKeys Name="CFBundlePackageType"/>
+                    <VersionInfoKeys Name="CFBundleSignature"/>
+                    <VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+                    <VersionInfoKeys Name="CFBundleExecutable"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k240.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp240.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Deployment Version="3">
+                <DeployFile LocalName="..\..\..\..\bin\nsjAPI.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>nsjAPI.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgsqlite3.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectUWPManifest">
+                    <Platform Name="Win32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList"/>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements"/>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList"/>
+                <DeployClass Name="ProjectOSXEntitlements"/>
+                <DeployClass Name="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+            </Deployment>
+            <Platforms>
+                <Platform value="OSX32">False</Platform>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

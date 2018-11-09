@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="LancamentoConta">
+		<model>
+			<nome>Novo</nome>
+			<field nome="Id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Conta" controlType="Object" namespace="financas\Conta_v2\TConta_v2Novo" required="True" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="False"/>
+			<field nome="Documento" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Sinal" controlType="Integer" required="True" notnull="True"
+				   summary="Débito - 0; Crédito - 1;"/>
+			<field nome="Valor" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" required="False" 
+				   summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>	
+			<field nome="Contabilizar" controlType="Boolean" summary="Default False" required="False" notnull="True"/>
+			<field nome="Historico" controlType="String" tamanho="1024" required="False" notnull="False"/>		    
+		</model>			
+	</models>
+</root>

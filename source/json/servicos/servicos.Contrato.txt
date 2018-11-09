@@ -1,0 +1,112 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(120)"
+   , "TipoContrato" : 1
+   , "DefinicaoContratante" : "String(20)"
+   , "DefinicaoBeneficiario" : "String(20)"
+   , "DataInicial" : "2014-12-31"
+   , "Administrador" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Fiador" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "Patrimonio" : "Guid ou Código"
+   , "QtdDiasDesconto" : 1
+   , "QtdDiasMulta" : 1
+   , "QtdDiasJurosDiarios" : 1
+   , "PercentualComissao" : 20,2
+   , "ValorComissao" : 20,2
+   , "PercentualRetencaoImposto" : 20,2
+   , "ValorRetencaoImposto" : 20,2
+   , "EmitirNotaFiscal" : False
+   , "TipoContabilizacao" : 1
+   , "Autorizado" : 1
+   , "Cancelado" : False
+   , "DataHoraCancelamento" : "2014-12-31 12:00:00"
+   , "TipoFuncao" : 1
+   , "Itens" : "ObjectList: TItemContrato"
+	
+}
+
+Campo: Id
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoContrato
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DefinicaoContratante
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DefinicaoBeneficiario
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DataInicial
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Administrador
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Pessoa
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Fiador
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Conta
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Patrimonio
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QtdDiasDesconto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QtdDiasMulta
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QtdDiasJurosDiarios
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PercentualComissao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorComissao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PercentualRetencaoImposto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorRetencaoImposto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: EmitirNotaFiscal
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoContabilizacao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Autorizado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Cancelado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DataHoraCancelamento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoFuncao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Itens
+Obrigatório: SIMAceita valor nulo: SIM
+

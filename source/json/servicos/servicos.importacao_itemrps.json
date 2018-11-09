@@ -1,0 +1,26 @@
+{
+     "Servico" : "Guid ou Código"
+   , "Descricao" : "String(1500)"
+   , "ValorUnitario" : 20,2
+   , "Quantidade" : 20,2
+   , "Desconto" : 20,2
+   , "BaseISS" : 20,2
+   , "ValorISS" : 20,2
+   , "BaseINSS" : 20,2
+   , "ValorINSS" : 20,2
+   , "BaseIR" : 20,2
+   , "ValorIR" : 20,2
+   , "BasePIS" : 20,2
+   , "ValorPIS" : 20,2
+   , "BaseCOFINS" : 20,2
+   , "ValorCOFINS" : 20,2
+   , "BaseCSLL" : 20,2
+   , "ValorCSLL" : 20,2
+   , "RetemISS" : False
+   , "RetemINSS" : False
+   , "RetemIR" : False
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+	
+}

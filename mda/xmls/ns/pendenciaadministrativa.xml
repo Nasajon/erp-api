@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="PendenciaAdministrativa">		
+		<model>
+			<nome>Novo</nome>
+			<field nome="Id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Sistema" controlType="Integer" required="True" notnull="True" summary="siGeral = 0
+siPersona         = 1
+siContabil        = 2
+siScritta         = 3
+siFinancas        = 4
+siCRM             = 5
+siEstoque         = 6
+siServicos        = 7
+siAdmin           = 8
+siLauncher        = 9
+siContabilizacao  = 10
+siMANAD           = 11
+siDIPJ            = 12
+siDIRF            = 13
+siSyncBrutus      = 14
+siSyncDiretorio   = 15
+siAgente          = 16
+siSolicitacoes    = 17
+siAPI             = 18
+siLojaPDV         = 19
+siECF             = 20
+siFamilyOffice    = 21
+siCompras         = 22
+siServiceDocument = 23"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Manual = 0 
+Desprocessamento de Proposta = 1"/>
+            <field nome="Situacao" controlType="Integer" tamanho="150" required="True" notnull="True" summary="Pendente = 0
+Resolvida = 1"/>
+            <field nome="LinkId" controlType="Guid" required="True" notnull="True" summary="Id da Entidade"/>
+            <field nome="LinkType" controlType="Integer" required="True" notnull="True" summary=""/>
+            <field nome="CriadoPor" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="ResolvidoPor" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="DataResolucao" controlType="Date" required="False" notnull="False"/>
+            <field nome="Observacao" controlType="String" tamanho="300" required="True" notnull="True"/>
+            <field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="Empresa" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="Estabelecimento" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="DataCriacao" controlType="Date" required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>Resolver</nome>
+            <field nome="Id" controlType="Guid" required="True" notnull="True"/>
+			<field nome="ResolvidoPor" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="DataResolucao" controlType="Date" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

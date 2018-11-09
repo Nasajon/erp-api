@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="Conta_v2">
+		<model>
+			<nome>Novo</nome>
+			<field nome="Id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="150" required="True" notnull="True"/>			
+			<field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True"/>
+			<field nome="TipoConta" controlType="EntidadeInterna" required="True" summary="Tipo da Conta(financas.TipoConta)." notnull="True"/>
+			<field nome="Banco"	controlType="Object" namespace="financas\banco\TBancoNovo" required="False" notnull="False"/>
+			<field nome="NomeAgencia" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="NumeroAgencia" controlType="String" tamanho="30" required="False" notnull="False"/>
+			<field nome="DvNumeroAgencia" controlType="String" tamanho="1" required="False" notnull="False"/>
+			<field nome="NumeroConta" controlType="String" tamanho="30" required="False" notnull="False"/>
+			<field nome="DvNumeroConta" controlType="String" tamanho="1" required="False" notnull="False"/>
+			<field nome="NomeTitular" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="LimiteFechamento" controlType="Date" required="False" notnull="False"/>
+			<field nome="Bloqueada" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="ConsideraSaldoNoFluxoCaixa" controlType="Boolean" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Conta" controlType="EntidadeInterna" required="True" 
+				   summary="Conta para alteração." notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="150" required="True" notnull="True"/>
+			<field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True"/>
+			<field nome="TipoConta" controlType="EntidadeInterna" required="True" summary="Tipo da Conta(financas.TipoConta)." notnull="True"/>						
+			<field nome="Banco"	controlType="Object" namespace="financas\banco\TBancoNovo" required="False" notnull="False"/>
+			<field nome="NomeAgencia" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="NumeroAgencia" controlType="String" tamanho="30" required="False" notnull="False"/>
+			<field nome="DvNumeroAgencia" controlType="String" tamanho="1" required="False" notnull="False"/>
+			<field nome="NumeroConta" controlType="String" tamanho="30" required="False" notnull="False"/>
+			<field nome="DvNumeroConta" controlType="String" tamanho="1" required="False" notnull="False"/>
+			<field nome="NomeTitular" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="LimiteFechamento" controlType="Date" required="False" notnull="False"/>
+			<field nome="Bloqueada" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="ConsideraSaldoNoFluxoCaixa" controlType="Boolean" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Conta" controlType="EntidadeInterna" required="True" notnull="True"/>			
+		</model>
+	</models>
+</root>

@@ -1,0 +1,15 @@
+{
+     "Projeto" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "GrupoEmpresarial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "TipoProjeto" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "DataCriacao" : "2014-12-31 12:00:00"
+   , "CriadoPor" : "Guid ou Código"
+   , "Situacao" : 1
+	
+}

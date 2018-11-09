@@ -1,0 +1,64 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataNascimento" : "2014-12-31"
+   , "DataEntrega" : "2014-12-31"
+   , "DataBaixa" : "2014-12-31"
+   , "UF" : "String(2)"
+   , "Cidade" : "String(60)"
+   , "Cartorio" : "String(30)"
+   , "Numero" : "String(40)"
+   , "Livro" : "String(10)"
+   , "FolhaLivro" : "String(5)"
+	
+}
+
+Campo: Dependente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataNascimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataEntrega
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataBaixa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: UF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cartorio
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Numero
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Livro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FolhaLivro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

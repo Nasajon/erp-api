@@ -1,0 +1,70 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "LayoutCobranca" : "Guid ou Código"
+   , "LayoutPagamento" : "Guid ou Código"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "Vencimento" : "2014-12-31"
+   , "PrevisaoVencimento" : "2014-12-31"
+   , "Parcela" : 1
+   , "TotalParcelas" : 1
+   , "Observacao" : "String(1000)"
+   , "Anotacoes" : "Este atributo é do titpo Memo."
+   , "ValorTitulo" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "AliquotaIr" : 15,4
+   , "ValorIrRetido" : 20,2
+   , "AliquotaCofins" : 15,4
+   , "ValorCofinsRetido" : 20,2
+   , "AliquotaPis" : 15,4
+   , "ValorPisRetido" : 20,2
+   , "AliquotaCsll" : 15,4
+   , "ValorCsllRetido" : 20,2
+   , "ValorInssRetido" : 20,2
+   , "AliquotaIss" : 15,4
+   , "ValorIssRetido" : 20,2
+   , "DataLimiteDesconto" : "2014-12-31"
+   , "PercentualDesconto" : 15,4
+   , "DataInicioMulta" : "2014-12-31"
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiario" : 15,4
+   , "TaxaBancaria" : 20,2
+   , "NossoNumero" : "String(30)"
+   , "LinhaDigitavel" : "String(54)"
+   , "CodigoBarras" : "String(44)"
+   , "InformacaoCartao" : "Objeto: TInformacaoCartao"
+   , "NumeroVezesCartao" : 1
+   , "ValorTarifaCartao" : 20,2
+   , "AutorizacaoCartao" : "String(30)"
+   , "DocumentoCartao" : "String(30)"
+   , "NumeroParcelaCartao" : 1
+   , "ValorParcelaCartao" : 20,2
+   , "NumeroNota" : "String(20)"
+   , "ModeloDocumentoFiscal" : 1
+   , "SerieDocumentoFiscal" : "String(3)"
+   , "SubserieDocumentoFiscal" : "String(2)"
+   , "ServicoBancario" : "Guid ou Código"
+   , "FinalidadePagamento" : "Guid ou Código"
+   , "TipoContaPagamento" : "Guid ou Código"
+   , "DataAgendamento" : "2014-12-31"
+   , "Vendedores" : "ObjectList: TVendedorTitulo"
+   , "DataProvisoria" : False
+   , "ValorProvisorio" : False
+   , "TipoOrigem" : 1
+   , "Contrato" : "Guid ou Código"
+   , "DataAutorizacaoCartao" : "2014-12-31"
+   , "FormaPagamento" : "Guid ou Código"
+   , "Fatura" : "Guid ou Código"
+   , "id_renegociacao_gerada" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_renegociacao_geradora" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "valorvariacaocambialativa" : 
+   , "valorvariacaocambialpassiva" : 
+   , "TipoCredito" : 1
+   , "CreditoIdentificado" : 1
+   , "OutrasRetencoes" : 20,2
+   , "DescricaoOutrasRetencoes" : "String(255)"
+	
+}

@@ -1,0 +1,48 @@
+{
+     "idoperacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(6)"
+   , "descricao" : "String(40)"
+   , "sinal" : 1
+   , "afetacustodosprodutos" : False
+   , "grupoodeoperacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usatabeladepreco" : False
+   , "associardocumento" : False
+   , "associarproduto" : False
+   , "finalidade" : 1
+   , "ativa" : False
+	
+}
+
+Campo: idoperacao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: sinal
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: afetacustodosprodutos
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: grupoodeoperacao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: usatabeladepreco
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: associardocumento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: associarproduto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: finalidade
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ativa
+Obrigatório: SIMAceita valor nulo: SIM
+

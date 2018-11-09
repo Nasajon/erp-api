@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="ns" modulo="Parcela">
+        <model>
+            <field nome="Parcela" controlType="Guid" required="False" notnull="True"/>
+            <field nome="Pagamento" controlType="Guid" required="False" notnull="True"/>
+            <field nome="Numero" controlType="String" tamanho="30" required="True" notnull="True" summary="Informe o número do documento que originou a parcela."/>
+            <field nome="Valor" controlType="Currency" tamanho="13,2" required="True" notnull="True"/>
+            <field nome="Vencimento" controlType="Date" required="True" notnull="True"/>
+            <field nome="Sequencial" controlType="Integer" required="True" notnull="True" summary="Número da parcela."/>
+            <field nome="Conta" controlType="EntidadeInterna" required="False" notnull="False"/>
+            <field nome="ValorCreditoaUtilizar" controlType="Currency" required="True" notnull="False"/>
+            <field nome="UsarSaldoCredito" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="id_owner" controlType="Guid" required="False" notnull="True"/>
+            <field nome="competencia" controlType="Date" required="False" notnull="True"/>
+            <field nome="basevencimentoparcela" controlType="Guid" required="False" notnull="True"/>
+            <field nome="percentual" controlType="Currency" required="False" notnull="True"/>
+            <field nome="intervalo" controlType="Integer" required="False" notnull="True"/>
+            <field nome="sinal" controlType="Boolean" required="False" notnull="True"/>
+        </model>
+    </models>
+</root>

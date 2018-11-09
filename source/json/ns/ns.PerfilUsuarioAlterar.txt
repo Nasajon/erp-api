@@ -1,0 +1,16 @@
+{
+     "PerfilUsuario" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(50)"
+	
+}
+
+Campo: PerfilUsuario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃOAceita valor nulo: NÃO
+

@@ -1,0 +1,89 @@
+{
+     "Solicitacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Status" : 1
+   , "FuncionarioNome" : "String(80)"
+   , "FuncionarioCodigo" : "String(6)"
+   , "FuncionarioDepartamento" : "String(40)"
+   , "FuncionarioCargo" : "String(50)"
+   , "Solicitante" : "String(64)"
+   , "FuncionarioFoto" : "String(100)"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Data" : "2014-12-31"
+   , "Rascunho" : False
+   , "Tenant" : 1
+   , "Fila" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Colaborador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Conteudo" : "Este atributo é do titpo Memo."
+   , "UsuarioDestino" : "String(64)"
+   , "Tipo" : "String(5)"
+	
+}
+
+Campo: Solicitacao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Status
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: FuncionarioNome
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FuncionarioCodigo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FuncionarioDepartamento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FuncionarioCargo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Solicitante
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FuncionarioFoto
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Data
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Rascunho
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Tenant
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Fila
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Colaborador
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Conteudo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: UsuarioDestino
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Tipo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,15 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataNascimento" : "2014-12-31"
+   , "DataEntrega" : "2014-12-31"
+   , "DataBaixa" : "2014-12-31"
+   , "UF" : "String(2)"
+   , "Cidade" : "String(60)"
+   , "Cartorio" : "String(30)"
+   , "Numero" : "String(40)"
+   , "Livro" : "String(10)"
+   , "FolhaLivro" : "String(5)"
+	
+}

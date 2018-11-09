@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="DocumentoAjusteRateio">
+		<model>
+		  <nome>Novo</nome>
+            <field nome="Id" controlType="Guid" Required="False" notnull="True" 
+			       summary="Identificador do documento"/>	
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True" 
+			       summary="Estabelecimento de origem"/> 
+			<field nome="Codigo" controlType="String" tamanho="30" notnull="True"
+			       summary="Código do documento"/>	
+			<field nome="Descricao" controlType="String" tamanho="100" Required="False" notnull="True"
+			       summary="Descrição resumida do documento"/>	
+			<field nome="Observacao" controlType="Memo" required="False" notnull="True"
+			       summary="Observações referente ao documento"/>	
+			<field nome="Data" controlType="Date" notnull="True"
+			       summary="Data do documento"/>	
+			<field nome="DataCompetencia" controlType="Date" notnull="True"
+			       summary="Data de Competência do documento" />	
+			<field nome="DataCriacao" controlType="Date" required="False" notnull="True"
+			       summary="Data da criação do documento"/>	
+			<field nome="Origem" controlType="Integer" required="False" 
+			       summary="Indica a origem do documento de ajuste. 0-Manual, 1-Requisição de Almoxarifado; 2 - Devolução ao Almoxarifado"/>
+			<field nome="NumeroDocumentoOrigem" controlType="String" tamanho="30" Required="False" notnull="True"
+			       summary="Número do documento que deu origem ao ajuste"/>	
+			<field nome="RequisicaoAlmoxarifado" controlType="EntidadeInterna" Required="False" notnull="True"
+			       summary="Identificador da requisição de almoxarifado que deu origem ao documento"/> 
+			<field nome="UsuarioCriador" controlType="EntidadeInterna" Required="False" notnull="True"
+			       summary="Usuário que esta criando o documento"/>				
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" notnull="true" 
+			       summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>
+			<field nome="IDDocumentoRateado" controlType="EntidadeInterna" notnull="False"/>    	   
+			<field nome="DevolucaoAlmoxarifado" controlType="EntidadeInterna" Required="False" notnull="True"
+			       summary="Identificador da devolução ao almoxarifado que deu origem ao documento"/> 
+		</model>
+    
+    <model>        
+		  <nome>Alterar</nome>
+		    <field nome="Id" controlType="Guid" Required="False" notnull="True" 
+			       summary="Identificador do documento"/>	
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True" 
+			       summary="Estabelecimento de origem"/> 
+			<field nome="Codigo" controlType="String" tamanho="30" notnull="True"
+			       summary="Código do documento"/>	
+			<field nome="Descricao" controlType="String" tamanho="100" Required="False" notnull="True"
+			       summary="Descrição resumida do documento"/>	
+			<field nome="Observacao" controlType="Memo" required="False" notnull="True"
+			       summary="Observações referente ao documento"/>	
+			<field nome="Data" controlType="Date" notnull="True"
+			       summary="Data do documento"/>	
+			<field nome="DataCompetencia" controlType="Date" notnull="True"
+			       summary="Data de Competência do documento" />	
+			<field nome="DataCriacao" controlType="Date" required="False" notnull="True"
+			       summary="Data da criação do documento"/>	
+			<field nome="Origem" controlType="Integer" required="False" 
+			       summary="Indica a origem do documento de ajuste. 0-Manual, 1-Requisição de Almoxarifado; 2 - Devolução ao Almoxarifado"/>
+			<field nome="NumeroDocumentoOrigem" controlType="String" tamanho="30" Required="False" notnull="True"
+			       summary="Número do documento que deu origem ao ajuste"/>	
+			<field nome="RequisicaoAlmoxarifado" controlType="EntidadeInterna" Required="False" notnull="True"
+			       summary="Identificador da requisição de almoxarifado que deu origem ao documento"/> 
+			<field nome="UsuarioCriador" controlType="EntidadeInterna" Required="False" notnull="True"
+			       summary="Usuário que esta criando o documento"/>				
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" notnull="true" 
+			       summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>
+			<field nome="IDDocumentoRateado" controlType="EntidadeInterna" notnull="False"/>    	   
+			<field nome="DevolucaoAlmoxarifado" controlType="EntidadeInterna" Required="False" notnull="True"
+			       summary="Identificador da devolução ao almoxarifado que deu origem ao documento"/> 
+		</model>	        
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Id" controlType="Guid" notnull="True"/>		
+		</model>
+	</models>
+</root>
+
+  
+  

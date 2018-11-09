@@ -1,0 +1,8 @@
+{
+     "Funcao" : "Guid ou Código"
+	
+}
+
+Campo: Funcao
+Obrigatório: SIMAceita valor nulo: SIM
+

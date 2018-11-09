@@ -1,0 +1,8 @@
+{
+     "Configuracaoproxy" : "String(100)"
+   , "endereco" : "String(50)"
+   , "prota" : "String(10)"
+   , "usuarioproxy" : "String(60)"
+   , "senhaproxy" : "String(300)"
+	
+}

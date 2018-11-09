@@ -1,0 +1,32 @@
+{
+     "Sindicato" : "Guid ou Código"
+   , "Nome" : "String(40)"
+   , "Email" : "String(100)"
+   , "DDDTelefone" : "String(2)"
+   , "Telefone" : "String(20)"
+   , "DDDFAX" : "String(2)"
+   , "FAX" : "String(20)"
+	
+}
+
+Campo: Sindicato
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Email
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DDDTelefone
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DDDFAX
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FAX
+Obrigatório: NÃOAceita valor nulo: SIM
+

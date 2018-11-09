@@ -1,0 +1,16 @@
+{
+     "Vendedor" : "Guid ou Código"
+   , "Percentual" : 20,2
+   , "PercentualComissao" : 20,2
+	
+}
+
+Campo: Vendedor
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Percentual
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: PercentualComissao
+Obrigatório: SIMAceita valor nulo: NÃO
+

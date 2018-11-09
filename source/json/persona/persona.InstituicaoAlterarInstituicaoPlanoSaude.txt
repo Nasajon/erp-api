@@ -1,0 +1,12 @@
+{
+     "Instituicao" : "Guid ou Código"
+   , "NumeroANS" : "String(12)"
+	
+}
+
+Campo: Instituicao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: NumeroANS
+Descrição: Informar o número do registro da instituição na agência nacional de saúdeObrigatório: NÃOAceita valor nulo: NÃO
+

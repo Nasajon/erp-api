@@ -1,0 +1,28 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "NumeroConta" : "String(16)"
+   , "Optante" : False
+   , "DataOpcao" : "2014-12-31"
+   , "Saldo" : 20,6
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NumeroConta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Optante
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataOpcao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Saldo
+Obrigatório: NÃOAceita valor nulo: SIM
+

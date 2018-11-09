@@ -1,0 +1,102 @@
+{
+     "lote" : "Guid ou Código"
+   , "lancamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipo" : 1
+   , "data" : "2014-12-31"
+   , "numero" : "String(12)"
+   , "contadebito" : "Guid ou Código"
+   , "contacredito" : "Guid ou Código"
+   , "centrodecusto" : "Guid ou Código"
+   , "indicadorlancamentofcont" : 1
+   , "pessoa" : "Guid ou Código"
+   , "historico" : "Este atributo é do titpo Memo."
+   , "valor" : 20,2
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "ano" : 1
+   , "usuario" : "Guid ou Código"
+   , "nomemaquina" : "String(50)"
+   , "datainclusao" : "2014-12-31"
+   , "contabilizacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "bemocorrencia" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: lote
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: lancamento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: tipo
+Descrição: 0 - Indefinido, 1 - Lançamentos normal, 2 - Transferencia de Resultado, 3 - Ocorrências Active, 4 - Lançamento de correção monetária, 5 - Lançamento de depreciação, 6 - Conversão de Cruzeiro para Cruzeiro Real, 7 - Conversão de Cruzeiro Real para Real, 8 - Lançamentos de integração com o controller, 9 - Lançamentos de integração com o Persona, 10 - Lançamentos de integração com o Scritta, 11 - Lançamentos oriundos de lotes, 12 - Lançamentos da Contabilização do Imobilizado, 13 - Lançamentos oriundos da importação de extratos, 14 - Impairment, 15 - Reversão do impairment, 16 - Custo Atribuído, 17 - Implantação de Saldo Anterior, 18 - Acréscimo de Bem, 19 - Baixa de Bem, 20 - Perda de Bem e 21 - Reavaliação de Bem. Quando não informado será assumido o valor 0.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: data
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: numero
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: contadebito
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: contacredito
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: centrodecusto
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: indicadorlancamentofcont
+Descrição: 1 - Lançamento de Expurgo, 2 - Lançamento Fiscal, 3 - Transferência Fiscal (alteração do plano fiscal - I050), 4 - Transferência de Saldo Fiscal (extinção da conta referencial), 5 - Transferência de Saldo Societário (extinção da conta referencial), 6 - Encerramento Fiscal, 7 - Inicialização de Saldo Fiscal, 8 - Inicialização de Saldo Societário e 9 - Sem Classificação.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: pessoa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: historico
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ano
+Descrição: Informar o ano de exercício.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: usuario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: nomemaquina
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: datainclusao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: contabilizacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: bemocorrencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

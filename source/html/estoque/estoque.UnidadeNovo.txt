@@ -1,0 +1,29 @@
+{
+     "idunidade" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(6)"
+   , "descricao" : "String(40)"
+   , "decimais" : 1
+   , "idgrupo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: idunidade
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: decimais
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: idgrupo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

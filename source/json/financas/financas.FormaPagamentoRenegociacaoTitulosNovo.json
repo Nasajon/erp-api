@@ -1,0 +1,27 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_renegociacaotitulos" : "Guid ou Código"
+   , "Id_formapagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_conta" : "Guid ou Código"
+   , "Id_rateiopadrao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_meioeletronico" : "Guid ou Código"
+   , "Id_layoutcobranca" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_operadora" : "Guid ou Código"
+   , "Id_bandeira" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_parcelamento" : "Guid ou Código"
+   , "Valor" : 13,2
+   , "NumeroParcelas" : 1
+   , "DataFatura" : "2014-12-31"
+   , "TipoOperacao" : 1
+   , "AutorizacaoCartao" : "String(30)"
+   , "dataautorizacaocartao" : "2014-12-31"
+   , "documentocartao" : "String(30)"
+   , "irretido" : 13,2
+   , "pisretido" : 13,2
+   , "cofinsretido" : 13,2
+   , "csllretido" : 13,2
+   , "issretido" : 13,2
+   , "inssretido" : 13,2
+   , "id_documentorateado" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

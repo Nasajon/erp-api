@@ -1,0 +1,144 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "IdContrato" : "Guid ou Código"
+   , "Servico" : "Guid ou Código"
+   , "ValorVariavel" : False
+   , "ValoresVariaveis" : "ObjectList: TValorVariavelItemContrato"
+   , "Codigo" : "String(40)"
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "Valor" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "Quantidade" : 1
+   , "Instancia" : "Guid ou Código"
+   , "CodigoInstancia" : "String(30)"
+   , "NomeInstancia" : "String(100)"
+   , "TipoInstancia" : "String(50)"
+   , "DescontosNoPedido" : 20,2
+   , "UnidadeNatureza" : 1
+   , "UnidadeIntervaloNatureza" : 1
+   , "QuantidadeIntervaloNatureza" : 1
+   , "TipoVencimento" : 1
+   , "DiaVencimento" : 1
+   , "AdicaoMesesVencimento" : 1
+   , "QtdDiasParaInicio" : 1
+   , "QtdDiasParaFim" : 1
+   , "QtdMesesParaReajuste" : 1
+   , "PercentualDesconto" : 15,4
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiarios" : 15,4
+   , "TipoCobranca" : 1
+   , "Indice" : "Guid ou Código"
+   , "ConsiderarDataInicio" : False
+   , "DataCobranca" : "2014-12-31"
+   , "DataReajuste" : "2014-12-31"
+   , "Autorizado" : False
+   , "Cancelado" : False
+   , "DataHoraCancelamento" : "2014-12-31 12:00:00"
+	
+}
+
+Campo: Id
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: IdContrato
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Servico
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorVariavel
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValoresVariaveis
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Observacao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Valor
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: RateioFinanceiro
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Quantidade
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Instancia
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: CodigoInstancia
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: NomeInstancia
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoInstancia
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DescontosNoPedido
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: UnidadeNatureza
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: UnidadeIntervaloNatureza
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QuantidadeIntervaloNatureza
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoVencimento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DiaVencimento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: AdicaoMesesVencimento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QtdDiasParaInicio
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QtdDiasParaFim
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QtdMesesParaReajuste
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PercentualDesconto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PercentualMulta
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PercentualJurosDiarios
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoCobranca
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Indice
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ConsiderarDataInicio
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DataCobranca
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DataReajuste
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Autorizado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Cancelado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DataHoraCancelamento
+Obrigatório: SIMAceita valor nulo: SIM
+

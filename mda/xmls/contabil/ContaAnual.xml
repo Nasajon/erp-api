@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="contabil" modulo="contaanual">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="codigoconta" controlType="String" tamanho="21" required="True" notnull="True"/>
+			<field nome="codigoreduzido" controlType="String" tamanho="6" required="True" notnull="True"/>
+	        <field nome="ano" controlType="Integer" required="True" notnull="True"/>
+			<field nome="nome" controlType="String" tamanho="100" required="True" notnull="True"/>
+	        <field nome="naturezaconta" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="naturezasaldo" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="permitecentrodecusto" controlType="Integer" required="True" notnull="True"/>
+            <field nome="contamae" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="conta" controlType="EntidadeInterna" required="True" notnull="True"/>
+	        <field nome="ano" controlType="Integer" required="True" notnull="True"/>            
+			<field nome="codigoreduzido" controlType="String" tamanho="6" required="True" notnull="True"/>
+			<field nome="nome" controlType="String" tamanho="100" required="True" notnull="True"/>
+	        <field nome="naturezaconta" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="naturezasaldo" controlType="Integer" required="True" notnull="True"/>
+	        <field nome="permitecentrodecusto" controlType="Integer" required="True" notnull="True"/>
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="conta" controlType="EntidadeInterna" required="True" notnull="True"/>
+	        <field nome="ano" controlType="Integer" required="True" notnull="True"/>            
+		</model>
+	</models>
+</root>

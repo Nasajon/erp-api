@@ -1,0 +1,9 @@
+{
+     "listacontaanual" : "ObjectList: TContaAnualNovo"
+	
+}
+
+Campo: listacontaanual
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

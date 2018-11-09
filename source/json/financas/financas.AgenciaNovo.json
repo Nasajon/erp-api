@@ -1,0 +1,9 @@
+{
+     "IdAgencia" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Banco" : "Guid ou Código"
+   , "Codigo" : "String(7)"
+   , "Nome" : "String(20)"
+   , "Numero" : "String(20)"
+   , "DigitoVerificador" : "String(2)"
+	
+}

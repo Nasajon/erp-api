@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="EntidadeCompartilhadora">
+		<model>			
+			<field nome="EntidadeCompartilhadora" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"
+				   summary="Este campo passa a ser requirido internamente caso o tipo igual a 2-Estabelecimento"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True"
+				   summary="Define o tipo de entidade compartilhadora:
+				   			0 - Grupo Empresarial
+				   			1 - Empresa
+				   			2 - Estabelecimento
+				   			3 - Conjunto"/>			
+		</model>		
+	</models>
+</root>

@@ -1,0 +1,49 @@
+{
+     "itemrps_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Item_Faturamento_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "itemrps_percentual_incidencia_inss" : 20,2
+   , "itemrps_percentual_base_iss" : 20,2
+   , "itemrps_quantidade" : 20,2
+   , "itemrps_valor_unitario" : 20,2
+   , "itemrps_desconto" : 20,2
+   , "itemrps_valor_total" : 20,2
+   , "itemrps_lista_tributos" : "ObjectList: TImpostos_Tributo"
+	
+}
+
+Campo: itemrps_id
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Item_Faturamento_ID
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: itemrps_percentual_incidencia_inss
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: itemrps_percentual_base_iss
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: itemrps_quantidade
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: itemrps_valor_unitario
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: itemrps_desconto
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: itemrps_valor_total
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: itemrps_lista_tributos
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

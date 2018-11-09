@@ -1,0 +1,12 @@
+{
+     "grupoempresarial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "conta" : "Guid ou Código"
+   , "ano" : 1
+   , "codigoreduzido" : "String(6)"
+   , "nome" : "String(100)"
+   , "naturezaconta" : 1
+   , "naturezasaldo" : 1
+   , "permitecentrodecusto" : 1
+	
+}

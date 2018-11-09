@@ -1,0 +1,28 @@
+{
+     "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(4)"
+   , "Nome" : "String(50)"
+   , "CodigoCBO" : "String(7)"
+   , "CodigoGrauInstrucao" : "String(2)"
+	
+}
+
+Campo: Cargo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CodigoCBO
+Descrição: Conforme tabela de código brasileiro de ocupaçõesObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CodigoGrauInstrucao
+Descrição: Conforme tabela oficial de graus de instrução do governoObrigatório: SIMAceita valor nulo: NÃO
+

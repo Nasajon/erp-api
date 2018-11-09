@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Empresa">		
+		<model>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="False" notnull="True"/>						
+			<field nome="Codigo" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="Identificacao" controlType="String" tamanho="20" required="False" notnull="True" summary="Informar o CNPJ [99.999.999/9999-99] ou CPF [999.999.999-99] dependendo do tipo de identificação. A máscara não é obrigatória."/>						
+			<field nome="RazaoSocial" controlType="String" tamanho="150" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="150" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdEmpresa" controlType="Guid" required="False" notnull="True"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="False" notnull="True"/>						
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Identificacao" controlType="String" tamanho="20" required="True" notnull="True" summary="Informar o CNPJ [99.999.999/9999-99] ou CPF [999.999.999-99] dependendo do tipo de identificação. A máscara não é obrigatória."/>						
+			<field nome="RazaoSocial" controlType="String" tamanho="150" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="150" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="False" notnull="True"/>						
+			<field nome="Codigo" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="Identificacao" controlType="String" tamanho="20" required="False" notnull="True" summary="Informar o CNPJ [99.999.999/9999-99] ou CPF [999.999.999-99] dependendo do tipo de identificação. A máscara não é obrigatória."/>						
+			<field nome="RazaoSocial" controlType="String" tamanho="150" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="150" required="False" notnull="True"/>
+			<field nome="CodigoCNAE" controlType="String" tamanho="7" required="False" notnull="True" summary="Conforme tabela de atividades econômicas do governo"/>
+			<field nome="InicioExercicio" controlType="Date" required="False" notnull="False"/>
+			
+		</model>
+		<model>
+			<nome>AlterarDadosFolha</nome>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="CodigoCNAE" controlType="String" tamanho="7" required="False" notnull="False" summary="Conforme tabela de atividades econômicas do governo"/>
+			<field nome="CodigoNaturezaJuridica" controlType="String" tamanho="4" required="False" notnull="False" summary="Conforme tabela de naturezas jurídicas do governo"/>
+			<field nome="FormaPagamento" controlType="String" tamanho="1" required="False" notnull="False" summary="M(Mensal) ou S(Semanal)"/>
+			<field nome="TipoCooperativa" controlType="Integer" required="False" notnull="False" summary="Não é cooperativa(0), Cooperativa de trabalho(1), Cooperativa de produção(2), Outras cooperativas(3)"/>
+			<field nome="Construtora" controlType="Integer" required="False" notnull="False" summary="Não é construtora(0) ou É construtora(1)"/>			
+			<field nome="PontoEletronico" controlType="Integer" required="False" notnull="False" summary="Não possui ponto eletrônicao(0) ou Possui ponto eletronico(1)"/>
+			<field nome="PossuiMultiplasTabelasRubrica" controlType="Boolean" required="False" notnull="False" summary="Indicar se a empresa trabalha ou não com tabelas distintas de rubricas para seus estabelecimentos"/>
+			<field nome="SituacaoPJ" controlType="Integer" required="False" notnull="False" summary="Normal(0), Extinção(1), Fusão(2), Cisão(3) ou Incorporação(4)"/>			
+			<field nome="SituacaoPF" controlType="Integer" required="False" notnull="False" summary="Normal(0), Encerramento de espólio(1), Saída do país em caráter permanente(2)"/>			
+		</model>
+		<model>
+			<nome>AlterarDadosContato</nome>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="80" required="False" notnull="False"/>
+			<field nome="CPF" controlType="String" tamanho="14" required="False" notnull="False" summary="[999.999.999-99]. A máscara não é obrigatória"/>
+			<field nome="DDDTelefonefixo" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="Telefonefixo" controlType="String" tamanho="20" required="False" notnull="False"/>			
+			<field nome="DDDTelefoneCelular" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="TelefoneCelular" controlType="String" tamanho="20" required="False" notnull="False"/>			
+			<field nome="DDDFAX" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="FAX" controlType="String" tamanho="20" required="False" notnull="False"/>			
+			<field nome="Email" controlType="String" tamanho="100" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosFolhaEmpresaPublica</nome>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="CodigoMunicipioEnteFederativo" controlType="String" tamanho="7" required="False" notnull="False" summary="Conforme tabela do IBGE" />
+			<field nome="DescricaoLeiSeguradoDiferenciado" controlType="String" tamanho="50" required="False" notnull="False"/>
+			<field nome="NumeroSIAFI" controlType="String" tamanho="6" required="False" notnull="False"/>
+            <field nome="AnosMaioridadeDependenteExecutivo" controlType="Integer" required="False" notnull="False"/>
+			<field nome="AnosMaioridadeDependenteLegislativo" controlType="Integer" required="False" notnull="False"/>			
+			<field nome="AnosMaioridadeDependenteJudiciario" controlType="Integer" required="False" notnull="False"/>
+			<field nome="AnosMaioridadeDependenteTodosPoderes" controlType="Integer" required="False" notnull="False"/>		
+			<field nome="RegimeProprioPrevidenciaSocial" controlType="Boolean" required="False" notnull="False"/>	
+			<field nome="ValorSubtetoINSSExecutivo" controlType="Currency" tamanho="20,6" required="False" notnull="False"/>
+			<field nome="ValorSubtetoINSSLegislativo" controlType="Currency" tamanho="20,6" required="False" notnull="False"/>
+			<field nome="ValorSubtetoINSSJudiciario" controlType="Currency" tamanho="20,6" required="False" notnull="False"/>
+			<field nome="ValorSubtetoINSSTodosPoderes" controlType="Currency" tamanho="20,6"  required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>AlterarDadosFolhaEmpresaFilantropica</nome>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Filantropica" controlType="Boolean" required="False" notnull="False"/>			
+			<field nome="NumeroCertificado" controlType="String" tamanho="40" required="False" notnull="False"/>
+			<field nome="Ministerio" controlType="String" tamanho="8" required="False" notnull="False" summary="CNAS, MEC, MS ou MDS"/>			
+			<field nome="NumeroProtocoloRenovacao" controlType="String" tamanho="40" required="False" notnull="False"/>			
+			<field nome="NumeroPaginaDiarioOficialUniao" controlType="String" tamanho="6" required="False" notnull="False"/>			
+			<field nome="DataEmissaoCertificado" controlType="Date" required="False" notnull="False"/>
+			<field nome="DataVencimentoCertificado" controlType="Date" required="False" notnull="False"/>
+			<field nome="DataProtocoloRenovacaoIsencao" controlType="Date" required="False" notnull="False"/>
+			<field nome="DataPublicacaoDiarioOficialUniao" controlType="Date" required="False" notnull="False"/>
+		</model>
+		<model>		
+			<nome>InativarEmpresa</nome>			
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Inativa" controlType="Boolean" required="True" notnull="True"/>	
+		</model>
+		<model>		
+			<nome>Excluir</nome>			
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,80 @@
+{
+     "IdHorario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(8)"
+   , "Nome" : "String(50)"
+   , "Tipo" : 1
+   , "JornadaSegunda" : "Guid ou Código"
+   , "JornadaTerca" : "Guid ou Código"
+   , "JornadaQuarta" : "Guid ou Código"
+   , "JornadaQuinta" : "Guid ou Código"
+   , "JornadaSexta" : "Guid ou Código"
+   , "JornadaSabado" : "Guid ou Código"
+   , "JornadaDomingo" : "Guid ou Código"
+   , "RepousoSegunda" : False
+   , "RepousoTerca" : False
+   , "RepousoQuarta" : False
+   , "RepousoQuinta" : False
+   , "RepousoSexta" : False
+   , "RepousoSabado" : False
+   , "RepousoDomingo" : False
+	
+}
+
+Campo: IdHorario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Normal(3), Folga fixa(4) ou Folga extra(5)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: JornadaSegunda
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: JornadaTerca
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: JornadaQuarta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: JornadaQuinta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: JornadaSexta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: JornadaSabado
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: JornadaDomingo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RepousoSegunda
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RepousoTerca
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RepousoQuarta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RepousoQuinta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RepousoSexta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RepousoSabado
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RepousoDomingo
+Obrigatório: SIMAceita valor nulo: NÃO
+

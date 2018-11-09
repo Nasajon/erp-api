@@ -1,0 +1,48 @@
+{
+     "IdProfissional" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(40)"
+   , "Conselho" : 1
+   , "NumeroConselho" : "String(14)"
+   , "UFConselho" : "String(2)"
+   , "NIT" : "String(15)"
+   , "TipoRegistro" : "String(1)"
+   , "Categoria" : 1
+   , "DDDTelefone" : "String(2)"
+   , "Telefone" : "String(20)"
+	
+}
+
+Campo: IdProfissional
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conselho
+Descrição: Medicina(0), Odontologia(1) ou Enfermagem(2)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: NumeroConselho
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: UFConselho
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: NIT
+Descrição: Número de inscrição do trabalhadorObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: TipoRegistro
+Descrição: Definitivo(D) ou Provisório(P)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Categoria
+Descrição: Geral(0), Ambientalista(1) ou Químico(2)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DDDTelefone
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Telefone
+Obrigatório: NÃOAceita valor nulo: NÃO
+

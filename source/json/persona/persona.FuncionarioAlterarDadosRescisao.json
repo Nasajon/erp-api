@@ -1,0 +1,15 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataRescisao" : "2014-12-31"
+   , "NumeroRecibo" : "String(15)"
+   , "CodigoMotivo" : "String(2)"
+   , "FGTSMesAnteriorRecolhido" : False
+   , "AvisoIndenizadoPago" : False
+   , "TinhaEmpregoDuranteAvisoPrevio" : False
+   , "JornadaCumpridaNaSemanaDaRescisao" : False
+   , "JornadaSabadoCompensadaNaSemanaDaRescisao" : False
+   , "DataProjecaoAvisoPrevioIndenizado" : "2014-12-31"
+   , "Processo" : "Guid ou Código"
+	
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Municipio">
+		<model>			
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>	
+			<field nome="ibge" controlType="String" tamanho="8" required="False" notnull="True"/>			
+			<field nome="nome" controlType="String" tamanho="100" required="False" notnull="False"/>	
+			<field nome="uf" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="zfm" controlType="String" tamanho="50" required="False" notnull="False"/>	
+		</model>	
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid"/>	
+			<field nome="ibge" controlType="String" tamanho="8"/>			
+			<field nome="nome" controlType="String" tamanho="100"/>	
+			<field nome="uf" controlType="String" tamanho="2"/>
+			<field nome="zfm" controlType="String" tamanho="50"/>	
+		</model>			
+		<model>
+			<nome>Alterar</nome>
+			<field nome="id" controlType="Guid"/>	
+			<field nome="ibge" controlType="String" tamanho="8"/>			
+			<field nome="nome" controlType="String" tamanho="100"/>	
+			<field nome="uf" controlType="String" tamanho="2"/>
+			<field nome="zfm" controlType="String" tamanho="50"/>	
+		</model>		
+		<model>
+			<nome>Excluir</nome>
+			<field nome="id" controlType="Guid"/>	
+		</model>			
+	</models>
+</root>

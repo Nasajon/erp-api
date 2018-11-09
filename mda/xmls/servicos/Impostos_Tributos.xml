@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="Impostos_Tributo">
+        <model>
+            <field nome="tipo" controlType="Integer" required="True" notnull="False"/>
+            <field nome="tributado" controlType="Boolean" required="True" notnull="False"/>
+            <field nome="base" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="aliquota" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="valor" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+        </model>
+    </models>
+</root>

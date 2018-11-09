@@ -1,0 +1,25 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "NumeroCartao" : "String(16)"
+   , "DiaSemanaComMeioVale" : 1
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: NumeroCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DiaSemanaComMeioVale
+Descrição: De 1 a 7, começando pelo domingo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

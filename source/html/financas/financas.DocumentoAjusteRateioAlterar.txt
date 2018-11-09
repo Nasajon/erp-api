@@ -1,0 +1,93 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(100)"
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "Data" : "2014-12-31"
+   , "DataCompetencia" : "2014-12-31"
+   , "DataCriacao" : "2014-12-31"
+   , "Origem" : 1
+   , "NumeroDocumentoOrigem" : "String(30)"
+   , "RequisicaoAlmoxarifado" : "Guid ou Código"
+   , "UsuarioCriador" : "Guid ou Código"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "IDDocumentoRateado" : "Guid ou Código"
+   , "DevolucaoAlmoxarifado" : "Guid ou Código"
+	
+}
+
+Campo: Id
+Descrição: Identificador do documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Descrição: Estabelecimento de origem
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Descrição: Código do documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Descrição: Descrição resumida do documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Observacao
+Descrição: Observações referente ao documento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Data
+Descrição: Data do documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataCompetencia
+Descrição: Data de Competência do documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataCriacao
+Descrição: Data da criação do documento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Origem
+Descrição: Indica a origem do documento de ajuste. 0-Manual, 1-Requisição de Almoxarifado; 2 - Devolução ao Almoxarifado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroDocumentoOrigem
+Descrição: Número do documento que deu origem ao ajuste
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: RequisicaoAlmoxarifado
+Descrição: Identificador da requisição de almoxarifado que deu origem ao documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: UsuarioCriador
+Descrição: Usuário que esta criando o documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira e centro de custo.
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: IDDocumentoRateado
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: DevolucaoAlmoxarifado
+Descrição: Identificador da devolução ao almoxarifado que deu origem ao documento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

@@ -1,0 +1,138 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CNPJ [99.999.999/9999-99]"
+   , "Cliente" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "String(38)"
+   , "Numero" : "String(9)"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : False
+   , "ISSRetido" : False
+   , "CodigoServico" : "Guid ou Código"
+   , "DescontoCondicional" : 20,2
+   , "CodigoIBGEMunicipioPrestacao" : "String(7)"
+   , "Obra" : "Guid ou Código"
+   , "DiscriminacaoServicos" : "String(5000)"
+   , "OutrasDeducoes" : 20,2
+   , "OutrasRetencoes" : 20,2
+   , "Observacao" : "String(5000)"
+   , "CalcularImpostos" : False
+   , "ItensRPS" : "ObjectList: "
+   , "Pagamentos" : "ObjectList: "
+   , "Rateios" : "ObjectList: "
+	
+}
+
+Campo: Estabelecimento
+Descrição: Identificador do estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Cliente
+Descrição: Identificador do cliente
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Serie
+Descrição: Número da série do RPS a ser utilizada. Quando não informado será utilizada a série padrão do estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Numero
+Descrição: Número do RPS a ser utilizado. Quando não informado será utilizado o próximo número da série padrão do estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: TipoTributacao
+Descrição: Indica o Tipo de Tributação. Quando não informado assumirá da configuração de RPS.
+                            00 - Nenhum,
+                            01 - Tributação no Município,
+                            02 - Tributação Fora do Município,
+                            03 - Operação Isenta,
+                            04 - Operação Imune,
+                            05 - Operação Suspensa por Decisão Judicial,
+                            06 - Operação Suspensa por Decisão Administrativa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RegimeEspecial
+Descrição: Indica o Regime Especial. Quando não informado assumirá da configuração de RPS.
+                            00 - Nenhum,
+                            01 - Microempresa Municipal,
+                            02 - Estimativa,
+                            03 - Sociedade de Profissionais,
+                            04 - Cooperativa,
+                            05 - Microempreendedor Individual,
+                            06 - Empresa Júnior
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: IncentivoCultural
+Descrição: Indica se tem Incentivo Cultural. Quando não informado assumirá da configuração de RPS.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: ISSRetido
+Descrição: Indica se haverá retenção de ISS no RPS Quando não informado assumirá da configuração do cliente/código de serviço
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CodigoServico
+Descrição: Identificador do código de serviço
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: DescontoCondicional
+Descrição: Indica se haverá desconto condicional no RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoIBGEMunicipioPrestacao
+Descrição: Indica o município onde o serviço está sendo prestado
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Obra
+Descrição: Identificador da obra
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DiscriminacaoServicos
+Descrição: Indica a discriminação dos serviços prestados
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: OutrasDeducoes
+Descrição: Indica se haverá deduções no RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: OutrasRetencoes
+Descrição: Indica se haverá retenções no RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Observacao
+Descrição: Indica a observação do RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CalcularImpostos
+Descrição: Indica se o sistema vai calcular os impostos com base nas configurações. Quando falso, assume os valores informados
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ItensRPS
+Descrição: Indica os serviços prestados no RPS
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Pagamentos
+Descrição: Indica as formas de pagamentos do RPS. Quando não informado assumirá da configuração do cliente
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Rateios
+Descrição: Indica as forma de rateio do RPS. Quando não informado assumirá da configuração do cliente
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

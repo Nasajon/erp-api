@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Processo">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdProcesso" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>			
+			<field nome="Numero" controlType="String" tamanho="20" required="True" notnull="True"/>
+			<field nome="DataAbertura" controlType="Date" required="True" notnull="True"/>			
+			<field nome="Descricao" controlType="String" tamanho="100" required="True" notnull="True"/>
+			<field nome="CodigoVara" controlType="String" tamanho="2" required="True" notnull="True"/>
+			<field nome="CodigoMunicipioVara" controlType="String" tamanho="8" required="True" notnull="True" summary="Conforme tabela do IBGE"/>			
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Administrativo(1) ou Judicial(2)"/>
+			<field nome="Autor" controlType="Integer" required="True" notnull="True" summary="Próprio contribuinte(1) ou Outra entidade(2)"/>
+			<field nome="Motivo" controlType="Integer" required="True" notnull="True" summary="RAT(0), FAP(1), INSS(2), IRRF(3), FGTS(4), Sindical(5), Demissão(6), Reintegração(7), Admissão(8), Menor Aprendiz(9) ou Terceiros(10)"/>			
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>			
+			<field nome="Processo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Numero" controlType="String" tamanho="20" required="False" notnull="True"/>
+			<field nome="DataAbertura" controlType="Date" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="100" required="False" notnull="True"/>
+			<field nome="CodigoMunicipioVara" controlType="String" tamanho="8" required="False" notnull="True" summary="Conforme tabela do IBGE"/>
+			<field nome="CodigoVara" controlType="String" tamanho="2" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="False" notnull="True" summary="Administrativo(1) ou Judicial(2)"/>
+			<field nome="Autor" controlType="Integer" required="False" notnull="True" summary="Próprio contribuinte(1) ou Outra entidade(2)"/>
+			<field nome="Motivo" controlType="Integer" required="False" notnull="True" summary="RAT(0), FAP(1), INSS(2), IRRF(3), FGTS(4), Sindical(5), Demissão(6), Reintegração(7), Admissão(8), Menor Aprendiz(9) ou Terceiros(10)"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosDecisao</nome>			
+			<field nome="Processo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="False" notnull="True" summary="Definitiva (1), Decisão não transitada em julgado com efeito suspensivo(2), Liminar em mandado de segurança(3), Liminar ou tutela antecipada, em outras espécies de ação judicial(4), Contestação administrativa(5), Outros(9)"/>
+			<field nome="Extensao" controlType="Integer" required="False" notnull="False" summary="Contribuições Patronais(1) ou Contribuições Patronais + Segurados(2)"/>
+			<field nome="DepositoIntegral" controlType="Boolean" required="False" notnull="False"/>			
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Processo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

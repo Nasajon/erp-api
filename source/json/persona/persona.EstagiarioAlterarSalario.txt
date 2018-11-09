@@ -1,0 +1,20 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "SalarioFixo" : 20,6
+   , "UnidadeSalario" : 1
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: SalarioFixo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: UnidadeSalario
+Descrição: Hora(1), Dia(2), Semana(3), Mês(4) ou Tarefa(5)Obrigatório: NÃOAceita valor nulo: NÃO
+

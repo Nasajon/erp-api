@@ -1,0 +1,16 @@
+{
+     "ItemFatura" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Fatura" : "Guid ou Código"
+   , "DocumentoFiscal" : "Objeto: TDocumentoFiscalNs"
+	
+}
+
+Campo: ItemFatura
+Descrição: Não é requerido pois o registro poderá ser encontrado pelos campos fatura e documentofiscal.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Fatura
+Descrição: Não é requerido pois o registro poderá ser encontrado pelo campo ItemFatura.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DocumentoFiscal
+Descrição: Não é requerido pois o registro poderá ser encontrado pelo campo ItemFatura.Obrigatório: NÃOAceita valor nulo: NÃO
+

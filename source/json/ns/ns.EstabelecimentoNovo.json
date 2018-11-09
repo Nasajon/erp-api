@@ -1,0 +1,14 @@
+{
+     "IdEstabelecimento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Identificacao" : "String(20)"
+   , "InscricaoEstadual" : "String(20)"
+   , "InscricaoMunicipal" : "String(20)"
+   , "NomeFantasia" : "String(150)"
+   , "CEI" : "String(12)"
+   , "DataInicioAtividades" : "2014-12-31"
+   , "DataFinalAtividades" : "2014-12-31"
+	
+}

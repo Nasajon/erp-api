@@ -1,0 +1,45 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoPaisEmissor" : "String(5)"
+   , "Numero" : "String(30)"
+   , "OrgaoEmissor" : "String(20)"
+   , "UF" : "String(2)"
+   , "DataExpedicao" : "2014-12-31"
+   , "DataValidade" : "2014-12-31"
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CodigoPaisEmissor
+Descrição: Conforme tabela oficial do governo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Numero
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: OrgaoEmissor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: UF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataExpedicao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataValidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

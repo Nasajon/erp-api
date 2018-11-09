@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="contabil" modulo="lotelancamento">
+		<model>
+			<nome>Novo</nome>
+			<field nome="lancamento" controlType="Guid" required="False" notnull="True"/>		
+			<field nome="data" controlType="Date" required="True" notnull="True"/>
+			<field nome="ano" controlType="Integer" required="True" notnull="True"/>
+			<field nome="contadebito" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="contacredito" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="historico" controlType="Memo" required="True" notnull="True"/>
+			<field nome="numero" controlType="String" tamanho="12" required="True" notnull="True"/>
+			<field nome="valor" controlType="Currency" tamanho="20,2" Required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="lote" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>		
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="lancamento" controlType="EntidadeInterna" required="False" notnull="True"/>		
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="lote" controlType="EntidadeInterna" required="True" notnull="True"/>	
+			<field nome="ano" controlType="Integer" required="False" notnull="True" summary="Informar o ano de excercício do lote"/>			
+		</model>
+	</models>
+</root>

@@ -1,0 +1,11 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DeficienteIntelectual" : False
+   , "DeficienteMental" : False
+   , "DeficienteAuditivo" : False
+   , "DeficienteVisual" : False
+   , "DeficienteFisico" : False
+   , "Reabilitado" : False
+	
+}

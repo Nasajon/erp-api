@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Pagamento">
+		<model>		    
+      <field nome="Pagamento" controlType="Guid" required="False" notnull="True"/>			
+      <field nome="FormaPagamento" controlType="EntidadeInterna" required="True" notnull="True"/>            
+      <field nome="DocumentoFiscal" controlType="Object" namespace="ns\documentofiscalns\TDocumentoFiscalns" required="False" notnull="True"/>
+			<field nome="Conta" controlType="EntidadeInterna" required="False" notnull="False"/>
+      <field nome="RateioPadrao" controlType="Object" namespace="financas\rateiopadrao\TRateioPadrao" required="False" notnull="False"/>
+			<field nome="MeioEletronicoCartao" controlType="EntidadeInterna" required="False" notnull="False"/>
+      <field nome="LayoutCobranca" controlType="Object" namespace="financas\layoutcobranca\TLayoutCobranca" required="False" notnull="False"/>
+			<field nome="OperadoraCartao" controlType="EntidadeInterna" required="False" notnull="False"/>
+      <field nome="BandeiraCartao" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Parcelamento" controlType="EntidadeInterna" required="False" notnull="False"/>
+	    <field nome="Valor" controlType="Currency" tamanho="13,2" required="True" notnull="True"/>
+	    <field nome="NomeFormaPagamento" controlType="String" tamanho="30" required="False" notnull="False"/>
+	    <field nome="NomeMeioEletronicoCartao" controlType="String" tamanho="30" required="False" notnull="False"/>
+	    <field nome="NomeBandeiraCartao" controlType="String" tamanho="30" required="False" notnull="False"/>
+	    <field nome="NomeOperadoraCartao" controlType="String" tamanho="30" required="False" notnull="False"/>
+	    <field nome="NomeConta" controlType="String" tamanho="30" required="False" notnull="False"/>
+			<field nome="NumeroParcelas" controlType="Integer" required="False" notnull="False"/>	
+			<field nome="DataFatura" controlType="Date" required="False" notnull="False"/>	
+			<field nome="TipoOperacao" controlType="Integer" required="False" notnull="False"/>	
+      <field nome="AutorizacaoCartao" controlType="String" tamanho="30" required="False" notnull="False"/>
+			<field nome="DataAutorizacaoCartao" controlType="Date" required="False" notnull="False"/>	
+      <field nome="DocumentoCartao" controlType="String" tamanho="30" required="False" notnull="False"/>
+      <field nome="IrRetido" controlType="Currency" tamanho="13,2" required="False" notnull="False"/>
+	    <field nome="PisRetido" controlType="Currency" tamanho="13,2" required="False" notnull="False"/>
+	    <field nome="CofinsRetido" controlType="Currency" tamanho="13,2" required="False" notnull="False"/>
+	    <field nome="CsllRetido" controlType="Currency" tamanho="13,2" required="False" notnull="False"/>
+	    <field nome="Tipo" controlType="Integer" required="False" notnull="True" summary="Informe: 
+	        	            0 - Pagamento derivado de Documento Fiscal;
+	        	            1 - Pagamento derivado de Fatura"/>
+      <field nome="Parcelas" controlType="ObjectList" namespace="ns\parcela\TParcela" required="False" notnull="False"/>
+		</model>
+	</models>
+</root>

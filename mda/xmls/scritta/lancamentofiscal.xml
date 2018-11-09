@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="scritta" modulo="LancamentoFiscal">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="False"/>
+			<field nome="iddocumentofiscal" controlType="EntidadeInterna" summary="id do documento fiscal associado" required="False" notnull="False"/>
+			<field nome="idpessoa" controlType="EntidadeInterna" required="False" summary="id do participante(cliente, fornecedor) " notnull="False"/>
+			<field nome="idestabelecimento" controlType="EntidadeFisicaJuridica" required="False" summary="id do estabelecimento ao qual o lançamento fiscal pertence" notnull="False"/>
+			<field nome="ano" controlType="Integer" required="False" notnull="False"/>
+			<field nome="tipo" controlType="Integer" summary="Indica se é entrada(1) ou saída(0)" required="True" />
+			<field nome="datalancamento" controlType="Date" required="True" />
+			<field nome="modelo" controlType="String" summary="Modelo do documento fiscal" tamanho="3" required="True" notnull="True"/>
+			<field nome="serie" controlType="String" summary="Série do documento fiscal" tamanho="3" required="True" notnull="True"/>
+			<field nome="subserie" controlType="String" tamanho="2" required="False" />
+			<field nome="numero" controlType="String" tamanho="15" required="True" />
+			<field nome="aliquotaicms" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+			<field nome="origem" controlType="Integer" required="False" />
+			<field nome="cfop" controlType="String" tamanho="8" required="True" />
+			<field nome="emissao" controlType="Date" summary="Data de emissão do documento" required="False" />
+			<field nome="cancelado" controlType="Boolean" summary="Lançamento fiscal cancelado?" required="False" />
+			<field nome="orgaopublico" controlType="Boolean" summary="Cliente/fornecedor é um orgão público?" required="False" />
+			<field nome="retemiss" controlType="Boolean" required="False" />
+			<field nome="retemir" controlType="Boolean" required="False" />
+			<field nome="reteminss" controlType="Boolean" required="False" />
+			<field nome="ipipresumido" controlType="Boolean" summary="Ipi presumido(certas compras realizadas por indústrias)" required="False" />
+			<field nome="dataretencaoiss" controlType="Date" required="False" />
+			<field nome="crt" controlType="Integer" required="False" />
+			<field nome="situacaosped" controlType="Integer" summary="00 Documento regular
+																	01 Documento regular extemporâneo
+																	02 Documento cancelado
+																	03 Documento cancelado extemporâneo
+																	04 NFe denegada
+																	05 NFe inutilizada
+																	06 Documento Fiscal Complementar
+																	07 Documento Fiscal Complementar extemporâneo
+																	08 Documento Fiscal emitido com base em Regime Especial ou Norma Específica
+																	30 Lançamento Alterado
+																	31 Lançamento Inconcistente" required="False" />
+			<field nome="tipoicms" controlType="" required="False" />
+			<field nome="tipoipi" controlType="" required="False" />
+			<field nome="tipoiss" controlType="Integer" required="False" />
+			<field nome="observacao" controlType="String" tamanho="255" required="False" />
+			<field nome="codigomunicipio" controlType="String" tamanho="8" required="False" />
+			<field nome="declaracaoimportacao" controlType="String" tamanho="12" required="False" />
+			<field nome="valorcontabil" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="baseicms" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoricms" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="isentaicms" controlType="Currency" tamanho="20,2" summary="Valor da base de icms isento" required="False" />
+			<field nome="outrasicms" controlType="Currency" tamanho="20,2" summary="" required="False" />
+			<field nome="baseicmsdiferencial" controlType="Currency" tamanho="20,2" summary="Base de icms do diferencial de alíquotas" required="False" />
+			<field nome="icmsnaocreditado" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="baseicmsreducao" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoricmsdiferencial" controlType="Currency" tamanho="20,2" summary="valor de icms do diferencial de alíquotas" required="False" />
+			<field nome="valoricmsantecipacao" controlType="Currency" tamanho="20,2" summary="Valor de antecipação de icms" required="False" />
+			<field nome="valoricmsadicional" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="basesubstituicaotributaria" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorstPropria" controlType="Currency" tamanho="20,2" summary="valor da substituicao tributária própria" required="False" />
+			<field nome="valorstterceiro" controlType="Currency" tamanho="20,2" summary="valor da substituicao tributária de terceiro" required="False" />
+			<field nome="valorstnaoretida" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="baseipi" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoripi" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoripiisento" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoripioutras" controlType="Currency" tamanho="20,2" summary="Valor de ipi sem crédito/débito e que não é isento" required="False" />
+			<field nome="valoripinaocreditado" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="baseiss" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoriss" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorissisento" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorissoutras" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorissoutromunicipio" controlType="Currency" tamanho="20,2" summary="valor de iss devido a outro município" required="False" />
+			<field nome="valormateriais" controlType="Currency" tamanho="20,2" summary="valor de icms referente a materiais" required="False" />
+			<field nome="valorsubempreitada" controlType="Currency" tamanho="20,2" summary="valor de icms referente a sub empreitada" required="False" />
+			<field nome="valoroutrasdeducoes" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorcide" controlType="Currency" tamanho="20,2" summary="valor imposto sobre combustíveis" required="False" />
+			<field nome="valordescontos" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valordescontosnaotributavel" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorfrete" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorseguro" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="outrasdespesas" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="baseir" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="basecsll" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="basepis" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="basecofins" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorinssretido" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorirretido" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorcsllretido" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorpisretido" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valorcofinsretido" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="deducaoir" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="deducaocsll" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="deducaopis" controlType="" required="False" />
+			<field nome="deducaocofins" controlType="" required="False" />
+			<field nome="valoricmsfcp" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoricmspartdest" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoricmspartorigem" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="itenslancamentofiscal" controlType="ObjectList" namespace="scritta\itemlancamentofiscal\TItemLancamentoFiscalNovo" summary="Lista dos itens do lançamento fiscal" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>Cancelar</nome>
+			<field nome="id" controlType="Guid" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

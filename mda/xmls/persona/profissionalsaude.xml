@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="ProfissionalSaude">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdProfissional" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="6" required="True" notnull="True"/>			
+			<field nome="Nome" controlType="String" tamanho="40" required="True" notnull="True"/>
+			<field nome="Conselho" controlType="Integer" required="True" notnull="True" summary="Medicina(0), Odontologia(1) ou Enfermagem(2)"/>
+			<field nome="NumeroConselho" controlType="String" tamanho="14" required="True" notnull="True"/>
+			<field nome="UFConselho" controlType="String" tamanho="2" required="True" notnull="True"/>
+			<field nome="NIT" controlType="String" tamanho="15" required="True" notnull="True" summary="Número de inscrição do trabalhador"/>
+			<field nome="TipoRegistro" controlType="String" tamanho="1" required="True" notnull="True" summary="Definitivo(D) ou Provisório(P)"/>
+			<field nome="Categoria" controlType= "Integer" required="True" notnull="True" summary="Geral(0), Ambientalista(1) ou Químico(2)"/>
+			<field nome="DDDTelefone" controlType="String" tamanho="2" required="False" notnull="True"/>			
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Profissional" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="6" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="40" required="False" notnull="True"/>
+			<field nome="Conselho" controlType="Integer" required="False" notnull="True" summary="Medicina(0), Odontologia(1) ou Enfermagem(2)"/>
+			<field nome="NumeroConselho" controlType="String" tamanho="14" required="False" notnull="True"/>
+			<field nome="UFConselho" controlType="String" tamanho="2" required="False" notnull="True"/>
+			<field nome="NIT" controlType="String" tamanho="15" required="False" notnull="True" summary="Número de inscrição do trabalhador"/>
+			<field nome="TipoRegistro" controlType="String" tamanho="1" required="False" notnull="True" summary="Definitivo(D) ou Provisório(P)"/>
+			<field nome="Categoria" controlType= "Integer" required="False" notnull="True" summary="Geral(0), Ambientalista(1) ou Químico(2)"/>
+			<field nome="DDDTelefone" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="False"/>			
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Profissional" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

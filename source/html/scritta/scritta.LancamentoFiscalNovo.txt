@@ -1,0 +1,442 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "iddocumentofiscal" : "Guid ou Código"
+   , "idpessoa" : "Guid ou Código"
+   , "idestabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "ano" : 1
+   , "tipo" : 1
+   , "datalancamento" : "2014-12-31"
+   , "modelo" : "String(3)"
+   , "serie" : "String(3)"
+   , "subserie" : "String(2)"
+   , "numero" : "String(15)"
+   , "aliquotaicms" : 20,2
+   , "origem" : 1
+   , "cfop" : "String(8)"
+   , "emissao" : "2014-12-31"
+   , "cancelado" : False
+   , "orgaopublico" : False
+   , "retemiss" : False
+   , "retemir" : False
+   , "reteminss" : False
+   , "ipipresumido" : False
+   , "dataretencaoiss" : "2014-12-31"
+   , "crt" : 1
+   , "situacaosped" : 1
+   , "tipoicms" : 1
+   , "tipoipi" : 1
+   , "tipoiss" : 1
+   , "observacao" : "String(255)"
+   , "codigomunicipio" : "String(8)"
+   , "declaracaoimportacao" : "String(12)"
+   , "valorcontabil" : 20,2
+   , "baseicms" : 20,2
+   , "valoricms" : 20,2
+   , "isentaicms" : 20,2
+   , "outrasicms" : 20,2
+   , "baseicmsdiferencial" : 20,2
+   , "icmsnaocreditado" : 20,2
+   , "baseicmsreducao" : 20,2
+   , "valoricmsdiferencial" : 20,2
+   , "valoricmsantecipacao" : 20,2
+   , "valoricmsadicional" : 20,2
+   , "basesubstituicaotributaria" : 20,2
+   , "valorstPropria" : 20,2
+   , "valorstterceiro" : 20,2
+   , "valorstnaoretida" : 20,2
+   , "baseipi" : 20,2
+   , "valoripi" : 20,2
+   , "valoripiisento" : 20,2
+   , "valoripioutras" : 20,2
+   , "valoripinaocreditado" : 20,2
+   , "baseiss" : 20,2
+   , "valoriss" : 20,2
+   , "valorissisento" : 20,2
+   , "valorissoutras" : 20,2
+   , "valorissoutromunicipio" : 20,2
+   , "valormateriais" : 20,2
+   , "valorsubempreitada" : 20,2
+   , "valoroutrasdeducoes" : 20,2
+   , "valorcide" : 20,2
+   , "valordescontos" : 20,2
+   , "valordescontosnaotributavel" : 20,2
+   , "valorfrete" : 20,2
+   , "valorseguro" : 20,2
+   , "outrasdespesas" : 20,2
+   , "baseir" : 20,2
+   , "basecsll" : 20,2
+   , "basepis" : 20,2
+   , "basecofins" : 20,2
+   , "valorinssretido" : 20,2
+   , "valorirretido" : 20,2
+   , "valorcsllretido" : 20,2
+   , "valorpisretido" : 20,2
+   , "valorcofinsretido" : 20,2
+   , "deducaoir" : 20,2
+   , "deducaocsll" : 20,2
+   , "deducaopis" : 20,2
+   , "deducaocofins" : 20,2
+   , "valoricmsfcp" : 20,2
+   , "valoricmspartdest" : 20,2
+   , "valoricmspartorigem" : 20,2
+   , "itenslancamentofiscal" : "ObjectList: TItemLancamentoFiscalNovo"
+	
+}
+
+Campo: id
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: iddocumentofiscal
+Descrição: id do documento fiscal associado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: idpessoa
+Descrição: id do participante(cliente, fornecedor) 
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: idestabelecimento
+Descrição: id do estabelecimento ao qual o lançamento fiscal pertence
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ano
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: tipo
+Descrição: Indica se é entrada(1) ou saída(0)
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: datalancamento
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: modelo
+Descrição: Modelo do documento fiscal
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: serie
+Descrição: Série do documento fiscal
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: subserie
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: numero
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: aliquotaicms
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: origem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: cfop
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: emissao
+Descrição: Data de emissão do documento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: cancelado
+Descrição: Lançamento fiscal cancelado?
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: orgaopublico
+Descrição: Cliente/fornecedor é um orgão público?
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: retemiss
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: retemir
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: reteminss
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ipipresumido
+Descrição: Ipi presumido(certas compras realizadas por indústrias)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: dataretencaoiss
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: crt
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: situacaosped
+Descrição: 00 Documento regular
+																	01 Documento regular extemporâneo
+																	02 Documento cancelado
+																	03 Documento cancelado extemporâneo
+																	04 NFe denegada
+																	05 NFe inutilizada
+																	06 Documento Fiscal Complementar
+																	07 Documento Fiscal Complementar extemporâneo
+																	08 Documento Fiscal emitido com base em Regime Especial ou Norma Específica
+																	30 Lançamento Alterado
+																	31 Lançamento Inconcistente
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: tipoicms
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: tipoipi
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: tipoiss
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: observacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: codigomunicipio
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: declaracaoimportacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorcontabil
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: baseicms
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoricms
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: isentaicms
+Descrição: Valor da base de icms isento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: outrasicms
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: baseicmsdiferencial
+Descrição: Base de icms do diferencial de alíquotas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: icmsnaocreditado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: baseicmsreducao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoricmsdiferencial
+Descrição: valor de icms do diferencial de alíquotas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoricmsantecipacao
+Descrição: Valor de antecipação de icms
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoricmsadicional
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: basesubstituicaotributaria
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorstPropria
+Descrição: valor da substituicao tributária própria
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorstterceiro
+Descrição: valor da substituicao tributária de terceiro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorstnaoretida
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: baseipi
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoripi
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoripiisento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoripioutras
+Descrição: Valor de ipi sem crédito/débito e que não é isento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoripinaocreditado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: baseiss
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoriss
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorissisento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorissoutras
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorissoutromunicipio
+Descrição: valor de iss devido a outro município
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valormateriais
+Descrição: valor de icms referente a materiais
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorsubempreitada
+Descrição: valor de icms referente a sub empreitada
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoroutrasdeducoes
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorcide
+Descrição: valor imposto sobre combustíveis
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valordescontos
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valordescontosnaotributavel
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorfrete
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorseguro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: outrasdespesas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: baseir
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: basecsll
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: basepis
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: basecofins
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorinssretido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorirretido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorcsllretido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorpisretido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valorcofinsretido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: deducaoir
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: deducaocsll
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: deducaopis
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: deducaocofins
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoricmsfcp
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoricmspartdest
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valoricmspartorigem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: itenslancamentofiscal
+Descrição: Lista dos itens do lançamento fiscal
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

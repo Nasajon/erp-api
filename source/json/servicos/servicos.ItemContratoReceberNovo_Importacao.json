@@ -1,0 +1,36 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "IdContrato" : "Guid ou Código"
+   , "Servico" : "Guid ou Código"
+   , "ValorVariavel" : False
+   , "ValoresVariaveis" : "ObjectList: TValorVariavelItemContrato"
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "Valor" : 20,2
+   , "Quantidade" : 1
+   , "Instancia" : "Guid ou Código"
+   , "CodigoInstancia" : "String(30)"
+   , "NomeInstancia" : "String(100)"
+   , "TipoInstancia" : "String(50)"
+   , "DescontosNoPedido" : 20,2
+   , "UnidadeNatureza" : 1
+   , "UnidadeIntervaloNatureza" : 1
+   , "QuantidadeIntervaloNatureza" : 1
+   , "TipoVencimento" : 1
+   , "DiaVencimento" : 1
+   , "AdicaoMesesVencimento" : 1
+   , "QtdDiasParaInicio" : 1
+   , "QtdDiasParaFim" : 1
+   , "QtdMesesParaReajuste" : 1
+   , "PercentualDesconto" : 15,4
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiarios" : 15,4
+   , "TipoCobranca" : 1
+   , "Indice" : "Guid ou Código"
+   , "ConsiderarDataInicio" : False
+   , "DataCobranca" : "2014-12-31"
+   , "DataReajuste" : "2014-12-31"
+   , "Autorizado" : False
+   , "Cancelado" : False
+   , "DataHoraCancelamento" : "2014-12-31 12:00:00"
+	
+}

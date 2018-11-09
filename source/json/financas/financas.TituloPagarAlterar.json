@@ -1,0 +1,146 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "LayoutPagamento" : "Guid ou Código"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "Vencimento" : "2014-12-31"
+   , "PrevisaoVencimento" : "2014-12-31"
+   , "Parcela" : 1
+   , "TotalParcelas" : 1
+   , "Observacao" : "String(1000)"
+   , "Anotacoes" : "Este atributo é do titpo Memo."
+   , "ValorTitulo" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "AliquotaIr" : 15,4
+   , "ValorIrRetido" : 20,2
+   , "AliquotaCofins" : 15,4
+   , "ValorCofinsRetido" : 20,2
+   , "AliquotaPis" : 15,4
+   , "ValorPisRetido" : 20,2
+   , "AliquotaCsll" : 15,4
+   , "ValorCsllRetido" : 20,2
+   , "ValorInssRetido" : 20,2
+   , "AliquotaIss" : 15,4
+   , "ValorIssRetido" : 20,2
+   , "DataLimiteDesconto" : "2014-12-31"
+   , "PercentualDesconto" : 15,4
+   , "DataInicioMulta" : "2014-12-31"
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiario" : 15,4
+   , "LinhaDigitavel" : "String(54)"
+   , "CodigoBarras" : "String(44)"
+   , "NumeroNota" : "String(20)"
+   , "ModeloDocumentoFiscal" : 1
+   , "SerieDocumentoFiscal" : "String(3)"
+   , "SubserieDocumentoFiscal" : "String(2)"
+   , "ServicoBancario" : "Guid ou Código"
+   , "FormaPagamento" : "Guid ou Código"
+   , "FinalidadePagamento" : "Guid ou Código"
+   , "TipoContaPagamento" : "Guid ou Código"
+   , "DataAgendamento" : "2014-12-31"
+   , "DataProvisoria" : False
+   , "ValorProvisorio" : False
+   , "TipoOrigem" : 1
+   , "Contrato" : "Guid ou Código"
+   , "IRRetidoNF" : 20,2
+   , "INSSRetidoNF" : 20,2
+   , "BemPatrimonial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Desconto" : 15,4
+   , "Multa" : 15,4
+   , "Juros" : 15,4
+   , "Adiantamento" : False
+   , "UsaDiscriminacao" : False
+   , "IDDocumentoRateado" : "Guid ou Código"
+   , "DebitoAutomatico" : False
+   , "PercentualOutrosAcrescimos" : 15,4
+   , "OutrosAcrescimos" : 15,4
+   , "ModoExibicaoDesconto" : "String(1)"
+   , "ModoExibicaoJuros" : "String(1)"
+   , "ModoExibicaoMulta" : "String(1)"
+   , "ModoExibicaoOutrosAcrescimos" : "String(1)"
+   , "ModoExibicaoCodigoBarras" : "String(1)"
+   , "id_servicobanco" : "Guid ou Código"
+   , "id_formapagamentobanco" : "Guid ou Código"
+   , "id_finalidadepagamentobanco" : "Guid ou Código"
+   , "id_tipocontapagamentobanco" : "Guid ou Código"
+   , "DataCompetenciaTributos" : "2014-12-31"
+   , "DataProcessamentoBoleto" : "2014-12-31"
+   , "NossoNumero" : "String(30)"
+   , "CodigoDoCedenteBoleto" : "String(7)"
+   , "NumeroDocumentoBoleto" : "String(20)"
+   , "EspecieBoleto" : "String(3)"
+   , "AceiteBoleto" : False
+   , "UsoBancoBoleto" : "String(10)"
+   , "CarteiraBoleto" : "String(5)"
+   , "CodigodaReceitaTributos" : "String(6)"
+   , "NumeroDeReferenciaDARF" : "String(17)"
+   , "valorreceitabrutaacumuladadarfsimples" : 20,2
+   , "percreceitabrutaacumuladadarfsimples" : 14, 4
+   , "numerodeclaracaogare" : "String(12)"
+   , "numeroetiquetagare" : "String(13)"
+   , "numerodaparcelagare" : "String(13)"
+   , "codigomunicipioipva" : "String(5)"
+   , "codigorenavam" : "String(11)"
+   , "opcaodepagamentoipva" : "String(1)"
+   , "opcaoretiradacrlv" : "String(1)"
+   , "placaveiculoipva" : "String(7)"
+   , "unidadefederacaoipva" : "String(2)"
+   , "identificadorfgts" : "String(16)"
+   , "lacreconectividadesocial" : "String(11)"
+   , "numerodocumentodarj" : "String(16)"
+   , "Situacao" : 1
+   , "ID_RENEGOCIACAO_GERADORA" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "valorvariacaocambialativa" : 
+   , "valorvariacaocambialpassiva" : 
+   , "Emprestimo" : False
+   , "ID_ContaEmprestimo" : "Guid ou Código"
+   , "DataCompetencia" : "2014-12-31"
+   , "UsuarioResponsavel" : "Guid ou Código"
+   , "id_servicons" : "Guid ou Código"
+   , "id_formapagamentons" : "Guid ou Código"
+   , "id_finalidadepagamentons" : "Guid ou Código"
+   , "id_tipocontapagamentons" : "Guid ou Código"
+   , "tipoordempagamento" : 1
+   , "TituloCoberturaConta" : False
+   , "GrupoEmpresarialCobertura" : "Guid ou Código"
+   , "ContaCobertura" : "Guid ou Código"
+   , "IDDocumentoRateadoCobertura" : "Guid ou Código"
+   , "PrestacaoDeConta" : "Guid ou Código"
+   , "contafornecedor" : "Guid ou Código"
+   , "Previsto" : False
+   , "CFOPCodigo" : "String(50)"
+   , "IdConjuntoAnexo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "OutrasRetencoes" : 20,2
+   , "DescricaoOutrasRetencoes" : "String(255)"
+   , "Contabilizar" : False
+   , "Contabilizar_Baixa" : False
+   , "RazaoSocialFactoring" : "String(150)"
+   , "NumeroDocumentoFactoring" : "String(30)"
+   , "RazaoSocialGPS" : "String(150)"
+   , "NumeroDocumentoGPS" : "String(30)"
+   , "Estorno" : False
+   , "id_titulo_estorno" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipoestorno" : 1
+   , "pisestornado" : 
+   , "cofinsestornado" : 
+   , "csllestornado" : 
+   , "irestornado" : 
+   , "issestornado" : 
+   , "inssestornado" : 
+   , "NotaFutura" : False
+   , "ValorASerReembolsado" : False
+   , "id_pessoa_reembolso" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usamoedaestrangeira" : False
+   , "moedaestrangeira" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "cotacao" : 
+   , "valornamoedaestrangeira" : 
+   , "mesanocompetenciagps" : "String()"
+   , "outrasentidadesgps" : 
+   , "id_titulo_origemcomissao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "DataCancelamento" : "2014-12-31"
+   , "id_tipo_despesa_receita" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

@@ -1,0 +1,34 @@
+{
+     "IdItem" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Faixa" : "Guid ou Código"
+   , "DataInicioValidade" : "2014-12-31"
+   , "ValorFinal" : 20,6
+   , "Percentual" : 20,6
+   , "ValorConstante" : 20,6
+	
+}
+
+Campo: IdItem
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Faixa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataInicioValidade
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ValorFinal
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Percentual
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: ValorConstante
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

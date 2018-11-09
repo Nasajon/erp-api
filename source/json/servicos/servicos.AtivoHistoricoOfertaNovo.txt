@@ -1,0 +1,24 @@
+{
+     "ativohistoricooferta" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_objetoservico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_oferta" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ativa" : False
+   , "data" : "2014-12-31"
+	
+}
+
+Campo: ativohistoricooferta
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: id_objetoservico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: id_oferta
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ativa
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: data
+Obrigatório: SIMAceita valor nulo: SIM
+

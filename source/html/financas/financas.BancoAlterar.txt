@@ -1,0 +1,24 @@
+{
+     "Banco" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Nome" : "String(150)"
+   , "Numero" : "String(4)"
+	
+}
+
+Campo: Banco
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

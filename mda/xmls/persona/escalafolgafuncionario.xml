@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="EscalaFolgaFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdEscalaFolga" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Horario" controlType="EntidadeInterna" required="True" notnull="True"/>			
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="IdEscalaFolga" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>			
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="True"/>			
+			<field nome="DataNova" controlType="Date" required="True" notnull="True"/>
+	    </model> 
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdEscalaFolga" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>			
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>						
+		</model>
+	</models>
+</root>
+
+
+  

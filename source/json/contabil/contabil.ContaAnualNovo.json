@@ -1,0 +1,14 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "grupoempresarial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "codigoconta" : "String(21)"
+   , "codigoreduzido" : "String(6)"
+   , "ano" : 1
+   , "nome" : "String(100)"
+   , "naturezaconta" : 1
+   , "naturezasaldo" : 1
+   , "permitecentrodecusto" : 1
+   , "contamae" : "Guid ou Código"
+	
+}

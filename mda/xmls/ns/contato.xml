@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Contato">
+		<model>
+			<field nome="id" controlType="Guid"/>	
+			<field nome="idPessoa" controlType="Guid" />			
+			<field nome="nome" controlType="String" tamanho="200"/>	
+			<field nome="primeiroNome" controlType="String" tamanho="100"/>
+			<field nome="sobreNome" controlType="String" tamanho="100"/>
+			<field nome="email" controlType="String" tamanho="100"/>
+			<field nome="cargo" controlType="String" tamanho="100"/>
+			<field nome="sexo" controlType="Integer" />			
+			<field nome="observacao" controlType="Memo" />			
+			<field nome="dataNascimento" controlType="Date" />			
+			<field nome="idPessoaFisica" controlType="Guid" />			
+		</model>		
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid"/>	
+			<field nome="idPessoa" controlType="Guid" />			
+			<field nome="nome" controlType="String" tamanho="200"/>	
+			<field nome="primeiroNome" controlType="String" tamanho="100"/>
+			<field nome="sobreNome" controlType="String" tamanho="100"/>
+			<field nome="email" controlType="String" tamanho="100"/>
+			<field nome="cargo" controlType="String" tamanho="100"/>
+			<field nome="sexo" controlType="Integer" />			
+			<field nome="observacao" controlType="Memo" />			
+			<field nome="dataNascimento" controlType="Date" />			
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="id" controlType="Guid"/>
+			<field nome="idPessoa" controlType="Guid" />			
+			<field nome="nome" controlType="String" tamanho="200"/>	
+			<field nome="primeiroNome" controlType="String" tamanho="100"/>
+			<field nome="sobreNome" controlType="String" tamanho="100"/>
+			<field nome="email" controlType="String" tamanho="100"/>
+			<field nome="cargo" controlType="String" tamanho="100"/>
+			<field nome="sexo" controlType="Integer" />			
+			<field nome="observacao" controlType="Memo" />			
+			<field nome="dataNascimento" controlType="Date" />			
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid"/>		
+		</model>
+	</models>
+</root>

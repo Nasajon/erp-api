@@ -1,0 +1,9 @@
+{
+     "Sindicato" : "Guid ou Código"
+   , "MesesParaCalculoMedia" : 1
+   , "NumeradorFracaoAdicionalFerias" : 1
+   , "DenominadorFracaoAdicionalFerias" : 1
+   , "MediaPelosMaioresValores" : False
+   , "QuantidadeMesesMaioresValores" : 1
+	
+}

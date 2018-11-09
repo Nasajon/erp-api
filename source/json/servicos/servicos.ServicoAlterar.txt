@@ -1,0 +1,36 @@
+{
+     "Servico" : "Guid ou Código"
+   , "TipoServico" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Valor" : 20,2
+   , "CFOP" : "Objeto: TCFOPServico"
+   , "entidadescompartilhadoras_anteriores" : "ObjectList: TEntidadeCompartilhadora"
+   , "entidadescompartilhadoras_novas" : "ObjectList: TEntidadeCompartilhadora"
+	
+}
+
+Campo: Servico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoServico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CFOP
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: entidadescompartilhadoras_anteriores
+Descrição: Define as entidades compartilhadoras atuais as quais o cliente está vinculado. Simplesmente para localização do registro considerando Código, CNPJ ou CPF.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: entidadescompartilhadoras_novas
+Descrição: Define as entidades compartilhadoras as quais o cliente passará a estar vinculado.Obrigatório: NÃOAceita valor nulo: NÃO
+

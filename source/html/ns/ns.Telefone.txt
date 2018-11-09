@@ -1,0 +1,64 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "idPessoa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "idContato" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ddi" : "String(5)"
+   , "ddd" : "String(5)"
+   , "chaveTel" : "String(50)"
+   , "numero" : "String(50)"
+   , "ramal" : "String(10)"
+   , "descricao" : "Este atributo é do titpo Memo."
+   , "tipo" : 1
+   , "ordemImportancia" : 1
+   , "idPessoafisica" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: id
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: idPessoa
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: idContato
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ddi
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ddd
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: chaveTel
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: numero
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ramal
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: tipo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ordemImportancia
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: idPessoafisica
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

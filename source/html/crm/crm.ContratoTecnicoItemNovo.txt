@@ -1,0 +1,39 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "ContratoTecnico" : "Guid ou Código"
+   , "ContratoFinanceiro" : "Guid ou Código"
+   , "ObjetoServico" : "Guid ou Código"
+	
+}
+
+Campo: Identificador
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: GrupoEmpresarial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ContratoTecnico
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ContratoFinanceiro
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ObjetoServico
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

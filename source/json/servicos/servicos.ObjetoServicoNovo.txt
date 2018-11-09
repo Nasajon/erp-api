@@ -1,0 +1,36 @@
+{
+     "objetoservico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipo_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "grupoempresarial_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "produto_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "numero_serie" : "String(30)"
+   , "precocompra" : 20,2
+   , "observacao" : "String(30)"
+	
+}
+
+Campo: objetoservico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: tipo_id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: grupoempresarial_id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: produto_id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: numero_serie
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: precocompra
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: observacao
+Obrigatório: SIMAceita valor nulo: SIM
+

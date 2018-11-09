@@ -1,0 +1,24 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "itens_faturamento" : "ObjectList: tgerador_rps_item_faturamento"
+   , "pagamentos" : "ObjectList: tpagamentosemparcela"
+   , "parcelas" : "ObjectList: tparcela"
+   , "rateios" : "ObjectList: TItemRateioFinanceiro"
+	
+}
+
+Campo: id
+Descrição: Identificador do estabelecimentoObrigatório: SIMAceita valor nulo: SIM
+
+Campo: itens_faturamento
+Descrição: Serviços do RPSObrigatório: SIMAceita valor nulo: SIM
+
+Campo: pagamentos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: parcelas
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: rateios
+Descrição: Indica as forma de rateio do RPS. Quando não informado assumirá da configuração do clienteObrigatório: NÃOAceita valor nulo: SIM
+

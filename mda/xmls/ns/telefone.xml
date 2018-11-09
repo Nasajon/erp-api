@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Telefone">
+		<model>
+			<field nome="id" controlType="Guid"/>	
+			<field nome="idPessoa" controlType="Guid"/>			
+			<field nome="idContato" controlType="Guid"/>						
+			<field nome="ddi" controlType="String" tamanho="5"/>	
+			<field nome="ddd" controlType="String" tamanho="5"/>
+			<field nome="chaveTel" controlType="String" tamanho="50"/>
+			<field nome="numero" controlType="String" tamanho="50"/>
+			<field nome="ramal" controlType="String" tamanho="10"/>
+			<field nome="descricao" controlType="Memo" />			
+			<field nome="tipo" controlType="Integer" />			
+			<field nome="ordemImportancia" controlType="Integer" />			
+			<field nome="idPessoafisica" controlType="Guid"/>			
+		</model>	
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid"/>	
+			<field nome="idPessoa" controlType="Guid"/>			
+			<field nome="idContato" controlType="Guid"/>						
+			<field nome="ddi" controlType="String" tamanho="5"/>	
+			<field nome="ddd" controlType="String" tamanho="5"/>
+			<field nome="chaveTel" controlType="String" tamanho="50"/>
+			<field nome="numero" controlType="String" tamanho="50"/>
+			<field nome="ramal" controlType="String" tamanho="10"/>
+			<field nome="descricao" controlType="Memo" />			
+			<field nome="tipo" controlType="Integer" />			
+			<field nome="ordemImportancia" controlType="Integer" />			
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="id" controlType="Guid"/>	
+			<field nome="idPessoa" controlType="Guid"/>			
+			<field nome="idContato" controlType="Guid"/>						
+			<field nome="ddi" controlType="String" tamanho="5"/>	
+			<field nome="ddd" controlType="String" tamanho="5"/>
+			<field nome="chaveTel" controlType="String" tamanho="50"/>
+			<field nome="numero" controlType="String" tamanho="50"/>
+			<field nome="ramal" controlType="String" tamanho="10"/>
+			<field nome="descricao" controlType="Memo" />			
+			<field nome="tipo" controlType="Integer" />			
+			<field nome="ordemImportancia" controlType="Integer" />			
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid"/>		
+		</model>
+	</models>
+</root>

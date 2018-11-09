@@ -1,0 +1,7 @@
+{
+     "SocioParticipacao" : "Guid ou Código"
+   , "Socio" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataInicial" : "2014-12-31"
+	
+}

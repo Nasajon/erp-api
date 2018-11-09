@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="OfertaItemFaturamento">
+		<model>
+			<nome>Novo</nome>
+			<field nome="servicocatalogoitem" controlType="Guid" required="False" notnull="True"/>
+			<field nome="servicocatalogo" controlType="Guid" required="False" notnull="True"/>
+			<field nome="itemfaturamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="quantidade" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+			<field nome="valorbase" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+			<field nome="finalidade" controlType="Integer" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="servicocatalogoitem" controlType="Guid" required="False" notnull="True"/>
+			<field nome="servicocatalogo" controlType="Guid" required="False" notnull="True"/>
+			<field nome="itemfaturamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="quantidade" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+			<field nome="valorbase" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+			<field nome="finalidade" controlType="Integer" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="servicocatalogoitem" controlType="Guid" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

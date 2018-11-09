@@ -1,0 +1,17 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+   , "DataCompetencia" : "2014-12-31"
+   , "Documento" : "String(30)"
+   , "Historico" : "String(1024)"
+   , "Sinal" : 1
+   , "Valor" : 20,2
+   , "ImprimeCheque" : False
+   , "VersoCheque" : "String(1024)"
+   , "Favorecido" : "String(150)"
+   , "Contabilizar" : False
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+	
+}

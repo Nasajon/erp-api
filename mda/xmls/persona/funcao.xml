@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Funcao">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdFuncao" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="100" required="True" notnull="True"/>
+			<field nome="CodigoCBO" controlType="String" tamanho="6" required="True" notnull="True" summary="Conforme tabela de código brasileiro de ocupações"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="Funcao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="100" required="False" notnull="True"/>
+			<field nome="CodigoCBO" controlType="String" tamanho="6" required="False" notnull="True" summary="Conforme tabela de código brasileiro de ocupações"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Funcao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>
+
+

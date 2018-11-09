@@ -1,0 +1,9 @@
+{
+     "IdLotacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(20)"
+   , "Nome" : "String(60)"
+   , "CodigoAgenteNocivo" : "String(1)"
+	
+}

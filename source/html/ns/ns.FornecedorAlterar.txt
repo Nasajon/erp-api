@@ -1,0 +1,53 @@
+{
+     "fornecedor" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "codigo" : "String(30)"
+   , "nome" : "String(150)"
+   , "nomefantasia" : "String(150)"
+   , "identidade" : "String(20)"
+   , "documento" : "String(20)"
+   , "entidadescompartilhadoras_anteriores" : "ObjectList: TEntidadeCompartilhadora"
+   , "entidadescompartilhadoras_novas" : "ObjectList: TEntidadeCompartilhadora"
+   , "endereco" : "ObjectList: TEndereco"
+	
+}
+
+Campo: fornecedor
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: nome
+Descrição: Informe o Nome do cliente ou Razão social
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: nomefantasia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: identidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: documento
+Descrição: Este campo aceita CPF ou CNPJ com ou sem mascara.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: entidadescompartilhadoras_anteriores
+Descrição: Define as entidades compartilhadoras atuais as quais o fornecedor está vinculado. Simplesmente para localização do registro considerando Código, CNPJ ou CPF.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: entidadescompartilhadoras_novas
+Descrição: Define as entidades compartilhadoras as quais o fornecedor passará a estar vinculado.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: endereco
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

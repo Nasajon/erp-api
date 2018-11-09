@@ -1,0 +1,16 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Formula" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Formula
+Obrigatório: NÃOAceita valor nulo: SIM
+

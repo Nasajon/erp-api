@@ -1,0 +1,14 @@
+{
+     "data" : "2014-12-31"
+   , "valor" : 20,2
+	
+}
+
+Campo: data
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

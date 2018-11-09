@@ -1,0 +1,25 @@
+{
+     "EntidadeCompartilhadora" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Tipo" : 1
+	
+}
+
+Campo: EntidadeCompartilhadora
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Descrição: Este campo passa a ser requirido internamente caso o tipo igual a 2-Estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Define o tipo de entidade compartilhadora:
+				   			0 - Grupo Empresarial
+				   			1 - Empresa
+				   			2 - Estabelecimento
+				   			3 - Conjunto
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

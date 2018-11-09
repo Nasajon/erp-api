@@ -1,0 +1,10 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Quantidademediahorassemanais" : 1
+   , "RegimedeJornada" : 1
+   , "JornadaReduzida" : False
+   , "NumeroHorasMensais" : 1
+   , "NumeroDiasPeriodo" : 1
+	
+}

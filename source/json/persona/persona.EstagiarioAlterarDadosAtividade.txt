@@ -1,0 +1,16 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Atividade" : 1
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Atividade
+Descrição: Rural(1) ou Urbana(2)Obrigatório: SIMAceita valor nulo: NÃO
+

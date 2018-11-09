@@ -1,0 +1,17 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Sistema" : 1
+   , "Tipo" : 1
+   , "Situacao" : 1
+   , "LinkId" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "LinkType" : 1
+   , "CriadoPor" : "Guid ou Código"
+   , "ResolvidoPor" : "Guid ou Código"
+   , "DataResolucao" : "2014-12-31"
+   , "Observacao" : "String(300)"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "DataCriacao" : "2014-12-31"
+	
+}

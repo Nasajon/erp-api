@@ -1,0 +1,44 @@
+{
+     "IdMovimento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Rubrica" : "Guid ou Código"
+   , "Sindicato" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "MesInicial" : 1
+   , "MesFinal" : 1
+   , "AnoInicial" : 1
+   , "AnoFinal" : 1
+	
+}
+
+Campo: IdMovimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Rubrica
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Sindicato
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: MesInicial
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: MesFinal
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: AnoInicial
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: AnoFinal
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

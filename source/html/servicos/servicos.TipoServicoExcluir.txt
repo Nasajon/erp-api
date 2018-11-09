@@ -1,0 +1,9 @@
+{
+     "TipoServico" : "Guid ou Código"
+	
+}
+
+Campo: TipoServico
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

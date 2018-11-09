@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="PrevisaoFinanceiraReceber">
+		<model>
+		    <nome>Novo</nome>
+			<field nome="Id" controlType="Guid" required="False" notnull="True"/>	
+			<field nome="Codigo" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Observacao" controlType="String" tamanho="120" notnull="False"/> 
+			<field nome="DefinicaoContratante" controlType="String" tamanho="20" 
+			       required="False" summary="Indica o nome do label ao informar a parte contratante."/>
+			<field nome="DefinicaoBeneficiario" controlType="String" tamanho="20" 
+			       required="False" summary="Indica o nome do label ao informar a parte contratada."/>
+			<field nome="DataInicial" controlType="Date" notnull="True"/>
+			<field nome="TerminoPrevisao" controlType="Integer" 
+			       summary="Indica o tipo de término da previsão. 
+				           0-Indeterminado, 1-DataFinal, 2-Quantidade de ocorrências." notnull="True"/>
+			<field nome="DataFinal" controlType="Date" 
+			       required="False" summary="Obrigatório quando o término da previsão for por data." notnull="True"/>			   
+			<field nome="NumeroOcorrencia" controlType="Integer" 
+			       required="False" summary="Obrigatório quando o término da previsão for por ocorrências." notnull="True"/>	   
+			<field nome="DataProximoLancamento" controlType="Date" 
+			       required="False" summary="Indica o vencimento do próximo título, no momento da criação será o vencimento do primeiro título, a ser gerado pela previsão. Quando não informada será calculada com base na periodicidade." notnull="False"/>
+			<field nome="Frequencia" controlType="Integer" 
+			       summary="Indica o tipo de periodicidade da previsão. 
+				           0-Diário, 1-Semanal, 2-Mensal, 3-Trimestral, 4-Semestral, 5-Anual, 6-Intervalo Fixo." notnull="True"/>	   
+			<field nome="Valor" controlType="Currency" tamanho="20,2" notnull="True"/>	   
+			<field nome="DiasIntervalo" controlType="Integer" 
+			       required="False" summary="Obrigatório quando o frequência da previsão for por intervalo fixo." notnull="True"/>	   
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna"
+			       summary="Indica o grupo empresarial do estabelecimento da previsão financeira(contratante)." notnull="True"/> 
+            <field nome="Empresa" controlType="EntidadeFisicaJuridica"
+			       summary="Indica a empresa do estabelecimento da previsão financeira(contratante)." notnull="True"/> 				   
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica"
+			       summary="Indica o estabelecimento da previsão financeira(contratante)." notnull="True"/> 
+			<field nome="Pessoa" controlType="EntidadeFisicaJuridica" 
+			       summary="Indica o fornecedor da previsão financeira(contratado)." notnull="True"/> 
+			<field nome="Conta" controlType="EntidadeInterna" notnull="True"/> 
+			<field nome="FormaPagamento" controlType="EntidadeInterna"
+			       required="False" summary="Indica a forma de pagamento do título." notnull="True"/>
+			<field nome="GeraTitulos" controlType="Boolean" 
+				   required="True" summary="Indica se a previsão irá gerar títulos." notnull="True"/>	   
+			<field nome="QtdDiasDesconto" controlType="Integer" required="False" 
+			       summary="Dias para cálculo de desconto no título com referência no vencimento."/>
+			<field nome="QtdDiasMulta" controlType="Integer" required="False" 
+			       summary="Dias para cálculo de multa no título com referência no vencimento."/>	
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="PercentualMulta" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="PercentualJurosDiario" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="IDDocumentoRateado" controlType="EntidadeInterna" notnull="False"/>      
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" 
+			       required="False" summary="Indica a lista de discriminação de valores por classificação financeira, centro de custo e projeto."/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Id" controlType="Guid" notnull="True"/>	
+			<field nome="Codigo" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Observacao" controlType="String" tamanho="120" notnull="False"/> 
+			<field nome="DefinicaoContratante" controlType="String" tamanho="20" 
+			       required="False" summary="Indica o nome do label ao informar a parte contratante."/>
+			<field nome="DefinicaoBeneficiario" controlType="String" tamanho="20" 
+			       required="False" summary="Indica o nome do label ao informar a parte contratada."/>
+			<field nome="DataProximoLancamento" controlType="Date" 
+			       required="False" summary="Indica o vencimento do próximo título a ser gerado pela previsão. Quando não informada será calculada com base na periodicidade." notnull="False"/>
+			<field nome="Frequencia" controlType="Integer" 
+			       summary="Indica o tipo de periodicidade da previsão. 
+				           0-Diário, 1-Semanal, 2-Mensal, 3-Trimestral, 4-Semestral, 5-Anual, 6-Intervalo Fixo." notnull="True"/>	   
+			<field nome="Valor" controlType="Currency" tamanho="20,2" notnull="True"/>	   
+			<field nome="DiasIntervalo" controlType="Integer" 
+			       required="False" summary="Obrigatório quando o frequência da previsão for por intervalo fixo." notnull="True"/>	   
+			<field nome="Conta" controlType="EntidadeInterna" notnull="True"/> 
+			<field nome="FormaPagamento" controlType="EntidadeInterna"
+			       required="False" summary="Indica a forma de pagamento do título." notnull="True"/>
+			<field nome="QtdDiasDesconto" controlType="Integer" required="False" 
+			       summary="Dias para cálculo de desconto no título com referência no vencimento."/>
+			<field nome="QtdDiasMulta" controlType="Integer" required="False" 
+			       summary="Dias para cálculo de multa no título com referência no vencimento."/>	
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="PercentualMulta" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="PercentualJurosDiario" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="IDDocumentoRateado" controlType="EntidadeInterna" notnull="False"/>      
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" 
+			       required="False" summary="Indica a lista de discriminação de valores por classificação financeira, centro de custo e projeto."/>
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Id" controlType="Guid" notnull="true"/>		
+		</model>
+	</models>
+</root>

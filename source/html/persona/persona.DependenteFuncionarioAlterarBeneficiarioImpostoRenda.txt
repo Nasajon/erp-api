@@ -1,0 +1,24 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Beneficiario" : False
+	
+}
+
+Campo: Dependente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Beneficiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

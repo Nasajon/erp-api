@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="TarifaConcessionariaValeTransporte">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdTarifa" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Concessionaria" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="4" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Valor" controlType="Currency"  tamanho="20,6" required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Ônibus(1), Metrô(2), Trem(3), Barca(4) ou Van(5)"/>
+		</model>	
+		<model>
+			<nome>AlterarValor</nome>			
+			<field nome="Tarifa" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Concessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Valor" controlType="Currency"  tamanho="20,6" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarCodigoExterno</nome>			
+			<field nome="Tarifa" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Concessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="CodigoExterno" controlType="String" tamanho="20" required="True" notnull="False" summary="Informar o código cadastrado em um sistema externo"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Tarifa" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Concessionaria" controlType="EntidadeInterna" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>
+
+ 
+   
+  
+  
+  
+   

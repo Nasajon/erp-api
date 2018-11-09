@@ -1,0 +1,8 @@
+{
+     "Conjunto" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Cadastro" : 1
+   , "Estabelecimentos" : "ObjectList: TEstabelecimento"
+	
+}

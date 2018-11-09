@@ -1,0 +1,33 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "quantidade" : 20,2
+   , "valor_unitario" : 20,2
+   , "valor_total" : 20,2
+   , "id_owner" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: id
+Descrição: Identificador do estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: quantidade
+Descrição: Indica a quantidade de serviços prestados
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: valor_unitario
+Descrição: Indica o valor unitário do serviço prestado.
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: valor_total
+Descrição: Indica o valor total do serviço prestado.
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: id_owner
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

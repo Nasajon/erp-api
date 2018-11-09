@@ -1,0 +1,12 @@
+{
+     "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+	
+}
+
+Campo: Agencia
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: NÃOAceita valor nulo: NÃO
+

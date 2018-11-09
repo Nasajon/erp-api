@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="PromocaoFuncionario">
+		<model>
+			<nome>Nova</nome>			
+			<field nome="idfuncionario" controlType="Guid"/>			
+			<field nome="idcargonovo" controlType="Guid"/>			
+			<field nome="idnivelnovo" controlType="Guid"/>			
+			<field nome="idfuncaonova" controlType="Guid"/>			
+			<field nome="idcargoanterior" controlType="Guid"/>			
+			<field nome="idnivelanterior" controlType="Guid"/>			
+			<field nome="idfuncaoanteriora" controlType="Guid"/>			
+		</model>			
+	</models>
+</root>

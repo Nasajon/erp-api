@@ -1,0 +1,8 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Faixa" : "Guid ou Código"
+   , "RubricaFaixa" : "Guid ou Código"
+   , "Base" : 1
+	
+}

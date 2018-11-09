@@ -1,0 +1,20 @@
+{
+     "TipoOperacao" : 1
+   , "Bandeira" : "Guid ou Código"
+   , "Operadora" : "Guid ou Código"
+   , "MeioEletronico" : "Guid ou Código"
+	
+}
+
+Campo: TipoOperacao
+Descrição: Indica a operação do cartão: 1-Débito, 2-Crédito a vista, 3-Parcelado pela empresa, 4-Parcelado pela administradora.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Bandeira
+Descrição: Indica a bandeira utilizada na venda com cartão.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Operadora
+Descrição: Indica a operadora do cartão. Preencher BNDES quando for o mesmo ou Não Informado quando não for. Pode-se passar o Guid também.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: MeioEletronico
+Descrição: Indica o meio eletronico na qual a operação foi realizada.Obrigatório: SIMAceita valor nulo: NÃO
+

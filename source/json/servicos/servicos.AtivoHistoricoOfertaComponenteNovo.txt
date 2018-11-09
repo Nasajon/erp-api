@@ -1,0 +1,28 @@
+{
+     "ativohistoricoofertacomponente" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_objetoservicohistoricooferta" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_componente" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "quantidade" : 20,2
+   , "ativa" : False
+   , "data" : "2014-12-31"
+	
+}
+
+Campo: ativohistoricoofertacomponente
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: id_objetoservicohistoricooferta
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: id_componente
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: quantidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ativa
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: data
+Obrigatório: SIMAceita valor nulo: SIM
+

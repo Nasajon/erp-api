@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="NaturezaJuridica">
+		<model>
+			<nome>Novo</nome>
+			<field nome="Codigo" controlType="String" tamanho="4" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="100" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Codigo" controlType="String" tamanho="4" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="100" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Codigo" controlType="String" tamanho="4" required="True" notnull="True"/>			
+		</model>
+	</models>
+</root>

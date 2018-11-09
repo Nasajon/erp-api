@@ -1,0 +1,18 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(100)"
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "Data" : "2014-12-31"
+   , "DataCompetencia" : "2014-12-31"
+   , "DataCriacao" : "2014-12-31"
+   , "Origem" : 1
+   , "NumeroDocumentoOrigem" : "String(30)"
+   , "RequisicaoAlmoxarifado" : "Guid ou Código"
+   , "UsuarioCriador" : "Guid ou Código"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "IDDocumentoRateado" : "Guid ou Código"
+   , "DevolucaoAlmoxarifado" : "Guid ou Código"
+	
+}

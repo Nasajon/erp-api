@@ -1,0 +1,8 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: Id
+Descrição: Identificador do RPSObrigatório: SIMAceita valor nulo: NÃO
+

@@ -1,0 +1,53 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(100)"
+   , "Tipo" : 1
+   , "Categoria" : 1
+   , "Calculo" : 1
+   , "Unidade" : 1
+   , "Percentual" : 20,6
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Rendimento(0), Desconto(1) ou Base(2)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Categoria
+Descrição: Conforme campo categoria na tela de rubricas do sistema
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Calculo
+Descrição: Folha(0), Férias(1), 13º(2) ou PPLR(3)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Unidade
+Descrição: Conforme campo unidade da tabela de rubricas
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Percentual
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

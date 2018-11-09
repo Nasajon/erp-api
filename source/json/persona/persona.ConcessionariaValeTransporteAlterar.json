@@ -1,0 +1,6 @@
+{
+     "Concessionaria" : "Guid ou Código"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(40)"
+	
+}

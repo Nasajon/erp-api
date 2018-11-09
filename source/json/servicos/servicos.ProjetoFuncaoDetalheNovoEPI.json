@@ -1,0 +1,13 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcao" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Registro" : "Guid ou Código"
+   , "Agrupador" : "Guid ou Código"
+   , "Unidade" : "Guid ou Código"
+   , "Quantidade" : 
+   , "ValorUnitario" : 
+   , "PeriodicidadeTipo" : 1
+   , "PeriodicidadeIntervalo" : 
+	
+}

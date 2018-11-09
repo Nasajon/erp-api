@@ -1,0 +1,40 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "comodato" : False
+   , "tipo" : 1
+   , "categoriadeproduto" : "Guid ou Código"
+   , "categoriadeservico" : "Guid ou Código"
+   , "detalhamento" : "Guid ou Código"
+   , "grupoempresarial" : "Guid ou Código"
+	
+}
+
+Campo: id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: comodato
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: tipo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: categoriadeproduto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: categoriadeservico
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: detalhamento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: grupoempresarial
+Obrigatório: SIMAceita valor nulo: NÃO
+

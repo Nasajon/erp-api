@@ -1,0 +1,6 @@
+{
+     "TipoConta" : "Guid ou Código"
+   , "Codigo" : "String(20)"
+   , "Descricao" : "String(80)"
+	
+}

@@ -1,0 +1,49 @@
+{
+     "IdAcordo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Sindicato" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(10)"
+   , "Descricao" : "String(100)"
+   , "DataInicio" : "2014-12-31"
+   , "DataFim" : "2014-12-31"
+   , "QuantidadeHoras" : "2014-12-31"
+   , "PercentualHoras" : 20,6
+	
+}
+
+Campo: IdAcordo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Sindicato
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataInicio
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataFim
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: QuantidadeHoras
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PercentualHoras
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

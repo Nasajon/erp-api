@@ -1,0 +1,25 @@
+{
+     "lancamento" : "Guid ou Código"
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "lote" : "Guid ou Código"
+   , "ano" : 1
+	
+}
+
+Campo: lancamento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: lote
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ano
+Descrição: Informar o ano de excercício do lote
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

@@ -1,0 +1,84 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "iddocumentofiscal" : "Guid ou Código"
+   , "idpessoa" : "Guid ou Código"
+   , "idestabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "ano" : 1
+   , "tipo" : 1
+   , "datalancamento" : "2014-12-31"
+   , "modelo" : "String(3)"
+   , "serie" : "String(3)"
+   , "subserie" : "String(2)"
+   , "numero" : "String(15)"
+   , "aliquotaicms" : 20,2
+   , "origem" : 1
+   , "cfop" : "String(8)"
+   , "emissao" : "2014-12-31"
+   , "cancelado" : False
+   , "orgaopublico" : False
+   , "retemiss" : False
+   , "retemir" : False
+   , "reteminss" : False
+   , "ipipresumido" : False
+   , "dataretencaoiss" : "2014-12-31"
+   , "crt" : 1
+   , "situacaosped" : 1
+   , "tipoicms" : 1
+   , "tipoipi" : 1
+   , "tipoiss" : 1
+   , "observacao" : "String(255)"
+   , "codigomunicipio" : "String(8)"
+   , "declaracaoimportacao" : "String(12)"
+   , "valorcontabil" : 20,2
+   , "baseicms" : 20,2
+   , "valoricms" : 20,2
+   , "isentaicms" : 20,2
+   , "outrasicms" : 20,2
+   , "baseicmsdiferencial" : 20,2
+   , "icmsnaocreditado" : 20,2
+   , "baseicmsreducao" : 20,2
+   , "valoricmsdiferencial" : 20,2
+   , "valoricmsantecipacao" : 20,2
+   , "valoricmsadicional" : 20,2
+   , "basesubstituicaotributaria" : 20,2
+   , "valorstPropria" : 20,2
+   , "valorstterceiro" : 20,2
+   , "valorstnaoretida" : 20,2
+   , "baseipi" : 20,2
+   , "valoripi" : 20,2
+   , "valoripiisento" : 20,2
+   , "valoripioutras" : 20,2
+   , "valoripinaocreditado" : 20,2
+   , "baseiss" : 20,2
+   , "valoriss" : 20,2
+   , "valorissisento" : 20,2
+   , "valorissoutras" : 20,2
+   , "valorissoutromunicipio" : 20,2
+   , "valormateriais" : 20,2
+   , "valorsubempreitada" : 20,2
+   , "valoroutrasdeducoes" : 20,2
+   , "valorcide" : 20,2
+   , "valordescontos" : 20,2
+   , "valordescontosnaotributavel" : 20,2
+   , "valorfrete" : 20,2
+   , "valorseguro" : 20,2
+   , "outrasdespesas" : 20,2
+   , "baseir" : 20,2
+   , "basecsll" : 20,2
+   , "basepis" : 20,2
+   , "basecofins" : 20,2
+   , "valorinssretido" : 20,2
+   , "valorirretido" : 20,2
+   , "valorcsllretido" : 20,2
+   , "valorpisretido" : 20,2
+   , "valorcofinsretido" : 20,2
+   , "deducaoir" : 20,2
+   , "deducaocsll" : 20,2
+   , "deducaopis" : 20,2
+   , "deducaocofins" : 20,2
+   , "valoricmsfcp" : 20,2
+   , "valoricmspartdest" : 20,2
+   , "valoricmspartorigem" : 20,2
+   , "itenslancamentofiscal" : "ObjectList: TItemLancamentoFiscalNovo"
+	
+}

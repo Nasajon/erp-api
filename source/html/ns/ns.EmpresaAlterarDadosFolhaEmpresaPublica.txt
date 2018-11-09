@@ -1,0 +1,70 @@
+{
+     "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoMunicipioEnteFederativo" : "String(7)"
+   , "DescricaoLeiSeguradoDiferenciado" : "String(50)"
+   , "NumeroSIAFI" : "String(6)"
+   , "AnosMaioridadeDependenteExecutivo" : 1
+   , "AnosMaioridadeDependenteLegislativo" : 1
+   , "AnosMaioridadeDependenteJudiciario" : 1
+   , "AnosMaioridadeDependenteTodosPoderes" : 1
+   , "RegimeProprioPrevidenciaSocial" : False
+   , "ValorSubtetoINSSExecutivo" : 20,6
+   , "ValorSubtetoINSSLegislativo" : 20,6
+   , "ValorSubtetoINSSJudiciario" : 20,6
+   , "ValorSubtetoINSSTodosPoderes" : 20,6
+	
+}
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: CodigoMunicipioEnteFederativo
+Descrição: Conforme tabela do IBGE
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DescricaoLeiSeguradoDiferenciado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroSIAFI
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AnosMaioridadeDependenteExecutivo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AnosMaioridadeDependenteLegislativo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AnosMaioridadeDependenteJudiciario
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AnosMaioridadeDependenteTodosPoderes
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RegimeProprioPrevidenciaSocial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorSubtetoINSSExecutivo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorSubtetoINSSLegislativo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorSubtetoINSSJudiciario
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorSubtetoINSSTodosPoderes
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

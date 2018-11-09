@@ -1,0 +1,39 @@
+{
+     "IdNivel" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(8)"
+   , "Data" : "2014-12-31"
+   , "ValorSalario" : 20,6
+   , "Observacao" : "String(100)"
+	
+}
+
+Campo: IdNivel
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Cargo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ValorSalario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Observacao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

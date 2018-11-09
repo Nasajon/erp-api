@@ -1,0 +1,32 @@
+{
+     "SolicitacaoHistorico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Solicitacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Usuario" : "String(64)"
+   , "Comentario" : "String(64)"
+   , "Data" : "String(64)"
+   , "Status" : 1
+   , "UsuarioDestino" : "String(64)"
+	
+}
+
+Campo: SolicitacaoHistorico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Solicitacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Usuario
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Comentario
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Data
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Status
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: UsuarioDestino
+Obrigatório: NÃOAceita valor nulo: SIM
+

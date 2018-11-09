@@ -1,0 +1,24 @@
+{
+     "Vendedor" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "PercentualParticipacao" : 20,2
+   , "PercentualComissao" : 20,2
+   , "ValorComissao" : 20,2
+	
+}
+
+Campo: Vendedor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PercentualParticipacao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PercentualComissao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ValorComissao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="importacao_pagamento">
+        <model>
+            <field nome="FormaPagamento" controlType="EntidadeInterna" required="True"
+                   summery="Identificador da forma de pagamento" notnull="False"/>
+            <field nome="Banco" controlType="String" tamanho="3" required="True"
+                   summery="Identifica o número do banco" notnull="False"/>
+            <field nome="AgenciaNumero" controlType="String" tamanho="30" required="True"
+                   summery="Identifica o número da agência" notnull="False"/>
+            <field nome="AgenciaDigito" controlType="String" tamanho="5" required="False"
+                   summery="Identifica o número do dígito verificador da agência" notnull="False"/>
+            <field nome="ContaNumero" controlType="String" tamanho="30" required="True"
+                   summery="Identifica o número da conta" notnull="False"/>
+            <field nome="ContaDigito" controlType="String" tamanho="5" required="True"
+                   summery="Identifica o número do dígito verificador da agência" notnull="False"/>
+            <field nome="LayoutCobranca" controlType="Guid" Required="False"
+                   summery="Identificador do layout de cobrança. Informar apenas quando a forma de pagamento for boleto bancário" notnull="True"/>
+            <field nome="Parcelas" controlType="ObjectList" required="False"
+                   summery="Identifica as parcelas referente a forma de pagamento" namespace="timportacao_parcela"/>
+        </model>
+    </models>
+</root>

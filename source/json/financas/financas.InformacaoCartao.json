@@ -1,0 +1,7 @@
+{
+     "TipoOperacao" : 1
+   , "Bandeira" : "Guid ou Código"
+   , "Operadora" : "Guid ou Código"
+   , "MeioEletronico" : "Guid ou Código"
+	
+}

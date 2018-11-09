@@ -1,0 +1,19 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Departamento" : "Guid ou Código"
+   , "Lotacao" : "Guid ou Código"
+   , "NivelCargo" : "Guid ou Código"
+   , "Cargo" : "Guid ou Código"
+   , "Codigo" : "String(14)"
+   , "Nome" : "String(80)"
+   , "CodigoCategoria" : "String(3)"
+   , "CPF" : "String(11)"
+   , "NIS" : "String(11)"
+   , "DataAdmissao" : "2014-12-31"
+   , "UnidadeSalario" : 1
+   , "Sexo" : 1
+   , "CodigoCBO" : "String(6)"
+	
+}

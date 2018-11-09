@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="AcordoProrrogacaoHora">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdAcordo" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho ="10" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho ="100" required="True" notnull="True"/>
+			<field nome="DataInicio" controlType="Date" required="True" notnull="True"/>
+			<field nome="DataFim" controlType="Date" required="False" notnull="True"/>
+			<field nome="QuantidadeHoras" controlType="Time" required="True" notnull="True"/>
+			<field nome="PercentualHoras" controlType="Currency" tamanho="20,6"  required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="Acordo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho ="10" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho ="100" required="False" notnull="True"/>
+			<field nome="DataInicio" controlType="Date" required="False" notnull="True"/>
+			<field nome="DataFim" controlType="Date" required="False" notnull="False"/>
+			<field nome="QuantidadeHoras" controlType="Time" required="False" notnull="True"/>
+			<field nome="PercentualHoras" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Acordo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

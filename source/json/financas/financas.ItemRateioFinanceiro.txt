@@ -1,0 +1,44 @@
+{
+     "ClassificacaoFinanceira" : "Guid ou Código"
+   , "CentroCusto" : "Guid ou Código"
+   , "Valor" : 20,2
+   , "Projeto" : "Guid ou Código"
+   , "Discriminacao" : "String(200)"
+   , "BemPatrimonial" : "Guid ou Código"
+   , "RATEIOFINANCEIRO" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ItemContrato" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ID_ESTABELECIMENTO_REEMBOLSO" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_owner" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: ClassificacaoFinanceira
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CentroCusto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Valor
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Projeto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Discriminacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BemPatrimonial
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RATEIOFINANCEIRO
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ItemContrato
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ID_ESTABELECIMENTO_REEMBOLSO
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: id_owner
+Obrigatório: NÃOAceita valor nulo: NÃO
+

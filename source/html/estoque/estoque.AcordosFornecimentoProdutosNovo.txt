@@ -1,0 +1,64 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "ContratoTecnico" : "Guid ou Código"
+   , "Cliente" : "Guid ou Código"
+   , "Modelo_LocalDeUso" : "Guid ou Código"
+   , "Codigo" : "String(60)"
+   , "Descricao" : "String(255)"
+   , "InicioVigencia" : "2014-12-31"
+   , "FimVigencia" : "2014-12-31"
+   , "Ativo" : False
+	
+}
+
+Campo: Identificador
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: GrupoEmpresarial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ContratoTecnico
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Cliente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Modelo_LocalDeUso
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: InicioVigencia
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: FimVigencia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Ativo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

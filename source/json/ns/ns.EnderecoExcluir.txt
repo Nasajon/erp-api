@@ -1,0 +1,16 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "idpessoa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipo" : 1
+	
+}
+
+Campo: id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: idpessoa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: tipo
+Descrição: Informar 0 = Local, 1 = Entrega ou 2 = CobrancaObrigatório: NÃOAceita valor nulo: SIM
+

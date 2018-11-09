@@ -1,0 +1,7 @@
+{
+     "TipoProjeto" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+	
+}

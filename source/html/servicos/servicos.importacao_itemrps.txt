@@ -1,0 +1,142 @@
+{
+     "Servico" : "Guid ou Código"
+   , "Descricao" : "String(1500)"
+   , "ValorUnitario" : 20,2
+   , "Quantidade" : 20,2
+   , "Desconto" : 20,2
+   , "BaseISS" : 20,2
+   , "ValorISS" : 20,2
+   , "BaseINSS" : 20,2
+   , "ValorINSS" : 20,2
+   , "BaseIR" : 20,2
+   , "ValorIR" : 20,2
+   , "BasePIS" : 20,2
+   , "ValorPIS" : 20,2
+   , "BaseCOFINS" : 20,2
+   , "ValorCOFINS" : 20,2
+   , "BaseCSLL" : 20,2
+   , "ValorCSLL" : 20,2
+   , "RetemISS" : False
+   , "RetemINSS" : False
+   , "RetemIR" : False
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+	
+}
+
+Campo: Servico
+Descrição: Identificador do serviço prestado
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Descricao
+Descrição: Indica a descrição do serviço prestado. Quando não informado assumirá a descrição do serviço informado
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: ValorUnitario
+Descrição: Indica o valor unitário do serviço prestado. Quando não informado assumirá o valor unitário do serviço informado
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Quantidade
+Descrição: Indica a quantidade de serviços prestados
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Desconto
+Descrição: Indica o desconto no valor unitário do serviço prestado. Quando não informado assumirá o valor zero
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseISS
+Descrição: Indica a base de ISS do serviço prestado. Quando não informado assumirá o o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorISS
+Descrição: Indica o valor do ISS do serviço prestado. Quando não informado assumirá o valor da base de ISS multiplicado pela alíquota de ISS informada na configuração de RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseINSS
+Descrição: Indica a base de INSS do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorINSS
+Descrição: Indica o valor do INSS do serviço prestado. Quando não informado assumirá o valor da base de INSS multiplicado pela alíquota de INSS informada na configuração do serviço
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseIR
+Descrição: Indica a base de IR do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorIR
+Descrição: Indica o valor do IR do serviço prestado. Quando não informado assumirá o valor da base de IR multiplicado pela alíquota de IR informada na configuração de RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BasePIS
+Descrição: Indica a base de PIS do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorPIS
+Descrição: Indica o valor do PIS do serviço prestado. Quando não informado assumirá o valor da base de PIS multiplicado pela alíquota de PIS informada na configuração de RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseCOFINS
+Descrição: Indica a base de COFINS do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorCOFINS
+Descrição: Indica o valor do COFINS do serviço prestado. Quando não informado assumirá o valor da base de COFINS multiplicado pela alíquota de COFINS informada na configuração de RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseCSLL
+Descrição: Indica a base de CSLL do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorCSLL
+Descrição: Indica o valor do CSLL do serviço prestado. Quando não informado assumirá o valor da base de CSLL  multiplicado pela alíquota de CSLL informada na configuração de RPS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemISS
+Descrição: Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do ISS calculado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemINSS
+Descrição: Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do INSS calculado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemIR
+Descrição: Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do IR calculado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemPIS
+Descrição: Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do PIS calculado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemCOFINS
+Descrição: Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do COFINS calculado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemCSLL
+Descrição: Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do CSLL calculado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

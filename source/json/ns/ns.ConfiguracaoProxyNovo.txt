@@ -1,0 +1,28 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usuariosistema" : "Guid ou Código"
+   , "endereco" : "String(50)"
+   , "prota" : "String(10)"
+   , "usuarioproxy" : "String(60)"
+   , "senhaproxy" : "String(300)"
+	
+}
+
+Campo: id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: usuariosistema
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: endereco
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: prota
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: usuarioproxy
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: senhaproxy
+Obrigatório: NÃOAceita valor nulo: SIM
+

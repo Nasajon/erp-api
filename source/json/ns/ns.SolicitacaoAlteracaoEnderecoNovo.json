@@ -1,0 +1,20 @@
+{
+     "Solicitacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Conteudo" : "Objeto: TFuncionarioSolicitacaoAlteracaoEndereco"
+   , "Status" : 1
+   , "FuncionarioNome" : "String(80)"
+   , "FuncionarioCodigo" : "String(6)"
+   , "FuncionarioDepartamento" : "String(40)"
+   , "FuncionarioCargo" : "String(50)"
+   , "FuncionarioFoto" : "String(100)"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Data" : "2014-12-31"
+   , "Tipo" : "String(5)"
+   , "Rascunho" : False
+   , "Solicitante" : "String(64)"
+   , "Fila" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Tenant" : 1
+   , "Colaborador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "UsuarioDestino" : "String(64)"
+	
+}

@@ -1,0 +1,10 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "ContratoTecnico" : "Guid ou Código"
+   , "ContratoFinanceiro" : "Guid ou Código"
+   , "ObjetoServico" : "Guid ou Código"
+	
+}

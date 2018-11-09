@@ -1,0 +1,60 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipoLogradouro" : "String(50)"
+   , "logradouro" : "String(150)"
+   , "numero" : "String(50)"
+   , "complemento" : "String(100)"
+   , "cep" : "String(30)"
+   , "bairro" : "String(100)"
+   , "municipio" : "String(50)"
+   , "pais" : "String(50)"
+   , "uf" : "String(2)"
+   , "tipo" : 1
+   , "enderecopadrao" : 1
+   , "referencia" : "String(150)"
+   , "idpessoa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: tipoLogradouro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: logradouro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: numero
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: complemento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: cep
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: bairro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: municipio
+Descrição: Informar o código IBGE ou o nome do MunicípioObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: pais
+Descrição: Informar o código do País ou o nome do PaísObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: uf
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: tipo
+Descrição: Informar 0 = Local, 1 = Entrega ou 2 = CobrancaObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: enderecopadrao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: referencia
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: idpessoa
+Obrigatório: NÃOAceita valor nulo: NÃO
+

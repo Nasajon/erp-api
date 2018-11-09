@@ -1,0 +1,30 @@
+{
+     "IdContrato" : "Guid ou Código"
+   , "Servico" : "Guid ou Código"
+   , "ValorVariavel" : False
+   , "ValoresVariaveis" : "ObjectList: TValorVariavelItemContrato"
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "Valor" : 20,2
+   , "Quantidade" : 1
+   , "Instancia" : "Guid ou Código"
+   , "CodigoInstancia" : "String(30)"
+   , "NomeInstancia" : "String(100)"
+   , "TipoInstancia" : "String(50)"
+   , "DescontosNoPedido" : 20,2
+   , "UnidadeNatureza" : 1
+   , "UnidadeIntervaloNatureza" : 1
+   , "QuantidadeIntervaloNatureza" : 1
+   , "TipoVencimento" : 1
+   , "DiaVencimento" : 1
+   , "AdicaoMesesVencimento" : 1
+   , "QtdDiasParaInicio" : 1
+   , "QtdDiasParaFim" : 1
+   , "QtdMesesParaReajuste" : 1
+   , "PercentualDesconto" : 15,4
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiarios" : 15,4
+   , "TipoCobranca" : 1
+   , "Indice" : "Guid ou Código"
+   , "ConsiderarDataInicio" : False
+	
+}

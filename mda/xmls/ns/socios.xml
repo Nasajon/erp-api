@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Socios">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdSocio" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="False" notnull="False"/>		
+			<field nome="Cargo" controlType="String" tamanho="30" required="False" notnull="False"/>				
+			<field nome="Pais" controlType="String" tamanho="5" required="False" notnull="False" sumary="Informar o código do país(Exemplo: '1058' que é o código do Brasil)."/>
+			<field nome="UFCaixaPostal" controlType="String" tamanho="2" required="False" notnull="False"/>	
+			<field nome="Identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+			<field nome="Documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara."/>
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="False"/>			
+			<field nome="Email" controlType="String" tamanho="100" required="False" notnull="False"/>
+			<field nome="Imprimir" controlType="Boolean" required="False" notnull="False" summary="Define se o sócio será impresso nos relatórios"/>								
+			<field nome="IndicadorQualificacao" controlType="String" tamanho="25" required="False" notnull="False" summary="Disponível para este campo os valores: Pessoa Física, Pessoa Jurídica, Fundo de Investimento" />
+			<field nome="Qualificacao" controlType="String" tamanho="80" required="False" notnull="False" summary="Disponível para este campo os valores: Acionista Pessoa Física Domiciliada no Brasil, 
+			Sócio Pessoa Física Domiciliado no Brasil, 
+			Acionista Pessoa Jurídica Domiciliado no Brasil, 
+			Sócio Pessoa Jurídica Domiciliado no Brasil, 
+			Sócio Pessoa Física Residente ou Domiciliado no Exterior, 
+			Acionista Pessoa Física Residente ou Domiciliado no Exterior, 
+			Acionista Pessoa Jurídica Residente ou Domiciliado no Exterior, 
+			Sócio Pessoa Jurídica Residente ou Domiciliado no Exterior, 
+			Titular, 
+			Administrador sem Vínculo Empregatício,
+			Diretor sem Vínculo Empregatício,
+			Presidente sem Vínculo Empregatício,
+			Administrador com Vínculo Empregatício,
+			Conselheiro de Administração ou Fiscal,
+			Diretor com Vínculo Empregatício,
+			Presidente com Vínculo Empregatício" />
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Socio" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="False" notnull="False"/>		
+			<field nome="Cargo" controlType="String" tamanho="30" required="False" notnull="False"/>				
+			<field nome="Pais" controlType="String" tamanho="5" required="False" notnull="False" sumary="Informar o código do país(Exemplo: '1058' que é o código do Brasil)."/>
+			<field nome="UFCaixaPostal" controlType="String" tamanho="2" required="False" notnull="False"/>	
+			<field nome="Identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+			<field nome="Documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara."/>
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="False"/>			
+			<field nome="Email" controlType="String" tamanho="100" required="False" notnull="False"/>
+			<field nome="Imprimir" controlType="Boolean" required="False" notnull="False" summary="Define se o sócio será impresso nos relatórios"/>								
+			<field nome="IndicadorQualificacao" controlType="String" tamanho="25" required="False" notnull="False" summary="Disponível para este campo os valores: Pessoa Física, Pessoa Jurídica, Fundo de Investimento" />
+			<field nome="Qualificacao" controlType="String" tamanho="80" required="False" notnull="False" summary="Disponível para este campo os valores: Acionista Pessoa Física Domiciliada no Brasil, 
+			Sócio Pessoa Física Domiciliado no Brasil, 
+			Acionista Pessoa Jurídica Domiciliado no Brasil, 
+			Sócio Pessoa Jurídica Domiciliado no Brasil, 
+			Sócio Pessoa Física Residente ou Domiciliado no Exterior, 
+			Acionista Pessoa Física Residente ou Domiciliado no Exterior, 
+			Acionista Pessoa Jurídica Residente ou Domiciliado no Exterior, 
+			Sócio Pessoa Jurídica Residente ou Domiciliado no Exterior, 
+			Titular, 
+			Administrador sem Vínculo Empregatício,
+			Diretor sem Vínculo Empregatício,
+			Presidente sem Vínculo Empregatício,
+			Administrador com Vínculo Empregatício,
+			Conselheiro de Administração ou Fiscal,
+			Diretor com Vínculo Empregatício,
+			Presidente com Vínculo Empregatício" />
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Socio" controlType="EntidadeInterna" required="True" notnull="True"/>	
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>		
+		</model>
+		
+	</models>
+</root>

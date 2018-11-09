@@ -1,0 +1,164 @@
+{
+     "Id_RPS" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "CodigoServico" : "Guid ou Código"
+   , "Quantidade" : 20,2
+   , "ValorUnitario" : 20,2
+   , "Descricao" : "String(1500)"
+   , "BaseISS" : 20,2
+   , "ValorISS" : 20,2
+   , "BaseIRRf" : 20,2
+   , "ValorIRRF" : 20,2
+   , "BaseINSS" : 20,2
+   , "ValorINSS" : 20,2
+   , "BasePIS" : 20,2
+   , "ValorPIS" : 20,2
+   , "BaseCOFINS" : 20,2
+   , "ValorCOFINS" : 20,2
+   , "BaseCSLL" : 20,2
+   , "ValorCSLL" : 20,2
+   , "RetemISS" : False
+   , "RetemIRRF" : False
+   , "RetemINSS" : False
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+   , "Contrato_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ItemContrato_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ProcessamentoContrato_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Pessoa_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_origem" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "desconto" : 20,2
+   , "Tipo" : 1
+   , "valor_total" : 20,2
+   , "item_faturamento_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: Id_RPS
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: CodigoServico
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Quantidade
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ValorUnitario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: BaseISS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorISS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseIRRf
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorIRRF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseINSS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorINSS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BasePIS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorPIS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseCOFINS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorCOFINS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BaseCSLL
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorCSLL
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemISS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemIRRF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemINSS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemPIS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemCOFINS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RetemCSLL
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Contrato_ID
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ItemContrato_ID
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: ProcessamentoContrato_ID
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Pessoa_ID
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: id_origem
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: desconto
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Tipo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: valor_total
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: item_faturamento_id
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

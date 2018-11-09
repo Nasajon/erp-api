@@ -1,0 +1,19 @@
+{
+     "Tipo" : 1
+   , "DataHora" : "2014-12-31"
+   , "Mensagem" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: Tipo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataHora
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Mensagem
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="LoteFatura_v2">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="LoteFatura" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True"/>
+			<field nome="Usuario" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Emissao" controlType="Date" notnull="True"/>
+			<field nome="DataCriacao" controlType="Date" notnull="True"/>            
+			<field nome="Clientes" controlType="ObjectList" namespace="ns\Cliente\TCliente" required="False"/>
+            <field nome="DataInicio" controlType="Date" notnull="False"/>
+            <field nome="DataFim" controlType="Date" notnull="True"/>
+            <field nome="PorEmissao" controlType="Boolean" required="False" notnull="True"/>            
+			<field nome="Mensagens" controlType="ObjectList" namespace="financas\MensagemLoteFatura_v2\TMensagemLoteFatura_v2" required="False"/>
+            <field nome="TipoSelecaoCliente" controlType="Integer" required="True" notnull="True"/>
+            <field nome="DiaInicioSelecao" controlType="Integer" required="False" notnull="False"/>
+            <field nome="DiaFimSelecao" controlType="Integer" required="False" notnull="False"/>            
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="LoteFatura" controlType="EntidadeInterna" required="True" notnull="true"/>
+		</model>
+	</models>
+</root>

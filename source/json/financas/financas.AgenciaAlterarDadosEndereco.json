@@ -1,0 +1,15 @@
+{
+     "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "Complemento" : "String(10)"
+   , "Bairro" : "String(60)"
+   , "Cidade" : "String(60)"
+   , "Estado" : "String(2)"
+   , "CEP" : "String(9)"
+   , "Contato" : "String(40)"
+   , "Telefone" : "String(20)"
+   , "DDDTelefone" : "String(2)"
+	
+}

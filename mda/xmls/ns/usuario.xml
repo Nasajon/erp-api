@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Usuario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdUsuario" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="60" required="True" notnull="True"/>
+			<field nome="Email" controlType="String" tamanho="100" required="False" notnull="True"/>
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="True"/>
+			<field nome="Login" controlType="String" tamanho="20" required="True" notnull="True"/>		
+			<field nome="Senha" controlType="String" tamanho="300" required="True" notnull="True"/>		
+			<field nome="PerfilUsuario" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="GrupoDeUsuario" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="representante" controlType="Guid" required="False" notnull="false"/>
+			<field nome="vendedor" controlType="Guid" required="False" notnull="false"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Usuario" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="60" required="False" notnull="True"/>
+			<field nome="Email" controlType="String" tamanho="100" required="False" notnull="False"/>
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="True"/>
+			<field nome="Login" controlType="String" tamanho="20" required="False" notnull="True"/>
+			<field nome="Senha" controlType="String" tamanho="300" required="False" notnull="True"/>
+			<field nome="PerfilUsuario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="GrupoDeUsuario" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="representante" controlType="Guid" required="False" notnull="false"/>
+            <field nome="vendedor" controlType="Guid" required="False" notnull="false"/>			
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Usuario" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>  

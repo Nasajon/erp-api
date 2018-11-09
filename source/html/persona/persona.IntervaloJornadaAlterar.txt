@@ -1,0 +1,39 @@
+{
+     "IdIntervalo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Jornada" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "HorarioInicio" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "HorarioFim" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "HorarioInicioNovo" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "HorarioFimNovo" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+	
+}
+
+Campo: IdIntervalo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Jornada
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: HorarioInicio
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: HorarioFim
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: HorarioInicioNovo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: HorarioFimNovo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

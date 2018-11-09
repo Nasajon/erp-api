@@ -1,0 +1,37 @@
+{
+     "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : 1
+   , "BeneficioFiscal" : 1
+   , "AliquotaISS" : 20,2
+   , "AliquotaIRPessoaJuridica" : 20,2
+   , "AliquotaIROrgaoPublico" : 20,2
+   , "AliquotaPIS" : 20,2
+   , "AliquotaCOFINS" : 20,2
+   , "AliquotaCSLL" : 20,2
+   , "UsaDiscriminacaoDoCFOPNoRPS" : False
+   , "UsaWebServiceRPS" : False
+   , "CertificadoDigitalInstalado" : "String(5000)"
+   , "CaminhoCertificadoDigital" : "String(5000)"
+   , "SenhaCertificadoDigital" : "String(5000)"
+   , "IdentificacaoAmbiente" : 1
+   , "LoteDaEmpresa" : 1
+   , "UtilizarMesmoRPS" : False
+   , "IncluirObservacao" : False
+   , "IncluirInformacoesOS" : False
+   , "TemplateOS" : "String(5000)"
+   , "IncluirRetencoes" : False
+   , "PermitirMultiplosVendedores" : False
+   , "ParticipanteCertificado" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ServidorSMTP" : "String(5000)"
+   , "Porta" : 1
+   , "Usuario" : "String(5000)"
+   , "Senha" : "String(5000)"
+   , "RequerAutenticacao" : False
+   , "UtilizarConexaoSegura" : False
+   , "AssuntoEmail" : "String(5000)"
+   , "MensagemEmail" : "String(5000)"
+   , "IncluirProjetos" : False
+	
+}

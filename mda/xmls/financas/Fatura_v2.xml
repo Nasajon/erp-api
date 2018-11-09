@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+  <models sistema="financas" modulo="Fatura_v2">
+    <model>
+      <nome>Novo</nome>
+      <field nome="Fatura" controlType="Guid" Required="False" notnull="True"/>
+      <field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True"/>
+      <field nome="Cliente" controlType="Object" namespace="ns\cliente\TClienteNovo" required="True" notnull="True"/>
+      <field nome="Usuario" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Numero" controlType="String" tamanho="30" required="True" notnull="True"/>
+      <field nome="Emissao" controlType="Date" required="True" notnull="True"/>
+      <field nome="Processado" controlType="Boolean" required="False" notnull="True"/>
+      <field nome="ItensFaturas" controlType="ObjectList" namespace="financas\ItemFatura_v2\TItemFatura_v2" required="False" notnull="True"/>
+      <field nome="Pagamentos" controlType="ObjectList" namespace="ns\pagamento\TPagamento" required="False" notnull="True"/>			
+      <field nome="Lote" controlType="EntidadeInterna" required="False" notnull="False"/>
+      <field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>          
+      <field nome="Desconto" controlType="Currency" tamanho="15,2" required="False"/> 
+      <field nome="ModoExibicaoDesconto" controlType="String" tamanho="1" requited="True" notnull="True"/>            
+    </model>
+    <model>
+      <nome>Alterar</nome>
+      <field nome="Fatura" controlType="EntidadeInterna" required="True" notnull="True"/>
+      <field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True"/>
+      <field nome="Cliente" controlType="Object" namespace="ns\cliente\TClienteNovo" required="True" notnull="True"/>
+      <field nome="Usuario" controlType="EntidadeInterna" notnull="True"/>
+      <field nome="Numero" controlType="String" tamanho="30" required="True" notnull="True"/>
+      <field nome="Emissao" controlType="Date" required="True" notnull="True"/>
+      <field nome="Processado" controlType="Boolean" required="False" notnull="True"/>
+      <field nome="ItensFaturas" controlType="ObjectList" namespace="financas\ItemFatura_v2\TItemFatura_v2" required="False" notnull="True"/>
+      <field nome="Pagamentos" controlType="ObjectList" namespace="ns\pagamento\TPagamento" required="False" notnull="True"/>
+      <field nome="Lote" controlType="EntidadeInterna" required="False" notnull="True"/>
+      <field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>          
+      <field nome="Desconto" controlType="Currency" tamanho="15,2" required="False"/> 
+      <field nome="ModoExibicaoDesconto" controlType="String" tamanho="1" requited="True" notnull="True"/>            
+    </model>
+    <model>
+      <nome>Excluir</nome>
+      <field nome="Fatura" controlType="EntidadeInterna" required="True" notnull="True"/>
+      <field nome="Numero" controlType="String" tamanho="30" required="True" notnull="True"/>            
+    </model>
+  </models>
+</root>

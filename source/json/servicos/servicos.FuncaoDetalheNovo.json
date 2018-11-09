@@ -1,0 +1,16 @@
+{
+     "FuncaoDetalhe" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcao" : "Guid ou Código"
+   , "Registro" : "Guid ou Código"
+   , "RegistroTipo" : 1
+   , "FuncaoDetalhePai" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Unidade" : "Guid ou Código"
+   , "Quantidade" : 
+   , "ValorUnitario" : 
+   , "ValorTotal" : 
+   , "PeriodicidadeTipo" : 1
+   , "PeriodicidadeIntervalo" : 
+	
+}

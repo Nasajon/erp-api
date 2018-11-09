@@ -1,0 +1,16 @@
+{
+     "Sindicato" : "Guid ou Código"
+   , "CodigoFPAS" : "String(6)"
+   , "CodigoTerceiros" : "String(4)"
+	
+}
+
+Campo: Sindicato
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CodigoFPAS
+Descrição: Conforme tabela de Fundo da Previdência e Assistência Social do governoObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoTerceiros
+Descrição: Conforme tabela de outras entidades do governoObrigatório: NÃOAceita valor nulo: NÃO
+

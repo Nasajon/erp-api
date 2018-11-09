@@ -1,0 +1,84 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "SalarioFamilia" : False
+   , "Sindical" : False
+   , "FGTS" : False
+   , "IRRF" : False
+   , "INSS" : False
+   , "InformeRendimentos" : False
+   , "RAIS" : False
+   , "DSR" : False
+   , "PensaoAlimenticia" : False
+   , "ValorDia" : False
+   , "PIS" : False
+   , "Encargos" : False
+   , "HoraExtra" : False
+   , "MaiorRemuneracao" : False
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: SalarioFamilia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Sindical
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FGTS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: IRRF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: INSS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: InformeRendimentos
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RAIS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DSR
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PensaoAlimenticia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorDia
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PIS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Encargos
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: HoraExtra
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: MaiorRemuneracao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,31 @@
+{
+     "Pagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Id_formapagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_DocumentoFiscal" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_conta" : "Guid ou Código"
+   , "Id_rateiopadrao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_meioeletronico" : "Guid ou Código"
+   , "Id_layoutcobranca" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_operadora" : "Guid ou Código"
+   , "Id_bandeira" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_parcelamento" : "Guid ou Código"
+   , "Valor" : 13,2
+   , "NomeFormaPagamento" : "String(30)"
+   , "NomeMeioEletronicoCartao" : "String(30)"
+   , "NomeBandeiraCartao" : "String(30)"
+   , "NomeOperadoraCartao" : "String(30)"
+   , "NomeConta" : "String(30)"
+   , "NumeroParcelas" : 1
+   , "DataFatura" : "2014-12-31"
+   , "TipoOperacao" : 1
+   , "AutorizacaoCartao" : "String(30)"
+   , "DataAutorizacaoCartao" : "2014-12-31"
+   , "DocumentoCartao" : "String(30)"
+   , "IrRetido" : 13,2
+   , "PisRetido" : 13,2
+   , "CofinsRetido" : 13,2
+   , "CsllRetido" : 13,2
+   , "Tipo" : 1
+   , "id_owner" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

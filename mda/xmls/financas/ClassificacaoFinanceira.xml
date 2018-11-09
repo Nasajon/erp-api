@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="ClassificacaoFinanceira">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdClassificacao" controlType="Guid" required="False" notnull="True"/>
+			<field nome="ClassificacaoPai" controlType="EntidadeInterna" required="False" 
+			       summary="Classificação financeira a qual está nova pertence(sintética)." notnull="False"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="16" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="CodigoContabil" controlType="String" tamanho="20" required="False" notnull="False"/>
+			<field nome="Resumo" controlType="String" tamanho="30" required="False" 
+			       summary="Descrição de forma resumida." notnull="False"/>
+			<field nome="Natureza" controlType="Integer" required="False" 
+			       summary="Indica a natureza da classificação: 0 - Indefinido, 1 - Receita e 2 - Despesa. Quando não informado será assumido o valor 0." notnull="True"/>
+			<field nome="Transferencia" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="Repasse_Deducao" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="Rendimentos" controlType="Boolean" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Classificacao" controlType="EntidadeInterna" required="True" 
+				   summary="Classificação financeira para alteração." notnull="True"/>
+			<field nome="ClassificacaoPai" controlType="EntidadeInterna" required="True" 
+			       summary="Classificação financeira a qual está nova pertence(sintética)." notnull="False"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True"
+           		   summary="Grupo empresarial da classificação a ser alterada." notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="16" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="150" required="True" notnull="False"/>
+			<field nome="CodigoContabil" controlType="String" tamanho="20" required="True" notnull="False"/>
+			<field nome="Resumo" controlType="String" tamanho="30" required="True" 
+			       summary="Descrição de forma resumida." notnull="False"/>
+			<field nome="Situacao" controlType="Integer" required="True" 
+			       summary="Indica a situação da classificação: 0 - Ativa e 1 - Desativada" notnull="True"/>
+			<field nome="Natureza" controlType="Integer" required="True" 
+			       summary="Indica a natureza da classificação: 0 - Indefinido, 1 - Receita e 2 - Despesa." notnull="True"/>
+			<field nome="Transferencia" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="Repasse_Deducao" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="Rendimentos" controlType="Boolean" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Classificacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True" 
+			       summary="Ao passar o código da classificação financeira será necessário passar o grupo empresarial." notnull="True"/>
+		</model>
+	</models>
+</root>

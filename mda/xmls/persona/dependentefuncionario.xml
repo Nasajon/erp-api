@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="DependenteFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdDependente" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="6" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="70" required="True" notnull="True"/>
+			<field nome="CPF" controlType="String" tamanho="14" required="True" notnull="True" summary="[999.999.999-99]. A máscara não é obrigatória."/>			
+			<field nome="DataInclusao" controlType="Date" required="True" notnull="True"/>
+			<field nome="TipoParentesco" controlType="Integer" required="True" notnull="True" summary="Conforme tabela do eSocial"/>
+			<field nome="Sexo" controlType="Integer" required="False" notnull="True" summary="Masculino(1) ou Feminino(2)"/>
+		</model>
+		<model>
+			<nome>AlterarDadosPadrao</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="6" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="70" required="False" notnull="True"/>
+			<field nome="CPF" controlType="String" tamanho="14" required="False" notnull="True" summary="[999.999.999-99]. A máscara não é obrigatória."/>			
+			<field nome="DataInclusao" controlType="Date" required="False" notnull="True"/>
+			<field nome="TipoParentesco" controlType="Integer" required="False" notnull="True" summary="Conforme tabela do eSocial"/>
+			<field nome="Sexo" controlType="Integer" required="False" notnull="True" summary="Masculino(1) ou Feminino(2)"/>		
+		</model>	
+		<model>
+			<nome>AlterarDadosCertidaoNascimento</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="DataNascimento" controlType="Date" required="False" notnull="True"/>
+			<field nome="DataEntrega" controlType="Date" required="False" notnull="False"/>
+			<field nome="DataBaixa" controlType="Date" required="False" notnull="False"/>
+			<field nome="UF" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="Cidade" controlType="String" tamanho="60" required="False" notnull="False"/>
+			<field nome="Cartorio" controlType="String" tamanho="30" required="False" notnull="False"/>
+			<field nome="Numero" controlType="String" tamanho="40" required="False" notnull="False"/>
+			<field nome="Livro" controlType="String" tamanho="10" required="False" notnull="False"/>
+			<field nome="FolhaLivro" controlType="String" tamanho="5" required="False" notnull="False"/>
+		</model>
+		<model>	
+			<nome>AlterarBeneficiarioSalarioFamilia</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Beneficiario" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>	
+			<nome>AlterarBeneficiarioPensaoAlimenticia</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Beneficiario" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>	
+			<nome>AlterarBeneficiarioPlanoSaude</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Beneficiario" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>	
+			<nome>AlterarBeneficiarioImpostoRenda</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Beneficiario" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>	
+			<nome>AlterarDadosSalarioFamilia</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="DataVencimentoDeclaracaoEscolar" controlType="Date" required="False" notnull="True"/>
+			<field nome="DataVencimentoVacinacao" controlType="Date" required="False" notnull="True"/>
+			<field nome="DependenteBeneficiarioPensao" controlType="EntidadeInterna" required="False" notnull="False"/>
+		</model>
+		<model>	
+			<nome>AlterarDataBaixaImpostoRenda</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+		</model>
+		<model>	
+			<nome>AlterarDadosPensaoAlimenticia</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="PercentualFolha" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+			<field nome="PercentualMultaFGTS" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+			<field nome="TipoRecebimento" controlType="Integer" required="False" notnull="True" summary="Conta Corrente(1), Conta Poupança(2), Conta Salário(4), Dinheiro(8) ou Cheque(16)"/>
+			<field nome="Agencia" controlType="EntidadeInterna" required="False" notnull="True"/>			
+			<field nome="Banco" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="NumeroContaRecebimento" controlType="String" tamanho="16" required="False" notnull="True"/>
+			<field nome="DigitoVerificadorContaRecebimento" controlType="String" tamanho="5" required="False" notnull="True"/>
+			<field nome="RubricaFolha" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="RubricaFerias" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="RubricaPPLR" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="RubricaDecimoTerceiro" controlType="EntidadeInterna" required="False" notnull="True"/>			
+			<field nome="Conjunto" controlType="EntidadeInterna" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="Dependente" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+	</models>
+</root> 

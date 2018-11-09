@@ -1,0 +1,40 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Tipo" : 1
+   , "Rescisao" : False
+   , "DecimoTerceiro" : False
+   , "Ferias" : False
+   , "Maternidade" : False
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Não entra na média(0), Entra para médias de rendimentos variáveis(1) ou Entra para média de horas extras(2)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Rescisao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DecimoTerceiro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Ferias
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Maternidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,12 @@
+{
+     "Horario" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Segunda" : False
+   , "Terca" : False
+   , "Quarta" : False
+   , "Quinta" : False
+   , "Sexta" : False
+   , "Sabado" : False
+   , "Domingo" : False
+	
+}

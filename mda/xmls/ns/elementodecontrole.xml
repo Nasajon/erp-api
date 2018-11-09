@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="ElementoDeControle">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" required="True" notnull="True"/>
+			<field nome="tipo" controlType="Integer" required="True" notnull="True" summary="
+					0 - Texto,
+                    1 - Inteiro,
+                    2 - Verdadeiro/Falso,
+                    3 - Decimal,
+                    4 - Data,
+                    5 - Lista,
+                    6 - Memo
+				" />
+			<field nome="modulo" controlType="Integer" required="True" notnull="True" summary="Valores suportados: 
+				0 - Produto, 
+				1 - Serviço Técnico, 
+				2 - Ativo, 
+				3 - Documento, 
+				4 - Ordem de Serviço, 
+				5 - Participante, 
+				6 - Proposta, 
+				7 - Pedido de Faturamento"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="identificador" controlType="EntidadeInterna" required="True" notnull="True"/>			
+		</model>
+		<model>
+			<nome>AplicarValorNoRegistro</nome>
+			<field nome="id_elementoDeControle" controlType="EntidadeInterna" required="True" notnull="True" />
+			<field nome="id_registro" controlType="Guid" required="True" notnull="True" />
+			<field nome="valor" controlType="String" tamanho="150" />
+		</model>
+	</models>
+</root>

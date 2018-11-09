@@ -1,0 +1,44 @@
+{
+     "AtributoEstabelecimento" : "String(1024)"
+   , "AtributoRPS" : "String(1024)"
+   , "AtributoSerie" : "String(1024)"
+   , "AtributoMotivo" : "String(1024)"
+   , "AtributoCodigoMotivo" : 1
+   , "AtributoCertificado" : "String(1024)"
+   , "AtributoUsuario" : "Guid ou Código"
+	
+}
+
+Campo: AtributoEstabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoRPS
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoSerie
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoMotivo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoCodigoMotivo
+Descrição: Indica o Código do Motivo de cancelamento.
+                                             1 - Erro na emissão,
+                                             2 - Serviço não prestado,
+                                             3 - Duplicidade da nota,
+                                             9 - Outros
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: AtributoCertificado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AtributoUsuario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

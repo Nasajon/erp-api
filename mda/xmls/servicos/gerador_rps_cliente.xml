@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="gerador_rps_cliente">
+        <model>
+            <field nome="id" controlType="Guid" required="True" summary="Identificador do estabelecimento" notnull="False"/>
+            <field nome="tabeladepreco" controlType="Guid" required="True" summary="Identificador da Tabela de Preço" notnull="False"/>
+        </model>
+    </models>
+</root>

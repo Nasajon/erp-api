@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Instituicao">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdInstituicao" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Plano de Saúde(0), Previdência(1), Ensino(2), Estágio(3), Saúde(4)"/>
+			<field nome="Codigo" controlType="String" tamanho="10" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="70" required="True" notnull="True"/>
+			<field nome="CNPJ" controlType="String" tamanho="18" required="True" notnull="True" summary="[99.999.999/9999-99]. A máscara não é obrigatória."/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>
+			<field nome="Instituicao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="10" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="70" required="False" notnull="True"/>
+			<field nome="CNPJ" controlType="String" tamanho="18" required="False" notnull="True" summary="[99.999.999/9999-99]. A máscara não é obrigatória."/>
+		</model>
+		<model>
+			<nome>AlterarInstituicaoPlanoSaude</nome>
+			<field nome="Instituicao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="NumeroANS" controlType="String" tamanho="12" required="False" notnull="True" summary="Informar o número do registro da instituição na agência nacional de saúde"/>
+		</model>	
+		<model>
+			<nome>AlterarInstituicaoSaude</nome>
+			<field nome="Instituicao" controlType="EntidadeInterna" required="True" notnull="True"/>			
+			<field nome="NumeroCNES" controlType="String" tamanho="7" required="False" notnull="True" summary="Informar o número da instituição no cadastro nacional de estabelecimentos de saúde"/>						
+		</model>	
+		<model>
+			<nome>AlterarTelefone</nome>
+			<field nome="Instituicao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="DDD" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="False"/>			
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Instituicao" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

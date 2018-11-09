@@ -1,0 +1,63 @@
+{
+     "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoCNAE" : "String(7)"
+   , "CodigoNaturezaJuridica" : "String(4)"
+   , "FormaPagamento" : "String(1)"
+   , "TipoCooperativa" : 1
+   , "Construtora" : 1
+   , "PontoEletronico" : 1
+   , "PossuiMultiplasTabelasRubrica" : False
+   , "SituacaoPJ" : 1
+   , "SituacaoPF" : 1
+	
+}
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: CodigoCNAE
+Descrição: Conforme tabela de atividades econômicas do governo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoNaturezaJuridica
+Descrição: Conforme tabela de naturezas jurídicas do governo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: FormaPagamento
+Descrição: M(Mensal) ou S(Semanal)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: TipoCooperativa
+Descrição: Não é cooperativa(0), Cooperativa de trabalho(1), Cooperativa de produção(2), Outras cooperativas(3)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Construtora
+Descrição: Não é construtora(0) ou É construtora(1)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PontoEletronico
+Descrição: Não possui ponto eletrônicao(0) ou Possui ponto eletronico(1)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PossuiMultiplasTabelasRubrica
+Descrição: Indicar se a empresa trabalha ou não com tabelas distintas de rubricas para seus estabelecimentos
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: SituacaoPJ
+Descrição: Normal(0), Extinção(1), Fusão(2), Cisão(3) ou Incorporação(4)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: SituacaoPF
+Descrição: Normal(0), Encerramento de espólio(1), Saída do país em caráter permanente(2)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

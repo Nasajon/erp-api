@@ -1,0 +1,44 @@
+{
+     "lote" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(8)"
+   , "descricao" : "String(50)"
+   , "datainicial" : "2014-12-31"
+   , "datafinal" : "2014-12-31"
+   , "conta" : "Guid ou Código"
+   , "usuariocriacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ano" : 1
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "lancamento" : "ObjectList: TlotelancamentoNovo"
+	
+}
+
+Campo: lote
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: datainicial
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: datafinal
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: conta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: usuariocriacao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ano
+Descrição: Informar o ano de excercício do loteObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: lancamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+

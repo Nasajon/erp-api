@@ -1,0 +1,18 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "PercentualFolha" : 20,6
+   , "PercentualMultaFGTS" : 20,6
+   , "TipoRecebimento" : 1
+   , "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+   , "NumeroContaRecebimento" : "String(16)"
+   , "DigitoVerificadorContaRecebimento" : "String(5)"
+   , "RubricaFolha" : "Guid ou Código"
+   , "RubricaFerias" : "Guid ou Código"
+   , "RubricaPPLR" : "Guid ou Código"
+   , "RubricaDecimoTerceiro" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+	
+}

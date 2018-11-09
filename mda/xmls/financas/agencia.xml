@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="Agencia">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdAgencia" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Banco" controlType="EntidadeInterna" required="True" notnull="True"/>			
+			<field nome="Codigo" controlType="String" tamanho="7" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="20" required="True"  notnull="True"/>	
+			<field nome="Numero" controlType="String" tamanho="20" required="True" notnull="True"/>
+			<field nome="DigitoVerificador" controlType="String" tamanho="2" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>			
+			<field nome="Agencia" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Banco" controlType="EntidadeInterna" required="False" notnull="True"/>			
+			<field nome="Codigo" controlType="String" tamanho="7" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="20" required="False" notnull="True"/>
+			<field nome="Numero" controlType="String" tamanho="20" required="False"  notnull="True"/>
+			<field nome="DigitoVerificador" controlType="String" tamanho="2" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosEndereco</nome>			
+			<field nome="Agencia" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Banco" controlType="EntidadeInterna" required="False" notnull="True"/>			
+			<field nome="Logradouro" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="Numero" controlType="String" tamanho="10" required="False" notnull="False"/>
+			<field nome="Complemento" controlType="String" tamanho="10" required="False" notnull="False"/>
+			<field nome="Bairro" controlType="String" tamanho="60" required="False" notnull="False"/>
+			<field nome="Cidade" controlType="String" tamanho="60" required="False" notnull="False"/>
+			<field nome="Estado" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="CEP" controlType="String" tamanho="9" required="False" notnull="False"/>
+			<field nome="Contato" controlType="String" tamanho="40" required="False" notnull="False"/>
+			<field nome="Telefone" controlType="String" tamanho="20" required="False" notnull="False"/>
+			<field nome="DDDTelefone" controlType="String" tamanho="2" required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Agencia" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Banco" controlType="EntidadeInterna" required="False" notnull="True"/>			
+		</model>
+	</models>
+</root>

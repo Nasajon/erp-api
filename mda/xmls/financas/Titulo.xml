@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="Titulo">
+		<model>
+            <field nome="Id" controlType="Guid" Required="False" notnull="True"/>	
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+			<field nome="Pessoa" controlType="EntidadeFisicaJuridica" notnull="True"/> 
+			<!-- A conta não pode ser obrigatória. Visto que, pode não existir o finanças instalado -->
+			<field nome="Conta" controlType="EntidadeInterna" Required="False" notnull="True"/> 
+			<field nome="LayoutCobranca" controlType="EntidadeInterna" Required="False" notnull="True"/> 
+			<field nome="LayoutPagamento" controlType="EntidadeInterna" Required="False" notnull="True"/> 
+			<field nome="Numero" controlType="String" tamanho="30" notnull="True"/>	
+			<field nome="Emissao" controlType="Date" notnull="True"/>	
+			<field nome="Vencimento" controlType="Date" notnull="True"/>	
+			<field nome="PrevisaoVencimento" controlType="Date" required="False" notnull="True"/>
+			<field nome="Parcela" controlType="Integer" required="False"/>	
+			<field nome="TotalParcelas" controlType="Integer" required="False"/>	
+			<field nome="Observacao" controlType="String" tamanho="1000" required="False"/>	
+			<field nome="Anotacoes" controlType="Memo" required="False"/>	
+	        <field nome="ValorTitulo" controlType="Currency" tamanho="20,2" notnull="True"/>
+			<field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" 
+			       required="False"/>
+			<field nome="AliquotaIr" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="ValorIrRetido" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="AliquotaCofins" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="ValorCofinsRetido" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="AliquotaPis" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="ValorPisRetido" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="AliquotaCsll" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="ValorCsllRetido" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="ValorInssRetido" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="AliquotaIss" controlType="Currency" tamanho="15,4" required="False"/> 
+			<field nome="ValorIssRetido" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="DataLimiteDesconto" controlType="Date" required="False"/>	
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="DataInicioMulta" controlType="Date" required="False"/>	
+			<field nome="PercentualMulta" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="PercentualJurosDiario" controlType="Currency" tamanho="15,4" required="False"/>
+			<field nome="TaxaBancaria" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="NossoNumero" controlType="String" tamanho="30" required="False" notnull="True"/>	
+			<field nome="LinhaDigitavel" controlType="String" tamanho="54" required="False" notnull="True"/>	
+			<field nome="CodigoBarras" controlType="String" tamanho="44" required="False" notnull="True"/>	
+			<field nome="InformacaoCartao" controlType="Object" namespace="financas\InformacaoCartao\TInformacaoCartao" 
+			       required="False" notnull="True"/> 
+	        <field nome="NumeroVezesCartao" controlType="Integer" required="False" notnull="True"/>	 
+			<field nome="ValorTarifaCartao" controlType="Currency" tamanho="20,2" required="False" notnull="True"/>
+			<field nome="AutorizacaoCartao" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="DocumentoCartao" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="NumeroParcelaCartao" controlType="Integer" required="False" notnull="True"/>
+			<field nome="ValorParcelaCartao" controlType="Currency" tamanho="20,2" required="False" notnull="True"/>
+			<field nome="NumeroNota" controlType="String" tamanho="20" required="False"/>
+			<field nome="ModeloDocumentoFiscal" controlType="Integer" required="False"/>
+			<field nome="SerieDocumentoFiscal" controlType="String" tamanho="3" required="False"/>
+			<field nome="SubserieDocumentoFiscal" controlType="String" tamanho="2" required="False"/>
+            <field nome="ServicoBancario" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="FinalidadePagamento" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="TipoContaPagamento" controlType="EntidadeInterna" required="False" notnull="True"/>				   
+			<field nome="DataAgendamento" controlType="Date" required="False" notnull="True"/>
+			<field nome="Vendedores" controlType="ObjectList" namespace="financas\VendedorTitulo\TVendedorTitulo" required="False" notnull="True"/> 
+			<field nome="DataProvisoria" controlType="Boolean" required="False" notnull="True"/> 	   	   
+			<field nome="ValorProvisorio" controlType="Boolean" required="False" notnull="True"/> 	
+			<field nome="TipoOrigem" controlType="Integer" 
+			       required="False" summary="Indica a origem do titulo. Quando não informado, assumirá 0 - Manutenção
+				                             23 - Previsão"
+				   notnull="True"/>
+			<field nome="Contrato" controlType="EntidadeInterna" required="False" notnull="False"/>			
+			<field nome="DataAutorizacaoCartao" controlType="Date" required="False" notnull="True"/>
+			<field nome="FormaPagamento" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Fatura" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="id_renegociacao_gerada" controlType="Guid" Required="False" notnull="True"/>
+            <field nome="id_renegociacao_geradora" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="valorvariacaocambialativa" controlType="Currency" Required="False" notnull="False"/>
+			<field nome="valorvariacaocambialpassiva" controlType="Currency" Required="False" notnull="False"/>
+			<field nome="TipoCredito" controlType="Integer" required="False"/>
+			<field nome="CreditoIdentificado" controlType="Integer" required="False"/>
+	        <field nome="OutrasRetencoes" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="DescricaoOutrasRetencoes" controlType="String" tamanho="255" required="False"/>	
+		</model>	
+	</models>
+</root>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="ObjetoServico">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="objetoservico" controlType="Guid" required="False" notnull="True"/>
+            <field nome="tipo_id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial_id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="produto_id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="numero_serie" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="precocompra" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+			<field nome="observacao" controlType="String" tamanho="30"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+            <field nome="objetoservico" controlType="Guid" required="False" notnull="True"/>
+            <field nome="tipo_id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial_id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="produto_id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/> 
+			<field nome="numero_serie" controlType="String" tamanho="30" required="True" notnull="True"/> 
+			<field nome="precocompra" controlType="Currency" tamanho="20,2" required="True" notnull="True"/> 
+			<field nome="observacao" controlType="String" tamanho="30"/>
+		</model>		
+		<model>
+			<nome>Excluir</nome>			
+            <field nome="objetoservico" controlType="Guid" required="False" notnull="True"/>	
+		</model>
+	</models>
+</root>
+
+

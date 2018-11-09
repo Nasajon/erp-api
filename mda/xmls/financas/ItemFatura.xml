@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="ItemFatura">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Id" controlType="Guid" Required="False" notnull="True"/>
+            <field nome="Id_fatura" controlType="Guid" Required="False" notnull="True"/>
+            <field nome="Id_docfis" controlType="Guid" Required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="Id" controlType="Guid" notnull="true"/>
+		</model>
+	</models>
+</root>

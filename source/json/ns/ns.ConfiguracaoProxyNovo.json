@@ -1,0 +1,9 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usuariosistema" : "Guid ou Código"
+   , "endereco" : "String(50)"
+   , "prota" : "String(10)"
+   , "usuarioproxy" : "String(60)"
+   , "senhaproxy" : "String(300)"
+	
+}

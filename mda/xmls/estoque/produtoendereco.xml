@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="estoque" modulo="ProdutoEndereco">
+		<model>
+			<nome>Novo</nome>
+			<field nome="idprodutoendereco" controlType="Guid" required="False" notnull="True"/>
+			<field nome="produto" controlType="Guid" required="True" notnull="True"/>
+			<field nome="localdeestoqueendereco" controlType="Guid"/>
+			<field nome="localdeestoque" controlType="Guid"/>
+			<field nome="padrao" controlType="Boolean"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="idprodutoendereco" controlType="Guid" required="True" notnull="True"/>
+			<field nome="padrao" controlType="Boolean"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="idprodutoendereco" controlType="Guid" required="True" notnull="True"/>			
+		</model>
+	</models>
+</root>

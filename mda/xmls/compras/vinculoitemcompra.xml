@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="compras" modulo="VinculoItemCompra">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+            <field nome="itemcompra" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="produto" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="grupoempresarial" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="padrao" controlType="Boolean" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="id" controlType="Guid" required="True" notnull="True"/>
+            <field nome="itemcompra" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="produto" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="grupoempresarial" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="padrao" controlType="Boolean" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

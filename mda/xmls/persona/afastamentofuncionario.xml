@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="AfastamentoFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+			<field nome="Dias" controlType="Integer" required="True" notnull="True"/>
+			<field nome="TipoHistorico" controlType="String" tamanho="3" required="True" notnull="True" summary="Preencher com o valor da coluna tipo da tela de afastamentos de funcionário"/>
+			<field nome="Descricao" controlType="String" tamanho="255" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="DataNova" controlType="Date" required="False" notnull="True"/>
+			<field nome="Dias" controlType="Integer" required="False" notnull="True"/>
+			<field nome="TipoHistorico" controlType="String" tamanho="3" required="False" notnull="True" summary="Preencher com o valor da coluna tipo da tela de afastamentos de funcionário"/>
+			<field nome="Descricao" controlType="String" tamanho="255" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarDadosMedicos</nome>
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Medico" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="CID" controlType="String" tamanho="5" required="False" notnull="False" summary="Conforme tabela de códigos de doenças do eSocial"/>
+			<field nome="TipoAcidenteTransito" controlType="Integer" required="False" notnull="False" summary="Atropelamento(1), Colisão(2) ou Outros(3)"/>
+		</model>
+		<model>
+			<nome>AlterarDadosSindicais</nome>
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Onus" controlType="String" tamanho="5" required="False" notnull="False" summary="Empregador(1), Sindicato(2) ou Diferença salarial paga pelo sindicato(3)"/>
+		</model>
+		<model>
+			<nome>AlterarDadosCessao</nome>
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="CNPJEmpresaCessionaria" controlType="String" tamanho="14" required="False" notnull="False" summary="[99.999.999/9999-99]. A máscara não é obrigatória."/>						
+			<field nome="Onus" controlType="Integer" required="False" notnull="False" summary="Cedente(1), Cessionário(2) ou Ambos(3)"/>
+		</model>		
+		<model>
+			<nome>AlterarDadosFerias</nome>
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="DataInicioPeriodoAquisitivo" controlType="Date" required="False" notnull="False"/>
+			<field nome="DiasPagosSaldoFerias" controlType="Integer" required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>AlterarAfastamentoOriginal</nome>
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="IdAfastamentoOriginal" controlType="Guid" required="False" notnull="True"/>
+			<field nome="DataAfastamentoOriginal" controlType="Date" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdAfastamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>		
+	</models>		
+</root>

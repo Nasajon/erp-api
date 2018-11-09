@@ -1,0 +1,20 @@
+{
+     "idvendedor" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "nome" : "String(150)"
+   , "identidade" : "String(20)"
+   , "documento" : "String(20)"
+	
+}
+
+Campo: idvendedor
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: identidade
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: documento
+Descrição: Este campo aceita CPF ou CNPJ com ou sem mascara.Obrigatório: SIMAceita valor nulo: SIM
+

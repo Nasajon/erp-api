@@ -1,0 +1,35 @@
+{
+     "Sindicato" : "Guid ou Código"
+   , "MesesParaCalculoMedia" : 1
+   , "MediaPelosMaioresValores" : False
+   , "QuantidadeMesesMaioresValores" : 1
+   , "DiasAvisoPrevio" : 1
+   , "PercentualMultaFGTS" : 20,6
+	
+}
+
+Campo: Sindicato
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: MesesParaCalculoMedia
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: MediaPelosMaioresValores
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: QuantidadeMesesMaioresValores
+Descrição: Informar o número de meses que possuam os maiores valores. Por exemplo, se o número de meses para médias forem 12, porém no sindicato apenas os 5 maiores valores interssam, informar 5
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DiasAvisoPrevio
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: PercentualMultaFGTS
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

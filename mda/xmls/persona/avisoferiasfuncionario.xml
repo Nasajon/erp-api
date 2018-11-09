@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="AvisoFeriasFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdAvisoFerias" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True"/>
+			<field nome="DataInicioGozo" controlType="Date" required="True" notnull="True"/>
+			<field nome="DataFimGozo" controlType="Date" required="True" notnull="True"/>
+			<field nome="DataInicioPeriodoAquisitivo" controlType="Date" required="True" notnull="True"/>
+			<field nome="DataFimPeriodoAquisitivo" controlType="Date" required="True" notnull="True"/>
+			<field nome="TemAbonoPecuniario" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="Observacao" controlType="Memo" required="False" notnull="True"/>
+			<field nome="DiasVendidos" controlType="Integer" required="False" notnull="True"/>
+			<field nome="DiasFeriasColetivas" controlType="Integer" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="IdAvisoFerias" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>			
+			<field nome="DataNova" controlType="Date" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="False" notnull="True"/>
+			<field nome="DataInicioGozo" controlType="Date" required="False" notnull="True"/>
+			<field nome="DataFimGozo" controlType="Date" required="False" notnull="True"/>
+			<field nome="DataInicioPeriodoAquisitivo" controlType="Date" required="False" notnull="True"/>
+			<field nome="DataFimPeriodoAquisitivo" controlType="Date" required="False" notnull="True"/>
+			<field nome="TemAbonoPecuniario" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="Observacao" controlType="Memo" required="False" notnull="False"/>
+			<field nome="DiasVendidos" controlType="Integer" required="False" notnull="False"/>
+			<field nome="DiasFeriasColetivas" controlType="Integer" required="False" notnull="False"/>		
+	    </model> 
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdAvisoFerias" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>			
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>						
+		</model>
+	</models>
+</root>
+
+
+  

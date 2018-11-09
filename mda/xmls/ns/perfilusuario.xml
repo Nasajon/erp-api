@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="PerfilUsuario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdPerfilUsuario" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="50" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="PerfilUsuario" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="50" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="PerfilUsuario" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

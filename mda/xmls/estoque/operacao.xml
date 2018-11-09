@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="estoque" modulo="Operacao">
+		<model>
+			<nome>Novo</nome>
+			<field nome="idoperacao" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="6" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="40" required="True" notnull="True"/>
+			<field nome="sinal" controlType="Integer"/>
+			<field nome="afetacustodosprodutos" controlType="Boolean"/>
+			<field nome="grupoodeoperacao" controlType="Guid"/>
+			<field nome="usatabeladepreco" controlType="Boolean"/>
+			<field nome="associardocumento" controlType="Boolean"/>
+			<field nome="associarproduto" controlType="Boolean"/>
+			<field nome="finalidade" controlType="Integer"/>
+			<field nome="ativa" controlType="Boolean"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="idoperacao" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="6" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="40"/>
+			<field nome="sinal" controlType="Integer"/>
+			<field nome="afetacustodosprodutos" controlType="Boolean"/>
+			<field nome="grupoodeoperacao" controlType="Guid"/>
+			<field nome="usatabeladepreco" controlType="Boolean"/>
+			<field nome="associardocumento" controlType="Boolean"/>
+			<field nome="associarproduto" controlType="Boolean"/>
+			<field nome="finalidade" controlType="Integer"/>
+			<field nome="ativa" controlType="Boolean"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="idoperacao" controlType="Guid" required="True" notnull="True"/>			
+		</model>
+	</models>
+</root>

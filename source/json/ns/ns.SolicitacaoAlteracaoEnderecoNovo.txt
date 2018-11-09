@@ -1,0 +1,72 @@
+{
+     "Solicitacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Conteudo" : "Objeto: TFuncionarioSolicitacaoAlteracaoEndereco"
+   , "Status" : 1
+   , "FuncionarioNome" : "String(80)"
+   , "FuncionarioCodigo" : "String(6)"
+   , "FuncionarioDepartamento" : "String(40)"
+   , "FuncionarioCargo" : "String(50)"
+   , "FuncionarioFoto" : "String(100)"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Data" : "2014-12-31"
+   , "Tipo" : "String(5)"
+   , "Rascunho" : False
+   , "Solicitante" : "String(64)"
+   , "Fila" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Tenant" : 1
+   , "Colaborador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "UsuarioDestino" : "String(64)"
+	
+}
+
+Campo: Solicitacao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Conteudo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Status
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: FuncionarioNome
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FuncionarioCodigo
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FuncionarioDepartamento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FuncionarioCargo
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FuncionarioFoto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Data
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Tipo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Rascunho
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Solicitante
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Fila
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Tenant
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Colaborador
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: UsuarioDestino
+Obrigatório: NÃOAceita valor nulo: SIM
+

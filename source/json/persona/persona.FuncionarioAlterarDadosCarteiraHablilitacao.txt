@@ -1,0 +1,36 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(30)"
+   , "OrgaoEmissor" : "String(20)"
+   , "DataExpedicao" : "2014-12-31"
+   , "DataValidade" : "2014-12-31"
+   , "DataPrimeiraHabilitacao" : "2014-12-31"
+   , "Categoria" : 1
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: OrgaoEmissor
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataExpedicao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataValidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataPrimeiraHabilitacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Categoria
+Descrição: A(0), B(1), C(2), D(3), E(4), AB(5), AC(6), AD(7) ou AE(8)Obrigatório: NÃOAceita valor nulo: SIM
+

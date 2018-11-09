@@ -1,0 +1,35 @@
+{
+     "Lotacao" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(20)"
+   , "Nome" : "String(60)"
+   , "CodigoAgenteNocivo" : "String(1)"
+	
+}
+
+Campo: Lotacao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CodigoAgenteNocivo
+Descrição: Conforme tabela do eSocial
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

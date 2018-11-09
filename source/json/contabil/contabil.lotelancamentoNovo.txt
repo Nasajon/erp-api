@@ -1,0 +1,44 @@
+{
+     "lancamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "data" : "2014-12-31"
+   , "ano" : 1
+   , "contadebito" : "Guid ou Código"
+   , "contacredito" : "Guid ou Código"
+   , "historico" : "Este atributo é do titpo Memo."
+   , "numero" : "String(12)"
+   , "valor" : 20,2
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "lote" : "Guid ou Código"
+	
+}
+
+Campo: lancamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: data
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ano
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: contadebito
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: contacredito
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: historico
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: numero
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: valor
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: lote
+Obrigatório: SIMAceita valor nulo: NÃO
+

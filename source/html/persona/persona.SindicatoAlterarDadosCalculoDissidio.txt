@@ -1,0 +1,19 @@
+{
+     "Sindicato" : "Guid ou Código"
+   , "Dias" : 1
+   , "Mes" : 1
+	
+}
+
+Campo: Sindicato
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Dias
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Mes
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

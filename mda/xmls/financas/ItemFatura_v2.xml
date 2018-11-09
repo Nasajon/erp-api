@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+  <models sistema="financas" modulo="ItemFatura_v2">
+    <model>
+      <field nome="ItemFatura" controlType="Guid" Required="False" notnull="True"/>
+      <field nome="Fatura" controlType="EntidadeInterna" Required="False" notnull="True"/>
+      <field nome="DocumentoFiscal" controlType="Object" namespace="ns\documentofiscalNs\TDocumentoFiscalNs" Required="False" notnull="True"/>
+    </model>
+    <model>
+    <nome>Novo</nome>
+      <field nome="ItemFatura" controlType="Guid" Required="False" notnull="True"/>
+      <field nome="Fatura" controlType="EntidadeInterna" Required="True" notnull="True"/>
+      <field nome="DocumentoFiscal" controlType="Object" namespace="ns\documentofiscalNs\TDocumentoFiscalNs" Required="True" notnull="True"/>
+    </model>
+    <model>
+      <nome>Excluir</nome>
+      <field nome="ItemFatura" controlType="Guid" required="False" notnull="True" summary="Não é requerido pois o registro poderá ser encontrado pelos campos fatura e documentofiscal."/>
+      <field nome="Fatura" controlType="EntidadeInterna" required="False" notnull="True" summary="Não é requerido pois o registro poderá ser encontrado pelo campo ItemFatura."/>
+      <field nome="DocumentoFiscal" controlType="Object" namespace="ns\documentofiscalNs\TDocumentoFiscalNs" required="False" notnull="True" summary="Não é requerido pois o registro poderá ser encontrado pelo campo ItemFatura."/>
+    </model>
+  </models>
+</root>

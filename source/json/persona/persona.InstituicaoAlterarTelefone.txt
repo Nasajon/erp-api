@@ -1,0 +1,16 @@
+{
+     "Instituicao" : "Guid ou Código"
+   , "DDD" : "String(2)"
+   , "Telefone" : "String(20)"
+	
+}
+
+Campo: Instituicao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DDD
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃOAceita valor nulo: SIM
+

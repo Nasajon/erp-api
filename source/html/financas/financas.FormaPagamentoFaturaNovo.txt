@@ -1,0 +1,109 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_fatura" : "Guid ou Código"
+   , "Id_formapagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_conta" : "Guid ou Código"
+   , "Id_rateiopadrao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_meioeletronico" : "Guid ou Código"
+   , "Id_layoutcobranca" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_operadora" : "Guid ou Código"
+   , "Id_bandeira" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_parcelamento" : "Guid ou Código"
+   , "Valor" : 13,2
+   , "NumeroParcelas" : 1
+   , "DataFatura" : "2014-12-31"
+   , "TipoOperacao" : 1
+   , "AutorizacaoCartao" : "String(30)"
+   , "dataautorizacaocartao" : "2014-12-31"
+   , "documentocartao" : "String(30)"
+   , "irretido" : 13,2
+   , "pisretido" : 13,2
+   , "cofinsretido" : 13,2
+   , "csllretido" : 13,2
+	
+}
+
+Campo: Id
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: id_fatura
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Id_formapagamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: id_conta
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Id_rateiopadrao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: id_meioeletronico
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Id_layoutcobranca
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: id_operadora
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Id_bandeira
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: id_parcelamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: NumeroParcelas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataFatura
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: TipoOperacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AutorizacaoCartao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: dataautorizacaocartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: documentocartao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: irretido
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: pisretido
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: cofinsretido
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: csllretido
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

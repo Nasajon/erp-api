@@ -1,0 +1,11 @@
+{
+     "Servico" : "Guid ou Código"
+   , "TipoServico" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+   , "Valor" : 20,2
+   , "CFOP" : "Objeto: TCFOPServico"
+   , "entidadescompartilhadoras_anteriores" : "ObjectList: TEntidadeCompartilhadora"
+   , "entidadescompartilhadoras_novas" : "ObjectList: TEntidadeCompartilhadora"
+	
+}

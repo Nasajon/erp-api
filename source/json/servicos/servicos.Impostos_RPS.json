@@ -1,0 +1,32 @@
+{
+     "estabelecimento_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "estabelecimento_simples_nacional" : False
+   , "estabelecimento_ibge" : "String(7)"
+   , "cliente_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "cliente_simples_nacional" : False
+   , "cliente_qualificacao" : 1
+   , "cliente_retem_iss" : False
+   , "cliente_retem_inss" : False
+   , "cliente_retem_ir" : False
+   , "cliente_retem_pis" : False
+   , "cliente_retem_cofins" : False
+   , "cliente_retem_csll" : False
+   , "configuracao_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "configuracao_destacar_iss_estabelecimento_simples" : False
+   , "configuracao_considerar_valor_minimo" : False
+   , "configuracao_ratear_retencoes" : False
+   , "configuracao_destacar_retencoes_parcela_inferior_valor_minimo" : False
+   , "codigo_servico_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo_servico_retem_ir" : False
+   , "codigo_servico_retem_pis" : False
+   , "codigo_servico_retem_cofins" : False
+   , "codigo_servico_retem_csll" : False
+   , "rps_tipo_tributacao" : 1
+   , "rps_iss_retido" : False
+   , "rps_valor_deducoes" : 20,2
+   , "rps_municipio_prestacao_id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "rps_municipio_prestacao_ibge" : "String(7)"
+   , "rps_total_parcelas" : 1
+   , "rps_lista_itens" : "ObjectList: TImpostos_ItemRPS"
+	
+}

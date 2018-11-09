@@ -1,0 +1,54 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Cliente" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "FormasPagamentosFaturas" : "ObjectList: TFormaPagamentoFaturaNovo"
+   , "Parcelas" : "ObjectList: TParcelaFormaPagamentoFaturaNovo"
+   , "PercentualDesconto" : 15,4
+   , "Desconto" : 15,2
+   , "ModoExibicaoDesconto" : "String(1)"
+	
+}
+
+Campo: Id
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Cliente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Emissao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: FormasPagamentosFaturas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Parcelas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PercentualDesconto
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Desconto
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ModoExibicaoDesconto
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

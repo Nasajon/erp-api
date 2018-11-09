@@ -1,0 +1,9 @@
+{
+     "XML" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: XML
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

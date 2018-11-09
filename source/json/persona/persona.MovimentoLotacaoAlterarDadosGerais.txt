@@ -1,0 +1,36 @@
+{
+     "IdMovimento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Rubrica" : "Guid ou Código"
+   , "Lotacao" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Ordem" : 1
+   , "CalculaNoFim" : False
+   , "Invisivel" : False
+   , "BaseParaCalculo" : 20,6
+	
+}
+
+Campo: IdMovimento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Rubrica
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Lotacao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Ordem
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CalculaNoFim
+Descrição: Indica se o movimento será calculado após todos os cálculos internosObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Invisivel
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: BaseParaCalculo
+Descrição: Informar o valor que servirá de base para cálculo da rubrica. Por exemplo, se a rubrica for de faltas, informar o número de diasObrigatório: NÃOAceita valor nulo: NÃO
+

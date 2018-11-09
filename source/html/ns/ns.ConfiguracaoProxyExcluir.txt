@@ -1,0 +1,9 @@
+{
+     "Configuracaoproxy" : "String(100)"
+	
+}
+
+Campo: Configuracaoproxy
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

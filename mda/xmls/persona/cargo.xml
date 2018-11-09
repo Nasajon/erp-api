@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Cargo">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdCargo" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="4" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="50" required="True" notnull="True"/>
+			<field nome="CodigoCBO" controlType="String" tamanho="7" required="True" notnull="True" summary="Conforme tabela de código brasileiro de ocupações"/>
+			<field nome="CodigoGrauInstrucao" controlType="String" tamanho="2" required="True" notnull="True" summary="Conforme tabela oficial de graus de instrução do governo"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>
+			<field nome="Cargo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="4" required="True" notnull="True"/>			
+			<field nome="Nome" controlType="String" tamanho="50" required="True" notnull="True"/>
+			<field nome="CodigoCBO" controlType="String" tamanho="7" required="True" notnull="True" summary="Conforme tabela de código brasileiro de ocupações"/>
+			<field nome="CodigoGrauInstrucao" controlType="String" tamanho="2" required="True" notnull="True" summary="Conforme tabela oficial de graus de instrução do governo"/>
+		</model>
+		<model>
+			<nome>AlterarDadosSugestao</nome>
+			<field nome="Cargo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Departamento" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Horario" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Lotacao" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Sindicato" controlType="EntidadeInterna" tamanho="6" required="False" notnull="False"/>
+			<field nome="DiasExperienciaContrato" controlType="Integer" required="False" notnull="False"/>
+			<field nome="DiasProrrogacaoContrato" controlType="Integer" required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>AlterarDadosComplementares</nome>
+			<field nome="Cargo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Experiencia" controlType="String" tamanho="100" required="False" notnull="False"/>
+			<field nome="Atividades" controlType="Memo" required="False" notnull="True"/>
+			<field nome="Requisitos" controlType="Memo" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarDadosMercado</nome>			
+			<field nome="Cargo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="MaiorSalario" controlType="Currency" tamanho="20,6"  required="False" notnull="False"/>
+			<field nome="MenorSalario" controlType="Currency" tamanho="20,6"  required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Cargo" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

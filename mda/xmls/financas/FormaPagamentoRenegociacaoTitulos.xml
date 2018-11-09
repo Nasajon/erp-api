@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="FormaPagamentoRenegociacaoTitulos">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Id" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="id_renegociacaotitulos" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Id_formapagamento" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="id_conta" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Id_rateiopadrao" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="id_meioeletronico" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Id_layoutcobranca" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="id_operadora" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Id_bandeira" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="id_parcelamento" controlType="EntidadeInterna" notnull="True"/>
+	        <field nome="Valor" controlType="Currency" tamanho="13,2" notnull="True"/>			
+			<field nome="NumeroParcelas" controlType="Integer" required="False"/>	
+			<field nome="DataFatura" controlType="Date" required="False"/>	
+			<field nome="TipoOperacao" controlType="Integer" required="False"/>	
+            <field nome="AutorizacaoCartao" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="dataautorizacaocartao" controlType="Date" required="False"/>	
+            <field nome="documentocartao" controlType="String" tamanho="30" notnull="True"/>
+            <field nome="irretido" controlType="Currency" tamanho="13,2" notnull="True"/>
+	        <field nome="pisretido" controlType="Currency" tamanho="13,2" notnull="True"/>
+	        <field nome="cofinsretido" controlType="Currency" tamanho="13,2" notnull="True"/>
+	        <field nome="csllretido" controlType="Currency" tamanho="13,2" notnull="True"/>
+	        <field nome="issretido" controlType="Currency" tamanho="13,2" notnull="True"/>
+	        <field nome="inssretido" controlType="Currency" tamanho="13,2" notnull="True"/>
+            <field nome="id_documentorateado" controlType="Guid" Required="False" notnull="False"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="BaixaTituloRenegociado">
+		<model>
+		    <nome>Novo</nome>        
+			<field nome="IdTitulo" controlType="Guid" notnull="True"/>	
+            <field nome="Data" controlType="Date" notnull="True"/>	
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="20,4" Required="False"/>
+			<field nome="ValorDesconto" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="PercentualJuros" controlType="Currency" tamanho="20,4" Required="False"/>
+			<field nome="ValorJuros" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="PercentualMulta" controlType="Currency" tamanho="20,4" Required="False"/>
+			<field nome="ValorMulta" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorAcrescimo" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorTarifaBancaria" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorPisRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorCofinsRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorCsllRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorIrrfRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorInssRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorissRetido" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorIrrfRetidoNotaFiscal" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="ValorInssRetidoNotaFiscal" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="Valor" controlType="Currency" tamanho="20,2" Required="False" notnull="True"/>
+			<field nome="Documento" controlType="String" tamanho="30" required="False"/>
+			<field nome="Historico" controlType="Memo" required="False"/>
+			<field nome="Favorecido" controlType="String" tamanho="150" required="False" notnull="True"/>   
+            <field nome="valorvariacaocambialativa" controlType="Currency" Required="False" notnull="False"/>
+			<field nome="valorvariacaocambialpassiva" controlType="Currency" Required="False" notnull="False"/> 			
+			<field nome="OutrasRetencoes" controlType="Currency" tamanho="20,2" Required="False"/>
+			<field nome="DescricaoOutrasRetencoes" controlType="String" tamanho="255" required="False"/>
+			<field nome="Origem" controlType="Integer" Required="False" notnull="False"/>			
+		</model>	
+		<model>
+		    <nome>Excluir</nome>        
+			<field nome="IdTitulo" controlType="Guid" notnull="True"/>	
+		</model>	        
+	</models>
+</root>

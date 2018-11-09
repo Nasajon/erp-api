@@ -1,0 +1,19 @@
+{
+     "idunidade" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "descricao" : "String(40)"
+   , "decimais" : 1
+	
+}
+
+Campo: idunidade
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: decimais
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

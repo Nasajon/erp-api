@@ -1,0 +1,24 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(120)"
+   , "DefinicaoContratante" : "String(20)"
+   , "DefinicaoBeneficiario" : "String(20)"
+   , "DataInicial" : "2014-12-31"
+   , "Administrador" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Fiador" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "Patrimonio" : "Guid ou Código"
+   , "QtdDiasDesconto" : 1
+   , "QtdDiasMulta" : 1
+   , "QtdDiasJurosDiarios" : 1
+   , "PercentualComissao" : 20,2
+   , "ValorComissao" : 20,2
+   , "PercentualRetencaoImposto" : 20,2
+   , "ValorRetencaoImposto" : 20,2
+   , "EmitirNotaFiscal" : False
+   , "Itens" : "ObjectList: TItemContratoReceberNovo"
+	
+}

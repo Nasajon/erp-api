@@ -1,0 +1,41 @@
+{
+     "IdAfastamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Data" : "2014-12-31"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Medico" : "Guid ou Código"
+   , "CID" : "String(5)"
+   , "TipoAcidenteTransito" : 1
+	
+}
+
+Campo: IdAfastamento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Medico
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CID
+Descrição: Conforme tabela de códigos de doenças do eSocial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: TipoAcidenteTransito
+Descrição: Atropelamento(1), Colisão(2) ou Outros(3)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

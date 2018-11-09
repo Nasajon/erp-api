@@ -1,0 +1,9 @@
+{
+     "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+   , "Codigo" : "String(7)"
+   , "Nome" : "String(20)"
+   , "Numero" : "String(20)"
+   , "DigitoVerificador" : "String(2)"
+	
+}

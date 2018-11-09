@@ -1,0 +1,47 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "tipo" : 1
+   , "modulo" : 1
+	
+}
+
+Campo: id
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: tipo
+Descrição: 
+					0 - Texto,
+                    1 - Inteiro,
+                    2 - Verdadeiro/Falso,
+                    3 - Decimal,
+                    4 - Data,
+                    5 - Lista,
+                    6 - Memo
+				
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: modulo
+Descrição: Valores suportados: 
+				0 - Produto, 
+				1 - Serviço Técnico, 
+				2 - Ativo, 
+				3 - Documento, 
+				4 - Ordem de Serviço, 
+				5 - Participante, 
+				6 - Proposta, 
+				7 - Pedido de Faturamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

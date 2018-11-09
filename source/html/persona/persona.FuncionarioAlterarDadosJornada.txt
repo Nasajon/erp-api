@@ -1,0 +1,39 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Quantidademediahorassemanais" : 1
+   , "RegimedeJornada" : 1
+   , "JornadaReduzida" : False
+   , "NumeroHorasMensais" : 1
+   , "NumeroDiasPeriodo" : 1
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Quantidademediahorassemanais
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RegimedeJornada
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: JornadaReduzida
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroHorasMensais
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: NumeroDiasPeriodo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

@@ -1,0 +1,32 @@
+{
+     "IdReajuste" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Sindicato" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+   , "DataDeveriaTerSidoConcedido" : "2014-12-31"
+   , "Tipo" : 1
+   , "Percentual" : 20,6
+   , "Descricao" : "String(50)"
+	
+}
+
+Campo: IdReajuste
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Sindicato
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataDeveriaTerSidoConcedido
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Convenção(0), Acordo(1), Dissídio(2) ou CCP(3)Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Percentual
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃOAceita valor nulo: NÃO
+

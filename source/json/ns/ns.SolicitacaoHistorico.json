@@ -1,0 +1,10 @@
+{
+     "SolicitacaoHistorico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Solicitacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Usuario" : "String(64)"
+   , "Comentario" : "String(64)"
+   , "Data" : "String(64)"
+   , "Status" : 1
+   , "UsuarioDestino" : "String(64)"
+	
+}

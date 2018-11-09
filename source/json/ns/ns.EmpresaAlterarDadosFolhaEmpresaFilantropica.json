@@ -1,0 +1,13 @@
+{
+     "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Filantropica" : False
+   , "NumeroCertificado" : "String(40)"
+   , "Ministerio" : "String(8)"
+   , "NumeroProtocoloRenovacao" : "String(40)"
+   , "NumeroPaginaDiarioOficialUniao" : "String(6)"
+   , "DataEmissaoCertificado" : "2014-12-31"
+   , "DataVencimentoCertificado" : "2014-12-31"
+   , "DataProtocoloRenovacaoIsencao" : "2014-12-31"
+   , "DataPublicacaoDiarioOficialUniao" : "2014-12-31"
+	
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="IntervaloJornada">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdIntervalo" controlType="Guid" required="False" notnull="True"/>			
+			<field nome="Jornada" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="HorarioInicio" controlType="Time" required="True" notnull="True"/>
+			<field nome="HorarioFim" controlType="Time" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="IdIntervalo" controlType="Guid" required="False" notnull="True"/>			
+			<field nome="Jornada" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="HorarioInicio" controlType="Time" required="False" notnull="True"/>
+			<field nome="HorarioFim" controlType="Time" required="False" notnull="True"/>
+			<field nome="HorarioInicioNovo" controlType="Time" required="False" notnull="True"/>
+			<field nome="HorarioFimNovo" controlType="Time" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdIntervalo" controlType="Guid" required="False" notnull="True"/>			
+			<field nome="Jornada" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="HorarioInicio" controlType="Time" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>
+
+ 
+  
+  
+  
+  
+  
+   

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="ParcelaFormaPagamentoFatura">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="parcela" controlType="Guid" Required="False" notnull="True"/>
+            <field nome="Id_pagamento" controlType="Guid" Required="False" notnull="True"/>
+            <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+	        <field nome="Valor" controlType="Currency" tamanho="13,2" notnull="True"/>			
+			<field nome="Vencimento" controlType="Date" notnull="True"/>			
+			<field nome="Sequencial" controlType="Integer" required="False"/>
+		</model>
+	</models>
+</root>

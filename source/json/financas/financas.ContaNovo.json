@@ -1,0 +1,8 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Nome" : "String(150)"
+   , "TipoConta" : "Guid ou Código"
+   , "Estabelecimento" : "Objeto: TEstabelecimento"
+	
+}

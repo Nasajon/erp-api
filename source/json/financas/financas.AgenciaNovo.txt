@@ -1,0 +1,28 @@
+{
+     "IdAgencia" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Banco" : "Guid ou Código"
+   , "Codigo" : "String(7)"
+   , "Nome" : "String(20)"
+   , "Numero" : "String(20)"
+   , "DigitoVerificador" : "String(2)"
+	
+}
+
+Campo: IdAgencia
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DigitoVerificador
+Obrigatório: SIMAceita valor nulo: NÃO
+

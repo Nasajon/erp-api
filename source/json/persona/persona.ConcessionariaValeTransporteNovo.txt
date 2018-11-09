@@ -1,0 +1,16 @@
+{
+     "IdConcessionaria" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(40)"
+	
+}
+
+Campo: IdConcessionaria
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+

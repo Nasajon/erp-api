@@ -1,0 +1,7 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "SalarioFixo" : 20,6
+   , "UnidadeSalario" : 1
+	
+}

@@ -1,0 +1,33 @@
+{
+     "identificador" : "Guid ou Código"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "tipo" : 1
+	
+}
+
+Campo: identificador
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: tipo
+Descrição: Valores suportados: 
+				0 - Produto, 
+				1 - Serviço Técnico, 
+				2 - Ativo, 
+				3 - Documento, 
+				4 - Ordem de Serviço, 
+				5 - Participante, 
+				6 - Proposta, 
+				7 - Pedido de Faturamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

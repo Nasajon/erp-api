@@ -1,0 +1,20 @@
+{
+     "Tarifa" : "Guid ou Código"
+   , "Concessionaria" : "Guid ou Código"
+   , "CodigoExterno" : "String(20)"
+	
+}
+
+Campo: Tarifa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Concessionaria
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CodigoExterno
+Descrição: Informar o código cadastrado em um sistema externo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

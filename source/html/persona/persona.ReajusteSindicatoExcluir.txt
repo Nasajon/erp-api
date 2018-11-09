@@ -1,0 +1,19 @@
+{
+     "IdReajuste" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Sindicato" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+	
+}
+
+Campo: IdReajuste
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Sindicato
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

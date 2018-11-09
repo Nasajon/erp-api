@@ -1,0 +1,12 @@
+{
+     "IdAcordo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Sindicato" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(10)"
+   , "Descricao" : "String(100)"
+   , "DataInicio" : "2014-12-31"
+   , "DataFim" : "2014-12-31"
+   , "QuantidadeHoras" : "2014-12-31"
+   , "PercentualHoras" : 20,6
+	
+}

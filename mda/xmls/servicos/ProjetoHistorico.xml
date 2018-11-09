@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models modulo="ProjetoHistorico" sistema="Servicos">
+		<model>
+			<nome>Novo</nome>
+			<field controlType="Guid" nome="ProjetoHistorico" notnull="True" required="False"/>
+			<field controlType="EntidadeInterna" nome="Projeto" notnull="True" required="True"/>
+			<field controlType="EntidadeFisicaJuridica" nome="Estabelecimento" required="False" notnull="False"/>
+			<field controlType="EntidadeFisicaJuridica" nome="Empresa" required="False" notnull="False"/>
+            <field controlType="EntidadeInterna" nome="GrupoEmpresarial" required="False" notnull="False"/>
+			<field controlType="DateTime" nome="Data" notnull="False" required="False"/>
+			<field controlType="EntidadeInterna" nome="Usuario" notnull="True" required="True"/>
+			<field controlType="Memo" nome="Historico" notnull="False" required="False"/>
+		</model>
+	</models>
+</root>

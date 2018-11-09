@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="ItemEmprestimoPrestacao">
+		<model>
+		    <nome>Novo</nome>        
+            <field nome="ID" controlType="Guid" required="False" notnull="True"/>
+			<field nome="ID_PrestacaoDeConta" controlType="EntidadeInterna" notnull="True"/>             
+			<field nome="ID_TituloEmprestimo" controlType="EntidadeInterna" notnull="True"/>                         
+		</model>
+	</models>
+</root>

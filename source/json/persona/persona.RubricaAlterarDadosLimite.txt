@@ -1,0 +1,20 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "ValorMaximo" : 20,6
+   , "ValorMinimo" : 20,6
+	
+}
+
+Campo: Rubrica
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ValorMaximo
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorMinimo
+Obrigatório: NÃOAceita valor nulo: SIM
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="VendedorTitulo">
+		<model>
+			<field nome="Vendedor" controlType="EntidadeFisicaJuridica" notnull="True"/>	
+			<field nome="PercentualParticipacao" controlType="Currency" tamanho="20,2" notnull="True"/>	
+			<field nome="PercentualComissao" controlType="Currency" tamanho="20,2" notnull="False"/>	
+			<field nome="ValorComissao" controlType="Currency" tamanho="20,2" notnull="False"/>	
+		</model>	
+	</models>
+</root>
+  

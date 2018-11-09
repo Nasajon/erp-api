@@ -1,0 +1,40 @@
+{
+     "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Estabelecimento" : "Guid ou Código"
+   , "Departamento" : "Guid ou Código"
+   , "Horario" : "Guid ou Código"
+   , "Lotacao" : "Guid ou Código"
+   , "Sindicato" : "Guid ou Código"
+   , "DiasExperienciaContrato" : 1
+   , "DiasProrrogacaoContrato" : 1
+	
+}
+
+Campo: Cargo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Departamento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Horario
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Lotacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Sindicato
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DiasExperienciaContrato
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DiasProrrogacaoContrato
+Obrigatório: NÃOAceita valor nulo: SIM
+

@@ -1,0 +1,55 @@
+{
+     "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Filantropica" : False
+   , "NumeroCertificado" : "String(40)"
+   , "Ministerio" : "String(8)"
+   , "NumeroProtocoloRenovacao" : "String(40)"
+   , "NumeroPaginaDiarioOficialUniao" : "String(6)"
+   , "DataEmissaoCertificado" : "2014-12-31"
+   , "DataVencimentoCertificado" : "2014-12-31"
+   , "DataProtocoloRenovacaoIsencao" : "2014-12-31"
+   , "DataPublicacaoDiarioOficialUniao" : "2014-12-31"
+	
+}
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Filantropica
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroCertificado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Ministerio
+Descrição: CNAS, MEC, MS ou MDS
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroProtocoloRenovacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroPaginaDiarioOficialUniao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataEmissaoCertificado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataVencimentoCertificado
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataProtocoloRenovacaoIsencao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataPublicacaoDiarioOficialUniao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,8 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(15)"
+   , "Serie" : "String(5)"
+   , "DataExpedicao" : "2014-12-31"
+	
+}

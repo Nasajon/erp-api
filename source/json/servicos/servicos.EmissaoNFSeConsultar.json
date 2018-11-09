@@ -1,0 +1,8 @@
+{
+     "AtributoEstabelecimento" : "String(1024)"
+   , "AtributoRPS" : "String(1024)"
+   , "AtributoSerie" : "String(1024)"
+   , "AtributoCertificado" : "String(1024)"
+   , "AtributoUsuario" : "Guid ou Código"
+	
+}

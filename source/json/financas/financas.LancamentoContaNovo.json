@@ -1,0 +1,12 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Conta" : "Objeto: TConta_v2Novo"
+   , "Data" : "2014-12-31"
+   , "Documento" : "String(30)"
+   , "Sinal" : 1
+   , "Valor" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "Contabilizar" : False
+   , "Historico" : "String(1024)"
+	
+}

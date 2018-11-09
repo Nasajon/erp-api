@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Sindicato">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdSindicato" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="6" required="True" notnull="True"/>
+			<field nome="CNPJ" controlType="String" tamanho="18" required="True" notnull="True" summary="[99.999.999/9999-99]. A máscara não é obrigatória."/>
+			<field nome="CodigoContribuicao" controlType="String" tamanho="12" required="False" notnull="True"/>			
+			<field nome="CodigoEntidade" controlType="String" tamanho="15" required="False" notnull="True"/>
+			<field nome="Patronal" controlType="Boolean"  required="True" notnull="True"/>
+			<field nome="MesContribuicaoAssistencial" controlType="Integer" required="False" notnull="True"/>
+			<field nome="MesContribuicaoSindical" controlType="Integer" required="True" notnull="True"/>
+			<field nome="PisoSalarial" controlType="Currency"  tamanho="20,6" required="False" notnull="True"/>,
+            <field nome="Nome" controlType="String" tamanho="60" required="True" notnull="True"/>			
+		</model>
+		<model>
+			<nome>AlterarDadosGerais</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="6" required="False" notnull="True"/>
+			<field nome="CNPJ" controlType="String" tamanho="18" required="False" notnull="True" summary="[99.999.999/9999-99]. A máscara não é obrigatória."/>
+			<field nome="CodigoContribuicao" controlType="String" tamanho="12" required="False" notnull="True"/>
+			<field nome="CodigoEntidade" controlType="String" tamanho="15" required="False" notnull="True"/>
+			<field nome="Patronal" controlType="Boolean"  required="False" notnull="True"/>
+			<field nome="MesContribuicaoAssistencial" controlType="Integer" required="False" notnull="True"/>
+			<field nome="MesContribuicaoSindical" controlType="Integer" required="False" notnull="True"/>
+			<field nome="PisoSalarial" controlType="Currency"  tamanho="20,6" required="False" notnull="False"/>
+			<field nome="Nome" controlType="String" tamanho="60" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarDadosEndereco</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Logradouro" controlType="String" tamanho="150"  required="False" notnull="False"/>
+			<field nome="Numero" controlType="String" tamanho="10"  required="False" notnull="False"/>
+			<field nome="complemento" controlType="String" tamanho="60"  required="False" notnull="False"/>
+			<field nome="Bairro" controlType="String" tamanho="60"  required="False" notnull="False"/>
+			<field nome="Cidade" controlType="String" tamanho="60"  required="False" notnull="False"/>
+			<field nome="CEP" controlType="String" tamanho="8"  required="False" notnull="False"/>
+			<field nome="Estado" controlType="String" tamanho="2"  required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>AlterarDadosContato</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="40"  required="False" notnull="False"/>
+			<field nome="Email" controlType="String" tamanho="100"  required="False" notnull="False"/>
+			<field nome="DDDTelefone" controlType="String" tamanho="2"  required="False" notnull="False"/>
+			<field nome="Telefone" controlType="String" tamanho="20"  required="False" notnull="False"/>			
+			<field nome="DDDFAX" controlType="String" tamanho="2"  required="False" notnull="False"/>
+			<field nome="FAX" controlType="String" tamanho="20"  required="False" notnull="False"/>			
+		</model>
+		<model>
+			<nome>AlterarDadosOutrasEntidades</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="CodigoFPAS" controlType="String" tamanho="6" required="False" notnull="True" summary="Conforme tabela de Fundo da Previdência e Assistência Social do governo"/>
+			<field nome="CodigoTerceiros" controlType="String" tamanho="4" required="False" notnull="True" summary="Conforme tabela de outras entidades do governo"/>
+		</model>
+		<model>
+			<nome>AlterarDadosCalculoFerias</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="MesesParaCalculoMedia" controlType="Integer" required="False" notnull="True"/>
+			<field nome="NumeradorFracaoAdicionalFerias" controlType="Integer"   required="False" notnull="True" summary="Se o adicional de férias for de 1/3 informar 1"/>
+			<field nome="DenominadorFracaoAdicionalFerias" controlType="Integer"  required="False" notnull="True" summary="Se o adicional de férias for de 1/3 informar 3"/>
+			<field nome="MediaPelosMaioresValores" controlType="Boolean"   required="False" notnull="False"/>
+			<field nome="QuantidadeMesesMaioresValores" controlType="Integer" required="False" notnull="True" summary="Informar o número de meses que possuam os maiores valores. Por exemplo, se o número de meses para médias forem 12, porém no sindicato apenas os 5 maiores valores interssam, informar 5"/>
+		</model>
+		<model>
+			<nome>AlterarDadosCalculoDecimoTerceiro</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="MesesParaCalculoMedia" controlType="Integer" required="False" notnull="True"/>
+			<field nome="MediaPelosMaioresValores" controlType="Boolean"   required="False" notnull="False"/>
+			<field nome="QuantidadeMesesMaioresValores" controlType="Integer" required="False" notnull="True" summary="Informar o número de meses que possuam os maiores valores. Por exemplo, se o número de meses para médias forem 12, porém no sindicato apenas os 5 maiores valores interssam, informar 5"/>
+		</model>
+		<model>
+			<nome>AlterarDadosCalculoRescisao</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="MesesParaCalculoMedia" controlType="Integer" required="False" notnull="True"/>
+			<field nome="MediaPelosMaioresValores" controlType="Boolean"   required="False" notnull="False"/>
+			<field nome="QuantidadeMesesMaioresValores" controlType="Integer" required="False" notnull="True" summary="Informar o número de meses que possuam os maiores valores. Por exemplo, se o número de meses para médias forem 12, porém no sindicato apenas os 5 maiores valores interssam, informar 5"/>
+			<field nome="DiasAvisoPrevio" controlType="Integer" required="False" notnull="True"/>
+			<field nome="PercentualMultaFGTS" controlType="Currency"  tamanho="20,6" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarDadosCalculoDissidio</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Dias" controlType="Integer"   required="False" notnull="True"/>			
+			<field nome="Mes" controlType="Integer"   required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarDadosCalculoMaternidade</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Meses" controlType="Integer" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarDadosCalculoAnuenio</nome>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Acumulativo" controlType="Boolean" required="False" notnull="False"/>
+			<field nome="CalculaNoFim" controlType="Boolean" required="False" notnull="False"/>			
+			<field nome="PagaSomenteMaior" controlType="Boolean" required="False" notnull="False"/>			
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+	        <field nome="Sindicato" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>
+   

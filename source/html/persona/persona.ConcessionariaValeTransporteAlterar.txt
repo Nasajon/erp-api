@@ -1,0 +1,19 @@
+{
+     "Concessionaria" : "Guid ou Código"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(40)"
+	
+}
+
+Campo: Concessionaria
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

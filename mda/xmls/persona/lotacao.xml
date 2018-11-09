@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Lotacao">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdLotacao" controlType="Guid" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="20" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="60" required="True" notnull="True"/>
+			<field nome="CodigoAgenteNocivo" controlType="String" tamanho="1" required="True" notnull="True" summary="Conforme tabela do eSocial"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="20" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="60" required="False" notnull="True"/>
+			<field nome="CodigoAgenteNocivo" controlType="String" tamanho="1" required="False" notnull="True" summary="Conforme tabela do eSocial"/>
+		</model>
+		<model>
+			<nome>AlterarTipoLotacaoEstabelecimento</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarTipoLotacaoObraEstabelecimento</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Obra" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarTipoLotacaoTomador</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Tomador" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarTipoLotacaoObraTomador</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="Obra" controlType="EntidadeInterna" required="True" notnull="True"/>			
+			<field nome="Tomador" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarEnderecoDiferenteDoVinculo</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Diferente" controlType="Boolean" required="True" notnull="True" />
+		</model>
+		<model>
+			<nome>AlterarDadosEnderecoDiferenteDoVinculo</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Tipologradouro" controlType="String" tamanho="10" required="False" notnull="False" summary="Conforme tabela do eSocial"/>
+			<field nome="Logradouro" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="Numero" controlType="String" tamanho="10" required="False" notnull="False"/>
+			<field nome="Complemento" controlType="String" tamanho="60" required="False" notnull="False"/>
+		    <field nome="Bairro" controlType="String" tamanho="60" required="False" notnull="False"/>
+			<field nome="Cidade" controlType="String" tamanho="60" required="False" notnull="False"/>
+			<field nome="CEP" controlType="String" tamanho="8" required="False" notnull="False"/>
+			<field nome="CodigoMunicipio" controlType="String" tamanho="8" required="False" notnull="False" summary="Conforme tabela do IBGE"/>
+			<field nome="UF" controlType="String" tamanho="2" required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>AlterarProcessoTerceiros</nome>
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Processo" controlType="EntidadeInterna" required="True" notnull="False"/>
+		</model>
+		<model>
+			<nome>AlterarOutrasEntidadesDiferenteDoVinculo</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Diferente" controlType="Boolean" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>AlterarDadosOutrasEntidadesDiferenteDoVinculo</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		    <field nome="CodigoFPAS" controlType="String" tamanho="6" required="False" notnull="False" summary="Conforme tabela de Fundo da Previdência e Assistência Social do governo"/>
+			<field nome="CodigoTerceiros" controlType="String" tamanho="4" required="False" notnull="False" summary="Conforme tabela de outras entidades do governo"/>
+			<field nome="AliquotaTerceiros" controlType="Currency" tamanho="20,6"  required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Lotacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>   

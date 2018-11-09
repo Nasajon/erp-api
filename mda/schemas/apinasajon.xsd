@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Definindo os elementos relativos a um MODEL -->
+<xs:element name="field">
+	<xs:complexType>
+		<xs:attribute name="nome" type="xs:string"/>					
+		<xs:attribute name="controlType" type="controlTypeEnum" use="required" />
+		<xs:attribute name="tamanho" type="xs:string"/>		
+		<!-- Quando o controlType for um Object or ObjectList, então Exemplo: ns/contato/TContatoNovo -->			
+		<xs:attribute name="namespace" type="xs:string"/>
+		<xs:attribute name="required" type="xs:string"/>		
+		<xs:attribute name="summary" type="xs:string"/>
+		<xs:attribute name="notnull" type="xs:string"/>
+		<xs:attribute name="format" type="xs:string"/>		
+	</xs:complexType>
+</xs:element>
+
+<xs:simpleType name="controlTypeEnum">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Guid" />		
+		<xs:enumeration value="String" />
+		<xs:enumeration value="Memo" />
+		<xs:enumeration value="Integer" />
+		<xs:enumeration value="Currency" />
+		<xs:enumeration value="Date" />
+		<xs:enumeration value="DateTime" />
+		<xs:enumeration value="Boolean" />
+		<xs:enumeration value="Object" />		
+		<xs:enumeration value="ObjectList" />		
+		<xs:enumeration value="EntidadeInterna" />
+		<xs:enumeration value="EntidadeJuridica" />
+		<xs:enumeration value="EntidadeFisica" />						
+		<xs:enumeration value="EntidadeFisicaJuridica" />			
+		<xs:enumeration value="ListaEntidadeInterna" />
+		<xs:enumeration value="Bytea" />
+	</xs:restriction>
+</xs:simpleType>
+
+<!-- Definindo o MODEL -->
+<xs:element name="import">
+	<xs:complexType>
+		<xs:attribute name="nome" type="xs:string"/>				
+	</xs:complexType>	
+</xs:element>
+
+<xs:element name="model">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string"/>
+			<xs:element ref="field" maxOccurs="unbounded"/>	
+			<xs:element name="summary" type="xs:string"/>			
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+<xs:element name="models">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="import" maxOccurs="unbounded"/>
+			<xs:element ref="model" maxOccurs="unbounded"/>			
+		</xs:sequence>
+		<xs:attribute name="sistema" type="xs:string"/>			
+		<xs:attribute name="modulo" type="xs:string"/>	
+	</xs:complexType>	
+</xs:element>
+
+<!-- Definindo o NEGOCIO (elemento root) -->
+<xs:element name="root">
+	<xs:complexType>
+		<xs:sequence>	
+			<xs:element ref="models"/>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+</xs:schema>

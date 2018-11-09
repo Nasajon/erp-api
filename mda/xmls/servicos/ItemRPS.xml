@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="ItemRPS">
+        <model>
+            <nome>Novo</nome>
+            <field nome="Id_RPS" controlType="Guid" Required="False" notnull="True"/>  
+            <field nome="CodigoServico" controlType="EntidadeInterna" required="True" notnull="True"/>
+            <field nome="Quantidade" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+            <field nome="ValorUnitario" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+            <field nome="Descricao" controlType="String" tamanho="1500" required="True" notnull="True"/>
+            <field nome="BaseISS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="ValorISS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="BaseIRRf" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="ValorIRRF" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="BaseINSS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="ValorINSS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="BasePIS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="ValorPIS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="BaseCOFINS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="ValorCOFINS" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="BaseCSLL" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="ValorCSLL" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="RetemISS" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="RetemIRRF" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="RetemINSS" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="RetemPIS" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="RetemCOFINS" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="RetemCSLL" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="Contrato_ID" controlType="Guid" Required="False" notnull="False"/>
+            <field nome="ItemContrato_ID" controlType="Guid" Required="False" notnull="False"/>
+            <field nome="ProcessamentoContrato_ID" controlType="Guid" Required="False" notnull="False"/>
+            <field nome="Pessoa_ID" controlType="Guid" Required="False" notnull="False"/>
+            <field nome="id_origem" controlType="Guid" Required="False" notnull="False"/>
+            <field nome="desconto" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="Tipo" controlType="Integer" required="False" notnull="False"/>
+            <field nome="valor_total" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="item_faturamento_id" controlType="Guid" Required="False" notnull="False"/>
+        </model>
+    </models>
+</root>

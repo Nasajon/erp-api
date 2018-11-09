@@ -1,0 +1,11 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcao" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CNPJ [99.999.999/9999-99]"
+   , "Registro" : "Guid ou Código"
+   , "Agrupador" : "Guid ou Código"
+   , "PeriodicidadeTipo" : 1
+   , "PeriodicidadeIntervalo" : 
+	
+}

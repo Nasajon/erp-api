@@ -1,0 +1,54 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "idPessoa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "nome" : "String(200)"
+   , "primeiroNome" : "String(100)"
+   , "sobreNome" : "String(100)"
+   , "email" : "String(100)"
+   , "cargo" : "String(100)"
+   , "sexo" : 1
+   , "observacao" : "Este atributo é do titpo Memo."
+   , "dataNascimento" : "2014-12-31"
+	
+}
+
+Campo: id
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: idPessoa
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: nome
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: primeiroNome
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: sobreNome
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: email
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: cargo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: sexo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: observacao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: dataNascimento
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

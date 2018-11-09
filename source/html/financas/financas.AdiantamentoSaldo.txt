@@ -1,0 +1,19 @@
+{
+     "tituloadiantamento" : "Guid ou Código"
+   , "titulonotafiscal" : "Guid ou Código"
+   , "valorresgatado" : 20,2
+	
+}
+
+Campo: tituloadiantamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: titulonotafiscal
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: valorresgatado
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

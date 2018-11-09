@@ -1,0 +1,17 @@
+{
+     "LoteFatura" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "Usuario" : "Guid ou Código"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "DataCriacao" : "2014-12-31"
+   , "Clientes" : "ObjectList: TCliente"
+   , "DataInicio" : "2014-12-31"
+   , "DataFim" : "2014-12-31"
+   , "PorEmissao" : False
+   , "Mensagens" : "ObjectList: TMensagemLoteFatura_v2"
+   , "TipoSelecaoCliente" : 1
+   , "DiaInicioSelecao" : 1
+   , "DiaFimSelecao" : 1
+	
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="gerador_rps_cliente_v2">
+        <model>
+            <field nome="id" controlType="Guid" required="True" summary="Identificador do estabelecimento" notnull="False"/>
+            <field nome="itens_faturamento" controlType="ObjectList" required="True" summary="Serviços do RPS" namespace="servicos\gerador_rps_item_faturamento\tgerador_rps_item_faturamento"/>            
+            <field nome="pagamentos" controlType="ObjectList" namespace="ns\pagamentosemparcela\tpagamentosemparcela" required="False"/>
+            <field nome="parcelas" controlType="ObjectList" namespace="ns\parcela\tparcela" required="False"/>
+            <field nome="rateios" controlType="ObjectList" required="False" summary="Indica as forma de rateio do RPS. Quando não informado assumirá da configuração do cliente" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro"/>
+        </model>
+    </models>
+</root>

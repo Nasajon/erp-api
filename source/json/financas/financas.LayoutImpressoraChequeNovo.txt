@@ -1,0 +1,20 @@
+{
+     "ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(20)"
+   , "Descricao" : "String(200)"
+   , "Banco" : "Guid ou Código"
+	
+}
+
+Campo: ID
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: SIMAceita valor nulo: NÃO
+

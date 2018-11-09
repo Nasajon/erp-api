@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="SerieRPS">
+		<model>
+			<nome>Novo</nome>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" Required="True" notnull="True"/> 
+			<field nome="Serie" controlType="String" tamanho="3" Required="True" notnull="True"/> 
+			<field nome="SubSerie" controlType="String" tamanho="2" Required="True" notnull="True"/> 
+			<field nome="Padrao" controlType="Boolean" notnull="False" summary="Informa se esse RPS é o RPS padrão a ser considerado"/> 
+			<field nome="NumeroInicial" controlType="Integer" Required="True" notnull="True"/>
+			<field nome="NumeroFinal" controlType="Integer" Required="True" notnull="True"/>
+			<field nome="ProximoNumero" controlType="Integer" Required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" Required="True" notnull="True"/> 
+			<field nome="Serie" controlType="String" tamanho="3" Required="True" notnull="True"/> 
+			<field nome="SubSerie" controlType="String" tamanho="2" Required="True" notnull="True"/> 
+			<field nome="Situacao" controlType="Integer" notnull="False" summary="Informa se esse RPS está aberto ou fechado. 0-Aberto 1-Fechado."/> 
+			<field nome="Padrao" controlType="Boolean" notnull="False" summary="Informa se esse RPS é o RPS padrão a ser considerado"/> 
+			<field nome="NumeroInicial" controlType="Integer" notnull="False"/>
+			<field nome="NumeroFinal" controlType="Integer" notnull="False"/>
+			<field nome="ProximoNumero" controlType="Integer" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Id" controlType="Guid" required="True" notnull="true"/>		
+		</model>
+	</models>
+</root>

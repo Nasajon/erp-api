@@ -1,0 +1,14 @@
+{
+     "Lotacao" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Tipologradouro" : "String(10)"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "Complemento" : "String(60)"
+   , "Bairro" : "String(60)"
+   , "Cidade" : "String(60)"
+   , "CEP" : "String(8)"
+   , "CodigoMunicipio" : "String(8)"
+   , "UF" : "String(2)"
+	
+}

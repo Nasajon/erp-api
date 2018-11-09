@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Faixa">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdFaixa" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="10" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="40" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Faixa" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="10" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="40" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Faixa" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

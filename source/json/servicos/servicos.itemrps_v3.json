@@ -1,0 +1,43 @@
+{
+     "crud" : 1
+   , "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_rps" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "item_faturamento" : "Guid ou Código"
+   , "quantidade" : 20,2
+   , "valor_unitario" : 20,2
+   , "desconto" : 20,2
+   , "valor_total" : 20,2
+   , "descricao" : "String(1500)"
+   , "retem_iss" : False
+   , "retem_ir" : False
+   , "retem_inss" : False
+   , "retem_pis" : False
+   , "retem_cofins" : False
+   , "retem_csll" : False
+   , "percentual_base_iss" : 20,2
+   , "base_iss" : 20,2
+   , "valor_iss" : 20,2
+   , "base_ir" : 20,2
+   , "aliquota_ir" : 20,2
+   , "valor_ir" : 20,2
+   , "percentual_base_inss" : 20,2
+   , "base_inss" : 20,2
+   , "aliquota_inss" : 20,2
+   , "valor_inss" : 20,2
+   , "base_pis" : 20,2
+   , "aliquota_pis" : 20,2
+   , "valor_pis" : 20,2
+   , "base_cofins" : 20,2
+   , "aliquota_cofins" : 20,2
+   , "valor_cofins" : 20,2
+   , "base_csll" : 20,2
+   , "aliquota_csll" : 20,2
+   , "valor_csll" : 20,2
+   , "contrato" : "Guid ou Código"
+   , "item_contrato" : "Guid ou Código"
+   , "processamento_cobranca" : "Guid ou Código"
+   , "titulo" : "Guid ou Código"
+   , "ordem" : 1
+   , "id_origem" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

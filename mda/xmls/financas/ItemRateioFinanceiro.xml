@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="ItemRateioFinanceiro">
+		<model>
+			<field nome="ClassificacaoFinanceira" controlType="EntidadeInterna" notnull="True"/>	
+			<field nome="CentroCusto" controlType="EntidadeInterna" required="False"/>	
+			<field nome="Valor" controlType="Currency" tamanho="20,2" notnull="True"/>
+			<field nome="Projeto" controlType="EntidadeInterna" required="False"/>	
+			<field nome="Discriminacao" controlType="String" tamanho="200" required="False" notnull="False"/>
+			<field nome="BemPatrimonial" controlType="EntidadeInterna" required="False"/>	
+			<field nome="RATEIOFINANCEIRO" controlType="Guid" required="False"/>
+			<field nome="ItemContrato" controlType="Guid" required="False"/>
+			<field nome="ID_ESTABELECIMENTO_REEMBOLSO" controlType="Guid" required="False"/>
+			<field nome="id_owner" controlType="Guid" required="False" notnull="True"/>	
+		</model>	
+	</models>
+</root>

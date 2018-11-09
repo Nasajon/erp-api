@@ -1,0 +1,13 @@
+{
+     "IdProcesso" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(20)"
+   , "DataAbertura" : "2014-12-31"
+   , "Descricao" : "String(100)"
+   , "CodigoVara" : "String(2)"
+   , "CodigoMunicipioVara" : "String(8)"
+   , "Tipo" : 1
+   , "Autor" : 1
+   , "Motivo" : 1
+	
+}

@@ -1,0 +1,12 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Codigo" : "String(6)"
+   , "Nome" : "String(100)"
+   , "Tipo" : 1
+   , "Categoria" : 1
+   , "Calculo" : 1
+   , "Unidade" : 1
+   , "Percentual" : 20,6
+	
+}

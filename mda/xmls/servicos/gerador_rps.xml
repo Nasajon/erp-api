@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="gerador_rps">
+        <model>
+            <field nome="estabelecimento" controlType="Guid" required="True" summary="Identificador do estabelecimento" notnull="False"/>
+            <field nome="lancamento" controlType="Date" required="True" summary="Identificador da data de competência do RPS" notnull="False"/>
+            <field nome="tipo_tributacao" controlType="Integer" required="False"
+                   summary="Indica o Tipo de Tributação.
+                           00 - Nenhum,
+                           01 - Tributação no Município,
+                           02 - Tributação Fora do Município,
+                           03 - Operação Isenta,
+                           04 - Operação Imune,
+                           05 - Operação Suspensa por Decisão Judicial,
+                           06 - Operação Suspensa por Decisão Administrativa" notnull="True"/>
+            <field nome="regime_especial" controlType="Integer" required="False"
+                   summary="Indica o Regime Especial.
+                           00 - Nenhum,
+                           01 - Microempresa Municipal,
+                           02 - Estimativa,
+                           03 - Sociedade de Profissionais,
+                           04 - Cooperativa,
+                           05 - Microempreendedor Individual,
+                           06 - Empresa Júnior" notnull="True"/>
+            <field nome="incentivador_cultural" controlType="Integer" required="False"
+                   summary="Indica se tem Incentivo Cultural.
+                           0 - Não,
+                           1 - Sim" notnull="True"/>
+            <field nome="codigo_servico" controlType="Guid" required="True" summary="Identificador do estabelecimento" notnull="False"/>
+            <field nome="usuario" controlType="Guid" required="True" summary="Identificador do usuário criador" notnull="False"/>
+            <field nome="discriminacao_servicos" controlType="String" tamanho="5000" required="True" notnull="False"/>
+            <field nome="itens_faturamento" controlType="ObjectList" required="True" summary="Serviços do RPS" namespace="servicos\gerador_rps_item_faturamento\tgerador_rps_item_faturamento"/>
+            <field nome="clientes" controlType="ObjectList" required="True" summary="Identificadores dos clientes" namespace="servicos\gerador_rps_cliente\tgerador_rps_cliente"/>
+            <field nome="pagamentos" controlType="ObjectList" namespace="ns\pagamentosemparcela\tpagamentosemparcela" required="False"/>
+            <field nome="parcelas" controlType="ObjectList" namespace="ns\parcela\tparcela" required="False"/>
+            <field nome="rateios" controlType="ObjectList" required="False" summary="Indica as forma de rateio do RPS. Quando não informado assumirá da configuração do cliente" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro"/>
+            <field nome="template_rps" controlType="Guid" required="True" summary="Identificador do template de RPS" notnull="False"/>
+        </model>
+    </models>
+</root>

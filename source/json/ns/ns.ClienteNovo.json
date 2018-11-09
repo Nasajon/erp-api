@@ -1,0 +1,17 @@
+{
+     "cliente" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "nome" : "String(150)"
+   , "nomefantasia" : "String(150)"
+   , "identidade" : "String(20)"
+   , "documento" : "String(20)"
+   , "retemiss" : False
+   , "retemir" : False
+   , "retempis" : False
+   , "retemcofins" : False
+   , "retemcsll" : False
+   , "reteminss" : False
+   , "entidadescompartilhadoras" : "ObjectList: TEntidadeCompartilhadora"
+   , "endereco" : "ObjectList: TEndereco"
+	
+}

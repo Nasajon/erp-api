@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="CFOPServico">
+		<model>
+			<field nome="CFOPServico" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="IBGEMunicipio" controlType="Integer" required="True" notnull="True"/>						
+		</model>
+		<model>
+		    <nome>Novo</nome>
+            <field nome="CFOPServico" controlType="Guid" required="False" notnull="True"/>
+            <field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/> 
+            <field nome="IBGEMunicipio" controlType="Integer" required="True" notnull="True"/>			
+			<field nome="Descricao" controlType="String" tamanho="255" required="True" notnull="True"/> 	   
+			<field nome="Discriminacao" controlType="String" tamanho="80" required="False" notnull="False"/>
+			<field nome="RetemPIS" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RetemCOFINS" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RetemCSLL" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RetemIRRF" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="IbpTaxa" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="CFOPServico" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="IBGEMunicipio_Anterior" controlType="Integer" required="True" notnull="True"/>
+            <field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/> 
+            <field nome="IBGEMunicipio_Novo" controlType="Integer" required="True" notnull="True"/>			
+			<field nome="Descricao" controlType="String" tamanho="255" required="True" notnull="True"/> 	   
+			<field nome="Discriminacao" controlType="String" tamanho="80" required="False" notnull="False"/>
+			<field nome="RetemPIS" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RetemCOFINS" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RetemCSLL" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="RetemIRRF" controlType="Boolean" required="True" notnull="True"/>
+			<field nome="IbpTaxa" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+		</model>		
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="CFOPServico" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="IBGEMunicipio" controlType="Integer" required="True" notnull="True"/>						
+		</model>
+	</models>
+</root>
+
+

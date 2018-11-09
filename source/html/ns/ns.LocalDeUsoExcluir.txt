@@ -1,0 +1,9 @@
+{
+     "id" : "Guid ou Código"
+	
+}
+
+Campo: id
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

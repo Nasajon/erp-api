@@ -1,0 +1,22 @@
+{
+     "Horario" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(8)"
+   , "Nome" : "String(50)"
+   , "Tipo" : 1
+   , "JornadaSegunda" : "Guid ou Código"
+   , "JornadaTerca" : "Guid ou Código"
+   , "JornadaQuarta" : "Guid ou Código"
+   , "JornadaQuinta" : "Guid ou Código"
+   , "JornadaSexta" : "Guid ou Código"
+   , "JornadaSabado" : "Guid ou Código"
+   , "JornadaDomingo" : "Guid ou Código"
+   , "RepousoSegunda" : False
+   , "RepousoTerca" : False
+   , "RepousoQuarta" : False
+   , "RepousoQuinta" : False
+   , "RepousoSexta" : False
+   , "RepousoSabado" : False
+   , "RepousoDomingo" : False
+	
+}

@@ -1,0 +1,36 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "grupoempresarial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Trabalhador" : "Guid ou Código"
+   , "Projeto" : "Guid ou Código"
+   , "ano" : 1
+   , "mes" : 1
+	
+}
+
+Campo: id
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: grupoempresarial
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Trabalhador
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Projeto
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ano
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: mes
+Obrigatório: SIMAceita valor nulo: NÃO
+

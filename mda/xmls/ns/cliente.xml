@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="ns" modulo="Cliente">
+        <model>
+            <field nome="cliente" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+        </model>
+        <model>
+            <nome>Novo</nome>
+            <field nome="cliente" controlType="Guid" required="False" notnull="True"/>
+            <field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+            <field nome="nome" controlType="String" tamanho="150" required="True" notnull="True" summary="Informe o Nome do cliente ou Razão social"/>
+            <field nome="nomefantasia" controlType="String" tamanho="150" required="False" notnull="False"/>
+            <field nome="identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+            <field nome="documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+            <field nome="retemiss" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retemir" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retempis" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retemcofins" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retemcsll" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="reteminss" controlType="Boolean" required="false" notnull="false"/>	    
+            <field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+            <field nome="endereco" controlType="ObjectList" namespace="ns\endereco\TEndereco" required="True" notnull="True"/>
+        </model>
+        <model>
+            <nome>Alterar</nome>
+            <field nome="cliente" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+            <field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+            <field nome="nome" controlType="String" tamanho="150" required="True" notnull="True" summary="Informe o Nome do cliente ou Razão social"/>
+            <field nome="nomefantasia" controlType="String" tamanho="150" required="False" notnull="False"/>
+            <field nome="identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+            <field nome="documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+            <field nome="retemiss" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retemir" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retempis" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retemcofins" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="retemcsll" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="reteminss" controlType="Boolean" required="false" notnull="false"/>
+            <field nome="entidadescompartilhadoras_anteriores" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" 
+                   required="True" notnull="True" summary="Define as entidades compartilhadoras atuais as quais o cliente está vinculado. Simplesmente para localização do registro considerando Código, CNPJ ou CPF."/>
+            <field nome="entidadescompartilhadoras_novas" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" 
+                   required="False" notnull="True" summary="Define as entidades compartilhadoras as quais o cliente passará a estar vinculado."/>
+            <field nome="endereco" controlType="ObjectList" namespace="ns\endereco\TEndereco" required="False" notnull="True"/>
+        </model>
+        <model>
+            <nome>Excluir</nome>
+            <field nome="cliente" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+        </model>
+        <model>
+            <nome>Novo_v2</nome>
+            <field nome="cliente" controlType="Guid" required="False" notnull="True"/>
+            <field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+            <field nome="nome" controlType="String" tamanho="150" required="True" notnull="True" summary="Informe o Nome do cliente ou Razão social"/>
+			<field nome="qualificacao" controlType="Integer" required="True" notnull="True"/>
+            <field nome="identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+            <field nome="documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+            <field nome="orgaoemissor" controlType="String" tamanho="150" required="False" notnull="False" />    
+			<field nome="inscricaoestadual" controlType="String" tamanho="150" required="False" notnull="False" />    
+			<field nome="inscricaomunicipal" controlType="String" tamanho="150" required="False" notnull="False" />    
+			<field nome="email" controlType="String" tamanho="250" required="False" notnull="False" />    
+			<field nome="observacao" controlType="String" tamanho="250" required="False" notnull="False" />    
+			<field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+			<field nome="enderecoprincipal" controlType="Object" namespace="ns\endereco\TEndereco" required="False" notnull="False"/>
+			<field nome="enderecoentrega" controlType="Object" namespace="ns\endereco\TEndereco"  required="False" notnull="False"/>
+			<field nome="enderecocobranca" controlType="Object" namespace="ns\endereco\TEndereco" required="False" notnull="False"/>
+        </model>				
+        <model>
+            <nome>Alterar_v2</nome>
+            <field nome="cliente" controlType="Guid" required="False" notnull="True"/>
+            <field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+            <field nome="nome" controlType="String" tamanho="150" required="True" notnull="True" summary="Informe o Nome do cliente ou Razão social"/>
+			<field nome="qualificacao" controlType="Integer" required="True" notnull="True"/>
+            <field nome="identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+            <field nome="documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+            <field nome="orgaoemissor" controlType="String" tamanho="150" required="False" notnull="False" />    
+			<field nome="inscricaoestadual" controlType="String" tamanho="150" required="False" notnull="False" />    
+			<field nome="inscricaomunicipal" controlType="String" tamanho="150" required="False" notnull="False" />    
+			<field nome="email" controlType="String" tamanho="250" required="False" notnull="False" />    
+			<field nome="observacao" controlType="String" tamanho="250" required="False" notnull="False" />    
+			<field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+			<field nome="enderecoprincipal" controlType="Object" namespace="ns\endereco\TEndereco" required="False" notnull="False"/>
+			<field nome="enderecoentrega" controlType="Object" namespace="ns\endereco\TEndereco"  required="False" notnull="False"/>
+			<field nome="enderecocobranca" controlType="Object" namespace="ns\endereco\TEndereco" required="False" notnull="False"/>
+        </model>		
+    </models>
+</root>

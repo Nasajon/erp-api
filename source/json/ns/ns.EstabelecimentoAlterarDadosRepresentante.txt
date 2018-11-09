@@ -1,0 +1,52 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Nome" : "String(60)"
+   , "CPF" : "String(11)"
+   , "DDDTelefone" : "String(2)"
+   , "Telefone" : "String(20)"
+   , "Ramal" : "String(5)"
+   , "DDDFAX" : "String(2)"
+   , "FAX" : "String(20)"
+   , "Email" : "String(100)"
+   , "Sexo" : 1
+   , "DataNascimento" : "2014-12-31"
+	
+}
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CPF
+Descrição: [999.999.999-99]. A máscara não é obrigatóriaObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DDDTelefone
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Ramal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DDDFAX
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FAX
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Email
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Sexo
+Descrição: Masculino(1) ou Feminino(2)Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataNascimento
+Obrigatório: NÃOAceita valor nulo: SIM
+

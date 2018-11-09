@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="CatalogoDeOferta">
+		<model>
+			<nome>Novo</nome>
+			<field nome="catalogodeoferta" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />
+			<field nome="id_grupoempresarial" controlType="Guid" required="False" notnull="True"/>
+			<field nome="catalogodeoferta_pai" controlType="Guid" required="False" notnull="True"/>
+			<field nome="tipo" controlType="Integer" required="False" notnull="True"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="catalogodeoferta" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />
+			<field nome="id_grupoempresarial" controlType="Guid" required="False" notnull="True"/>
+			<field nome="catalogodeoferta_pai" controlType="Guid" required="False" notnull="True"/>			
+			<field nome="tipo" controlType="Integer" required="False" notnull="True"/>			
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="catalogodeoferta" controlType="Guid" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

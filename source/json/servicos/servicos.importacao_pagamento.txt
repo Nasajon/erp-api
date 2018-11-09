@@ -1,0 +1,36 @@
+{
+     "FormaPagamento" : "Guid ou Código"
+   , "Banco" : "String(3)"
+   , "AgenciaNumero" : "String(30)"
+   , "AgenciaDigito" : "String(5)"
+   , "ContaNumero" : "String(30)"
+   , "ContaDigito" : "String(5)"
+   , "LayoutCobranca" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Parcelas" : "ObjectList: "
+	
+}
+
+Campo: FormaPagamento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Banco
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: AgenciaNumero
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: AgenciaDigito
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ContaNumero
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ContaDigito
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: LayoutCobranca
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Parcelas
+Obrigatório: NÃOAceita valor nulo: SIM
+

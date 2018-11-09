@@ -1,0 +1,35 @@
+{
+     "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Identificacao" : "String(20)"
+   , "RazaoSocial" : "String(150)"
+   , "Descricao" : "String(150)"
+	
+}
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Identificacao
+Descrição: Informar o CNPJ [99.999.999/9999-99] ou CPF [999.999.999-99] dependendo do tipo de identificação. A máscara não é obrigatória.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RazaoSocial
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

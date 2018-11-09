@@ -1,0 +1,13 @@
+{
+     "lancamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "data" : "2014-12-31"
+   , "numero" : "String(12)"
+   , "contadebito" : "Guid ou Código"
+   , "contacredito" : "Guid ou Código"
+   , "centrodecusto" : "Guid ou Código"
+   , "indicadorlancamentofcont" : 1
+   , "pessoa" : "Guid ou Código"
+   , "historico" : "Este atributo é do titpo Memo."
+   , "valor" : 20,2
+	
+}

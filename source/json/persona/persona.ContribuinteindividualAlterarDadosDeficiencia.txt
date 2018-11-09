@@ -1,0 +1,36 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DeficienteIntelectual" : False
+   , "DeficienteMental" : False
+   , "DeficienteAuditivo" : False
+   , "DeficienteVisual" : False
+   , "DeficienteFisico" : False
+   , "Reabilitado" : False
+	
+}
+
+Campo: Contribuinte
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DeficienteIntelectual
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DeficienteMental
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DeficienteAuditivo
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DeficienteVisual
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DeficienteFisico
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Reabilitado
+Obrigatório: NÃOAceita valor nulo: SIM
+

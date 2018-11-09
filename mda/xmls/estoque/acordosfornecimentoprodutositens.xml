@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="estoque" modulo="AcordosFornecimentoProdutosItens">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Identificador" controlType="Guid" required="False" notnull="False"/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Empresa" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Estabelecimento" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="Unidade" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Item" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="AcordosFornecimentoProdutos" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Tipo_Fornecimento" controlType="Smallint" required="True" notnull="True"/>
+			<field nome="Quantidade" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+			<field nome="Valor_Unitario" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+			<field nome="Recorrencia" controlType="Currency" tamanho="20,2"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Endereco">
+		<model>		
+			<field nome="id" controlType="Guid" required="False" notnull="True" />	
+			<field nome="tipoLogradouro" controlType="String" tamanho="50" required="False" notnull="False"/>			
+			<field nome="logradouro" controlType="String" tamanho="150" required="False" notnull="False"/>	
+			<field nome="numero" controlType="String" tamanho="50" required="False" notnull="False"/>				
+			<field nome="complemento" controlType="String" tamanho="100" required="False" notnull="False"/>				
+			<field nome="cep" controlType="String" tamanho="30" required="False" notnull="False"/>				
+			<field nome="bairro" controlType="String" tamanho="100" required="False" notnull="False"/>				
+			<field nome="municipio" controlType="String" tamanho="50" required="False" notnull="False" summary="Informar o código IBGE ou o nome do Município"/>				
+			<field nome="pais" controlType="String" tamanho="50" required="True" notnull="True" summary="Informar o código do País ou o nome do País"/>			
+			<field nome="uf" controlType="String" tamanho="2" required="False" notnull="False"/>
+			<field nome="tipo" controlType="Integer"  required="True" notnull="True" summary="Informar 0 = Local, 1 = Entrega ou 2 = Cobranca"/>							
+			<field nome="enderecopadrao" controlType="Integer" required="False" notnull="False"/>
+			<field nome="referencia" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="idpessoa" controlType="Guid" required="False" notnull="True"/>									
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>	
+			<field nome="idpessoa" controlType="Guid" required="False" notnull="True"/>
+	        <field nome="tipo" controlType="Integer" required="False" notnull="False" summary="Informar 0 = Local, 1 = Entrega ou 2 = Cobranca"/>							
+		</model>
+	</models>
+</root>

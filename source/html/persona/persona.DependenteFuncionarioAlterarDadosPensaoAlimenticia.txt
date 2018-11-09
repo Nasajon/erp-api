@@ -1,0 +1,80 @@
+{
+     "Dependente" : "Guid ou Código"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "PercentualFolha" : 20,6
+   , "PercentualMultaFGTS" : 20,6
+   , "TipoRecebimento" : 1
+   , "Agencia" : "Guid ou Código"
+   , "Banco" : "Guid ou Código"
+   , "NumeroContaRecebimento" : "String(16)"
+   , "DigitoVerificadorContaRecebimento" : "String(5)"
+   , "RubricaFolha" : "Guid ou Código"
+   , "RubricaFerias" : "Guid ou Código"
+   , "RubricaPPLR" : "Guid ou Código"
+   , "RubricaDecimoTerceiro" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+	
+}
+
+Campo: Dependente
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: PercentualFolha
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: PercentualMultaFGTS
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: TipoRecebimento
+Descrição: Conta Corrente(1), Conta Poupança(2), Conta Salário(4), Dinheiro(8) ou Cheque(16)
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Agencia
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Banco
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: NumeroContaRecebimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DigitoVerificadorContaRecebimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RubricaFolha
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RubricaFerias
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RubricaPPLR
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RubricaDecimoTerceiro
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Conjunto
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

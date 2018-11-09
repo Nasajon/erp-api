@@ -1,0 +1,39 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CasadoComBrasileiro" : False
+   , "TemFilhoBrasileiro" : False
+   , "DataChegadaPais" : "2014-12-31"
+   , "DataNaturalizacao" : "2014-12-31"
+   , "NumeroNaturalizacao" : "String(30)"
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CasadoComBrasileiro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: TemFilhoBrasileiro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataChegadaPais
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataNaturalizacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroNaturalizacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

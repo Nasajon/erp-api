@@ -1,0 +1,9 @@
+{
+     "GrupoEmpresarial" : "Guid ou Código"
+	
+}
+
+Campo: GrupoEmpresarial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

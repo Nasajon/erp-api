@@ -1,0 +1,168 @@
+{
+     "crud" : 1
+   , "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_rps" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "item_faturamento" : "Guid ou Código"
+   , "quantidade" : 20,2
+   , "valor_unitario" : 20,2
+   , "desconto" : 20,2
+   , "valor_total" : 20,2
+   , "descricao" : "String(1500)"
+   , "retem_iss" : False
+   , "retem_ir" : False
+   , "retem_inss" : False
+   , "retem_pis" : False
+   , "retem_cofins" : False
+   , "retem_csll" : False
+   , "percentual_base_iss" : 20,2
+   , "base_iss" : 20,2
+   , "valor_iss" : 20,2
+   , "base_ir" : 20,2
+   , "aliquota_ir" : 20,2
+   , "valor_ir" : 20,2
+   , "percentual_base_inss" : 20,2
+   , "base_inss" : 20,2
+   , "aliquota_inss" : 20,2
+   , "valor_inss" : 20,2
+   , "base_pis" : 20,2
+   , "aliquota_pis" : 20,2
+   , "valor_pis" : 20,2
+   , "base_cofins" : 20,2
+   , "aliquota_cofins" : 20,2
+   , "valor_cofins" : 20,2
+   , "base_csll" : 20,2
+   , "aliquota_csll" : 20,2
+   , "valor_csll" : 20,2
+   , "contrato" : "Guid ou Código"
+   , "item_contrato" : "Guid ou Código"
+   , "processamento_cobranca" : "Guid ou Código"
+   , "titulo" : "Guid ou Código"
+   , "ordem" : 1
+   , "id_origem" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: crud
+Descrição: Indica a acao a ser realizada no item
+                        0 - NaoFazerNada,
+                        1 - Inserir,
+                        2 - Excluir,
+                        3 - AlterarObrigatório: SIMAceita valor nulo: SIM
+
+Campo: id
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: id_rps
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: item_faturamento
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: quantidade
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: valor_unitario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: desconto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valor_total
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: retem_iss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: retem_ir
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: retem_inss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: retem_pis
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: retem_cofins
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: retem_csll
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: percentual_base_iss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: base_iss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valor_iss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: base_ir
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: aliquota_ir
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valor_ir
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: percentual_base_inss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: base_inss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: aliquota_inss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valor_inss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: base_pis
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: aliquota_pis
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valor_pis
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: base_cofins
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: aliquota_cofins
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valor_cofins
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: base_csll
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: aliquota_csll
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valor_csll
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: contrato
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: item_contrato
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: processamento_cobranca
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: titulo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ordem
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: id_origem
+Obrigatório: SIMAceita valor nulo: SIM
+

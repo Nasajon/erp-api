@@ -1,0 +1,36 @@
+{
+     "SocioParticipacao" : "Guid ou Código"
+   , "Socio" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataInicial" : "2014-12-31"
+   , "DataInicial_Anterior" : "2014-12-31"
+   , "DataFinal" : "2014-12-31"
+   , "PercentualCapitalTotal" : 5,2
+   , "PercentualCapitalVotante" : 5,2
+	
+}
+
+Campo: SocioParticipacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Socio
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataInicial
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataInicial_Anterior
+Descrição: Define a data início anterior. Simplesmente para localização do registroObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataFinal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualCapitalTotal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualCapitalVotante
+Obrigatório: NÃOAceita valor nulo: SIM
+

@@ -1,0 +1,48 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(14)"
+   , "Nome" : "String(80)"
+   , "CodigoCategoria" : "String(3)"
+   , "CPF" : "String(14)"
+   , "NIS" : "String(11)"
+   , "DataAdmissao" : "2014-12-31"
+   , "UnidadeSalario" : 1
+   , "Sexo" : 1
+   , "CodigoCBO" : "String(6)"
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoCategoria
+Descrição: Conforme tabela de categorias do eSocialObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CPF
+Descrição: [999.999.999-99]. A máscara não é obrigatória.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NIS
+Descrição: Informar o número do PIS, PASEP ou NITObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataAdmissao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: UnidadeSalario
+Descrição: Hora(1), Dia(2), Semana(3), Mês(4) ou Tarefa(5)Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Sexo
+Descrição: Masculino(1) ou Feminino(2)Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoCBO
+Descrição: Conforme tabela de código brasileiro de ocupaçõesObrigatório: NÃOAceita valor nulo: NÃO
+

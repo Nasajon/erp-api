@@ -1,0 +1,12 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tabeladepreco" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: id
+Descrição: Identificador do estabelecimentoObrigatório: SIMAceita valor nulo: SIM
+
+Campo: tabeladepreco
+Descrição: Identificador da Tabela de PreçoObrigatório: SIMAceita valor nulo: SIM
+

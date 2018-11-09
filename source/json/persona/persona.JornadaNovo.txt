@@ -1,0 +1,48 @@
+{
+     "IdJornada" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(10)"
+   , "Descricao" : "String(100)"
+   , "Entrada" : "String(100)"
+   , "Saida" : "String(100)"
+   , "Tipo" : 1
+   , "DescricaoTipo" : "String(100)"
+   , "Flexivel" : False
+   , "TipoIntervalo" : 1
+   , "DuracaoIntervalo" : 1
+	
+}
+
+Campo: IdJornada
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Entrada
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Saida
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Semanal com folga fixa(0) ou Outros(1)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DescricaoTipo
+Descrição: Informar apenas quando o campo tipo for 0Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Flexivel
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoIntervalo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DuracaoIntervalo
+Obrigatório: NÃOAceita valor nulo: NÃO
+

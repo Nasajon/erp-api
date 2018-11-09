@@ -1,0 +1,120 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "IdContrato" : "Guid ou Código"
+   , "Descricao" : "String(40)"
+   , "ValorVariavel" : False
+   , "ValoresVariaveis" : "ObjectList: TValorVariavelItemContrato"
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "Valor" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "UnidadeNatureza" : 1
+   , "UnidadeIntervaloNatureza" : 1
+   , "QuantidadeIntervaloNatureza" : 1
+   , "TipoVencimento" : 1
+   , "DiaVencimento" : 1
+   , "AdicaoMesesVencimento" : 1
+   , "QtdDiasParaInicio" : 1
+   , "QtdDiasParaFim" : 1
+   , "QtdMesesParaReajuste" : 1
+   , "PercentualDesconto" : 15,4
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiarios" : 15,4
+   , "TipoCobranca" : 1
+   , "Indice" : "Guid ou Código"
+   , "ConsiderarDataInicio" : False
+   , "DataCobranca" : "2014-12-31"
+   , "DataReajuste" : "2014-12-31"
+   , "Autorizado" : False
+   , "Cancelado" : False
+   , "DataHoraCancelamento" : "2014-12-31 12:00:00"
+	
+}
+
+Campo: Id
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IdContrato
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Descrição: Descrição do pagamento do item de contrato.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ValorVariavel
+Descrição: Indica o valor do serviço(fixo ou variável)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ValoresVariaveis
+Descrição: Quando o valor for variável, informar a lista de valoresObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Observacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Valor
+Descrição: Quando o valor não for variável, informar o valor.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira e centro de custo.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: UnidadeNatureza
+Descrição: Indica qual a unidade utilizada no item de contrato. 0-Dia, 1-Semana, 2-Mês, 3-Ano.Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: UnidadeIntervaloNatureza
+Descrição: Indica qual o período utilizado na unidade do item de contrato. 0-Dia, 1-Semana, 2-Mês, 3-Ano.Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: QuantidadeIntervaloNatureza
+Descrição: Indica o intervalo utilizado no período do item de contrato.Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoVencimento
+Descrição: Indica a forma de calcular o vencimento do item de contrato. 0-n dias após emissão do título, 1-todo dia x do mês mais y meses, 
+                           	2-último dia do mês mais y meses, 3-no final da referência do item do contrato.Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DiaVencimento
+Descrição: Indica o dia de vencimento de acordo com o tipo escolhido.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AdicaoMesesVencimento
+Descrição: Indica o número de meses do vencimento de acordo com o tipo escolhido.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: QtdDiasParaInicio
+Descrição: Indica o número de dias com base na emissão do contrato. Utilizado para gerar a data de vigência do item de contrato.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: QtdDiasParaFim
+Descrição: Indica o número de dias com base na emissão do contrato para finalização do item de contrato. Informar zero quando a validade for ilimitada.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: QtdMesesParaReajuste
+Descrição: Indica a quantidade de meses para reajuste com base na emissão do contrato.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualDesconto
+Descrição: Indica o percentual de desconto utilizado na criação do título referente ao item de contrato.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualMulta
+Descrição: Indica o percentual de multa utilizado na criação do título referente ao item de contrato.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualJurosDiarios
+Descrição: Indica o percentual de juros de mora utilizado na criação do título referente ao item de contrato.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: TipoCobranca
+Descrição: Indica a forma como o contrato vai ser processado e suas data de inicio e fim de referência. 
+				            0-Cobrado no período corrente mas com inicio da referência no próprio período, 
+							1-Cobrado no período corrente mas com inicio da referência no período anterior(pós-pago), 
+							2-Cobrado no período corrente mas com inicio da referência no período seguinte(pré-pago).Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Indice
+Descrição: Indica o índice utilizado no reajuste do item de contrato.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ConsiderarDataInicio
+Descrição: Indica se a data de referência inicia na data de emissão do contrato ou (D+1).Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataCobranca
+Descrição: Indica a data de início para cobrança. Quando não informada assume a data de início do contrato acrescida da quantidade de dias de carência.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataReajuste
+Descrição: Indica a data de reajuste do item. Quando não informada assume a data de início do contrato acrescida da quantidade de dias de reajuste.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Autorizado
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Cancelado
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataHoraCancelamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+

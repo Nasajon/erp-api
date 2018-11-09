@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Participante">
+		<model>
+			<nome>Recuperar</nome>
+			<field nome="identificador" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

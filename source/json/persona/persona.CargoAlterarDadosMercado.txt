@@ -1,0 +1,20 @@
+{
+     "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "MaiorSalario" : 20,6
+   , "MenorSalario" : 20,6
+	
+}
+
+Campo: Cargo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: MaiorSalario
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: MenorSalario
+Obrigatório: NÃOAceita valor nulo: SIM
+

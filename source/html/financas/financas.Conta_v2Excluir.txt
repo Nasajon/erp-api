@@ -1,0 +1,9 @@
+{
+     "Conta" : "Guid ou Código"
+	
+}
+
+Campo: Conta
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

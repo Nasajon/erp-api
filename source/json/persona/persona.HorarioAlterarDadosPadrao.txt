@@ -1,0 +1,36 @@
+{
+     "Horario" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(8)"
+   , "Nome" : "String(50)"
+   , "Tipo" : 1
+   , "JornadaSegunda" : "Guid ou Código"
+   , "RepousoSabado" : False
+   , "JornadaSabado" : "Guid ou Código"
+	
+}
+
+Campo: Horario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Normal(0), Folga fixa(1) ou Folga extra(2)Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: JornadaSegunda
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: RepousoSabado
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: JornadaSabado
+Obrigatório: NÃOAceita valor nulo: NÃO
+

@@ -1,0 +1,104 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Observacao" : "String(120)"
+   , "DefinicaoContratante" : "String(20)"
+   , "DefinicaoBeneficiario" : "String(20)"
+   , "DataProximoLancamento" : "2014-12-31"
+   , "Frequencia" : 1
+   , "Valor" : 20,2
+   , "DiasIntervalo" : 1
+   , "Conta" : "Guid ou Código"
+   , "FormaPagamento" : "Guid ou Código"
+   , "QtdDiasDesconto" : 1
+   , "QtdDiasMulta" : 1
+   , "PercentualDesconto" : 15,4
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiario" : 15,4
+   , "IDDocumentoRateado" : "Guid ou Código"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+	
+}
+
+Campo: Id
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Observacao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: DefinicaoContratante
+Descrição: Indica o nome do label ao informar a parte contratante.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DefinicaoBeneficiario
+Descrição: Indica o nome do label ao informar a parte contratada.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataProximoLancamento
+Descrição: Indica o vencimento do próximo título a ser gerado pela previsão. Quando não informada será calculada com base na periodicidade.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Frequencia
+Descrição: Indica o tipo de periodicidade da previsão. 
+				           0-Diário, 1-Semanal, 2-Mensal, 3-Trimestral, 4-Semestral, 5-Anual, 6-Intervalo Fixo.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DiasIntervalo
+Descrição: Obrigatório quando o frequência da previsão for por intervalo fixo.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Conta
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: FormaPagamento
+Descrição: Indica a forma de pagamento do título.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: QtdDiasDesconto
+Descrição: Dias para cálculo de desconto no título com referência no vencimento.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: QtdDiasMulta
+Descrição: Dias para cálculo de multa no título com referência no vencimento.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PercentualDesconto
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PercentualMulta
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PercentualJurosDiario
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: IDDocumentoRateado
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira, centro de custo e projeto.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

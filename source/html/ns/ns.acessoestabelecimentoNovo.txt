@@ -1,0 +1,34 @@
+{
+     "GrupoUsuario" : "Guid ou Código"
+   , "Usuario" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "GrupoEmpresarial" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+	
+}
+
+Campo: GrupoUsuario
+Descrição: Informar o grupo de usuário ao qual o acesso será dado. Opcionalmente pode-se informar no campo 'usuario', do qual o grupo de usuário será utilizado para o acesso
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Usuario
+Descrição: Ïnformar o usuário do qual o grupo de usuário será utilizado para o acesso. Opcionalmente pode-se informar diretamente o campo 'grupodeusuario'
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Descrição: Pode receber ID ou Código
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Descrição: Pode receber ID, Código ou CPF/CNPJ. Caso seja informado Código ou CPF/CNPJ, é necessário informar também o grupo empresarial
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Descrição: Pode receber ID, Código ou CPF/CNPJ. Case seja informado Código ou CPF/CNPJ, é necessário informar também a empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

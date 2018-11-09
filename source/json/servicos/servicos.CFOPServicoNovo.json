@@ -1,0 +1,13 @@
+{
+     "CFOPServico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "IBGEMunicipio" : 1
+   , "Descricao" : "String(255)"
+   , "Discriminacao" : "String(80)"
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+   , "RetemIRRF" : False
+   , "IbpTaxa" : 20,2
+	
+}

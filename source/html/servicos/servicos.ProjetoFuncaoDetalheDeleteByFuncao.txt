@@ -1,0 +1,14 @@
+{
+     "Funcao" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+	
+}
+
+Campo: Funcao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

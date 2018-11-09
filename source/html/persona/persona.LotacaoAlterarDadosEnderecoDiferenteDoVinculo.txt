@@ -1,0 +1,61 @@
+{
+     "Lotacao" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Tipologradouro" : "String(10)"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "Complemento" : "String(60)"
+   , "Bairro" : "String(60)"
+   , "Cidade" : "String(60)"
+   , "CEP" : "String(8)"
+   , "CodigoMunicipio" : "String(8)"
+   , "UF" : "String(2)"
+	
+}
+
+Campo: Lotacao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Tipologradouro
+Descrição: Conforme tabela do eSocial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Logradouro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Numero
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Complemento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Bairro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CEP
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoMunicipio
+Descrição: Conforme tabela do IBGE
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: UF
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

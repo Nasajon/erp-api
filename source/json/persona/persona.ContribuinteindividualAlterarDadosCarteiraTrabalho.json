@@ -1,0 +1,8 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(11)"
+   , "Serie" : "String(5)"
+   , "UF" : "String(2)"
+	
+}

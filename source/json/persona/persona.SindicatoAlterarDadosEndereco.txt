@@ -1,0 +1,36 @@
+{
+     "Sindicato" : "Guid ou Código"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "complemento" : "String(60)"
+   , "Bairro" : "String(60)"
+   , "Cidade" : "String(60)"
+   , "CEP" : "String(8)"
+   , "Estado" : "String(2)"
+	
+}
+
+Campo: Sindicato
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Logradouro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Numero
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: complemento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Bairro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CEP
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Estado
+Obrigatório: NÃOAceita valor nulo: SIM
+

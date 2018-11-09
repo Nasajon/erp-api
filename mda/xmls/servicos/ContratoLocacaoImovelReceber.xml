@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="ContratoLocacaoImovelReceber">
+		<model>
+		    <nome>Novo</nome>
+			<field nome="Id" controlType="Guid" required="False" notnull="True"/>	
+			<field nome="Codigo" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="120" notnull="True"/> 
+			<field nome="DefinicaoContratante" controlType="String" tamanho="20" 
+			       required="False" summary="Indica o nome do label ao informar a parte contratante."/>
+			<field nome="DefinicaoBeneficiario" controlType="String" tamanho="20" 
+			       required="False" summary="Indica o nome do label ao informar a parte contratada."/>
+			<field nome="DataInicial" controlType="Date" notnull="True"/>
+			<field nome="Administrador" controlType="EntidadeInterna" required="False" 
+			       summary="Indica o administrador legal do contrato. Utilizado na geração do DIMOB."/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" 
+			       summary="Indica o estabelecimento do contrato.(contratada)." notnull="True"/> 
+			<field nome="Pessoa" controlType="EntidadeFisicaJuridica"
+			       summary="Indica o cliente do contrato(contratante)." notnull="True"/> 
+			<field nome="Fiador" controlType="EntidadeFisicaJuridica" required="False"/>
+			<field nome="Conta" controlType="EntidadeInterna" notnull="True"/> 
+			<field nome="Patrimonio" controlType="EntidadeInterna" 
+			       summary="Indica o imóvel usado no contrato de locação." notnull="True"/>
+			<field nome="QtdDiasDesconto" controlType="Integer" required="False" 
+			       summary="Dias para cálculo de desconto no título com referência no vencimento."/>
+			<field nome="QtdDiasMulta" controlType="Integer" required="False" 
+			       summary="Dias para cálculo de multa no título com referência no vencimento."/>	
+			<field nome="QtdDiasJurosDiarios" controlType="Integer" required="False" 
+			       summary="Dias para cálculo de juros no título com referência no vencimento."/> 
+			<field nome="PercentualComissao" controlType="Currency" tamanho="20,2" required="False" 
+			       summary="Campo utilizado na geração do arquivo DIMOB"/>
+			<field nome="ValorComissao" controlType="Currency" tamanho="20,2" required="False" 
+			       summary="Campo utilizado na geração do arquivo DIMOB"/>
+			<field nome="PercentualRetencaoImposto" controlType="Currency" tamanho="20,2" required="False" 
+			       summary="Campo utilizado na geração do arquivo DIMOB"/>
+			<field nome="ValorRetencaoImposto" controlType="Currency" tamanho="20,2" required="False"
+			       summary="Campo utilizado na geração do arquivo DIMOB" />
+			<field nome="EmitirNotaFiscal" controlType="Boolean" required="False" 
+			       summary="Define se ao processar o contrato será gerado um registro de NFS-e." notnull="True"/>
+			<field nome="Itens" controlType="ObjectList" namespace="servicos\ItemContratoReceber\TItemContratoReceberNovo" notnull="True"/>
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid" notnull="true"/>		
+		</model>
+	</models>
+</root>

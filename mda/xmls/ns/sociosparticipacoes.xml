@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="SociosParticipacoes">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdSocioParticipacao" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Socio" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="DataInicial" controlType="Date" required="True" notnull="True"/>		
+			<field nome="DataFinal" controlType="Date" required="False" notnull="False"/>		
+			<field nome="PercentualCapitalTotal" controlType="Currency" tamanho="5,2"  required="False" notnull="False"/>				
+			<field nome="PercentualCapitalVotante" controlType="Currency" tamanho="5,2"  required="False" notnull="False"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="SocioParticipacao" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Socio" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="DataInicial" controlType="Date" required="True" notnull="True"/>
+			<field nome="DataInicial_Anterior" controlType="Date" required="False" notnull="True" summary="Define a data início anterior. Simplesmente para localização do registro"/>
+			<field nome="DataFinal" controlType="Date" required="False" notnull="False"/>		
+			<field nome="PercentualCapitalTotal" controlType="Currency" tamanho="5,2"  required="False" notnull="False"/>				
+			<field nome="PercentualCapitalVotante" controlType="Currency" tamanho="5,2"  required="False" notnull="False"/>
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="SocioParticipacao" controlType="EntidadeInterna" required="True" notnull="True"/>	
+			<field nome="Socio" controlType="EntidadeInterna" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>	
+			<field nome="DataInicial" controlType="Date" required="False" notnull="True" summary="Define a data início. Simplesmente para localização do registro"/>
+		</model>
+	</models>
+</root>

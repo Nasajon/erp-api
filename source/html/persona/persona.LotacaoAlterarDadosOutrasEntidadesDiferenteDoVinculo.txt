@@ -1,0 +1,31 @@
+{
+     "Lotacao" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoFPAS" : "String(6)"
+   , "CodigoTerceiros" : "String(4)"
+   , "AliquotaTerceiros" : 20,6
+	
+}
+
+Campo: Lotacao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: CodigoFPAS
+Descrição: Conforme tabela de Fundo da Previdência e Assistência Social do governo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CodigoTerceiros
+Descrição: Conforme tabela de outras entidades do governo
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AliquotaTerceiros
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,22 @@
+{
+     "lancamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipo" : 1
+   , "data" : "2014-12-31"
+   , "numero" : 1
+   , "contadebito" : "Guid ou Código"
+   , "contacredito" : "Guid ou Código"
+   , "centrodecusto" : "Guid ou Código"
+   , "indicadorlancamentofcont" : 1
+   , "pessoa" : "Guid ou Código"
+   , "historico" : "Este atributo é do titpo Memo."
+   , "valor" : 20,2
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "ano" : 1
+   , "usuario" : "Guid ou Código"
+   , "nomemaquina" : "String(50)"
+   , "datainclusao" : "2014-12-31"
+   , "contabilizacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "bemocorrencia" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "lote" : "Guid ou Código"
+	
+}

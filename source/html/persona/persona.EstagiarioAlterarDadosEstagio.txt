@@ -1,0 +1,55 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "AreaAtuacao" : "String(50)"
+   , "ApoliceSeguro" : "String(30)"
+   , "NomeSupervisor" : "String(60)"
+   , "CPFSupervisor" : "String(11)"
+   , "Nivel" : 1
+   , "Obrigatorio" : False
+   , "InstituicaoEnsino" : "Guid ou Código"
+   , "InstituicaoIntegradora" : "Guid ou Código"
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: AreaAtuacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ApoliceSeguro
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeSupervisor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CPFSupervisor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Nivel
+Descrição: Fundamental(1), Médio(2), Formação Profissional(3) ou Superior(4)
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Obrigatorio
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: InstituicaoEnsino
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: InstituicaoIntegradora
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,6 @@
+{
+     "GrupoDeUsuario" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+	
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="contabil" modulo="lancamento">
+		<model>
+			<nome>Novo</nome>
+			<field nome="lancamento" controlType="Guid" required="False" notnull="True"/>
+			<field nome="tipo" controlType="Integer" required="True" notnull="True"
+				   summary="0 - Indefinido, 1 - Lançamentos normal, 2 - Transferencia de Resultado, 3 - Ocorrências Active, 4 - Lançamento de correção monetária, 5 - Lançamento de depreciação, 6 - Conversão de Cruzeiro para Cruzeiro Real, 7 - Conversão de Cruzeiro Real para Real, 8 - Lançamentos de integração com o controller, 9 - Lançamentos de integração com o Persona, 10 - Lançamentos de integração com o Scritta, 11 - Lançamentos oriundos de lotes, 12 - Lançamentos da Contabilização do Imobilizado, 13 - Lançamentos oriundos da importação de extratos, 14 - Impairment, 15 - Reversão do impairment, 16 - Custo Atribuído, 17 - Implantação de Saldo Anterior, 18 - Acréscimo de Bem, 19 - Baixa de Bem, 20 - Perda de Bem e 21 - Reavaliação de Bem. Quando não informado será assumido o valor 0."/>
+			<field nome="data" controlType="Date" required="True" notnull="True"/>
+			<field nome="numero" controlType="Integer" required="True" notnull="True"/>
+			<field nome="contadebito" controlType="EntidadeInterna" required="True" notnull="False"/>
+			<field nome="contacredito" controlType="EntidadeInterna" required="True" notnull="False"/>
+			<field nome="centrodecusto" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="indicadorlancamentofcont" controlType="Integer" required="False" notnull="False"
+				   summary="1 - Lançamento de Expurgo, 2 - Lançamento Fiscal, 3 - Transferência Fiscal (alteração do plano fiscal - I050), 4 - Transferência de Saldo Fiscal (extinção da conta referencial), 5 - Transferência de Saldo Societário (extinção da conta referencial), 6 - Encerramento Fiscal, 7 - Inicialização de Saldo Fiscal, 8 - Inicialização de Saldo Societário e 9 - Sem Classificação."/>
+			<field nome="pessoa" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="historico" controlType="Memo" required="True" notnull="True"/>
+			<field nome="valor" controlType="Currency" tamanho="20,2" Required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="ano" controlType="Integer" required="True" notnull="True" summary="Informar o ano de exercício."/>
+			<field nome="usuario" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="nomemaquina" controlType="String" tamanho="50" required="True" notnull="True"/>
+			<field nome="datainclusao" controlType="Date" required="False" notnull="False"/>
+			<field nome="contabilizacao" controlType="Guid" required="False" notnull="False"/>
+			<field nome="bemocorrencia" controlType="Guid" required="False" notnull="False"/>
+			<field nome="lote" controlType="EntidadeInterna" required="False" notnull="False"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field nome="lancamento" controlType="Guid" required="True" notnull="True"/>
+			<field nome="data" controlType="Date" required="True" notnull="True"/>
+			<field nome="numero" controlType="Integer" required="True" notnull="True"/>
+			<field nome="contadebito" controlType="EntidadeInterna" required="True" notnull="False"/>
+			<field nome="contacredito" controlType="EntidadeInterna" required="True" notnull="False"/>
+			<field nome="centrodecusto" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="indicadorlancamentofcont" controlType="Integer" required="False" notnull="False"
+				   summary="1 - Lançamento de Expurgo, 2 - Lançamento Fiscal, 3 - Transferência Fiscal (alteração do plano fiscal - I050), 4 - Transferência de Saldo Fiscal (extinção da conta referencial), 5 - Transferência de Saldo Societário (extinção da conta referencial), 6 - Encerramento Fiscal, 7 - Inicialização de Saldo Fiscal, 8 - Inicialização de Saldo Societário e 9 - Sem Classificação."/>
+			<field nome="pessoa" controlType="EntidadeInterna" required="False" notnull="False"/>
+			<field nome="historico" controlType="Memo" required="True" notnull="True"/>
+			<field nome="valor" controlType="Currency" tamanho="20,2" Required="True" notnull="True"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="lancamento" controlType="Guid" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

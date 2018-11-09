@@ -1,0 +1,20 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "PercentualReducaoINSS" : 20,6
+   , "PercentualReducaoIRRF" : 20,6
+	
+}
+
+Campo: Contribuinte
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: PercentualReducaoINSS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualReducaoIRRF
+Obrigatório: NÃOAceita valor nulo: SIM
+

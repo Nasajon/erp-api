@@ -1,0 +1,88 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+   , "DataCompetencia" : "2014-12-31"
+   , "Documento" : "String(30)"
+   , "Historico" : "String(1024)"
+   , "Sinal" : 1
+   , "Valor" : 20,2
+   , "ImprimeCheque" : False
+   , "VersoCheque" : "String(1024)"
+   , "Favorecido" : "String(150)"
+   , "Contabilizar" : False
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+	
+}
+
+Campo: Id
+Descrição: Identificador do lançamento. Quando não informado será gerado automaticamente.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Descrição: Estabelecimento da conta na qual o lançamento pertence.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conta
+Descrição: Conta na qual o lançamento pertence.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Data
+Descrição: Data do lançamento. Quando não informada assumirá a data do servidor.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataCompetencia
+Descrição: Data da competência do lançamento. Quando não informada assumirá a data do próprio lançamento.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Documento
+Descrição: Código para identificar o lançamento.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Historico
+Descrição: Histórico do lançamento.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Sinal
+Descrição: Indica se é um débito ou crédito: 0 - Débito; 1 - Crédito;
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Descrição: Valor do lançamento.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ImprimeCheque
+Descrição: Quando for uma lançamento de débito, ter a possibilidade de gerar um lançamento preparado para uma impressão em cheque.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: VersoCheque
+Descrição: Informações para ser impressa no verso do cheque caso o mesmo seja impresso.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Favorecido
+Descrição: Nome do favorecido para ser usado na impressão do cheque.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Contabilizar
+Descrição: Indica se o lançamento pode ser contabilizado. Quando não informado assume o valor False.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira, centro de custo e projeto.
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

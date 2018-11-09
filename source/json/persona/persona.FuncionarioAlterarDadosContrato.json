@@ -1,0 +1,19 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "TipoAdmissao" : 1
+   , "RegimeTrabalhista" : 1
+   , "RegimeINSS" : 1
+   , "Atividade" : 1
+   , "Prazo" : 1
+   , "CodigoVinculo" : "String(3)"
+   , "DiasExperiencia" : 1
+   , "DiasProrrogacao" : 1
+   , "MotivoAdmissao" : 1
+   , "MotivoContratacaoTemporaria" : 1
+   , "DataFimcontrato" : "2014-12-31"
+   , "FuncionarioSubstituido" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "ProcessoAdmissao" : "Guid ou Código"
+   , "PrimeiroEmprego" : False
+	
+}

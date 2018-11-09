@@ -1,0 +1,48 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "Unidade" : "Guid ou Código"
+   , "Item" : "Guid ou Código"
+   , "AcordosFornecimentoProdutos" : "Guid ou Código"
+   , "Tipo_Fornecimento" : "Guid ou Código"
+   , "Quantidade" : 20,2
+   , "Valor_Unitario" : 20,2
+   , "Recorrencia" : 20,2
+	
+}
+
+Campo: Identificador
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: GrupoEmpresarial
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Estabelecimento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Unidade
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Item
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: AcordosFornecimentoProdutos
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Tipo_Fornecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Quantidade
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Valor_Unitario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Recorrencia
+Obrigatório: SIMAceita valor nulo: SIM
+

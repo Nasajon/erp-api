@@ -1,0 +1,14 @@
+{
+     "fornecedor" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "entidadescompartilhadoras" : "ObjectList: TEntidadeCompartilhadora"
+	
+}
+
+Campo: fornecedor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: entidadescompartilhadoras
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

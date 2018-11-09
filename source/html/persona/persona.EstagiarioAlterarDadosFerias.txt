@@ -1,0 +1,24 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataInicioPeriodoAquisitivo" : "2014-12-31"
+   , "DataProximasFerias" : "2014-12-31"
+	
+}
+
+Campo: Estagiario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataInicioPeriodoAquisitivo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataProximasFerias
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

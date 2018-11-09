@@ -1,0 +1,14 @@
+{
+     "Jornada" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(10)"
+   , "Descricao" : "String(100)"
+   , "Entrada" : "String(100)"
+   , "Saida" : "String(100)"
+   , "Tipo" : 1
+   , "DescricaoTipo" : "String(100)"
+   , "Flexivel" : False
+   , "TipoIntervalo" : 1
+   , "DuracaoIntervalo" : 1
+	
+}

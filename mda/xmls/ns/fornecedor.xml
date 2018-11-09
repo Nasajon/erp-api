@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Fornecedor">
+		<model>
+			<nome>Novo</nome>
+			<field nome="fornecedor" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="nome" controlType="String" tamanho="150" required="True" notnull="True" summary="Informe o Nome do cliente ou Razão social"/>	
+			<field nome="nomefantasia" controlType="String" tamanho="150" required="False" notnull="false"/>			
+			<field nome="identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+			<field nome="documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+			<field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>	
+		    <field nome="endereco" controlType="ObjectList" namespace="ns\endereco\TEndereco" required="True" notnull="True"/>			
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="fornecedor" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="nome" controlType="String" tamanho="150" required="True" notnull="True" summary="Informe o Nome do cliente ou Razão social"/>	
+			<field nome="nomefantasia" controlType="String" tamanho="150" required="false" notnull="false"/>			
+			<field nome="identidade" controlType="String" tamanho="20" required="False" notnull="False"/>
+			<field nome="documento" controlType="String" tamanho="20" required="False" notnull="False" summary="Este campo aceita CPF ou CNPJ com ou sem mascara." />
+			<field nome="entidadescompartilhadoras_anteriores" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" 
+				   required="True" notnull="True" summary="Define as entidades compartilhadoras atuais as quais o fornecedor está vinculado. Simplesmente para localização do registro considerando Código, CNPJ ou CPF."/>
+			<field nome="entidadescompartilhadoras_novas" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" 
+				   required="False" notnull="True" summary="Define as entidades compartilhadoras as quais o fornecedor passará a estar vinculado."/>
+			<field nome="endereco" controlType="ObjectList" namespace="ns\endereco\TEndereco" required="False" notnull="True"/>
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="fornecedor" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>			
+			<field nome="entidadescompartilhadoras" controlType="ObjectList" namespace="ns\entidadecompartilhadora\TEntidadeCompartilhadora" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

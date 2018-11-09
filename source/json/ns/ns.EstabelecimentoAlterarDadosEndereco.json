@@ -1,0 +1,22 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoMunicipio" : "String(8)"
+   , "TipoLogradouro" : "String(10)"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "Complemento" : "String(60)"
+   , "Bairro" : "String(60)"
+   , "CEP" : "String(8)"
+   , "Cidade" : "String(60)"
+   , "CaixaPostal" : "String(6)"
+   , "UFCaixaPostal" : "String(2)"
+   , "CEPCaixaPostal" : "String(8)"
+   , "Email" : "String(100)"
+   , "Site" : "String(100)"
+   , "DDDTelefone" : "String(2)"
+   , "Telefone" : "String(20)"
+   , "DDDFAX" : "String(2)"
+   , "FAX" : "String(20)"
+	
+}

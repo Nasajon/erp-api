@@ -1,0 +1,56 @@
+{
+     "Contribuinte" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "TipoLogradouro" : "String(10)"
+   , "CodigoMunicipio" : "String(8)"
+   , "CodigoPais" : "String(5)"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "Complemento" : "String(60)"
+   , "Bairro" : "String(60)"
+   , "Cidade" : "String(60)"
+   , "CEP" : "String(10)"
+   , "DDD" : "String(2)"
+   , "Telefone" : "String(20)"
+	
+}
+
+Campo: Contribuinte
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoLogradouro
+Descrição: Conforme tabela de tipos de logradouro do eSocialObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CodigoMunicipio
+Descrição: Conforme tabela do IBGEObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CodigoPais
+Descrição: Conforme tabela oficial do governoObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Logradouro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Numero
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Complemento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Bairro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Cidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CEP
+Descrição: [99999-999]. A máscara não é obrigatóriaObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DDD
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Telefone
+Obrigatório: NÃOAceita valor nulo: SIM
+

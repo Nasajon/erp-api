@@ -1,0 +1,28 @@
+{
+     "idvendedor" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "nome" : "String(150)"
+   , "identidade" : "String(20)"
+   , "documento" : "String(20)"
+	
+}
+
+Campo: idvendedor
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: identidade
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: documento
+Descrição: Este campo aceita CPF ou CNPJ com ou sem mascara.Obrigatório: SIMAceita valor nulo: SIM
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="FaltaFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdFalta" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="Date" tamanho="255" required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Injustificada(0) ou Justificada(1)"/>
+			<field nome="AbateNoCalculoDoPonto" controlType="Boolean" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="IdFalta" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="Date" tamanho="255" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="False" notnull="True" summary="Injustificada(0) ou Justificada(1)"/>
+			<field nome="AbateNoCalculoDoPonto" controlType="Boolean" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdFalta" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+		</model>
+	</models>
+</root> 

@@ -1,0 +1,147 @@
+{
+     "Pagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "FormaPagamento" : "Guid ou Código"
+   , "DocumentoFiscal" : "Objeto: TDocumentoFiscalns"
+   , "Conta" : "Guid ou Código"
+   , "RateioPadrao" : "Objeto: TRateioPadrao"
+   , "MeioEletronicoCartao" : "Guid ou Código"
+   , "LayoutCobranca" : "Objeto: TLayoutCobranca"
+   , "OperadoraCartao" : "Guid ou Código"
+   , "BandeiraCartao" : "Guid ou Código"
+   , "Parcelamento" : "Guid ou Código"
+   , "Valor" : 13,2
+   , "NomeFormaPagamento" : "String(30)"
+   , "NomeMeioEletronicoCartao" : "String(30)"
+   , "NomeBandeiraCartao" : "String(30)"
+   , "NomeOperadoraCartao" : "String(30)"
+   , "NomeConta" : "String(30)"
+   , "NumeroParcelas" : 1
+   , "DataFatura" : "2014-12-31"
+   , "TipoOperacao" : 1
+   , "AutorizacaoCartao" : "String(30)"
+   , "DataAutorizacaoCartao" : "2014-12-31"
+   , "DocumentoCartao" : "String(30)"
+   , "IrRetido" : 13,2
+   , "PisRetido" : 13,2
+   , "CofinsRetido" : 13,2
+   , "CsllRetido" : 13,2
+   , "Tipo" : 1
+   , "Parcelas" : "ObjectList: TParcela"
+	
+}
+
+Campo: Pagamento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: FormaPagamento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DocumentoFiscal
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Conta
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: RateioPadrao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: MeioEletronicoCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: LayoutCobranca
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: OperadoraCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: BandeiraCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Parcelamento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: NomeFormaPagamento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeMeioEletronicoCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeBandeiraCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeOperadoraCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NomeConta
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: NumeroParcelas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataFatura
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: TipoOperacao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: AutorizacaoCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DataAutorizacaoCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: DocumentoCartao
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: IrRetido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: PisRetido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CofinsRetido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: CsllRetido
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Tipo
+Descrição: Informe: 
+	        	            0 - Pagamento derivado de Documento Fiscal;
+	        	            1 - Pagamento derivado de Fatura
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Parcelas
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

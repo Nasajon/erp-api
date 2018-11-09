@@ -1,0 +1,7 @@
+{
+     "lancamento" : "Guid ou Código"
+   , "estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "lote" : "Guid ou Código"
+   , "ano" : 1
+	
+}

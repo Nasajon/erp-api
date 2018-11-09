@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="SolicitacaoHistorico">
+		<model>
+      <field nome="SolicitacaoHistorico" controlType="Guid" required="False" notnull="True" />
+      <field nome="Solicitacao" controlType="Guid" required="True" notnull="True" />
+      <field nome="Usuario" controlType="String" tamanho="64" required="False" notnull="False" />
+      <field nome="Comentario" controlType="Text" required="False" notnull="False" />
+      <field nome="Data" controlType="TDate" required="False" notnull="False" />
+      <field nome="Status" controlType="Integer" required="True" notnull="True" />
+      <field nome="UsuarioDestino" controlType="String" tamanho="64" required="False" notnull="False" />
+		</model>
+	</models>
+</root>

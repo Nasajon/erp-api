@@ -1,0 +1,36 @@
+{
+     "IdCargo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(4)"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Nome" : "String(50)"
+   , "CodigoCBO" : "String(7)"
+   , "CodigoGrauInstrucao" : "String(2)"
+	
+}
+
+Campo: IdCargo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: CodigoCBO
+Descrição: Conforme tabela de código brasileiro de ocupações
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: CodigoGrauInstrucao
+Descrição: Conforme tabela oficial de graus de instrução do governo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

@@ -1,0 +1,24 @@
+{
+     "tipo" : 1
+   , "tributado" : False
+   , "base" : 20,2
+   , "aliquota" : 20,2
+   , "valor" : 20,2
+	
+}
+
+Campo: tipo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: tributado
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: base
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: aliquota
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: valor
+Obrigatório: SIMAceita valor nulo: SIM
+

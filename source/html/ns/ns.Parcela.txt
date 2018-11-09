@@ -1,0 +1,81 @@
+{
+     "Parcela" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Pagamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Numero" : "String(30)"
+   , "Valor" : 13,2
+   , "Vencimento" : "2014-12-31"
+   , "Sequencial" : 1
+   , "Conta" : "Guid ou Código"
+   , "ValorCreditoaUtilizar" : 
+   , "UsarSaldoCredito" : False
+   , "id_owner" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "competencia" : "2014-12-31"
+   , "basevencimentoparcela" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "percentual" : 
+   , "intervalo" : 1
+   , "sinal" : False
+	
+}
+
+Campo: Parcela
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Pagamento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Numero
+Descrição: Informe o número do documento que originou a parcela.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Vencimento
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Sequencial
+Descrição: Número da parcela.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Conta
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: ValorCreditoaUtilizar
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: UsarSaldoCredito
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: id_owner
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: competencia
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: basevencimentoparcela
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: percentual
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: intervalo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: sinal
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

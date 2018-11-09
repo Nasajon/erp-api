@@ -1,0 +1,9 @@
+{
+     "Codigo" : "String(7)"
+	
+}
+
+Campo: Codigo
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

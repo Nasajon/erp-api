@@ -1,0 +1,21 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Observacao" : "String(120)"
+   , "DefinicaoContratante" : "String(20)"
+   , "DefinicaoBeneficiario" : "String(20)"
+   , "DataProximoLancamento" : "2014-12-31"
+   , "Frequencia" : 1
+   , "Valor" : 20,2
+   , "DiasIntervalo" : 1
+   , "Conta" : "Guid ou Código"
+   , "FormaPagamento" : "Guid ou Código"
+   , "QtdDiasDesconto" : 1
+   , "QtdDiasMulta" : 1
+   , "PercentualDesconto" : 15,4
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiario" : 15,4
+   , "IDDocumentoRateado" : "Guid ou Código"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+	
+}

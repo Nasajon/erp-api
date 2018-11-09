@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models modulo="Projeto" sistema="Servicos">
+		<model>
+			<nome>Novo</nome>
+			<field controlType="Guid" nome="Projeto" notnull="True" required="False"/>
+			<field Required="True" controlType="EntidadeFisicaJuridica" nome="Estabelecimento" notnull="True"/>
+			<field controlType="EntidadeFisicaJuridica" nome="Empresa" notnull="False" Required="False"/>
+			<field controlType="EntidadeFisicaJuridica" nome="GrupoEmpresarial" notnull="False" Required="False"/>
+			<field Required="True" controlType="EntidadeFisicaJuridica" nome="Pessoa" notnull="True" required="True"/>
+			<field controlType="EntidadeInterna" nome="TipoProjeto" notnull="True" required="True"/>
+			<field controlType="String" nome="Codigo" notnull="True" required="True" tamanho="30"/>
+			<field controlType="String" nome="Descricao" notnull="False" required="False" tamanho="150"/>
+			<field controlType="Memo" nome="Observacao" notnull="False" required="False"/>
+			<field controlType="DateTime" nome="DataCriacao" notnull="False" required="False"/>
+			<field controlType="EntidadeInterna" nome="CriadoPor" notnull="True" required="True"/>
+			<field controlType="Integer" nome="Situacao" notnull="True" required="True"/>
+		</model>
+		<model>
+			<nome>Alterar</nome>
+			<field controlType="EntidadeInterna" nome="Projeto" notnull="True" required="True"/>
+			<field Required="True" controlType="EntidadeFisicaJuridica" nome="Estabelecimento" notnull="True"/>
+			<field controlType="EntidadeFisicaJuridica" nome="Empresa" notnull="False" Required="False"/>
+			<field controlType="EntidadeFisicaJuridica" nome="GrupoEmpresarial" notnull="False" Required="False"/>
+			<field Required="True" controlType="EntidadeFisicaJuridica" nome="Pessoa" notnull="True"/>
+			<field controlType="EntidadeInterna" nome="TipoProjeto" notnull="True" required="True"/>
+			<field controlType="String" nome="Codigo" notnull="True" required="True" tamanho="30"/>
+			<field controlType="String" nome="Descricao" notnull="False" required="False" tamanho="150"/>
+			<field controlType="Memo" nome="Observacao" notnull="False" required="False"/>
+			<field controlType="Integer" nome="Situacao" notnull="True" required="True"/>
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field controlType="EntidadeInterna" nome="Projeto" notnull="True" required="True"/>
+			<field controlType="EntidadeFisicaJuridica" nome="Estabelecimento" required="False" notnull="False"/>
+			<field controlType="EntidadeFisicaJuridica" nome="Empresa" required="False" notnull="False"/>
+			<field controlType="EntidadeFisicaJuridica" nome="GrupoEmpresarial" notnull="False" Required="False"/>
+		</model>
+	</models>
+</root>

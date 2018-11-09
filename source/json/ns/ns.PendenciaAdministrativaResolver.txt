@@ -1,0 +1,16 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ResolvidoPor" : "Guid ou Código"
+   , "DataResolucao" : "2014-12-31"
+	
+}
+
+Campo: Id
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ResolvidoPor
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataResolucao
+Obrigatório: SIMAceita valor nulo: NÃO
+

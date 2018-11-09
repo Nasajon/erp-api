@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="Banco">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdBanco" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="150" required="True" notnull="True"/>	
+			<field nome="Numero" controlType="String" tamanho="4" required="True" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="Banco" controlType="EntidadeInterna"  required="True"  notnull="True"/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="False" notnull="True"/>
+			<field nome="Nome" controlType="String" tamanho="150" required="False" notnull="True"/>	
+			<field nome="Numero" controlType="String" tamanho="4" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Banco" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

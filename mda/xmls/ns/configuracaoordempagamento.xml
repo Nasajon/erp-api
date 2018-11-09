@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="configuracaoordempagamento">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+	        <field nome="tipoordempagamento" controlType="Integer" required="True" notnull="True" 
+	        	   summary="Informe: 
+                            0  - Folha
+                            1  - AdiantamentoDeFolha
+                            2  - FolhaCorretiva
+                            3  - DecimoTerceiroSalario
+                            4  - AdiantamentoDeDecimoTerceiroSalario
+                            5  - ComplementoDeDecimoTerceiroSalario
+                            6  - Ferias
+                            7  - ComplementoDeFerias
+                            8  - Recisao
+                            9  - ReajusteSindical
+                            10 - PPLR
+                            11 - ValeTransporte
+                            12 - ValrRefeicao
+                            13 - ValeAlimentacao
+                            14 - PlanoDeSaude
+                            15 - PlanoOdontologico
+                            16 - GPSEmpresa
+                            17 - GPSContribuinteIndividual
+                            18 - GPSTrabalhadoresDomesticos
+                            19 - SEFIP
+                            20 - GRRF
+                            21 - DARFFuncionario
+                            22 - DARFEstabiario
+                            23 - DARFContribuinteIndividual
+                            24 - DARFPIS
+                            25 - GRCSSindical
+                            26 - GRCSConfederativa
+                            27 - GRCSAssistencial
+                            28 - GRCSAssociativa
+                            29 - GRCSPatronal"/>            
+            <field nome="fornecedor" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="contacorrente" controlType="EntidadeInterna" required="True" notnull="True"/>            
+			<field nome="diapagamento" controlType="Integer" required="True" notnull="True"/>
+			<field nome="classificacaofinanceira" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="CentroDeCusto" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="Projeto" controlType="EntidadeInterna" required="False" notnull="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+	        <field nome="tipoordempagamento" controlType="Integer" required="True" notnull="True" 
+	        	   summary="Informe: 
+                            0  - Folha
+                            1  - AdiantamentoDeFolha
+                            2  - FolhaCorretiva
+                            3  - DecimoTerceiroSalario
+                            4  - AdiantamentoDeDecimoTerceiroSalario
+                            5  - ComplementoDeDecimoTerceiroSalario
+                            6  - Ferias
+                            7  - ComplementoDeFerias
+                            8  - Recisao
+                            9  - ReajusteSindical
+                            10 - PPLR
+                            11 - ValeTransporte
+                            12 - ValrRefeicao
+                            13 - ValeAlimentacao
+                            14 - PlanoDeSaude
+                            15 - PlanoOdontologico
+                            16 - GPSEmpresa
+                            17 - GPSContribuinteIndividual
+                            18 - GPSTrabalhadoresDomesticos
+                            19 - SEFIP
+                            20 - GRRF
+                            21 - DARFFuncionario
+                            22 - DARFEstabiario
+                            23 - DARFContribuinteIndividual
+                            24 - DARFPIS
+                            25 - GRCSSindical
+                            26 - GRCSConfederativa
+                            27 - GRCSAssistencial
+                            28 - GRCSAssociativa
+                            29 - GRCSPatronal"/>            
+            <field nome="fornecedor" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+            <field nome="contacorrente" controlType="EntidadeInterna" required="True" notnull="True"/>    
+            <field nome="diapagamento" controlType="Integer" required="True" notnull="True"/>
+			<field nome="classificacaofinanceira" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="CentroDeCusto" controlType="EntidadeInterna" required="False" notnull="True"/>
+            <field nome="Projeto" controlType="EntidadeInterna" required="False" notnull="True"/>
+		</model>			
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="grupoempresarial" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="empresa" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+			<field nome="estabelecimento" controlType="EntidadeFisicaJuridica" required="True" notnull="True"/>
+	        <field nome="tipoordempagamento" controlType="Integer" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

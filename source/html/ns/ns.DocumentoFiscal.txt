@@ -1,0 +1,40 @@
+{
+     "DocumentoFiscal" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ChaveAcesso" : "String(44)"
+   , "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "Valor" : 15,2
+   , "Emissao" : "2014-12-31"
+   , "DataSaida" : "2014-12-31"
+   , "Tipo" : 1
+	
+}
+
+Campo: DocumentoFiscal
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: ChaveAcesso
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Emissao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: DataSaida
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: 087 - Conhecimento de Transporte
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

@@ -1,0 +1,60 @@
+{
+     "IdAvisoFerias" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Data" : "2014-12-31"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataNova" : "2014-12-31"
+   , "Tipo" : 1
+   , "DataInicioGozo" : "2014-12-31"
+   , "DataFimGozo" : "2014-12-31"
+   , "DataInicioPeriodoAquisitivo" : "2014-12-31"
+   , "DataFimPeriodoAquisitivo" : "2014-12-31"
+   , "TemAbonoPecuniario" : False
+   , "Observacao" : "Este atributo é do titpo Memo."
+   , "DiasVendidos" : 1
+   , "DiasFeriasColetivas" : 1
+	
+}
+
+Campo: IdAvisoFerias
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataNova
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Tipo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataInicioGozo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataFimGozo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataInicioPeriodoAquisitivo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataFimPeriodoAquisitivo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TemAbonoPecuniario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Observacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DiasVendidos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DiasFeriasColetivas
+Obrigatório: NÃOAceita valor nulo: SIM
+

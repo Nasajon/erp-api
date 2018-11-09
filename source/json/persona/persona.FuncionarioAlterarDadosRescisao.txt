@@ -1,0 +1,52 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataRescisao" : "2014-12-31"
+   , "NumeroRecibo" : "String(15)"
+   , "CodigoMotivo" : "String(2)"
+   , "FGTSMesAnteriorRecolhido" : False
+   , "AvisoIndenizadoPago" : False
+   , "TinhaEmpregoDuranteAvisoPrevio" : False
+   , "JornadaCumpridaNaSemanaDaRescisao" : False
+   , "JornadaSabadoCompensadaNaSemanaDaRescisao" : False
+   , "DataProjecaoAvisoPrevioIndenizado" : "2014-12-31"
+   , "Processo" : "Guid ou Código"
+	
+}
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataRescisao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: NumeroRecibo
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CodigoMotivo
+Descrição: Conforme tabela de motivos de rescisão disponível na tela de funcionários aba contratoObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FGTSMesAnteriorRecolhido
+Descrição: Informar se o fgts do mês anterior ao mês da rescisão foi recolhido na grrf do mês da rescisãoObrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AvisoIndenizadoPago
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: TinhaEmpregoDuranteAvisoPrevio
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: JornadaCumpridaNaSemanaDaRescisao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: JornadaSabadoCompensadaNaSemanaDaRescisao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataProjecaoAvisoPrevioIndenizado
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Processo
+Obrigatório: NÃOAceita valor nulo: SIM
+

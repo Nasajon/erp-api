@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="estoque" modulo="CategoriaDeProdutos">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>
+			<field nome="codigo" controlType="String" tamanho="30" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />
+			<field nome="completarcodigoproduto" controlType="Boolean" summary="Este recurso fará com que o código do produto seja concatenado com a sigla da categoria." />			
+			<field nome="sigla" controlType="String" tamanho="10" summary="Sigla para concatenação com o código do produto" />
+			<field nome="categoriasuperior" controlType="EntidadeInterna" summary="Categoria pai. Este campo é responsável por determinar a árvore hierárquica das categorias." required="False" notnull="True"/>					
+			<field nome="figuratributaria" controlType="EntidadeInterna" summary="Figura Tributária à ser aplicada em todos os produtos da categoria" required="False" notnull="True"/>						
+			<field nome="ncm" controlType="EntidadeInterna" summary="NCM à ser aplicado em todos os produtos da categoria" required="False" notnull="True"/>
+			<field nome="controlaestoque" controlType="Boolean" summary="Este campo habilita o gerenciamento do estoque na categoria." />		
+			<field nome="quantidademinima" controlType="Currency" tamanho="20,2" summary="Quantidade mínima em estoque" />
+			<field nome="quantidademaxima" controlType="Currency" tamanho="20,2" summary="Quantidade máxima em estoque" />
+			<field nome="quantidadealerta" controlType="Currency" tamanho="20,2" summary="Quantidade de alerta para o estoque" />													
+			<field nome="dimensaohorizontal" controlType="Guid" summary="Dimensão horizontal na grade dos produtos da categoria" />
+			<field nome="dimensaovertical" controlType="Guid" summary="Dimensão vertical na grade dos produtos da categoria" />
+			<field nome="classificacaofinanceiracompra" controlType="Guid" summary="Categoria de Compra" />
+			<field nome="classificacaofinanceiravenda" controlType="Guid" summary="Categoria de Venda" />						
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="id" controlType="EntidadeInterna" required="True" notnull="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" />			
+			<field nome="categoriasuperior" controlType="EntidadeInterna" summary="Categoria pai. Este campo é responsável por determinar a árvore hierárquica das categorias." required="False" notnull="True"/>					
+			<field nome="figuratributaria" controlType="EntidadeInterna" summary="Figura Tributária à ser aplicada em todos os produtos da categoria" required="False" notnull="True"/>						
+			<field nome="ncm" controlType="EntidadeInterna" summary="NCM à ser aplicado em todos os produtos da categoria" required="False" notnull="True"/>
+			<field nome="controlaestoque" controlType="Boolean" summary="Este campo habilita o gerenciamento do estoque na categoria." />		
+			<field nome="quantidademinima" controlType="Currency" tamanho="20,2" summary="Quantidade mínima em estoque" />
+			<field nome="quantidademaxima" controlType="Currency" tamanho="20,2" summary="Quantidade máxima em estoque" />
+			<field nome="quantidadealerta" controlType="Currency" tamanho="20,2" summary="Quantidade de alerta para o estoque" />	
+			<field nome="dimensaohorizontal" controlType="Guid" summary="Dimensão horizontal na grade dos produtos da categoria" />
+			<field nome="dimensaovertical" controlType="Guid" summary="Dimensão vertical na grade dos produtos da categoria" />
+			<field nome="completarcodigoproduto" controlType="Boolean" summary="Este recurso fará com que o código do produto seja concatenado com a sigla da categoria." />
+
+			<field nome="sigla" controlType="String" tamanho="10" summary="Sigla para concatenação com o código do produto" />
+			<field nome="classificacaofinanceiracompra" controlType="Guid" summary="Categoria de Compra" />
+			<field nome="classificacaofinanceiravenda" controlType="Guid" summary="Categoria de Venda" />									
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

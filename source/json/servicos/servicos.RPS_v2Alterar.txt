@@ -1,0 +1,282 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "Guid ou Código"
+   , "Emissao" : "2014-12-31"
+   , "Vencimento" : "2014-12-31"
+   , "Lancamento" : "2014-12-31"
+   , "LoteCobrancaId" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : 1
+   , "BeneficioFiscal" : 1
+   , "Desconto" : 20,2
+   , "ItemRPS" : "ObjectList: TItemRPSNovo"
+   , "FormasPagamentos" : "ObjectList: TPagamentoSemParcela"
+   , "Parcelas" : "ObjectList: TParcela"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "Observacao" : "String(5000)"
+   , "Vendedores" : "ObjectList: TVendedorRPS"
+   , "BaseISS" : 20,2
+   , "ValorISS" : 20,2
+   , "BaseIRRf" : 20,2
+   , "ValorIRRF" : 20,2
+   , "BaseINSS" : 20,2
+   , "ValorINSS" : 20,2
+   , "BasePIS" : 20,2
+   , "ValorPIS" : 20,2
+   , "BaseCOFINS" : 20,2
+   , "ValorCOFINS" : 20,2
+   , "BaseCSLL" : 20,2
+   , "ValorCSLL" : 20,2
+   , "RetemISS" : False
+   , "RetemIRRF" : False
+   , "RetemINSS" : False
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+   , "DescricaoServicos" : "String(5000)"
+   , "IdConjuntoAnexo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ISS" : 1
+   , "PreRPS" : False
+   , "OutrasDeducoes" : 20,2
+   , "XML_RPS" : "String(999999)"
+   , "XML_NFSE" : "String(999999)"
+   , "XML_Cancelamento" : "String(999999)"
+   , "XML_DocEngine" : "String(999999)"
+   , "MunicipioPrestacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "CFOPId" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Obra" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Contrato_ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "NaoGerarFinanceiro" : False
+   , "NaoGerarTitulo" : False
+   , "OutrasRetencoes" : 20,2
+   , "DiscriminacaoServicos" : "String(5000)"
+   , "numero_titulo" : "String(30)"
+   , "TemplateDiscriminacaoRPS" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "CalcularImpostos" : False
+   , "FaturamentoProvisorio" : False
+	
+}
+
+Campo: Id
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Pessoa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Serie
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Emissao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Vencimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Lancamento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: LoteCobrancaId
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoTributacao
+Descrição: Indica o Tipo de Tributação. Quando não informado assumirá da configuração de RPS.
+                                             00 - Nenhum,
+                                             01 - Tributação no Município,
+                                             02 - Tributação Fora do Município,
+                                             03 - Operação Isenta,
+                                             04 - Operação Imune,
+                                             05 - Operação Suspensa por Decisão Judicial,
+                                             06 - Operação Suspensa por Decisão AdministrativaObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: RegimeEspecial
+Descrição: Indica o Regime Especial. Quando não informado assumirá da configuração de RPS.
+                                             00 - Nenhum,
+                                             01 - Microempresa Municipal,
+                                             02 - Estimativa,
+                                             03 - Sociedade de Profissionais,
+                                             04 - Cooperativa,
+                                             05 - Microempreendedor Individual,
+                                             06 - Empresa JúniorObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: IncentivoCultural
+Descrição: Indica se tem Incentivo Cultural. Quando não informado assumirá da configuração de RPS.
+                                             0 - Não,
+                                             1 - SimObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: BeneficioFiscal
+Descrição: Indica se tem Benifício Fiscal. Quando não informado assumirá da configuração de RPS.
+                                             001 - L. 691/84 - Isenção - associações de classe, sindicatos e as respectivas federações e confederações.
+                                             002 - L. 691/84 - Isenção - associações culturais, recreativas e desportivas.
+                                             003 - L. 691/84 - Isenção - serviços de veiculação de publicidade prestados por táxis autônomos e táxis de cooperativas.
+                                             004 - L. 691/84 - Isenção - espetáculos circenses nacionais.
+                                             005 - L. 691/84 - Isenção - espetáculos teatrais.
+                                             006 - L. 691/84 - Isenção - promoção de concertos, recitais, shows, festividades, exposições, quermesses e similares.
+                                             007 - L. 691/84 - Isenção - músicos, artistas e técnicos de espetáculos.
+                                             008 - L. 691/84 - Isenção - exibição de filmes cinematográficos por entidades brasileiras sem fins lucrativos.
+                                             009 - L. 691/84 - Isenção - reforma, reestruturação ou conserv. de prédios de int. histórico, cultural ou p/ preserv. ambiental.
+                                             010 - L. 691/84 - Estudos e projetos / polos industriais - Lei 691/84, art. 12, inciso XX.
+                                             011 - L. 4.372/06 - Isenção - Serv. vinc. à construção de terminais portuários na Zona Oeste.
+                                             012 - L. 5.133/09 - Isenção - Serviços vinculados à construção de complexos siderúrgicos na Zona Oeste.
+                                             013 - L. 5.044/2009 - Isenção - Central de teleatendimento (construção/reforma).
+                                             014 - L. 5.065/2009 - Isenção - Empreendim. Habitacionais de interesse social e de arrendamento Resid. - construção / reforma.
+                                             015 - Lei 5.128/2009 - Isenção - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             016 - L. 5.230/2010 - Isenção - Copa das Confederações 2013 / Copa do Mundo 2014.
+                                             017 - L. 5.230/2010 - Isenção - Jogos Olímpicos e Paraolímpicos RIO 2016.
+                                             039 - Exportação de serviços para o exterior.
+                                             040 - Lei 4.372/2006 - Redução de Aliq. - Serviços Vinculados à operação de terminais portuários na Zona Oeste.
+                                             041 - Lei 5.128/2009 - Redução de Aliq. - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             080 - Imunidade - Ente Federado.
+                                             081 - Imunidade - Autarquia ou Fundação pública.
+                                             082 - Imunidade - Templo religioso.
+                                             083 - Imunidade - Partido político.
+                                             084 - Imunidade - Fundação mantida por partido político.
+                                             085 - Imunidade - Entidade sindical de trabalhadores.
+                                             086 - Imunidade - Instituição de educação sem fins lucrativos.
+                                             087 - CRFB, Art. 150, inc. VI, alínea 'c'.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Desconto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ItemRPS
+Descrição: Indica a lista dos Itens do RPS.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: FormasPagamentos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Parcelas
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira e centro de custo.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Observacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Vendedores
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BaseISS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorISS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BaseIRRf
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorIRRF
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BaseINSS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorINSS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BasePIS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorPIS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BaseCOFINS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorCOFINS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: BaseCSLL
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorCSLL
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RetemISS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RetemIRRF
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RetemINSS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RetemPIS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RetemCOFINS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RetemCSLL
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DescricaoServicos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: IdConjuntoAnexo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ISS
+Descrição: Indica tipo de retenção de ISS
+                                                                                0 - Retido.
+                                                                                1 - Devido.Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PreRPS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: OutrasDeducoes
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: XML_RPS
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: XML_NFSE
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: XML_Cancelamento
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: XML_DocEngine
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: MunicipioPrestacao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: CFOPId
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Obra
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Contrato_ID
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: NaoGerarFinanceiro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: NaoGerarTitulo
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: OutrasRetencoes
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DiscriminacaoServicos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: numero_titulo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: TemplateDiscriminacaoRPS
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: CalcularImpostos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: FaturamentoProvisorio
+Obrigatório: NÃOAceita valor nulo: SIM
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="itemrps_v3">
+        <model>
+            <field nome="crud" controlType="Integer" required="True" notnull="False"
+               summary="Indica a acao a ser realizada no item
+                        0 - NaoFazerNada,
+                        1 - Inserir,
+                        2 - Excluir,
+                        3 - Alterar"/>
+            <field nome="id" controlType="Guid" Required="False" notnull="True"/>
+            <field nome="id_rps" controlType="Guid" Required="False" notnull="True"/>
+            <field nome="item_faturamento" controlType="EntidadeInterna" Required="False" notnull="False"/>
+            <field nome="quantidade" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+            <field nome="valor_unitario" controlType="Currency" tamanho="20,2" required="True" notnull="True"/>
+            <field nome="desconto" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_total" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="descricao" controlType="String" tamanho="1500" required="True" notnull="True"/>
+            <field nome="retem_iss" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_ir" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_inss" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_pis" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_cofins" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="retem_csll" controlType="Boolean" required="False" notnull="False"/>
+            <field nome="percentual_base_iss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_iss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_iss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_ir" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="aliquota_ir" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_ir" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="percentual_base_inss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_inss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="aliquota_inss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_inss" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_pis" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="aliquota_pis" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_pis" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_cofins" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="aliquota_cofins" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_cofins" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="base_csll" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="aliquota_csll" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="valor_csll" controlType="Currency" tamanho="20,2" required="False" notnull="False"/>
+            <field nome="contrato" controlType="EntidadeInterna" Required="False" notnull="False"/>
+            <field nome="item_contrato" controlType="EntidadeInterna" Required="False" notnull="False"/>
+            <field nome="processamento_cobranca" controlType="EntidadeInterna" Required="False" notnull="False"/>
+            <field nome="titulo" controlType="EntidadeInterna" Required="False" notnull="False"/>
+            <field nome="ordem" controlType="Integer" Required="False" notnull="False"/>
+            <field nome="id_origem" controlType="Guid" Required="False" notnull="False"/>
+        </model>
+    </models>
+</root>

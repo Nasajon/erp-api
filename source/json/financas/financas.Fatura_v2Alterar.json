@@ -1,0 +1,16 @@
+{
+     "Fatura" : "Guid ou Código"
+   , "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "Cliente" : "Objeto: TClienteNovo"
+   , "Usuario" : "Guid ou Código"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "Processado" : False
+   , "ItensFaturas" : "ObjectList: TItemFatura_v2"
+   , "Pagamentos" : "ObjectList: TPagamento"
+   , "Lote" : "Guid ou Código"
+   , "PercentualDesconto" : 15,4
+   , "Desconto" : 15,2
+   , "ModoExibicaoDesconto" : "String(1)"
+	
+}

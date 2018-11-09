@@ -1,0 +1,64 @@
+{
+     "cliente" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "nome" : "String(150)"
+   , "qualificacao" : 1
+   , "identidade" : "String(20)"
+   , "documento" : "String(20)"
+   , "orgaoemissor" : "String(150)"
+   , "inscricaoestadual" : "String(150)"
+   , "inscricaomunicipal" : "String(150)"
+   , "email" : "String(250)"
+   , "observacao" : "String(250)"
+   , "entidadescompartilhadoras" : "ObjectList: TEntidadeCompartilhadora"
+   , "enderecoprincipal" : "Objeto: TEndereco"
+   , "enderecoentrega" : "Objeto: TEndereco"
+   , "enderecocobranca" : "Objeto: TEndereco"
+	
+}
+
+Campo: cliente
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: nome
+Descrição: Informe o Nome do cliente ou Razão socialObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: qualificacao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: identidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: documento
+Descrição: Este campo aceita CPF ou CNPJ com ou sem mascara.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: orgaoemissor
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: inscricaoestadual
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: inscricaomunicipal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: email
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: observacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: entidadescompartilhadoras
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: enderecoprincipal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: enderecoentrega
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: enderecocobranca
+Obrigatório: NÃOAceita valor nulo: SIM
+

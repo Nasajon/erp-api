@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="ProjetoFuncaoDetalhe">
+		<model>
+		    <nome>NovoAgrupador</nome>
+            <field nome="Identificador" controlType="Guid" required="False" notnull="False"/>
+            <field nome="Funcao" controlType="EntidadeInterna" required="True" notnull="True" summary="Função à qual este agrupador pertence."/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True" notnull="True" summary="Utilizado para recuperar a função à que o Agrupador pertence."/>
+			<field nome="Codigo" controlType="String" tamanho="30" required="True" notnull="True" summary="Código do agrupador sendo cadastrado."/>
+			<field nome="Descricao" controlType="String" tamanho="150" required="True" notnull="True" summary="Descrição do agrupador sendo cadastrado."/>
+		</model>
+		<model>
+		    <nome>NovoEPI</nome>
+            <field nome="Identificador" controlType="Guid" required="False" notnull="False"/>
+            <field nome="Funcao" controlType="EntidadeInterna" required="True" notnull="True" summary="Função à qual este EPI pertence."/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True" notnull="True" summary="Utilizado para recuperar a função à que o EPI pertence, e para localizar o próprio item de EPI."/>
+            <field nome="Registro" controlType="EntidadeInterna" required="True" notnull="True" summary="Identificador da EPI."/>
+            <field nome="Agrupador" controlType="EntidadeInterna" required="True" notnull="False" summary="Campo utilizado para indicar a que agrupador esta EPI pertence."/>
+            <field nome="Unidade" controlType="EntidadeInterna" required="True" notnull="False" summary="Unidade de cálculo para as quantidades.."/>
+			<field nome="Quantidade" controlType="Currency" required="True" notnull="True" summary="Quantidade."/>
+			<field nome="ValorUnitario" controlType="Currency" required="True" notnull="True" summary="Valor comercial de uma unidade."/>
+            <field nome="PeriodicidadeTipo" controlType="Integer" required="True" notnull="True" summary="Tipo de periodicidade da EPI. Valores possíveis: 0) Não periódico; 1) Diário; 2) Semanal; 3) Mensal; 4) Bimestral; 5) Trimestral; 6) Semestral; 7) Anual"/>
+			<field nome="PeriodicidadeIntervalo" controlType="Currency" required="True" notnull="False" summary="Periodicidade da EPI (verificar os tipos de periodicidade no parâmetro PeriodicidadeTipo)."/>
+		</model>
+		<model>
+		    <nome>NovoFormacaoSalarial</nome>
+            <field nome="Identificador" controlType="Guid" required="False" notnull="False"/>
+            <field nome="Funcao" controlType="EntidadeInterna" required="True" notnull="True" summary="Função à qual esta Formação Salarial pertence."/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True" notnull="True" summary="Utilizado para recuperar a função à que a Formação Salarial pertence."/>
+			<field nome="Empresa" controlType="EntidadeJuridica" required="True" notnull="True" summary="Utilizado para recuperar a própria Formação Salarial."/>
+            <field nome="Registro" controlType="EntidadeInterna" required="True" notnull="True" summary="Identificador da formação salarial."/>
+            <field nome="Agrupador" controlType="EntidadeInterna" required="False" notnull="False" summary="Campo utilizado para indicar a que agrupador esta Formação Salarial pertence."/>
+            <field nome="PeriodicidadeTipo" controlType="Integer" required="True" notnull="True" summary="Tipo de periodicidade da Formação Salarial. Valores possíveis: 0) Não periódico; 1) Diário; 2) Semanal; 3) Mensal; 4) Bimestral; 5) Trimestral; 6) Semestral; 7) Anual"/>
+			<field nome="PeriodicidadeIntervalo" controlType="Currency" required="True" notnull="False" summary="Periodicidade do Formação Salarial (verificar os tipos de periodicidade no parâmetro PeriodicidadeTipo)."/>
+		</model>
+		<model>
+		    <nome>NovoBeneficio</nome>
+            <field nome="Identificador" controlType="Guid" required="False" notnull="False"/>
+            <field nome="Funcao" controlType="EntidadeInterna" required="True" notnull="True" summary="Função à qual este Beneficio pertence."/>
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True" notnull="True" summary="Utilizado para recuperar a função à que o Benefício pertence, e para localizar o próprio benefício."/>
+			<field nome="Empresa" controlType="EntidadeJuridica" required="True" notnull="True" summary="Utilizado para recuperar a própria Formação Salarial."/>
+            <field nome="Registro" controlType="EntidadeInterna" required="True" notnull="True" summary="Identificador do Benefício."/>
+            <field nome="Agrupador" controlType="EntidadeInterna" required="False" notnull="False" summary="Campo utilizado para indicar a que agrupador este Benefício pertence."/>
+            <field nome="PeriodicidadeTipo" controlType="Integer" required="True" notnull="True" summary="Tipo de periodicidade do benefício. Valores possíveis: 0) Não periódico; 1) Diário; 2) Semanal; 3) Mensal; 4) Bimestral; 5) Trimestral; 6) Semestral; 7) Anual"/>
+			<field nome="PeriodicidadeIntervalo" controlType="Currency" required="True" notnull="False" summary="Periodicidade do Benefício (verificar os tipos de periodicidade no parâmetro PeriodicidadeTipo)."/>
+		</model>
+		<model>
+			<nome>DeleteByFuncao</nome>			
+			<field nome="Funcao" controlType="EntidadeInterna" required="True" notnull="True"/>		
+			<field nome="GrupoEmpresarial" controlType="EntidadeInterna" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,13 @@
+{
+     "ClassificacaoFinanceira" : "Guid ou Código"
+   , "CentroCusto" : "Guid ou Código"
+   , "Valor" : 20,2
+   , "Projeto" : "Guid ou Código"
+   , "Discriminacao" : "String(200)"
+   , "BemPatrimonial" : "Guid ou Código"
+   , "RATEIOFINANCEIRO" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ItemContrato" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "ID_ESTABELECIMENTO_REEMBOLSO" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_owner" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

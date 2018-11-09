@@ -1,0 +1,15 @@
+{
+     "Classificacao" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+	
+}
+
+Campo: Classificacao
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Descrição: Ao passar o código da classificação financeira será necessário passar o grupo empresarial.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

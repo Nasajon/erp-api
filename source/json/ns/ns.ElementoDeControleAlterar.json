@@ -1,0 +1,7 @@
+{
+     "identificador" : "Guid ou Código"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "tipo" : 1
+	
+}

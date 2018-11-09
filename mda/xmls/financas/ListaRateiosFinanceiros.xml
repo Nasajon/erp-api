@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="financas" modulo="ListaRateiosFinanceiros">
+        <model>
+            <nome>Novo</nome>
+            <field nome="RateioFinanceiro" controlType="ObjectList" namespace="financas\ItemRateioFinanceiro\TItemRateioFinanceiro" required="False" summary="Indica a lista de discriminação de valores por classificação financeira e centro de custo."/>
+        </model>
+    </models>
+</root>

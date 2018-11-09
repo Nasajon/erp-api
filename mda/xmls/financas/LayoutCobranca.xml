@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="LayoutCobranca">
+		<model>
+			<field nome="LayoutCobranca" controlType="Guid" required="False" notnull="True" summary="Não é requerido pois pode ser utilizada a chave única(nome, implementacao)."/>	
+			<field nome="Nome" controlType="String" tamanho="100" required="False" notnull="True"/>
+            <field nome="Implementacao" controlType="Integer" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,20 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "CodigoFPAS" : "String(6)"
+   , "CodigoTerceiros" : "String(4)"
+   , "CodigoCNAE" : "String(7)"
+   , "NumeroProprietarios" : 1
+   , "NumeroFamiliares" : 1
+   , "Porte" : 1
+   , "CapitalSocial" : 20,6
+   , "FazPartePAT" : False
+   , "PagaPIS" : False
+   , "CentralizaContribuicaoSindical" : False
+   , "Sindicato" : "Guid ou Código"
+   , "NumeroContaDepositoFGTS" : "String(14)"
+   , "TipoContaDepositoFGTS" : 1
+   , "AgenciaDepositoFGTS" : "Guid ou Código"
+   , "BancoDepositoFGTS" : "Guid ou Código"
+	
+}

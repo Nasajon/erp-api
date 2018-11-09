@@ -1,0 +1,13 @@
+{
+     "estabelecimento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "lancamento" : "2014-12-31"
+   , "tipo_tributacao" : 1
+   , "regime_especial" : 1
+   , "incentivador_cultural" : 1
+   , "codigo_servico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usuario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "discriminacao_servicos" : "String(5000)"
+   , "clientes" : "ObjectList: tgerador_rps_cliente_v2"
+   , "template_rps" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}

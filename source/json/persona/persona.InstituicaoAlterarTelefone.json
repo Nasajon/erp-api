@@ -1,0 +1,6 @@
+{
+     "Instituicao" : "Guid ou Código"
+   , "DDD" : "String(2)"
+   , "Telefone" : "String(20)"
+	
+}

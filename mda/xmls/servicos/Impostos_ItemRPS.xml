@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="Impostos_ItemRPS">
+        <model>
+            <field nome="itemrps_id" controlType="Guid" required="True" notnull="False"/>
+            <field nome="Item_Faturamento_ID" controlType="Guid" required="True" notnull="False"/>
+            <field nome="itemrps_percentual_incidencia_inss" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="itemrps_percentual_base_iss" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="itemrps_quantidade" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="itemrps_valor_unitario" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="itemrps_desconto" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="itemrps_valor_total" controlType="Currency" tamanho="20,2" required="True" notnull="False"/>
+            <field nome="itemrps_lista_tributos" controlType="ObjectList" namespace="servicos\Impostos_Tributo\TImpostos_Tributo" required="True" notnull="False"/>
+        </model>
+    </models>
+</root>

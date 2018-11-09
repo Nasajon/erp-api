@@ -1,0 +1,9 @@
+{
+     "Sindicato" : "Guid ou Código"
+	
+}
+
+Campo: Sindicato
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+

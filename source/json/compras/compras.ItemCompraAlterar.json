@@ -1,0 +1,12 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "codigo" : "String(30)"
+   , "descricao" : "String(150)"
+   , "comodato" : False
+   , "tipo" : 1
+   , "categoriadeproduto" : "Guid ou Código"
+   , "categoriadeservico" : "Guid ou Código"
+   , "detalhamento" : "Guid ou Código"
+   , "grupoempresarial" : "Guid ou Código"
+	
+}

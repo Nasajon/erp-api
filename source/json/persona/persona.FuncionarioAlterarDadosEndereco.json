@@ -1,0 +1,16 @@
+{
+     "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "TipoLogradouro" : "String(10)"
+   , "CodigoMunicipio" : "String(8)"
+   , "CodigoPais" : "String(5)"
+   , "Logradouro" : "String(150)"
+   , "Numero" : "String(10)"
+   , "Complemento" : "String(60)"
+   , "Bairro" : "String(60)"
+   , "Cidade" : "String(60)"
+   , "CEP" : "String(10)"
+   , "DDD" : "String(2)"
+   , "Telefone" : "String(20)"
+	
+}

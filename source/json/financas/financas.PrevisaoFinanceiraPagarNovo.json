@@ -1,0 +1,30 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Observacao" : "String(120)"
+   , "DefinicaoContratante" : "String(20)"
+   , "DefinicaoBeneficiario" : "String(20)"
+   , "DataInicial" : "2014-12-31"
+   , "TerminoPrevisao" : 1
+   , "DataFinal" : "2014-12-31"
+   , "NumeroOcorrencia" : 1
+   , "DataProximoLancamento" : "2014-12-31"
+   , "Frequencia" : 1
+   , "Valor" : 20,2
+   , "DiasIntervalo" : 1
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "FormaPagamento" : "Guid ou Código"
+   , "GeraTitulos" : False
+   , "QtdDiasDesconto" : 1
+   , "QtdDiasMulta" : 1
+   , "PercentualDesconto" : 15,4
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiario" : 15,4
+   , "IDDocumentoRateado" : "Guid ou Código"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+	
+}

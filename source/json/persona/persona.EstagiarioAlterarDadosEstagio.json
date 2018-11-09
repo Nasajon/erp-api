@@ -1,0 +1,13 @@
+{
+     "Estagiario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "AreaAtuacao" : "String(50)"
+   , "ApoliceSeguro" : "String(30)"
+   , "NomeSupervisor" : "String(60)"
+   , "CPFSupervisor" : "String(11)"
+   , "Nivel" : 1
+   , "Obrigatorio" : False
+   , "InstituicaoEnsino" : "Guid ou Código"
+   , "InstituicaoIntegradora" : "Guid ou Código"
+	
+}

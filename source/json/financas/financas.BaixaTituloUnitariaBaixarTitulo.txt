@@ -1,0 +1,177 @@
+{
+     "IdTitulo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Conta" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+   , "PercentualDesconto" : 20,4
+   , "ValorDesconto" : 20,2
+   , "PercentualJuros" : 20,4
+   , "ValorJuros" : 20,2
+   , "PercentualMulta" : 20,4
+   , "ValorMulta" : 20,2
+   , "ValorAcrescimo" : 20,2
+   , "ValorTarifaBancaria" : 20,2
+   , "ValorPisRetido" : 20,2
+   , "ValorCofinsRetido" : 20,2
+   , "ValorCsllRetido" : 20,2
+   , "ValorIrrfRetido" : 20,2
+   , "ValorInssRetido" : 20,2
+   , "ValorissRetido" : 20,2
+   , "ValorIrrfRetidoNotaFiscal" : 20,2
+   , "ValorInssRetidoNotaFiscal" : 20,2
+   , "Valor" : 20,2
+   , "DataLancamento" : "2014-12-31"
+   , "ImprimirCheque" : False
+   , "Documento" : "String(20)"
+   , "Historico" : "Este atributo é do titpo Memo."
+   , "VersoCheque" : "Este atributo é do titpo Memo."
+   , "Favorecido" : "String(150)"
+   , "Renegociacao" : False
+   , "FormasPagamentos" : "ObjectList: TFormaPagamentoRenegociacaoTitulosNovo"
+   , "Parcelas" : "ObjectList: TParcelaFormaPagamentoRenegociacaoTitulosNovo"
+   , "Usuario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "valorvariacaocambialativa" : 
+   , "valorvariacaocambialpassiva" : 
+   , "idlancamentoconta" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "PrestacaoDeContas" : "Guid ou Código"
+   , "DataCompetencia" : "2014-12-31"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "baixapermuta" : False
+   , "valorpermuta" : 
+   , "descricaopermuta" : "String(1000)"
+   , "OutrasRetencoes" : 20,2
+   , "DescricaoOutrasRetencoes" : "String(255)"
+   , "cotacao" : 
+   , "Origem" : 1
+	
+}
+
+Campo: IdTitulo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conta
+Descrição: Indica a conta que o título foi baixado.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Data
+Descrição: Indica a data que o título foi baixado.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: PercentualDesconto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorDesconto
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PercentualJuros
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorJuros
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: PercentualMulta
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorMulta
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorAcrescimo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorTarifaBancaria
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorPisRetido
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorCofinsRetido
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorCsllRetido
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorIrrfRetido
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorInssRetido
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorissRetido
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorIrrfRetidoNotaFiscal
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: ValorInssRetidoNotaFiscal
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Valor
+Descrição: Indica o valor líquido da baixa. Valor utilizado no lançamento bancário. 
+				            Quando não informado será calculado a partir do valor do título e seus impostos e valores financeiros.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataLancamento
+Descrição: Indica a data do lançamento bancário. Quando não informada é assumida a data da baixa.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ImprimirCheque
+Descrição: Indica se o lançamento bancário estará habilitado para impressão do cheque. Utilizado somente para títulos a pagar.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Documento
+Descrição: Campo de controle utilizado no lançamento bancário.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Historico
+Descrição: Indica o histórico do lançamento.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: VersoCheque
+Descrição: Indica o texto que será impresso no verso do cheque.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Favorecido
+Descrição: Indica o nome do favorecido que será impresso no cheque.Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Renegociacao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: FormasPagamentos
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Parcelas
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Usuario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: valorvariacaocambialativa
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: valorvariacaocambialpassiva
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: idlancamentoconta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PrestacaoDeContas
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: DataCompetencia
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: RateioFinanceiro
+Descrição: Indica a lista de discriminação de valores por classificação financeira e centro de custo.Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: baixapermuta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valorpermuta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: descricaopermuta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: OutrasRetencoes
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DescricaoOutrasRetencoes
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: cotacao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Origem
+Obrigatório: SIMAceita valor nulo: SIM
+

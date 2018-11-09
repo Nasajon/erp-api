@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="importacao_rateio">
+        <model>
+            <field nome="Discriminacao" controlType="String" tamanho="200" required="True"
+                   summary="Identifica o rateio financeiro" notnull="False"/>
+            <field nome="ClassificacaoFinanceira" controlType="EntidadeInterna" required="True"
+                   summary="Identificador da classificação financeira do rateio financeiro" notnull="False"/>
+            <field nome="CentroCusto" controlType="EntidadeInterna" required="False"
+                   summary="Identificador do centro de custo do rateio financeiro" notnull="True"/>
+            <field nome="Projeto" controlType="EntidadeInterna" required="False"
+                   summary="Identificador do projeto do rateio financeiro" notnull="True"/>
+            <field nome="Valor" controlType="Currency" tamanho="20,2" required="True"
+                   summary="Identifica o valor do rateio financeiro" notnull="False"/>
+            <field nome="Percentual" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Identifica o percentual do rateio financeiro" notnull="True"/>
+        </model>
+    </models>
+</root>

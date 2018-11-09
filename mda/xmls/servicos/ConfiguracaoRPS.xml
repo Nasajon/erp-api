@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="ConfiguracaoRPS">
+		<model>
+			<nome>Novo</nome>
+			<field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True" />
+			<field nome="TipoTributacao" controlType="Integer" 
+			       required="False" summary="Indica o Tipo de Tributação. 
+                                             00 - Nenhum,
+                                             01 - Tributação no Município,
+                                             02 - Tributação Fora do Município,
+                                             03 - Operação Isenta,
+                                             04 - Operação Imune,
+                                             05 - Operação Suspensa por Decisão Judicial,
+                                             06 - Operação Suspensa por Decisão Administrativa"/>
+			<field nome="RegimeEspecial" controlType="Integer" 
+			       required="False" summary="Indica o Regime Especial. 
+                                             00 - Nenhum,
+                                             01 - Microempresa Municipal,
+                                             02 - Estimativa,
+                                             03 - Sociedade de Profissionais,
+                                             04 - Cooperativa,
+                                             05 - Microempreendedor Individual,
+                                             06 - Empresa Júnior"/>
+			<field nome="IncentivoCultural" controlType="Integer" 
+			       required="False" summary="Indica se tem Incentivo Cultural. 
+                                             0 - Não,
+                                             1 - Sim"/>
+			<field nome="BeneficioFiscal" controlType="Integer" 
+			       required="False" summary="Indica se tem um benefício fiscal. Obrigatório quando a tributação for isenta.
+                                             001 - L. 691/84 - Isenção - associações de classe, sindicatos e as respectivas federações e confederações.
+                                             002 - L. 691/84 - Isenção - associações culturais, recreativas e desportivas.
+                                             003 - L. 691/84 - Isenção - serviços de veiculação de publicidade prestados por táxis autônomos e táxis de cooperativas.
+                                             004 - L. 691/84 - Isenção - espetáculos circenses nacionais.
+                                             005 - L. 691/84 - Isenção - espetáculos teatrais.
+                                             006 - L. 691/84 - Isenção - promoção de concertos, recitais, shows, festividades, exposições, quermesses e similares.
+                                             007 - L. 691/84 - Isenção - músicos, artistas e técnicos de espetáculos.
+                                             008 - L. 691/84 - Isenção - exibição de filmes cinematográficos por entidades brasileiras sem fins lucrativos.
+                                             009 - L. 691/84 - Isenção - reforma, reestruturação ou conserv. de prédios de int. histórico, cultural ou p/ preserv. ambiental.
+                                             010 - L. 691/84 - Estudos e projetos / polos industriais - Lei 691/84, art. 12, inciso XX.
+                                             011 - L. 4.372/06 - Isenção - Serv. vinc. à construção de terminais portuários na Zona Oeste.
+                                             012 - L. 5.133/09 - Isenção - Serviços vinculados à construção de complexos siderúrgicos na Zona Oeste.
+                                             013 - L. 5.044/2009 - Isenção - Central de teleatendimento (construção/reforma).
+                                             014 - L. 5.065/2009 - Isenção - Empreendim. Habitacionais de interesse social e de arrendamento Resid. - construção / reforma.
+                                             015 - Lei 5.128/2009 - Isenção - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             016 - L. 5.230/2010 - Isenção - Copa das Confederações 2013 / Copa do Mundo 2014.
+                                             017 - L. 5.230/2010 - Isenção - Jogos Olímpicos e Paraolímpicos RIO 2016.
+                                             039 - Exportação de serviços para o exterior.
+                                             040 - Lei 4.372/2006 - Redução de Aliq. - Serviços Vinculados à operação de terminais portuários na Zona Oeste.
+                                             041 - Lei 5.128/2009 - Redução de Aliq. - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             080 - Imunidade - Ente Federado.
+                                             081 - Imunidade - Autarquia ou Fundação pública.
+                                             082 - Imunidade - Templo religioso.
+                                             083 - Imunidade - Partido político.
+                                             084 - Imunidade - Fundação mantida por partido político.
+                                             085 - Imunidade - Entidade sindical de trabalhadores.
+                                             086 - Imunidade - Instituição de educação sem fins lucrativos.
+                                             087 - CRFB, Art. 150, inc. VI, alínea 'c'." notnull="True"/>
+			<field nome="AliquotaISS" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de ISS." required="True"/>
+			<field nome="AliquotaIRPessoaJuridica" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de IR para pessoa jurídica." required="True"/>
+			<field nome="AliquotaIROrgaoPublico" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de IR para órgão público." required="True"/>
+			<field nome="AliquotaPIS" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de PIS." required="True"/>
+			<field nome="AliquotaCOFINS" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de COFINS." required="True"/>
+			<field nome="AliquotaCSLL" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de CSLL." required="True"/>
+			<field nome="UsaDiscriminacaoDoCFOPNoRPS" controlType="Boolean" notnull="True" required="True"/>
+            <field nome="UsaWebServiceRPS" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="CertificadoDigitalInstalado" controlType="String" tamanho="5000" required="False"/>
+			<field nome="CaminhoCertificadoDigital" controlType="String" tamanho="5000" required="False"/>
+			<field nome="SenhaCertificadoDigital" controlType="String" tamanho="5000" required="False"/>
+			<field nome="IdentificacaoAmbiente" controlType="Integer" 
+			       required="False" summary="Inddentifica o tipo de ambiente
+                                             0 - Homologaão,
+                                             1 - Produção"/>
+			<field nome="LoteDaEmpresa" controlType="Integer" required="False"/>
+			<field nome="UtilizarMesmoRPS" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="IncluirObservacao" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="IncluirInformacoesOS" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="TemplateOS" controlType="String" tamanho="5000" required="False"/>
+            <field nome="IncluirRetencoes" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="PermitirMultiplosVendedores" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="ParticipanteCertificado" controlType="Guid" Required="False" notnull="False"/>
+			<field nome="ServidorSMTP" controlType="String" tamanho="5000" required="False"/>
+			<field nome="Porta" controlType="Integer" required="False"/>
+			<field nome="Usuario" controlType="String" tamanho="5000" required="False"/>
+			<field nome="Senha" controlType="String" tamanho="5000" required="False"/>
+			<field nome="RequerAutenticacao" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="UtilizarConexaoSegura" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="AssuntoEmail" controlType="String" tamanho="5000" required="False"/>
+			<field nome="MensagemEmail" controlType="String" tamanho="5000" required="False"/>
+			<field nome="IncluirProjetos" controlType="Boolean" notnull="True" required="True"/>
+		</model>	
+		<model>
+			<nome>Alterar</nome>
+			<field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True" />			
+			<field nome="TipoTributacao" controlType="Integer" 
+			       required="False" summary="Indica o Tipo de Tributação. 
+                                             00 - Nenhum,
+                                             01 - Tributação no Município,
+                                             02 - Tributação Fora do Município,
+                                             03 - Operação Isenta,
+                                             04 - Operação Imune,
+                                             05 - Operação Suspensa por Decisão Judicial,
+                                             06 - Operação Suspensa por Decisão Administrativa"/>
+			<field nome="RegimeEspecial" controlType="Integer" 
+			       required="False" summary="Indica o Regime Especial. 
+                                             00 - Nenhum,
+                                             01 - Microempresa Municipal,
+                                             02 - Estimativa,
+                                             03 - Sociedade de Profissionais,
+                                             04 - Cooperativa,
+                                             05 - Microempreendedor Individual,
+                                             06 - Empresa Júnior"/>
+			<field nome="IncentivoCultural" controlType="Integer" 
+			       required="False" summary="Indica se tem Incentivo Cultural. 
+                                             0 - Não,
+                                             1 - Sim"/>
+			<field nome="BeneficioFiscal" controlType="Integer" 
+			       required="False" summary="Indica se tem Incentivo Cultural. 
+                                             001 - L. 691/84 - Isenção - associações de classe, sindicatos e as respectivas federações e confederações.
+                                             002 - L. 691/84 - Isenção - associações culturais, recreativas e desportivas.
+                                             003 - L. 691/84 - Isenção - serviços de veiculação de publicidade prestados por táxis autônomos e táxis de cooperativas.
+                                             004 - L. 691/84 - Isenção - espetáculos circenses nacionais.
+                                             005 - L. 691/84 - Isenção - espetáculos teatrais.
+                                             006 - L. 691/84 - Isenção - promoção de concertos, recitais, shows, festividades, exposições, quermesses e similares.
+                                             007 - L. 691/84 - Isenção - músicos, artistas e técnicos de espetáculos.
+                                             008 - L. 691/84 - Isenção - exibição de filmes cinematográficos por entidades brasileiras sem fins lucrativos.
+                                             009 - L. 691/84 - Isenção - reforma, reestruturação ou conserv. de prédios de int. histórico, cultural ou p/ preserv. ambiental.
+                                             010 - L. 691/84 - Estudos e projetos / polos industriais - Lei 691/84, art. 12, inciso XX.
+                                             011 - L. 4.372/06 - Isenção - Serv. vinc. à construção de terminais portuários na Zona Oeste.
+                                             012 - L. 5.133/09 - Isenção - Serviços vinculados à construção de complexos siderúrgicos na Zona Oeste.
+                                             013 - L. 5.044/2009 - Isenção - Central de teleatendimento (construção/reforma).
+                                             014 - L. 5.065/2009 - Isenção - Empreendim. Habitacionais de interesse social e de arrendamento Resid. - construção / reforma.
+                                             015 - Lei 5.128/2009 - Isenção - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             016 - L. 5.230/2010 - Isenção - Copa das Confederações 2013 / Copa do Mundo 2014.
+                                             017 - L. 5.230/2010 - Isenção - Jogos Olímpicos e Paraolímpicos RIO 2016.
+                                             039 - Exportação de serviços para o exterior.
+                                             040 - Lei 4.372/2006 - Redução de Aliq. - Serviços Vinculados à operação de terminais portuários na Zona Oeste.
+                                             041 - Lei 5.128/2009 - Redução de Aliq. - Operação Urbana Consorciada da Região do Porto do Rio.
+                                             080 - Imunidade - Ente Federado.
+                                             081 - Imunidade - Autarquia ou Fundação pública.
+                                             082 - Imunidade - Templo religioso.
+                                             083 - Imunidade - Partido político.
+                                             084 - Imunidade - Fundação mantida por partido político.
+                                             085 - Imunidade - Entidade sindical de trabalhadores.
+                                             086 - Imunidade - Instituição de educação sem fins lucrativos.
+                                             087 - CRFB, Art. 150, inc. VI, alínea 'c'."/>
+			<field nome="AliquotaISS" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de ISS." required="False"/>
+			<field nome="AliquotaIRPessoaJuridica" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de IR para pessoa jurídica." required="False"/>
+			<field nome="AliquotaIROrgaoPublico" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de IR para órgão público." required="False"/>
+			<field nome="AliquotaPIS" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de PIS." required="False"/>
+			<field nome="AliquotaCOFINS" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de COFINS." required="False"/>
+			<field nome="AliquotaCSLL" controlType="Currency" tamanho="20,2" notnull="True" summary="Informe a alíquota de CSLL." required="False"/>
+			<field nome="UsaDiscriminacaoDoCFOPNoRPS" controlType="Boolean" notnull="True" required="True"/>
+            <field nome="UsaWebServiceRPS" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="CertificadoDigitalInstalado" controlType="String" tamanho="5000" required="False"/>
+			<field nome="CaminhoCertificadoDigital" controlType="String" tamanho="5000" required="False"/>
+			<field nome="SenhaCertificadoDigital" controlType="String" tamanho="5000" required="False"/>
+			<field nome="IdentificacaoAmbiente" controlType="Integer" 
+			       required="False" summary="Inddentifica o tipo de ambiente
+                                             0 - Homologaão,
+                                             1 - Produção"/>
+			<field nome="LoteDaEmpresa" controlType="Integer" required="False"/>
+			<field nome="UtilizarMesmoRPS" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="IncluirObservacao" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="IncluirInformacoesOS" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="TemplateOS" controlType="String" tamanho="5000" required="False"/>
+            <field nome="IncluirRetencoes" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="PermitirMultiplosVendedores" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="ParticipanteCertificado" controlType="Guid" Required="False" notnull="False"/>
+			<field nome="ServidorSMTP" controlType="String" tamanho="5000" required="False"/>
+			<field nome="Porta" controlType="Integer" required="False"/>
+			<field nome="Usuario" controlType="String" tamanho="5000" required="False"/>
+			<field nome="Senha" controlType="String" tamanho="5000" required="False"/>
+			<field nome="RequerAutenticacao" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="UtilizarConexaoSegura" controlType="Boolean" notnull="True" required="True"/>
+			<field nome="AssuntoEmail" controlType="String" tamanho="5000" required="False"/>
+			<field nome="MensagemEmail" controlType="String" tamanho="5000" required="False"/>
+			<field nome="IncluirProjetos" controlType="Boolean" notnull="True" required="True"/>			
+    		</model>	
+		<model>
+			<nome>Excluir</nome>
+			<field nome="Estabelecimento" controlType="Object" namespace="ns\estabelecimento\TEstabelecimento" required="True" notnull="True" />			
+		</model>
+	</models>
+</root>

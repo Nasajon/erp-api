@@ -1,0 +1,23 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CNPJ [99.999.999/9999-99]"
+   , "Cliente" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "String(38)"
+   , "Numero" : "String(9)"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : False
+   , "ISSRetido" : False
+   , "CodigoServico" : "Guid ou Código"
+   , "DescontoCondicional" : 20,2
+   , "CodigoIBGEMunicipioPrestacao" : "String(7)"
+   , "Obra" : "Guid ou Código"
+   , "DiscriminacaoServicos" : "String(5000)"
+   , "OutrasDeducoes" : 20,2
+   , "OutrasRetencoes" : 20,2
+   , "Observacao" : "String(5000)"
+   , "CalcularImpostos" : False
+   , "ItensRPS" : "ObjectList: "
+   , "Pagamentos" : "ObjectList: "
+   , "Rateios" : "ObjectList: "
+	
+}

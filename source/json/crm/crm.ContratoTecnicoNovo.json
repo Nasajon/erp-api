@@ -1,0 +1,14 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "Negocio" : "Guid ou Código"
+   , "Cliente" : "Guid ou Código"
+   , "Codigo" : "String(60)"
+   , "Descricao" : "String(255)"
+   , "InicioVigencia" : "2014-12-31"
+   , "FimVigencia" : "2014-12-31"
+   , "Ativo" : False
+	
+}

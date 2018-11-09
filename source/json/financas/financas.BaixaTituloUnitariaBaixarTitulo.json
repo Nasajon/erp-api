@@ -1,0 +1,46 @@
+{
+     "IdTitulo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Conta" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+   , "PercentualDesconto" : 20,4
+   , "ValorDesconto" : 20,2
+   , "PercentualJuros" : 20,4
+   , "ValorJuros" : 20,2
+   , "PercentualMulta" : 20,4
+   , "ValorMulta" : 20,2
+   , "ValorAcrescimo" : 20,2
+   , "ValorTarifaBancaria" : 20,2
+   , "ValorPisRetido" : 20,2
+   , "ValorCofinsRetido" : 20,2
+   , "ValorCsllRetido" : 20,2
+   , "ValorIrrfRetido" : 20,2
+   , "ValorInssRetido" : 20,2
+   , "ValorissRetido" : 20,2
+   , "ValorIrrfRetidoNotaFiscal" : 20,2
+   , "ValorInssRetidoNotaFiscal" : 20,2
+   , "Valor" : 20,2
+   , "DataLancamento" : "2014-12-31"
+   , "ImprimirCheque" : False
+   , "Documento" : "String(20)"
+   , "Historico" : "Este atributo é do titpo Memo."
+   , "VersoCheque" : "Este atributo é do titpo Memo."
+   , "Favorecido" : "String(150)"
+   , "Renegociacao" : False
+   , "FormasPagamentos" : "ObjectList: TFormaPagamentoRenegociacaoTitulosNovo"
+   , "Parcelas" : "ObjectList: TParcelaFormaPagamentoRenegociacaoTitulosNovo"
+   , "Usuario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "valorvariacaocambialativa" : 
+   , "valorvariacaocambialpassiva" : 
+   , "idlancamentoconta" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "PrestacaoDeContas" : "Guid ou Código"
+   , "DataCompetencia" : "2014-12-31"
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "baixapermuta" : False
+   , "valorpermuta" : 
+   , "descricaopermuta" : "String(1000)"
+   , "OutrasRetencoes" : 20,2
+   , "DescricaoOutrasRetencoes" : "String(255)"
+   , "cotacao" : 
+   , "Origem" : 1
+	
+}

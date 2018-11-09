@@ -1,0 +1,9 @@
+{
+     "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Codigo" : "String(4)"
+   , "Nome" : "String(50)"
+   , "CodigoCBO" : "String(7)"
+   , "CodigoGrauInstrucao" : "String(2)"
+	
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="Solicitacoes">
+		<model>
+			<nome>AlteracaoEndereco</nome>
+			<field nome="TipoLogradouro" controlType="String" tamanho="10" required="False" notnull="False" summary="Conforme tabela de tipos de logradouro do eSocial"/>
+			<field nome="Logradouro" controlType="String" tamanho="150" required="False" notnull="False"/>
+			<field nome="Numero" controlType="String" tamanho="10" required="False" notnull="False"/>
+			<field nome="Complemento" controlType="String" tamanho="60" required="False" notnull="False"/>
+			<field nome="Bairro" controlType="String" tamanho="60" required="False" notnull="False"/>
+			<field nome="CEP" controlType="String" tamanho="10" required="False" notnull="False" summary="[99999-999]. A máscara não é obrigatória"/>
+			<field nome="MunicipioResidencia" controlType="String" tamanho="8" required="False" notnull="False" summary="Conforme tabela do IBGE"/>
+		</model>
+	</models>
+</root>

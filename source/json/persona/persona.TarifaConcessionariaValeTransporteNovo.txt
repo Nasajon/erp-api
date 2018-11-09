@@ -1,0 +1,28 @@
+{
+     "IdTarifa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Concessionaria" : "Guid ou Código"
+   , "Codigo" : "String(4)"
+   , "Descricao" : "String(30)"
+   , "Valor" : 20,6
+   , "Tipo" : 1
+	
+}
+
+Campo: IdTarifa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Concessionaria
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Valor
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Ônibus(1), Metrô(2), Trem(3), Barca(4) ou Van(5)Obrigatório: SIMAceita valor nulo: NÃO
+

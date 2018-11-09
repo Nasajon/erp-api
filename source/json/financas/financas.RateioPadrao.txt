@@ -1,0 +1,16 @@
+{
+     "RateioPadrao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Nome" : "String(100)"
+   , "GrupoEmpresarial" : "Objeto: TGrupoEmpresarial"
+	
+}
+
+Campo: RateioPadrao
+Descrição: Não é requerido pois pode ser utilizada a chave única(nome, grupoempresarial).Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Obrigatório: NÃOAceita valor nulo: NÃO
+

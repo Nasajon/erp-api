@@ -1,0 +1,20 @@
+{
+     "ID" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Numero" : "String(30)"
+   , "Data" : "2014-12-31"
+   , "ID_ContaEmprestimo" : "Guid ou Código"
+   , "Situacao" : 1
+   , "ID_GrupoEmpresarial" : "Guid ou Código"
+   , "ItensPrestacaoDeConta" : "ObjectList: TItemPrestacaoDeContaNovo"
+   , "ItensEmprestimoPrestacao" : "ObjectList: TItemEmprestimoPrestacaoNovo"
+   , "DocumentoRateado" : "Guid ou Código"
+   , "ValorEspecie" : 20,2
+   , "contaespecie" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código"
+   , "Fornecedor" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "ValorPerdoado" : 20,2
+   , "DataLancamento" : "2014-12-31"
+   , "Tipo" : 1
+	
+}

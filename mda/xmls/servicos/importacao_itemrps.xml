@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+    <models sistema="servicos" modulo="importacao_itemrps">
+        <model>
+            <field nome="Servico" controlType="EntidadeInterna" required="True"
+                   summary="Identificador do serviço prestado" notnull="False"/>
+            <field nome="Descricao" controlType="String" tamanho="1500" required="False"
+                   summary="Indica a descrição do serviço prestado. Quando não informado assumirá a descrição do serviço informado" notnull="True"/>
+            <field nome="ValorUnitario" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o valor unitário do serviço prestado. Quando não informado assumirá o valor unitário do serviço informado" notnull="True"/>
+            <field nome="Quantidade" controlType="Currency" tamanho="20,2" required="True"
+                   summary="Indica a quantidade de serviços prestados" notnull="True"/>
+            <field nome="Desconto" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o desconto no valor unitário do serviço prestado. Quando não informado assumirá o valor zero" notnull="False"/>
+            <field nome="BaseISS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica a base de ISS do serviço prestado. Quando não informado assumirá o o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem" notnull="False"/>
+            <field nome="ValorISS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o valor do ISS do serviço prestado. Quando não informado assumirá o valor da base de ISS multiplicado pela alíquota de ISS informada na configuração de RPS" notnull="False"/>
+            <field nome="BaseINSS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica a base de INSS do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem" notnull="False"/>
+            <field nome="ValorINSS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o valor do INSS do serviço prestado. Quando não informado assumirá o valor da base de INSS multiplicado pela alíquota de INSS informada na configuração do serviço" notnull="False"/>
+            <field nome="BaseIR" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica a base de IR do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem" notnull="False"/>
+            <field nome="ValorIR" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o valor do IR do serviço prestado. Quando não informado assumirá o valor da base de IR multiplicado pela alíquota de IR informada na configuração de RPS" notnull="False"/>
+            <field nome="BasePIS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica a base de PIS do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem" notnull="False"/>
+            <field nome="ValorPIS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o valor do PIS do serviço prestado. Quando não informado assumirá o valor da base de PIS multiplicado pela alíquota de PIS informada na configuração de RPS" notnull="False"/>
+            <field nome="BaseCOFINS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica a base de COFINS do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem" notnull="False"/>
+            <field nome="ValorCOFINS" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o valor do COFINS do serviço prestado. Quando não informado assumirá o valor da base de COFINS multiplicado pela alíquota de COFINS informada na configuração de RPS" notnull="False"/>
+            <field nome="BaseCSLL" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica a base de CSLL do serviço prestado. Quando não informado assumirá o valor do serviço informado caso a configuração do cliente/código de serviço esteja informando que retem" notnull="False"/>
+            <field nome="ValorCSLL" controlType="Currency" tamanho="20,2" required="False"
+                   summary="Indica o valor do CSLL do serviço prestado. Quando não informado assumirá o valor da base de CSLL  multiplicado pela alíquota de CSLL informada na configuração de RPS" notnull="False"/>
+            <field nome="RetemISS" controlType="Boolean" required="False"
+                   summary="Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do ISS calculado" notnull="False"/>
+            <field nome="RetemINSS" controlType="Boolean" required="False"
+                   summary="Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do INSS calculado" notnull="False"/>
+            <field nome="RetemIR" controlType="Boolean" required="False"
+                   summary="Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do IR calculado" notnull="False"/>
+            <field nome="RetemPIS" controlType="Boolean" required="False"
+                   summary="Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do PIS calculado" notnull="False"/>
+            <field nome="RetemCOFINS" controlType="Boolean" required="False"
+                   summary="Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do COFINS calculado" notnull="False"/>
+            <field nome="RetemCSLL" controlType="Boolean" required="False"
+                   summary="Indica se o serviço informado irá ter retenção. Quando não informado assumirá valor de acordo com o valor do CSLL calculado" notnull="False"/>
+        </model>
+    </models>
+</root>

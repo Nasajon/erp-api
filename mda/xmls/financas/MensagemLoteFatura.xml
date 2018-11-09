@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="MensagemLoteFatura">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Lote" controlType="Guid" Required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True"/>	
+			<field nome="DataHora" controlType="Date" required="True" notnull="True"/>
+            <field nome="Mensagem" controlType="Memo" required="True" notnull="True"/>
+		</model>
+	</models>
+</root>

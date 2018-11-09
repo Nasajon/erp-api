@@ -1,0 +1,9 @@
+{
+     "FuncaoDetalhe" : "Guid ou Código"
+	
+}
+
+Campo: FuncaoDetalhe
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

@@ -1,0 +1,8 @@
+{
+     "Estabelecimento" : "Objeto: TEstabelecimento"
+	
+}
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+

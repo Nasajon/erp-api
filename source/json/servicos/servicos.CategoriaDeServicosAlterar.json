@@ -1,0 +1,8 @@
+{
+     "id" : "Guid ou Código"
+   , "descricao" : "String(150)"
+   , "categoriasuperior" : "Guid ou Código"
+   , "completarcodigoservico" : False
+   , "sigla" : "String(10)"
+	
+}

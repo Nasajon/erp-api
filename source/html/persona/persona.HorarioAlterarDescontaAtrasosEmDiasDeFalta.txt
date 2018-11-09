@@ -1,0 +1,49 @@
+{
+     "Horario" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Segunda" : False
+   , "Terca" : False
+   , "Quarta" : False
+   , "Quinta" : False
+   , "Sexta" : False
+   , "Sabado" : False
+   , "Domingo" : False
+	
+}
+
+Campo: Horario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Segunda
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Terca
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Quarta
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Quinta
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Sexta
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Sabado
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Domingo
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

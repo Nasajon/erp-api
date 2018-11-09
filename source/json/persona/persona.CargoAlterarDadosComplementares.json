@@ -1,0 +1,8 @@
+{
+     "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Experiencia" : "String(100)"
+   , "Atividades" : "Este atributo é do titpo Memo."
+   , "Requisitos" : "Este atributo é do titpo Memo."
+	
+}

@@ -1,0 +1,63 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcao" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Registro" : "Guid ou Código"
+   , "Agrupador" : "Guid ou Código"
+   , "Unidade" : "Guid ou Código"
+   , "Quantidade" : 
+   , "ValorUnitario" : 
+   , "PeriodicidadeTipo" : 1
+   , "PeriodicidadeIntervalo" : 
+	
+}
+
+Campo: Identificador
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Funcao
+Descrição: Função à qual este EPI pertence.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Descrição: Utilizado para recuperar a função à que o EPI pertence, e para localizar o próprio item de EPI.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Registro
+Descrição: Identificador da EPI.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Agrupador
+Descrição: Campo utilizado para indicar a que agrupador esta EPI pertence.
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Unidade
+Descrição: Unidade de cálculo para as quantidades..
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: Quantidade
+Descrição: Quantidade.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: ValorUnitario
+Descrição: Valor comercial de uma unidade.
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PeriodicidadeTipo
+Descrição: Tipo de periodicidade da EPI. Valores possíveis: 0) Não periódico; 1) Diário; 2) Semanal; 3) Mensal; 4) Bimestral; 5) Trimestral; 6) Semestral; 7) Anual
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: PeriodicidadeIntervalo
+Descrição: Periodicidade da EPI (verificar os tipos de periodicidade no parâmetro PeriodicidadeTipo).
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

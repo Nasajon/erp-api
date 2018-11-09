@@ -1,0 +1,15 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "Guid ou Código"
+   , "Emissao" : "2014-12-31"
+   , "Lancamento" : "2014-12-31"
+   , "TipoTributacao" : 1
+   , "RegimeEspecial" : 1
+   , "IncentivoCultural" : 1
+   , "BeneficioFiscal" : 1
+   , "Desconto" : 20,2
+   , "ItemRPS" : "ObjectList: TItemRPSNovo"
+	
+}

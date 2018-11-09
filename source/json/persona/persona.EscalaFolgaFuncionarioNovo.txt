@@ -1,0 +1,24 @@
+{
+     "IdEscalaFolga" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Horario" : "Guid ou Código"
+   , "Data" : "2014-12-31"
+	
+}
+
+Campo: IdEscalaFolga
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Horario
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: SIMAceita valor nulo: NÃO
+

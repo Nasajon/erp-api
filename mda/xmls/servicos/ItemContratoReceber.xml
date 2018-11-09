@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="servicos" modulo="ItemContratoReceber">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdContrato" controlType="EntidadeInterna" notnull="True"/>	
+			<field nome="Servico" controlType="EntidadeInterna" notnull="True"/>			
+			<field nome="ValorVariavel" controlType="Boolean" summary="Indica o valor do serviço(fixo ou variável)" notnull="True"/>
+			<field nome="ValoresVariaveis" controlType="ObjectList" namespace="servicos\ValorVariavelItemContrato\TValorVariavelItemContrato" 
+			       required="False" summary="Quando o valor for variável, informar a lista de valores" notnull="True"/> 
+			<field nome="Observacao" controlType="Memo" required="False"/>
+			<field nome="Valor" controlType="Currency" tamanho="20,2" 
+			       required="False" summary="Quando o valor não for variável, informar o valor." notnull="True"/>
+			<field nome="Quantidade" controlType="Integer" notnull="True"/>
+			<field nome="Instancia" controlType="EntidadeInterna"
+			       required="False" summary="Indica a instância vinculada ao serviço do item de contrato." notnull="True"/> 
+			<field nome="CodigoInstancia" controlType="String" tamanho="30" 
+			       required="False" summary="Codigo da instância. Preencher caso o guid da instância tenha sido passado." notnull="True"/> 	   
+			<field nome="NomeInstancia" controlType="String" tamanho="100" 
+			       required="False" notnull="True"/> 
+			<field nome="TipoInstancia" controlType="String" tamanho="50" 
+			       required="False" notnull="True"/> 
+			<field nome="DescontosNoPedido" controlType="Currency" tamanho="20,2" required="False"/> 
+			<field nome="UnidadeNatureza" controlType="Integer" 
+			       summary="Indica qual a unidade utilizada no item de contrato. 0-Dia, 1-Semana, 2-Mês, 3-Ano." notnull="true"/>
+			<field nome="UnidadeIntervaloNatureza" controlType="Integer" 
+			       summary="Indica qual o período utilizado na unidade do item de contrato. 0-Dia, 1-Semana, 2-Mês, 3-Ano." notnull="true"/>
+			<field nome="QuantidadeIntervaloNatureza" controlType="Integer" 
+			       summary="Indica o intervalo utilizado no período do item de contrato." notnull="true"/>
+			<field nome="TipoVencimento" controlType="Integer" 
+			       summary="Indica a forma de calcular o vencimento do item de contrato. 0-n dias após emissão do título, 1-todo dia x do mês mais y meses, 
+                           	2-último dia do mês mais y meses, 3-no final da referência do item do contrato." notnull="true"/>
+			<field nome="DiaVencimento" controlType="Integer" 
+			       required="False" summary="Indica o dia de vencimento de acordo com o tipo escolhido." notnull="true"/>
+			<field nome="AdicaoMesesVencimento" controlType="Integer" 
+			       required="False" summary="Indica o número de meses do vencimento de acordo com o tipo escolhido." notnull="true"/>
+			<field nome="QtdDiasParaInicio" controlType="Integer" 
+			       required="False" summary="Indica o número de dias com base na emissão do contrato. Utilizado para gerar a data de vigência do item de contrato." notnull="true"/>
+			<field nome="QtdDiasParaFim" controlType="Integer" 
+			       required="False" summary="Indica o número de dias com base na emissão do contrato para finalização do item de contrato. Informar zero quando a validade for ilimitada." notnull="true"/>
+			<field nome="QtdMesesParaReajuste" controlType="Integer" 
+			       required="False" summary="Indica a quantidade de meses para reajuste com base na emissão do contrato." notnull="true"/>
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" 
+			       required="False" summary="Indica o percentual de desconto utilizado na criação do título referente ao item de contrato."/>
+			<field nome="PercentualMulta" controlType="Currency" tamanho="15,4" 
+			       required="False" summary="Indica o percentual de multa utilizado na criação do título referente ao item de contrato."/>
+			<field nome="PercentualJurosDiarios" controlType="Currency" tamanho="15,4" 
+			       required="False" summary="Indica o percentual de juros de mora utilizado na criação do título referente ao item de contrato."/>
+			<field nome="TipoCobranca" controlType="Integer" 
+			       summary="Indica a forma como o contrato vai ser processado e suas data de inicio e fim de referência. 
+				            0-Cobrado no período corrente mas com inicio da referência no próprio período, 
+							1-Cobrado no período corrente mas com inicio da referência no período anterior(pós-pago), 
+							2-Cobrado no período corrente mas com inicio da referência no período seguinte(pré-pago)." notnull="true"/>
+			<field nome="Indice" controlType="EntidadeInterna"
+			       required="False" summary="Indica o índice utilizado no reajuste do item de contrato."/> 
+			<field nome="ConsiderarDataInicio" controlType="Boolean" 
+			       required="False" summary="Indica se a data de referência inicia na data de emissão do contrato ou (D+1)." notnull="True"/> 
+		</model>
+		<model>
+        <nome>Novo_Importacao</nome>
+		    <field nome="Id" controlType="Guid" required="False"/>	
+			<field nome="IdContrato" controlType="EntidadeInterna" notnull="True"/>	
+			<field nome="Servico" controlType="EntidadeInterna" notnull="True"/>			
+			<field nome="ValorVariavel" controlType="Boolean" summary="Indica o valor do serviço(fixo ou variável)" notnull="True"/>
+			<field nome="ValoresVariaveis" controlType="ObjectList" namespace="servicos\ValorVariavelItemContrato\TValorVariavelItemContrato" 
+			       required="False" summary="Quando o valor for variável, informar a lista de valores" notnull="True"/> 
+			<field nome="Observacao" controlType="Memo" required="False"/>
+			<field nome="Valor" controlType="Currency" tamanho="20,2" 
+			       required="False" summary="Quando o valor não for variável, informar o valor." notnull="True"/>
+			<field nome="Quantidade" controlType="Integer" notnull="True"/>
+			<field nome="Instancia" controlType="EntidadeInterna"
+			       required="False" summary="Indica a instância vinculada ao serviço do item de contrato." notnull="True"/> 
+			<field nome="CodigoInstancia" controlType="String" tamanho="30" 
+			       required="False" summary="Codigo da instância. Preencher caso o guid da instância tenha sido passado." notnull="True"/> 	   
+			<field nome="NomeInstancia" controlType="String" tamanho="100" 
+			       required="False" notnull="True"/> 
+			<field nome="TipoInstancia" controlType="String" tamanho="50" 
+			       required="False" notnull="True"/> 
+			<field nome="DescontosNoPedido" controlType="Currency" tamanho="20,2" required="False"/> 
+			<field nome="UnidadeNatureza" controlType="Integer" 
+			       summary="Indica qual a unidade utilizada no item de contrato. 0-Dia, 1-Semana, 2-Mês, 3-Ano." notnull="true"/>
+			<field nome="UnidadeIntervaloNatureza" controlType="Integer" 
+			       summary="Indica qual o período utilizado na unidade do item de contrato. 0-Dia, 1-Semana, 2-Mês, 3-Ano." notnull="true"/>
+			<field nome="QuantidadeIntervaloNatureza" controlType="Integer" 
+			       summary="Indica o intervalo utilizado no período do item de contrato." notnull="true"/>
+			<field nome="TipoVencimento" controlType="Integer" 
+			       summary="Indica a forma de calcular o vencimento do item de contrato. 0-n dias após emissão do título, 1-todo dia x do mês mais y meses, 
+                           	2-último dia do mês mais y meses, 3-no final da referência do item do contrato." notnull="true"/>
+			<field nome="DiaVencimento" controlType="Integer" 
+			       required="False" summary="Indica o dia de vencimento de acordo com o tipo escolhido." notnull="true"/>
+			<field nome="AdicaoMesesVencimento" controlType="Integer" 
+			       required="False" summary="Indica o número de meses do vencimento de acordo com o tipo escolhido." notnull="true"/>
+			<field nome="QtdDiasParaInicio" controlType="Integer" 
+			       required="False" summary="Indica o número de dias com base na emissão do contrato. Utilizado para gerar a data de vigência do item de contrato." notnull="true"/>
+			<field nome="QtdDiasParaFim" controlType="Integer" 
+			       required="False" summary="Indica o número de dias com base na emissão do contrato para finalização do item de contrato. Informar zero quando a validade for ilimitada." notnull="true"/>
+			<field nome="QtdMesesParaReajuste" controlType="Integer" 
+			       required="False" summary="Indica a quantidade de meses para reajuste com base na emissão do contrato." notnull="true"/>
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" 
+			       required="False" summary="Indica o percentual de desconto utilizado na criação do título referente ao item de contrato."/>
+			<field nome="PercentualMulta" controlType="Currency" tamanho="15,4" 
+			       required="False" summary="Indica o percentual de multa utilizado na criação do título referente ao item de contrato."/>
+			<field nome="PercentualJurosDiarios" controlType="Currency" tamanho="15,4" 
+			       required="False" summary="Indica o percentual de juros de mora utilizado na criação do título referente ao item de contrato."/>
+			<field nome="TipoCobranca" controlType="Integer" 
+			       summary="Indica a forma como o contrato vai ser processado e suas data de inicio e fim de referência. 
+				            0-Cobrado no período corrente mas com inicio da referência no próprio período, 
+							1-Cobrado no período corrente mas com inicio da referência no período anterior(pós-pago), 
+							2-Cobrado no período corrente mas com inicio da referência no período seguinte(pré-pago)." notnull="true"/>
+			<field nome="Indice" controlType="EntidadeInterna"
+			       required="False" summary="Indica o índice utilizado no reajuste do item de contrato."/> 
+			<field nome="ConsiderarDataInicio" controlType="Boolean" 
+			       required="False" summary="Indica se a data de referência inicia na data de emissão do contrato ou (D+1)." notnull="True"/> 
+			<field nome="DataCobranca" controlType="Date" required="False" 
+			       summary="Indica a data de início para cobrança. Quando não informada assume a data de início do contrato acrescida da quantidade de dias de carência."/>  	
+            <field nome="DataReajuste" controlType="Date" 
+			       required="False" summary="Indica a data de reajuste do item. Quando não informada assume a data de início do contrato acrescida da quantidade de dias de reajuste."/>/>  
+			<field nome="Autorizado" controlType="Boolean" notnull="True"/>	
+			<field nome="Cancelado" controlType="Boolean"
+			       required="False" notnull="True"/>  
+			<field nome="DataHoraCancelamento" controlType="DateTime"
+			       required="False" notnull="True"/>
+		</model>		
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="Id" controlType="Guid" notnull="true"/>		
+		</model>
+	</models>
+</root>

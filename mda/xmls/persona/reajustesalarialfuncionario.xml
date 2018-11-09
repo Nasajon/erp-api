@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="persona" modulo="ReajusteSalarialFuncionario">
+		<model>
+			<nome>Novo</nome>
+			<field nome="IdReajuste" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="True" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>			
+			<field nome="Data" controlType="Date" required="True" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="255" required="True" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="True" notnull="True" summary="Promoção(0), Antecipação(1) ou Sindical(2)"/>
+			<field nome="Percentual" controlType="Currency" tamanho="20,6"  required="True" notnull="True"/>
+			<field nome="SalarioAnterior" controlType="Currency" tamanho="20,6"  required="True" notnull="True"/>
+			<field nome="SalarioNovo" controlType="Currency" tamanho="20,6"  required="True" notnull="True"/>
+			<field nome="UnidadeSalarioNovo" controlType="Integer" required="True" notnull="True" summary="Hora(1), Dia(2), Semana(3), Mês(4) ou Tarefa(5)"/>
+		</model>	
+		<model>
+			<nome>AlterarDadosGerais</nome>			
+			<field nome="IdReajuste" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>			
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="Descricao" controlType="String" tamanho="255" required="False" notnull="True"/>
+			<field nome="Tipo" controlType="Integer" required="False" notnull="True"/>
+			<field nome="Percentual" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+			<field nome="SalarioAnterior" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+			<field nome="SalarioNovo" controlType="Currency" tamanho="20,6"  required="False" notnull="True"/>
+			<field nome="UnidadeSalarioNovo" controlType="Integer" required="False" notnull="True" summary="Hora(1), Dia(2), Semana(3), Mês(4) ou Tarefa(5)"/>
+		</model>	
+		<model>
+			<nome>AlterarReajusteSindical</nome>			
+			<field nome="IdReajuste" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>			
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+			<field nome="IdReajusteSindical" controlType="Guid" required="False" notnull="False"/>
+			<field nome="DataReajusteSindical" controlType="Date" required="False" notnull="True"/>
+			<field nome="Sindicato" controlType="EntidadeInterna" required="False" notnull="True"/>			
+		</model>		
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="IdReajuste" controlType="Guid" required="False" notnull="True"/>
+			<field nome="Funcionario" controlType="EntidadeFisica" required="False" notnull="True"/>
+			<field nome="Empresa" controlType="EntidadeFisicaJuridica" required="False" notnull="True"/>			
+			<field nome="Data" controlType="Date" required="False" notnull="True"/>
+		</model>
+	</models>
+</root>

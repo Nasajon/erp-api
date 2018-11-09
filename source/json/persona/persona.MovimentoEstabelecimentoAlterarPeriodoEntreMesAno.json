@@ -1,0 +1,11 @@
+{
+     "IdMovimento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Rubrica" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "MesInicial" : 1
+   , "MesFinal" : 1
+   , "AnoInicial" : 1
+   , "AnoFinal" : 1
+	
+}

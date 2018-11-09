@@ -1,0 +1,18 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Nome" : "String(150)"
+   , "Estabelecimento" : "Objeto: TEstabelecimento"
+   , "TipoConta" : "Guid ou Código"
+   , "Banco" : "Objeto: TBancoNovo"
+   , "NomeAgencia" : "String(150)"
+   , "NumeroAgencia" : "String(30)"
+   , "DvNumeroAgencia" : "String(1)"
+   , "NumeroConta" : "String(30)"
+   , "DvNumeroConta" : "String(1)"
+   , "NomeTitular" : "String(150)"
+   , "LimiteFechamento" : "2014-12-31"
+   , "Bloqueada" : False
+   , "ConsideraSaldoNoFluxoCaixa" : False
+	
+}

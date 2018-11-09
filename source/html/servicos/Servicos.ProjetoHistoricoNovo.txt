@@ -1,0 +1,44 @@
+{
+     "ProjetoHistorico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Projeto" : "Guid ou Código"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Data" : "2014-12-31 12:00:00"
+   , "Usuario" : "Guid ou Código"
+   , "Historico" : "Este atributo é do titpo Memo."
+	
+}
+
+Campo: ProjetoHistorico
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Projeto
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: GrupoEmpresarial
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Data
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+
+Campo: Usuario
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Historico
+Obrigatório: NÃO
+Aceita valor nulo: SIM
+

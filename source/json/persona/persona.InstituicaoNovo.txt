@@ -1,0 +1,24 @@
+{
+     "IdInstituicao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Tipo" : 1
+   , "Codigo" : "String(10)"
+   , "Nome" : "String(70)"
+   , "CNPJ" : "String(18)"
+	
+}
+
+Campo: IdInstituicao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Tipo
+Descrição: Plano de Saúde(0), Previdência(1), Ensino(2), Estágio(3), Saúde(4)Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Nome
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: CNPJ
+Descrição: [99.999.999/9999-99]. A máscara não é obrigatória.Obrigatório: SIMAceita valor nulo: NÃO
+

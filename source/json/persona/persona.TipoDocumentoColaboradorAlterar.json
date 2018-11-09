@@ -1,0 +1,5 @@
+{
+     "TipoDocumento" : "Guid ou Código"
+   , "Descricao" : "String(200)"
+	
+}

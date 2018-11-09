@@ -1,0 +1,13 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Cliente" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "FormasPagamentosFaturas" : "ObjectList: TFormaPagamentoFaturaNovo"
+   , "Parcelas" : "ObjectList: TParcelaFormaPagamentoFaturaNovo"
+   , "PercentualDesconto" : 15,4
+   , "Desconto" : 15,2
+   , "ModoExibicaoDesconto" : "String(1)"
+	
+}

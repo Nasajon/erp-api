@@ -1,0 +1,60 @@
+{
+     "estabelecimento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "lancamento" : "2014-12-31"
+   , "tipo_tributacao" : 1
+   , "regime_especial" : 1
+   , "incentivador_cultural" : 1
+   , "codigo_servico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "usuario" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "discriminacao_servicos" : "String(5000)"
+   , "clientes" : "ObjectList: tgerador_rps_cliente_v2"
+   , "template_rps" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: estabelecimento
+Descrição: Identificador do estabelecimentoObrigatório: SIMAceita valor nulo: SIM
+
+Campo: lancamento
+Descrição: Identificador da data de competência do RPSObrigatório: SIMAceita valor nulo: SIM
+
+Campo: tipo_tributacao
+Descrição: Indica o Tipo de Tributação.
+                           00 - Nenhum,
+                           01 - Tributação no Município,
+                           02 - Tributação Fora do Município,
+                           03 - Operação Isenta,
+                           04 - Operação Imune,
+                           05 - Operação Suspensa por Decisão Judicial,
+                           06 - Operação Suspensa por Decisão AdministrativaObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: regime_especial
+Descrição: Indica o Regime Especial.
+                           00 - Nenhum,
+                           01 - Microempresa Municipal,
+                           02 - Estimativa,
+                           03 - Sociedade de Profissionais,
+                           04 - Cooperativa,
+                           05 - Microempreendedor Individual,
+                           06 - Empresa JúniorObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: incentivador_cultural
+Descrição: Indica se tem Incentivo Cultural.
+                           0 - Não,
+                           1 - SimObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: codigo_servico
+Descrição: Identificador do estabelecimentoObrigatório: SIMAceita valor nulo: SIM
+
+Campo: usuario
+Descrição: Identificador do usuário criadorObrigatório: SIMAceita valor nulo: SIM
+
+Campo: discriminacao_servicos
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: clientes
+Descrição: Identificadores dos clientesObrigatório: SIMAceita valor nulo: SIM
+
+Campo: template_rps
+Descrição: Identificador do template de RPSObrigatório: SIMAceita valor nulo: SIM
+

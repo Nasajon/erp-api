@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="financas" modulo="Fatura">
+		<model>
+		    <nome>Novo</nome>
+            <field nome="Id" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"/>
+			<field nome="Cliente" controlType="EntidadeFisicaJuridica" notnull="True"/>
+			<field nome="Usuario" controlType="EntidadeInterna" notnull="True"/>
+            <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Emissao" controlType="Date" notnull="True"/>
+			<field nome="Processado" controlType="Boolean" required="False" notnull="True"/>
+			<field nome="ItensFaturas" controlType="ObjectList" namespace="financas\ItemFatura\TItemFaturaNovo" required="False"/>
+			<field nome="FormasPagamentosFaturas" controlType="ObjectList" namespace="financas\FormaPagamentoFatura\TFormaPagamentoFaturaNovo" required="False"/>
+			<field nome="Parcelas" controlType="ObjectList" namespace="financas\ParcelaFormaPagamentoFatura\TParcelaFormaPagamentoFaturaNovo" required="False"/>             
+            <field nome="Lote" controlType="Guid" Required="False" notnull="False"/>
+			<field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>          
+            <field nome="Desconto" controlType="Currency" tamanho="15,2" required="False"/> 
+            <field nome="ModoExibicaoDesconto" controlType="String" tamanho="1" requited="True" notnull="True"/>
+		</model>
+		<model>
+		    <nome>Alterar</nome>
+            <field nome="Id" controlType="Guid" Required="False" notnull="True"/>
+			<field nome="Estabelecimento" controlType="EntidadeFisicaJuridica" notnull="True"/>
+			<field nome="Cliente" controlType="EntidadeFisicaJuridica" notnull="True"/>
+            <field nome="Numero" controlType="String" tamanho="30" notnull="True"/>
+			<field nome="Emissao" controlType="Date" notnull="True"/>
+            <field nome="FormasPagamentosFaturas" controlType="ObjectList" namespace="financas\FormaPagamentoFatura\TFormaPagamentoFaturaNovo" required="False"/>
+			<field nome="Parcelas" controlType="ObjectList" namespace="financas\ParcelaFormaPagamentoFatura\TParcelaFormaPagamentoFaturaNovo" required="False"/>                         
+            <field nome="PercentualDesconto" controlType="Currency" tamanho="15,4" required="False"/>          
+            <field nome="Desconto" controlType="Currency" tamanho="15,2" required="False"/>            
+            <field nome="ModoExibicaoDesconto" controlType="String" tamanho="1" requited="True" notnull="True"/>            
+		</model>
+		<model>
+			<nome>Excluir</nome>
+			<field nome="Id" controlType="Guid" notnull="true"/>
+		</model>
+	</models>
+</root>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="ns" modulo="Pais">
+		<model>			
+			<field nome="id" controlType="Guid" required="False" notnull="True"/>	
+			<field nome="codigo" controlType="String" tamanho="30" required="False" notnull="True"/>			
+			<field nome="nome" controlType="String" tamanho="150" required="False" notnull="True"/>	
+		</model>	
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid"/>	
+			<field nome="codigo" controlType="String" tamanho="30"/>			
+			<field nome="nome" controlType="String" tamanho="150"/>	
+		</model>	
+		<model>
+			<nome>Alterar</nome>			
+			<field nome="id" controlType="Guid"/>	
+			<field nome="codigo" controlType="String" tamanho="30"/>			
+			<field nome="nome" controlType="String" tamanho="150"/>	
+		</model>	
+		<model>
+			<nome>Excluir</nome>			
+			<field nome="id" controlType="Guid"/>		
+		</model>
+	</models>
+</root>

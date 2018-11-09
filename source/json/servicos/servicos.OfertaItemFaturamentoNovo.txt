@@ -1,0 +1,28 @@
+{
+     "servicocatalogoitem" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "servicocatalogo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "itemfaturamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "quantidade" : 20,2
+   , "valorbase" : 20,2
+   , "finalidade" : 1
+	
+}
+
+Campo: servicocatalogoitem
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: servicocatalogo
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: itemfaturamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: quantidade
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: valorbase
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: finalidade
+Obrigatório: NÃOAceita valor nulo: NÃO
+

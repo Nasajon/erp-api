@@ -1,0 +1,24 @@
+{
+     "Identificador" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Funcao" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+	
+}
+
+Campo: Identificador
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Funcao
+Descrição: Função à qual este agrupador pertence.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: GrupoEmpresarial
+Descrição: Utilizado para recuperar a função à que o Agrupador pertence.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Descrição: Código do agrupador sendo cadastrado.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Descrição: Descrição do agrupador sendo cadastrado.Obrigatório: SIMAceita valor nulo: NÃO
+

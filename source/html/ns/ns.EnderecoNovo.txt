@@ -1,0 +1,74 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "tipoLogradouro" : "String(50)"
+   , "logradouro" : "String(150)"
+   , "numero" : "String(50)"
+   , "complemento" : "String(100)"
+   , "cep" : "String(30)"
+   , "bairro" : "String(100)"
+   , "municipio" : "Objeto: TMunicipioNovo"
+   , "pais" : "Objeto: TPaisNovo"
+   , "uf" : "String(2)"
+   , "tipo" : 1
+   , "enderecopadrao" : 1
+   , "referencia" : "String(150)"
+   , "idpessoa" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+	
+}
+
+Campo: id
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: tipoLogradouro
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: logradouro
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: numero
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: complemento
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: cep
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: bairro
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: municipio
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: pais
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: uf
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: tipo
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: enderecopadrao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: referencia
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: idpessoa
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

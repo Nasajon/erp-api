@@ -1,0 +1,14 @@
+{
+     "CFOPServico" : "Guid ou Código"
+   , "IBGEMunicipio_Anterior" : 1
+   , "Codigo" : "String(30)"
+   , "IBGEMunicipio_Novo" : 1
+   , "Descricao" : "String(255)"
+   , "Discriminacao" : "String(80)"
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+   , "RetemIRRF" : False
+   , "IbpTaxa" : 20,2
+	
+}

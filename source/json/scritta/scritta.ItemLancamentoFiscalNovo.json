@@ -1,0 +1,58 @@
+{
+     "id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "iditem" : "Guid ou Código"
+   , "idlancamentofiscal" : "Guid ou Código"
+   , "descricao" : "String(150)"
+   , "ordem" : 1
+   , "ano" : 1
+   , "incentivo" : False
+   , "ignorasoma" : False
+   , "semmovimento" : False
+   , "valor" : 20,2
+   , "quantidade" : 20,4
+   , "unidade" : "String(6)"
+   , "desconto" : 20,2
+   , "descontonaotributado" : 20,2
+   , "valorcontabil" : 20,2
+   , "situacaotributariaipi" : 1
+   , "tipoipi" : 1
+   , "aliquotaipi" : 20,2
+   , "baseipi" : 20,2
+   , "valoripi" : 20,2
+   , "baseipinaotributada" : 20,2
+   , "reducaoipi" : 20,2
+   , "valorreducaoipi" : 20,2
+   , "valorabatimentoipi" : 20,2
+   , "situacaotributariaicms" : 1
+   , "situacaosimplesnacional" : 1
+   , "aliquotaicms" : 20,2
+   , "baseicms" : 20,2
+   , "valoricms" : 20,2
+   , "baseicmsnaotributada" : 20,2
+   , "valoricmsnaotributada" : 20,2
+   , "reducaoicms" : 20,2
+   , "valorreducaoicms" : 20,2
+   , "valorabatimentoicms" : 20,2
+   , "valordificms" : 20,2
+   , "valorantecipacaoicms" : 20,2
+   , "valorciap" : 20,2
+   , "basesubstituicaotributaria" : 20,2
+   , "valorsubstituicaotributariapropria" : 20,2
+   , "valorsubstituicaotributariaterceiro" : 20,2
+   , "valorsubstituicaotributarianaoretida" : 20,2
+   , "valorstcomp" : 20,2
+   , "situacaotributariapis" : "String(2)"
+   , "aliquotapis" : 20,2
+   , "valorpis" : 20,2
+   , "situacaotributariacofins" : "String(2)"
+   , "aliquotacofins" : 20,2
+   , "valorcofins" : 20,2
+   , "fichaconteudoimportacao" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "aliquotaicmsfcp" : 20,2
+   , "aliquotaicmspartint" : 20,2
+   , "aliquotaicmspartdest" : 20,2
+   , "valoricmsfcp" : 20,2
+   , "valoricmspartdest" : 20,2
+   , "valoricmspartorigem" : 20,2
+	
+}

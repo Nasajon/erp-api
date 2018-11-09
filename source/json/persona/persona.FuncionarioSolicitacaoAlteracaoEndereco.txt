@@ -1,0 +1,20 @@
+{
+     "Colaborador" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Novo" : "Objeto: TSolicitacoesAlteracaoEndereco"
+   , "Antigo" : "Objeto: TSolicitacoesAlteracaoEndereco"
+	
+}
+
+Campo: Colaborador
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Novo
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Antigo
+Obrigatório: SIMAceita valor nulo: SIM
+

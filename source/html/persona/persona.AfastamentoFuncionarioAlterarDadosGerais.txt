@@ -1,0 +1,45 @@
+{
+     "IdAfastamento" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Data" : "2014-12-31"
+   , "Funcionario" : "Guid ou Código ou CPF [999.999.999-99]"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "DataNova" : "2014-12-31"
+   , "Dias" : 1
+   , "TipoHistorico" : "String(3)"
+   , "Descricao" : "String(255)"
+	
+}
+
+Campo: IdAfastamento
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Data
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: Funcionario
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Empresa
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: DataNova
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Dias
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: TipoHistorico
+Descrição: Preencher com o valor da coluna tipo da tela de afastamentos de funcionário
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+

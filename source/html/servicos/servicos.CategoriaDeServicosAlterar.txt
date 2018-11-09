@@ -1,0 +1,32 @@
+{
+     "id" : "Guid ou Código"
+   , "descricao" : "String(150)"
+   , "categoriasuperior" : "Guid ou Código"
+   , "completarcodigoservico" : False
+   , "sigla" : "String(10)"
+	
+}
+
+Campo: id
+Obrigatório: SIM
+Aceita valor nulo: NÃO
+
+Campo: descricao
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: categoriasuperior
+Descrição: Categoria pai. Este campo é responsável por determinar a árvore hierárquica das categorias.
+Obrigatório: NÃO
+Aceita valor nulo: NÃO
+
+Campo: completarcodigoservico
+Descrição: Este recurso fará com que o código do servico seja concatenado com a sigla da categoria.
+Obrigatório: SIM
+Aceita valor nulo: SIM
+
+Campo: sigla
+Descrição: Sigla para concatenação com o código do produto
+Obrigatório: SIM
+Aceita valor nulo: SIM
+

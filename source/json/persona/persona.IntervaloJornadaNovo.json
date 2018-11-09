@@ -1,0 +1,8 @@
+{
+     "IdIntervalo" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Jornada" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "HorarioInicio" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "HorarioFim" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+	
+}

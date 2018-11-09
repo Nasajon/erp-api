@@ -1,0 +1,52 @@
+{
+     "Classificacao" : "Guid ou Código"
+   , "ClassificacaoPai" : "Guid ou Código"
+   , "GrupoEmpresarial" : "Guid ou Código"
+   , "Codigo" : "String(16)"
+   , "Descricao" : "String(150)"
+   , "CodigoContabil" : "String(20)"
+   , "Resumo" : "String(30)"
+   , "Situacao" : 1
+   , "Natureza" : 1
+   , "Transferencia" : False
+   , "Repasse_Deducao" : False
+   , "Rendimentos" : False
+	
+}
+
+Campo: Classificacao
+Descrição: Classificação financeira para alteração.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: ClassificacaoPai
+Descrição: Classificação financeira a qual está nova pertence(sintética).Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: GrupoEmpresarial
+Descrição: Grupo empresarial da classificação a ser alterada.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: CodigoContabil
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Resumo
+Descrição: Descrição de forma resumida.Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: Situacao
+Descrição: Indica a situação da classificação: 0 - Ativa e 1 - DesativadaObrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Natureza
+Descrição: Indica a natureza da classificação: 0 - Indefinido, 1 - Receita e 2 - Despesa.Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Transferencia
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Repasse_Deducao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Rendimentos
+Obrigatório: NÃOAceita valor nulo: SIM
+

@@ -1,0 +1,16 @@
+{
+     "IdGrupoEmpresarial" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "Descricao" : "String(150)"
+	
+}
+
+Campo: IdGrupoEmpresarial
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+

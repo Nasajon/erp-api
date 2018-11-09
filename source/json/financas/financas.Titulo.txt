@@ -1,0 +1,273 @@
+{
+     "Id" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Pessoa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Conta" : "Guid ou Código"
+   , "LayoutCobranca" : "Guid ou Código"
+   , "LayoutPagamento" : "Guid ou Código"
+   , "Numero" : "String(30)"
+   , "Emissao" : "2014-12-31"
+   , "Vencimento" : "2014-12-31"
+   , "PrevisaoVencimento" : "2014-12-31"
+   , "Parcela" : 1
+   , "TotalParcelas" : 1
+   , "Observacao" : "String(1000)"
+   , "Anotacoes" : "Este atributo é do titpo Memo."
+   , "ValorTitulo" : 20,2
+   , "RateioFinanceiro" : "ObjectList: TItemRateioFinanceiro"
+   , "AliquotaIr" : 15,4
+   , "ValorIrRetido" : 20,2
+   , "AliquotaCofins" : 15,4
+   , "ValorCofinsRetido" : 20,2
+   , "AliquotaPis" : 15,4
+   , "ValorPisRetido" : 20,2
+   , "AliquotaCsll" : 15,4
+   , "ValorCsllRetido" : 20,2
+   , "ValorInssRetido" : 20,2
+   , "AliquotaIss" : 15,4
+   , "ValorIssRetido" : 20,2
+   , "DataLimiteDesconto" : "2014-12-31"
+   , "PercentualDesconto" : 15,4
+   , "DataInicioMulta" : "2014-12-31"
+   , "PercentualMulta" : 15,4
+   , "PercentualJurosDiario" : 15,4
+   , "TaxaBancaria" : 20,2
+   , "NossoNumero" : "String(30)"
+   , "LinhaDigitavel" : "String(54)"
+   , "CodigoBarras" : "String(44)"
+   , "InformacaoCartao" : "Objeto: TInformacaoCartao"
+   , "NumeroVezesCartao" : 1
+   , "ValorTarifaCartao" : 20,2
+   , "AutorizacaoCartao" : "String(30)"
+   , "DocumentoCartao" : "String(30)"
+   , "NumeroParcelaCartao" : 1
+   , "ValorParcelaCartao" : 20,2
+   , "NumeroNota" : "String(20)"
+   , "ModeloDocumentoFiscal" : 1
+   , "SerieDocumentoFiscal" : "String(3)"
+   , "SubserieDocumentoFiscal" : "String(2)"
+   , "ServicoBancario" : "Guid ou Código"
+   , "FinalidadePagamento" : "Guid ou Código"
+   , "TipoContaPagamento" : "Guid ou Código"
+   , "DataAgendamento" : "2014-12-31"
+   , "Vendedores" : "ObjectList: TVendedorTitulo"
+   , "DataProvisoria" : False
+   , "ValorProvisorio" : False
+   , "TipoOrigem" : 1
+   , "Contrato" : "Guid ou Código"
+   , "DataAutorizacaoCartao" : "2014-12-31"
+   , "FormaPagamento" : "Guid ou Código"
+   , "Fatura" : "Guid ou Código"
+   , "id_renegociacao_gerada" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "id_renegociacao_geradora" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "valorvariacaocambialativa" : 
+   , "valorvariacaocambialpassiva" : 
+   , "TipoCredito" : 1
+   , "CreditoIdentificado" : 1
+   , "OutrasRetencoes" : 20,2
+   , "DescricaoOutrasRetencoes" : "String(255)"
+	
+}
+
+Campo: Id
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Estabelecimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Pessoa
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Conta
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: LayoutCobranca
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: LayoutPagamento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Numero
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Emissao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Vencimento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: PrevisaoVencimento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Parcela
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: TotalParcelas
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Observacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: Anotacoes
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorTitulo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RateioFinanceiro
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaIr
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorIrRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaCofins
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorCofinsRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaPis
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorPisRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaCsll
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorCsllRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorInssRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: AliquotaIss
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ValorIssRetido
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataLimiteDesconto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualDesconto
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataInicioMulta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualMulta
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: PercentualJurosDiario
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: TaxaBancaria
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: NossoNumero
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: LinhaDigitavel
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: CodigoBarras
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: InformacaoCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NumeroVezesCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ValorTarifaCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: AutorizacaoCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DocumentoCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NumeroParcelaCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ValorParcelaCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: NumeroNota
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ModeloDocumentoFiscal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: SerieDocumentoFiscal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: SubserieDocumentoFiscal
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: ServicoBancario
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: FinalidadePagamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoContaPagamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataAgendamento
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Vendedores
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: DataProvisoria
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: ValorProvisorio
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: TipoOrigem
+Descrição: Indica a origem do titulo. Quando não informado, assumirá 0 - Manutenção
+				                             23 - PrevisãoObrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Contrato
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: DataAutorizacaoCartao
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: FormaPagamento
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Fatura
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: id_renegociacao_gerada
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: id_renegociacao_geradora
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: valorvariacaocambialativa
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: valorvariacaocambialpassiva
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: TipoCredito
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: CreditoIdentificado
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: OutrasRetencoes
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: DescricaoOutrasRetencoes
+Obrigatório: NÃOAceita valor nulo: SIM
+

@@ -1,0 +1,4 @@
+	IF (a_objeto.$(field) IS NULL) THEN
+      VAR_RETURN.MENSAGEM := ns.api_montamensagemerro('W0001#O campo "$(field)" não pode ser nulo.');
+	  RETURN VAR_RETURN;
+	END IF;

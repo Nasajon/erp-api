@@ -1,0 +1,44 @@
+{
+     "CFOPServico" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "Codigo" : "String(30)"
+   , "IBGEMunicipio" : 1
+   , "Descricao" : "String(255)"
+   , "Discriminacao" : "String(80)"
+   , "RetemPIS" : False
+   , "RetemCOFINS" : False
+   , "RetemCSLL" : False
+   , "RetemIRRF" : False
+   , "IbpTaxa" : 20,2
+	
+}
+
+Campo: CFOPServico
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: Codigo
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: IBGEMunicipio
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Descricao
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: Discriminacao
+Obrigatório: NÃOAceita valor nulo: SIM
+
+Campo: RetemPIS
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RetemCOFINS
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RetemCSLL
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: RetemIRRF
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: IbpTaxa
+Obrigatório: SIMAceita valor nulo: NÃO
+

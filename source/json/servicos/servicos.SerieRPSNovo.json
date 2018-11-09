@@ -1,0 +1,10 @@
+{
+     "Estabelecimento" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "Serie" : "String(3)"
+   , "SubSerie" : "String(2)"
+   , "Padrao" : False
+   , "NumeroInicial" : 1
+   , "NumeroFinal" : 1
+   , "ProximoNumero" : 1
+	
+}

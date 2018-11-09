@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="apinasajon.xsd">
+	<models sistema="scritta" modulo="ItemLancamentoFiscal">
+		<model>
+			<nome>Novo</nome>
+			<field nome="id" controlType="Guid" required="False" notnull="False"/>
+			<field nome="iditem" controlType="EntidadeInterna" summary="id do item na tabela de itens" required="True" notnull="False"/>
+			<field nome="idlancamentofiscal" controlType="EntidadeInterna" summary="id do lançamento fiscal" required="True"/>
+			<field nome="descricao" controlType="String" tamanho="150" required="True" />
+			<field nome="ordem" controlType="Integer" summary="ordem de inclusao do item no documento" required="True" notnull="True"/>
+			<field nome="ano" controlType="Integer" summary="Ano do lancamento" required="True" notnull="True"/>
+			<field nome="incentivo" controlType="Boolean" required="False"/>
+			<field nome="ignorasoma" controlType="Boolean" required="False" />
+			<field nome="semmovimento" controlType="Boolean" required="False"/>
+			<field nome="valor" controlType="Currency" tamanho="20,2" required="True" />
+			<field nome="quantidade" controlType="Currency" tamanho="20,4" required="True" />
+			<field nome="unidade" controlType="String" tamanho="6" required="True" />
+			<field nome="desconto" controlType="Currency" tamanho="20,2" required="False" />
+			<field nome="descontonaotributado" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorcontabil" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="situacaotributariaipi" controlType="Integer" required="True"/>
+			<field nome="tipoipi" controlType="Integer" required="False"/>
+			<field nome="aliquotaipi" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="baseipi" controlType="Currency" tamanho="20,2"  required="False"/>
+			<field nome="valoripi" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="baseipinaotributada" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="reducaoipi" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorreducaoipi" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorabatimentoipi" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="situacaotributariaicms" controlType="Integer" required="False"/>
+			<field nome="situacaosimplesnacional" controlType="Integer" summary="Caso empresa do simples nacional, informa cst do documento" required="True"/>
+			<field nome="aliquotaicms" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="baseicms" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="valoricms" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="baseicmsnaotributada" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valoricmsnaotributada" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="reducaoicms" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorreducaoicms" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorabatimentoicms" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valordificms" controlType="Currency" tamanho="20,2"  summary="Valor de diferencial de alíquota de icms" required="False"/>
+			<field nome="valorantecipacaoicms" controlType="Currency" tamanho="20,2" summary="Valor de antecipação de icms" required="False"/>
+			<field nome="valorciap" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="basesubstituicaotributaria" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorsubstituicaotributariapropria" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorsubstituicaotributariaterceiro" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorsubstituicaotributarianaoretida" controlType="Currency" tamanho="20,2" required="False"/>
+			<field nome="valorstcomp" controlType="Currency" tamanho="20,2" summary="Valor de subst. das informações complementares para operações com combustíveis " required="False"/>
+			<field nome="situacaotributariapis" controlType="String" tamanho="2" required="True"/>
+			<field nome="aliquotapis" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="valorpis" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="situacaotributariacofins" controlType="String" tamanho="2" required="True"/>
+			<field nome="aliquotacofins" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="valorcofins" controlType="Currency" tamanho="20,2" required="True"/>
+			<field nome="fichaconteudoimportacao" controlType="Guid" required="False"/>
+			<field nome="aliquotaicmsfcp" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="aliquotaicmspartint" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="aliquotaicmspartdest" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoricmsfcp" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoricmspartdest" controlType="Currency" tamanho="20,2"  required="False" />
+			<field nome="valoricmspartorigem" controlType="Currency" tamanho="20,2"  required="False" />
+		</model>
+	</models>
+</root>

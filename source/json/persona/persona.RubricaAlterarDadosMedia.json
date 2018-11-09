@@ -1,0 +1,10 @@
+{
+     "Rubrica" : "Guid ou Código"
+   , "Conjunto" : "Guid ou Código"
+   , "Tipo" : 1
+   , "Rescisao" : False
+   , "DecimoTerceiro" : False
+   , "Ferias" : False
+   , "Maternidade" : False
+	
+}

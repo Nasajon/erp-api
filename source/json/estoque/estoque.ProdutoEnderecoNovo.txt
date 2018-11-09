@@ -1,0 +1,24 @@
+{
+     "idprodutoendereco" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "produto" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "localdeestoqueendereco" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "localdeestoque" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "padrao" : False
+	
+}
+
+Campo: idprodutoendereco
+Obrigatório: NÃOAceita valor nulo: NÃO
+
+Campo: produto
+Obrigatório: SIMAceita valor nulo: NÃO
+
+Campo: localdeestoqueendereco
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: localdeestoque
+Obrigatório: SIMAceita valor nulo: SIM
+
+Campo: padrao
+Obrigatório: SIMAceita valor nulo: SIM
+

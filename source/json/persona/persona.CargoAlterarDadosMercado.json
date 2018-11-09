@@ -1,0 +1,7 @@
+{
+     "Cargo" : "Guid ou Código"
+   , "Empresa" : "Guid ou Código ou CPF [999.999.999-99] ou CNPJ [99.999.999/9999-99]"
+   , "MaiorSalario" : 20,6
+   , "MenorSalario" : 20,6
+	
+}

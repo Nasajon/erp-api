@@ -1,0 +1,7 @@
+{
+     "LayoutImpressoraCheque" : "Guid ou Código"
+   , "Codigo" : "String(20)"
+   , "Descricao" : "String(200)"
+   , "Banco" : "Guid ou Código"
+	
+}

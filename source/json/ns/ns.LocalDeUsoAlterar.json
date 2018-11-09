@@ -1,0 +1,9 @@
+{
+     "id" : "Guid ou Código"
+   , "descricao" : "String(150)"
+   , "centrocusto" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "projeto" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "grupoempresarial" : "{86BF0D56-4AA1-4E8B-87D4-77F83A422068}"
+   , "agrega_solicitacoes" : False
+	
+}
