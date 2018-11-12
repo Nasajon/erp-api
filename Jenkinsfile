@@ -69,6 +69,8 @@ def generateVersionNumber() {
 
 	println("Version: " + version)
 
+	currentBuild.displayName = version
+
 	writeFile file: "${env.WORKSPACE}\\output\\VersionInfo", text: version
 }
 
