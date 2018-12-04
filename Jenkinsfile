@@ -47,13 +47,15 @@ node('master') {
 }
 
 def notifyFailed() {
-	emailext(
-		subject: "Build Quebrado: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-		body: """Build Quebrado: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]': '${env.BUILD_URL}/console'""",
-			recipientProviders: [[$class: 'DevelopersRecipientProvider']]
-	)
+  emailext(
+      subject: "Build Quebrado: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+      body: """Build Quebrado: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]': '${env.BUILD_URL}/console'""",
+      recipientProviders: [[$class: 'CulpritsRecipientProvider'],
+                     	   [$class: 'DevelopersRecipientProvider'],
+                           [$class: 'RequesterRecipientProvider'],
+                           [$class: 'UpstreamComitterRecipientProvider']]
+  )
 }
-
 def generateVersionNumber() {
 	def version = ""
 	def branchName = "${env.BRANCH_NAME}"
