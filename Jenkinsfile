@@ -4,6 +4,8 @@ node('master') {
 	def nasajonCIBaseDir = "${env.NASAJON_CI_BASE_DIR}"
 
 	try {
+		properties([disableConcurrentBuilds()])
+
 		stage('Checkout') {
 			dir("${dirArtifactName}") {
 			    timeout(time: 300, unit: 'SECONDS') {
