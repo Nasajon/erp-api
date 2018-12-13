@@ -63,6 +63,13 @@ def notifyFailed() {
 
 @NonCPS
 def notifyChangeLog() {
+	def branchName = "${env.BRANCH_NAME}"
+	def branchsLD = "${env.BRANCHS_LD}"
+
+	if (!branchsLD.contains(branchName)) {
+		return
+	}
+
 	def changeLogSets = currentBuild.changeSets
 	def content = ""
 
@@ -80,7 +87,7 @@ def notifyChangeLog() {
     }
 
 	emailext(
-      to: "diogodias@nasajon.com.br",
+      to: "cvf@nasajon.com.br",
 	  subject: "ChangeLog '${env.JOB_NAME} [${currentBuild.displayName}]'",
       body: content
   	)
