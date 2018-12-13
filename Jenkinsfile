@@ -35,6 +35,8 @@ node('master') {
 				}
 			}
 		}
+
+		notifyChangeLog()
 	} catch (e) {
 		currentBuild.result = "FAILED"
     	notifyFailed()
@@ -58,6 +60,32 @@ def notifyFailed() {
                            [$class: 'UpstreamComitterRecipientProvider']]
   )
 }
+
+@NonCPS
+def notifyChangeLog() {
+	def changeLogSets = currentBuild.rawBuild.changeSets
+	def content = ""
+
+	for (int i = 0; i < changeLogSets.size(); i++) {
+		def entries = changeLogSets[i].items
+
+		for (int j = 0; j < entries.length; j++) {
+			def entry = entries[j]
+			content += "[${entry.author}] - ${entry.msg}\n"
+		}
+	}
+
+	if (!content) {
+        return
+    }
+
+	emailext(
+      to: "diogodias@nasajon.com.br",
+	  subject: "ChangeLog '${env.JOB_NAME} [${currentBuild.displayName}]'",
+      body: content
+  	)
+}
+
 def generateVersionNumber() {
 	def version = ""
 	def branchName = "${env.BRANCH_NAME}"
