@@ -63,7 +63,7 @@ def notifyFailed() {
 
 @NonCPS
 def notifyChangeLog() {
-	def changeLogSets = currentBuild.rawBuild.changeSets
+	def changeLogSets = currentBuild.changeSets
 	def content = ""
 
 	for (int i = 0; i < changeLogSets.size(); i++) {
