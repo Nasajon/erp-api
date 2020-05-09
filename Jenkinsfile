@@ -52,13 +52,14 @@ node('master') {
 
 def notifyFailed() {
   emailext(
-      subject: "Build Quebrado: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-      body: """Build Quebrado: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]': '${env.BUILD_URL}/console'""",
-      recipientProviders: [[$class: 'CulpritsRecipientProvider'],
-                     	   [$class: 'DevelopersRecipientProvider'],
-                           [$class: 'RequesterRecipientProvider'],
-                           [$class: 'UpstreamComitterRecipientProvider']]
-  )
+		subject: '''${DEFAULT_SUBJECT}''',
+		body: '''${DEFAULT_CONTENT}''',
+		recipientProviders: [[$class: 'CulpritsRecipientProvider'],
+							[$class: 'DevelopersRecipientProvider'],
+							[$class: 'RequesterRecipientProvider'],
+							[$class: 'UpstreamComitterRecipientProvider']],
+		to: "${env.EMAILS_FAILED}"
+	)
 }
 
 @NonCPS
