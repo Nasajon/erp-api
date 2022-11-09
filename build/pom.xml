@@ -8,8 +8,8 @@
     <name>Nasajon.API</name>
 
     <properties>
-        <bplUtilsVersion>[2.0.0.0, 2.9901.0.9999]</bplUtilsVersion>
-        <bplLibrariesVersion>[2.0.0.0, 2.9901.0.9999]</bplLibrariesVersion>
+        <bplUtilsVersion>${env.DEPS_VERSION}</bplUtilsVersion>
+        <bplLibrariesVersion>${env.DEPS_VERSION}</bplLibrariesVersion>
     </properties>
 
     <dependencies>

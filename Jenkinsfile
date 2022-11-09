@@ -2,6 +2,8 @@ node('master') {
 	def dirArtifactName = "erp-api"
 	def artifactBuildPath = "${env.WORKSPACE}\\${dirArtifactName}\\build"
 	def nasajonCIBaseDir = "${env.NASAJON_CI_BASE_DIR}"
+	def version = ""
+	def dependenciesMaskVersion = "RELEASE"
 
 	try {
 		properties([disableConcurrentBuilds()])
@@ -30,8 +32,11 @@ node('master') {
 			stage('Deploy') {
 				dir("${nasajonCIBaseDir}\\build\\") {
 					bat "tools\\7zip\\7za.exe a -tzip ${env.WORKSPACE}\\output\\Nasajon.API.zip ${env.WORKSPACE}\\output\\dcu\\api"
-
-					bat "erp\\deploy.bat ${artifactBuildPath} zip ${env.WORKSPACE}\\output\\Nasajon.API.zip"
+					bat """
+                        set VERINFO=${version}
+                        set DEPS_VERSION=${dependenciesMaskVersion}
+						erp\\deploy.bat ${artifactBuildPath} zip ${env.WORKSPACE}\\output\\Nasajon.API.zip
+					"""
 				}
 			}
 		}
@@ -95,23 +100,26 @@ def notifyChangeLog() {
 }
 
 def generateVersionNumber() {
-	def version = ""
 	def branchName = "${env.BRANCH_NAME}"
 
 	if (branchName == "master") {
 		version = "2.${env.CURRENT_SPRINT}.0.${env.BUILD_NUMBER}"
+		dependenciesMaskVersion = "[2.${env.CURRENT_SPRINT}.0.0, 2.${env.CURRENT_SPRINT}.0.9999]"
 	} else if (branchName.startsWith("v2.")) {
 		def sprint = branchName.substring(3)
 		version = "2.${sprint}.${env.BUILD_NUMBER}.0"
+		dependenciesMaskVersion = "[2.${sprint}.1.0, 2.${sprint}.9999.0]"
 	} else {
 		version = "2.0.0.0"
 	}
 
 	println("Version: " + version)
+	println("Dependencies Mask Version: " + dependenciesMaskVersion)
 
 	currentBuild.displayName = version
 
 	writeFile file: "${env.WORKSPACE}\\output\\VersionInfo", text: version
+	writeFile file: "${env.WORKSPACE}\\output\\DependenciesMaskVersion", text: dependenciesMaskVersion
 }
 
 def canDeploy() {
